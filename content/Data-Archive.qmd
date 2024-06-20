@@ -18,12 +18,14 @@ All ADRIFT, CCES, and PASCAL raw data is publicly accessible through [NCEI Passi
 
 All data were packaged using a combination of automated scripts and the NCEI Passive Packer tool. Several automation scripts were used to create Passive Packer ready databases from our deployment details metadata. Detailed methods can be found [here](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/NCEI.html).
 
+## PACM
+
+All ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the [Passive Acoustic Cetacean Map](https://apps-nefsc.fisheries.noaa.gov/pacm/#/). Archive methods can be found [here](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/PACM.html). 
+
 ## Tethys
 
 All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived in our lab's [Tethys database](https://tethys.sdsu.edu/). See [Tethys SAEL GitHub repository](https://github.com/asimonis/TethysSAEL) and our [detailed methods](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html) for more information.
 
 ## OBIS Seamap
 
-Work in progress
-
-All ADRIFT, CCES, and PASCAL marine mammal detection data are publicly accessible from OBIS-SEAMAP database.
+We are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available [here](https://github.com/TaikiSan21/PAMpal/blob/735dfec50b3c6feaa8772765d752e8260363a2c5/devel/OBIS_Functions.R). 
