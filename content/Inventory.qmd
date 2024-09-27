@@ -2,26 +2,6 @@
 title: Inventory
 ---
 
-## Inventory: Inventree
+## Inventory
 
-Add Content Here
-
-## Inventory Update Request
-
-Complete the following steps to request and Inventory Update
-
-1.  Go to the [Inventory Github page](https://github.com/Kourtney-Burger/Inventree) and click on the 'Issues' tab
-
-    ![](images/Screenshot%202023-01-03%20163007.png){width="573"}
-
-2.  Click the green 'New Issue' button and select the appropriate Issue Template
-
-    ![](images/Screenshot%202023-01-03%20163229.png){width="144"}
-
-    ![](images/Screenshot%202023-01-03%20163501.png){width="569"}
-
-3.  Follow the directions in the issue template, and click the 'Submit new issue' button to submit the inventory update request form
-
-    ![](images/Screenshot%202023-01-03%20163615.png)
-
-Email Kourtney Burger (kourtney.burger\@noaa.gov) with any inventory related questions
+Inventory is tracked on a google document that can be accessed by lab employees. Inventory should be updated for new equipment, or when there is a change in the status of equipment. For more information, contact: kourtney.burger@noaa.gov or shannon.rankin@noaa.gov.

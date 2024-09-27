@@ -28,7 +28,7 @@ An automated script can be found [here](https://github.com/SAEL-SWFSC/SAEL-lab-m
 
 ## Fish & Wildlife Permits
 
-Add Content Here
+**We are no longer conducting research requiring Fish & Wildlife Permits**
 
 ## Navy Agreement
 
