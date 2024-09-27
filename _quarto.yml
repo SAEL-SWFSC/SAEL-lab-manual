@@ -44,9 +44,9 @@ website:
           - content/Inventory.qmd
       - section: "Data Management"
         contents:
+          - content/Data-Archive.qmd
           - content/Permits_Reporting.qmd
           - content/Data-SpeciesAndCallTypes.qmd
-          - content/Data-Archive.qmd
           - content/media.qmd
       - section: "Hardware Methods"
         contents:
@@ -54,7 +54,14 @@ website:
           - content/Hardware_Handheld-Hydrophone.qmd
       - section: "Software Management"
         contents:
+          - content/Analysis-software.qmd
           - content/Ocean-Alert-App.qmd
+      - section: "Analysis"
+        contents:
+          - content/Analysis-adrift.qmd
+      - section: "Reporting"
+        contents:
+          - content/Reporting.qmd
       - section: "Open Science"
         contents: 
           - content/OpenScience_Getting-Started.qmd
@@ -66,10 +73,8 @@ website:
           - content/OpenScience_GithubBook.qmd
           - content/OpenScience_GithubBranches.qmd
           - content/OpenScience_Presentations.qmd
-      - section: "Acoustic Analysis"
-        contents:
-          - content/Analysis-software.qmd
-          - content/Analysis-adrift.qmd
+
+
         
 
 format:

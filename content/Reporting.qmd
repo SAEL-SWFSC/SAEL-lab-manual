@@ -1,0 +1,32 @@
+---
+title: Reporting
+---
+
+Please see links, below, to publications and reports
+
+[Rankin, S., Sakai, T., Archer, F. I., Barlow, J., Cholewiak, D., DeAngelis, A. I., ... & Trickey, J. S. (2024). *Open-source machine learning BANTER acoustic classification of beaked whale echolocation pulses.* Ecological Informatics, 80, 102511.](https://www.sciencedirect.com/science/article/am/pii/S1574954124000530)
+
+[Barlow, J., Cárdenas‐Hinojosa, G., Henderson, E. E., Breese, D., López‐Arzate, D., Hidalgo Pla, E., & Taylor, B. L. (2022). *Unique morphological and acoustic characteristics of beaked whales (Mesoplodon sp.) off the west coast of Baja California, Mexico.*](https://repository.library.noaa.gov/view/noaa/36758/noaa_36758_DS1.pdf)
+
+[Barlow, J., Moore, J. E., McCullough, J. L., & Griffiths, E. T. (2022). *Acoustic‐based estimates of Cuvier's beaked whale (Ziphius cavirostris) density and abundance along the US West Coast from drifting hydrophone recorders.* Marine Mammal Science, 38(2), 517-538.](https://onlinelibrary.wiley.com/doi/pdf/10.1111/mms.12872?casa_token=wxl1vZW3UXoAAAAA:9H5p0y9ZHNtrmTPG4xP3cBn6nyFnb7XMz22UHL6HxWDsbMwZUV5zAP4tgExK6Lji0z4ALf9KoohU6w)
+
+[Barlow, J., Fregosi, S., Thomas, L., Harris, D., & Griffiths, E. T. (2021). *Acoustic detection range and population density of Cuvier's beaked whales estimated from near-surface hydrophones.* The Journal of the Acoustical Society of America, 149(1), 111-125.](https://pubs.aip.org/asa/jasa/article/149/1/111/610260)
+
+[Barlow, J., Trickey, J. S., Schorr, G. S., Rankin, S., & Moore, J. E. (2021). *Recommended snapshot length for acoustic point-transect surveys of intermittently available Cuvier's beaked whales.* The Journal of the Acoustical Society of America, 149(6), 3830-3840.](https://pubs.aip.org/asa/jasa/article/149/6/3830/1059293)
+
+[Rankin, S., Oedekoven, C., & Archer, F. (2020). *Mark recapture distance sampling: using acoustics to estimate the fraction of dolphins missed by observers during shipboard line-transect surveys.* Environmental and ecological statistics, 27(2), 233-251.](https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10651-020-00443-7&casa_token=A29BMsW3h5QAAAAA:wNqimuNiFynryJJMqaAD3pvM0TKGqupGKj3dNUBJezoXIpxdCRZFbesIdl287Uoihl7nisb09YqTuHY7)
+
+[Simonis, A. E., Forney, K. A., Rankin, S., Ryan, J., Zhang, Y., DeVogelaere, A., ... & Baumann-Pickering, S. (2020). *Seal bomb noise as a potential threat to Monterey Bay harbor porpoise.* Frontiers in Marine Science, 7, 142.](https://www.frontiersin.org/articles/10.3389/fmars.2020.00142/pdf)
+
+[Archer, F. I., Rankin, S., Stafford, K. M., Castellote, M., & Delarue, J. (2020). *Quantifying spatial and temporal variation of North Pacific fin whale (Balaenoptera physalus) acoustic behavior.* Marine Mammal Science, 36(1), 224-245.](https://onlinelibrary.wiley.com/doi/pdf/10.1111/mms.12640?casa_token=_n2o8hHVU94AAAAA:UQOVnE5h3JLalnqs_xfYA5tHLl34TjwWSmYQSfrU4kbxCXNPOJ0sowjKOssoZIISOgUhT45BbAy5wg)
+
+[Simonis, A. E., Trickey, J. S., Barlow, J., Rankin, S., Urbán, J., Rojas-Bracho, L., & Moore, J. E. (2020). *Passive Acoustic Survey Of Deep-Diving Odontocetes in the California Current Ecosystem 2018.*](https://repository.library.noaa.gov/view/noaa/27223/noaa_27223_DS1.pdf)
+
+[Rankin, S., Archer, F., Keating, J. L., Oswald, J. N., Oswald, M., Curtis, A., & Barlow, J. (2017). *Acoustic classification of dolphins in the California Current using whistles, echolocation clicks, and burst pulses. Marine Mammal Science, 33(2), 520-540.*](https://onlinelibrary.wiley.com/doi/pdf/10.1111/mms.12381?casa_token=Jaz6sOXObnwAAAAA:Hcvb3lN62_gG28XJ0AljbP7hbfNgBhgEpVFKpjlS30PnPKpP7-FYDsSYLrGvxfgpLjGqHfiYyrnVWA)
+
+[Rankin, S., Castellote, M., Delarue, J., Stafford, K. M., Archer, F. I., Koot, B., ... & Morano, J. L. (2018). *Methods for characterizing fin whale song notes for comparative studies of geographic variation in song.*](https://repository.library.noaa.gov/view/noaa/17737/noaa_17737_DS1.pdf)
+
+[Rankin, S. (2008). *Acoustic studies of marine mammals during seven years of combined visual and acoustic line-transect surveys for cetaceans in the eastern and central Pacific Ocean.*](https://repository.library.noaa.gov/view/noaa/3608/noaa_3608_DS1.pdf)
+
+[Rankin, S., Oswald, J. N., & Barlow, J. (2008). *Acoustic behavior of dolphins in the Pacific Ocean: Implications for using passive acoustic methods for population studies.* Canadian Acoustics, 36(1), 88-92.](https://jcaa.caa-aca.ca/index.php/jcaa/article/download/1996/1743)
+
