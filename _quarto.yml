@@ -53,11 +53,12 @@ website:
           - content/Hardware_Handheld-Hydrophone.qmd
       - section: "Software Management"
         contents:
-          - content/Analysis-software.qmd
+          - content/SAEL-Analysis-software.qmd
+          - content/Acoustic-Analysis-software.qmd
           - content/Ocean-Alert-App.qmd
       - section: "Analysis"
         contents:
-          - content/Analysis-adrift.qmd
+          - content/Analysis-Methods.qmd
       - section: "Reporting"
         contents:
           - content/Permits_Reporting.qmd
