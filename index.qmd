@@ -9,18 +9,35 @@ The Southwest Acoustic Ecology Lab conducts research using passive acoustic moni
 This lab manual serves as the go-to handbook for the behind-the-scenes information to support our science.
 
 # Team Members
+
 [Shannon Rankin](shannon.rankin@noaa.gov), SAEL Team Leader
+
 [Cory Hom-Weaver](cory.hom-weaver@noaa.gov), Acoustician and Fieldwork Manager
+
 [Kourtney Burger](kourtney.burger@noaa.gov), Acoustician and Data Manager
 
-
 # Github Repositories
-[Adrift in the California Current](https://sael-swfsc.github.io/Adrift/)
-[PAM-UxS](https://nmfs-pam-glider.github.io/PAM-UxS/)
-[Glider Rodeo](https://nmfs-pam-glider.github.io/GliderRodeo/)
 
+PAM Gliders
 
+-   [PAM-UxS](https://nmfs-pam-glider.github.io/PAM-UxS/)
 
-### **Want to Copy this Lab Manual Format?**
-Use the [PAM_template_lab_manual](https://github.com/nmfs-ost/PAM_template_lab_manual) following [these methods](https://nmfs-ost.github.io/PAM_template_lab_manual/#how-to-use-this-template).
+-   [Glider Rodeo](https://nmfs-pam-glider.github.io/GliderRodeo/)
 
+Adrift in the California Current:
+
+-   [Adrift Report](https://sael-swfsc.github.io/Adrift/)
+
+-   [Field Methods](https://sael-swfsc.github.io/adrift-field-methods/)
+
+-   [Analysis Methods](https://sael-swfsc.github.io/adrift-analysis-methods/)
+
+[BANTER_Beaked Whales](https://github.com/shannonrankin/BANTER_BeakedWhales)
+
+[FOSSA Soundscape](https://github.com/shannonrankin/fossa_soundscape)
+
+[SAEL Lab Hardware](https://sael-swfsc.github.io/SAEL-Lab-Hardware/)
+
+***Want to Copy this Lab Manual Format?***
+
+*Use the [PAM_template_lab_manual](https://github.com/nmfs-ost/PAM_template_lab_manual) following [these methods](https://nmfs-ost.github.io/PAM_template_lab_manual/#how-to-use-this-template).*
