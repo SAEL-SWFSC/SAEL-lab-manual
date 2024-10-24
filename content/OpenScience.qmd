@@ -1,0 +1,20 @@
+::: columns
+::: {.column width="30%"}
+
+# Open Science
+
+:::
+::: {.column width="70%"}
+
+![](images/githubTeamLogo.jpg){width=2in}
+
+:::
+:::
+
+
+We firmly believe in the power of Open Science, and the reponsibility for federal scientists to actively engage in Open Science. As our efforts have expanded, we have shifted our Open Science materials to a stand-alone repository that can be accessed here: [Open Science](https://sael-swfsc.github.io/OpenScience/). 
+
+
+![](images/openScience.png)
+
+
