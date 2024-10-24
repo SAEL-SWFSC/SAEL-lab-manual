@@ -64,17 +64,8 @@ website:
           - content/Permits_Reporting.qmd
       - href: content/publications.qmd
         text: Publications
-      - section: "Open Science"
-        contents: 
-          - content/OpenScience_Getting-Started.qmd
-          - content/OpenScience_Stack-Exchange.qmd
-          - content/OpenScience_Research-Guide.qmd
-          - content/OpenScience_CoWorking.qmd
-          - content/OpenScience_Writing-Guide.qmd
-          - content/OpenScience_Zotero.qmd
-          - content/OpenScience_GithubBook.qmd
-          - content/OpenScience_GithubBranches.qmd
-          - content/OpenScience_Presentations.qmd
+      - href: content/OpenScience.qmd
+        text: Open Science
 
 
         
