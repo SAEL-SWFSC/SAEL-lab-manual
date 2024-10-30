@@ -1,0 +1,78 @@
+name: "Add Outreach Element"
+description: Add Outreach Element to Database (blog, media, presentation, etc)
+title: "💡 [REQUEST] - <title>"
+labels: [
+  "question"
+]
+body:
+  - type: input
+    id: date
+    attributes:
+      label: "Date"
+      description: Date for Outreach 
+      placeholder: "month/day/year"
+    validations:
+      required: true
+  - type: textarea
+    id: title
+    attributes:
+      label: "Title"
+      description: Title of Outreach Element
+      placeholder: "xxxx"
+    validations:
+      required: true
+  - type: textarea
+    id: authors
+    attributes:
+      label: "Authors & Affiliations"
+      description: Add all Authors & the affiliation of the primary author. If media, include the newspaper, company, etc. 
+      placeholder: "yyyy"
+    validations:
+      required: true
+  - type: textarea
+    id: link
+    attributes:
+      label: "Link"
+      description: Add DOI or URL to the location of the element. If there is no online presence, then type "attached" and attach document to form.
+      placeholder: "zzzz"
+    validations:
+      required: true
+  - type: textarea
+    id: citation
+    attributes:
+      label: "Citation"
+      description: Provide citation in APA format.
+      placeholder: "abcd"
+    validations:
+      required: true
+- type: dropdown
+    id: type
+    attributes:
+      label: "Type of Outreach"
+      description: Identify the type of outreach (multiple options allowed?)
+      multiple: true
+      options:
+        - Presentation
+        - Poster
+        - Blog
+        - Webstory
+        - Newspaper
+        - Film (news, other video media)
+        - Othere (describe in comments)
+    validations:
+      required: true
+  - type: checkboxes
+    id: noaa_comms
+    attributes:
+      label: Was this reviewed by NOAA Communications?
+      description: If this outreach was reviewed by any level of NOAA Communications team, please check box (details in comments are appreciated).
+    validations:
+      required: false
+  - type: textarea
+    id: comments
+    attributes:
+      label: "Comments"
+      description: Any additional comments?
+      placeholder: xyz
+    validations:
+      required: false
