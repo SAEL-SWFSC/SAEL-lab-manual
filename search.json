@@ -420,6 +420,17 @@
     ]
   },
   {
+    "objectID": "content/Permits_Reporting.html#inport-metadata-archive",
+    "href": "content/Permits_Reporting.html#inport-metadata-archive",
+    "title": "Permits & Reporting",
+    "section": "InPort Metadata Archive",
+    "text": "InPort Metadata Archive\nMost of our data/metadata are archived and publicly available at NCEI, but there are also expectations regarding submitting metadata to InPort (SR has requested info on what must be submitted to InPort if metadata is already being supplied to NCEI; in the least, if we get NOAA Ocean Acoustics Program funding, we must submit metadata to InPort in order to be considered for future funding). To submit metadata, you must first create an Account by contacting one of these SWFSC InPort Librarians: Arnold Ammann arnold.ammann@noaa.gov\nGabriel Arce Gabriel.Arce@noaa.gov\nThanh T Vu thanh.vu@noaa.gov\nLogin, Navigate to the SWFSC Organization page, and you can then navigate to Passive Acoustics (as long as you are logged in).\nThen select “Add Child Item” (on the right).\nComplete Metadata according to expectations (see InPort Help)",
+    "crumbs": [
+      "Reporting",
+      "Permits & Reporting"
+    ]
+  },
+  {
     "objectID": "content/SharedValues-BestPractices.html",
     "href": "content/SharedValues-BestPractices.html",
     "title": "Shared Values and Best Practices",
