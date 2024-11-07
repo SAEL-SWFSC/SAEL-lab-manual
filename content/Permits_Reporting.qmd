@@ -35,3 +35,23 @@ An automated script can be found [here](https://github.com/SAEL-SWFSC/SAEL-lab-m
 ### Reporting
 
 An automated script can be found [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/5c9712776262ca1b460776cf1bebcb6e7507e163/Scripts/NMFS-Navy_PAM-Deployments.R) for pulling the necessary Navy reporting data from our [Deployment Details spreadsheet](https://docs.google.com/spreadsheets/d/10bxlwfVOe1LFfj69B_YddxcA0V14m7codYwgD2YncFk/edit#gid=395545420). Download the script and follow the directions for each reporting cycle. Contact Kourtney Burger (kourtney.burger\@noaa.gov) with any questions/concerns.
+
+## InPort Metadata Archive
+Most of our data/metadata are archived and publicly available at NCEI, but there are also expectations regarding submitting metadata to InPort (SR has requested info on what must be submitted to InPort if metadata is already being supplied to NCEI; in the least, if we get NOAA Ocean Acoustics Program funding, we must submit metadata to InPort in order to be considered for future funding).
+To submit metadata, you must first create an Account by contacting one of these SWFSC InPort Librarians:
+Arnold Ammann
+arnold.ammann@noaa.gov
+
+Gabriel Arce
+Gabriel.Arce@noaa.gov
+
+Thanh T Vu
+thanh.vu@noaa.gov
+
+
+Login, Navigate to the [SWFSC Organization page](https://www.fisheries.noaa.gov/inport/hierarchy/1370), and you can then navigate to Passive Acoustics (as long as you are logged in).
+
+Then select "Add Child Item" (on the right). 
+
+Complete Metadata according to expectations (see [InPort Help](https://www.fisheries.noaa.gov/inport/help))
+
