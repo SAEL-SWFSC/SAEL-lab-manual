@@ -1,10 +1,7 @@
 ---
 title: Shared Values and Best Practices
+subtitle: Southwest Acoustic Ecology Lab
 ---
-
-# **Southwest Acoustic Ecology Lab**
-
-# Shared Values & Best Practices
 
 ::: callout-note
 ## Note
@@ -84,13 +81,12 @@ The SAEL Lab Values also include:
 ### **Other important resources:**
 
 -   [SWFSC Team for Inclusion Diversity and Equity TIDE)](https://sites.google.com/noaa.gov/inside-swfsc/home/cross-divisional-teams/tide/tide-calendar)
--   [SWFSC Emergency Plan](https://drive.google.com/file/d/1VEyhiG4ThCcisAgMgieK_eo5R8xeu4QO/view)
--   [SWFSC COVID Reintegration Plan](https://sites.google.com/a/noaa.gov/inside-swfsc/covid-19/covid-19-reintegration)
+-   [SWFSC Emergency Plan](https://sites.google.com/noaa.gov/inside-swfsc/home/administrative/safety/emergency-preparedness)
 -   [Online Guide to the Science of Effective Mentorship in STEMM](https://www.nap.edu/resource/25568/interactive/)
--   [NOAA Office of Inclusion and Civil Rights](https://www.noaa.gov/organization/inclusion-and-civil-rights)
--   [NOAA Fisheries Diversity & Inclusion](https://www.fisheries.noaa.gov/topic/careers-more#diversity-&-inclusion)
+-   [NOAA Office of Inclusion and Civil Rights](https://www.noaa.gov/organization/inclusion-and-civil-rights/diversity-and-inclusion)
+-   [NOAA Fisheries Diversity & Inclusion](https://www.fisheries.noaa.gov/topic/careers-more/diversity-and-inclusion)
 -   [NOAA Employee Resource & Affinity Groups](https://drive.google.com/open?id=1q26wdiZ8l6qLQtEFr2kOKWbcps8xCCM2)
--   [NOAA Employee Assistance Program](https://sites.google.com/noaa.gov/ohcs/employee-resources/work-life-resources/workplace-programs/employee-assistance-program-eap?authuser=1)
+-   [NOAA Employee Assistance Program](https://www.commerce.gov/hr/employees/work-life-balance/eap)
     -   Available for NOAA employees & contractors: 3 free phone counseling sessions to identify & resolve specific issues of concern
 
 \
