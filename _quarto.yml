@@ -47,21 +47,17 @@ website:
           - content/Data-Archive.qmd
           - content/Data-SpeciesAndCallTypes.qmd
           - content/media.qmd
-      - section: "Hardware Methods"
-        contents:
-          - content/Hardware_ADRIFT.qmd
-          - content/Hardware_Handheld-Hydrophone.qmd
+      - href: content/Hardware.qmd
+        text: Hardware Methods
       - section: "Software Management"
         contents:
           - content/SAEL-Analysis-software.qmd
           - content/Acoustic-Analysis-software.qmd
           - content/Ocean-Alert-App.qmd
-      - section: "Analysis"
-        contents:
-          - content/Analysis-Methods.qmd
-      - section: "Reporting"
-        contents:
-          - content/Permits_Reporting.qmd
+      - href: content/Analysis-Methods.qmd
+        text: Analysis Methods
+      - href: content/Permits_Reporting.qmd
+        text: Permits & Reporting
       - href: content/publications.qmd
         text: Publications
       - href: content/OpenScience.qmd
