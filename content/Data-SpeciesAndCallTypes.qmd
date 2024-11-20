@@ -12,11 +12,11 @@ Use the following [species abbreviations and call type codes](https://docs.googl
 | Blue whale                                     | Balaenoptera musculus      | Bm                      | BLWH         |
 | Bryde's Whale                                  | Balaenoptera brydei        | Be                      | BBWH         |
 | Cross Seamount beaked whales                   | NA                         | BWC                     | BWC          |
-| Cuvier's beaked whale                          | Ziphius cavirostris        | Zc                      | GOBW         |
 | Dall's porpoise                                | Phocoenoides dalli         | Pd                      | DAPO         |
 | Dolphins                                       | Delphinidae sp.            | Includes Gg, Lo, and UO | UNDO         |
 | Fin whale                                      | Balaenoptera physalus      | Bp                      | FIWH         |
 | Gray whale                                     | Eschrichtius robustus      | Er                      | GRWH         |
+| Goose-beaked whale (Cuvier's)                  | Ziphius cavirostris        | Zc                      | GOBW         |
 | Harbor porpoise                                | Phocoena phocoena          |                         | HAPO         |
 | Hubb's beaked whale                            | Mesoplodon carlhubbsi      | Mc                      | BWMC         |
 | Humpback whale                                 | Megaptera novaeangliae     | Mn                      | HUWH         |
