@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Handheld Hydrophone – SAEL Lab Manual</title>
+<title>Handheld Hydrophone User Manual – SAEL Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/SAEL-Analysis-software.html" rel="next">
+<link href="../content/Hardware_Sonobuoys.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -81,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Handheld Hydrophone</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/Hardware.html">Hardware Methods</a></li><li class="breadcrumb-item"><a href="../content/Hardware_Handheld-Hydrophone.html">Handheld Hydrophone User Manual</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -181,21 +183,44 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hardware Methods</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Software Management</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a href="../content/Hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hardware Methods</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/Hardware_Towed-Hydrophone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Towed Array</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/Hardware_Sonobuoys.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sonobuoys</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/Hardware_Handheld-Hydrophone.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Handheld Hydrophone User Manual</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Software Management</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/SAEL-Analysis-software.html" class="sidebar-item-text sidebar-link">
@@ -250,16 +275,38 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#handheld-hydrophone-user-manual" id="toc-handheld-hydrophone-user-manual" class="nav-link active" data-scroll-target="#handheld-hydrophone-user-manual">Handheld Hydrophone User Manual</a></li>
+  <li><a href="#equipment-list" id="toc-equipment-list" class="nav-link active" data-scroll-target="#equipment-list"><strong>Equipment List</strong></a></li>
+  <li><a href="#pre-fieldwork" id="toc-pre-fieldwork" class="nav-link" data-scroll-target="#pre-fieldwork"><strong>Pre-Fieldwork</strong>&nbsp;</a>
+  <ul class="collapse">
+  <li><a href="#pre-fieldwork-checklist" id="toc-pre-fieldwork-checklist" class="nav-link" data-scroll-target="#pre-fieldwork-checklist"><strong>Pre-Fieldwork Checklist</strong></a></li>
+  <li><a href="#testing-the-hydrophone-with-handy-recorder" id="toc-testing-the-hydrophone-with-handy-recorder" class="nav-link" data-scroll-target="#testing-the-hydrophone-with-handy-recorder"><strong>Testing the Hydrophone with Handy Recorder</strong></a></li>
+  <li><a href="#setting-up-and-changing-settings-for-handy-recorder" id="toc-setting-up-and-changing-settings-for-handy-recorder" class="nav-link" data-scroll-target="#setting-up-and-changing-settings-for-handy-recorder"><strong>Setting Up and Changing Settings for Handy Recorder</strong></a></li>
+  </ul></li>
+  <li><a href="#how-to-use-handheld-hydrophone-in-the-field" id="toc-how-to-use-handheld-hydrophone-in-the-field" class="nav-link" data-scroll-target="#how-to-use-handheld-hydrophone-in-the-field"><strong>How to Use Handheld Hydrophone in the field</strong></a>
+  <ul class="collapse">
+  <li><a href="#device-set-up" id="toc-device-set-up" class="nav-link" data-scroll-target="#device-set-up"><strong>Device Set-Up</strong></a></li>
+  <li><a href="#recording-with-the-handheld-hydrophone-no-playback" id="toc-recording-with-the-handheld-hydrophone-no-playback" class="nav-link" data-scroll-target="#recording-with-the-handheld-hydrophone-no-playback"><strong>Recording with the Handheld Hydrophone (no playback)</strong></a></li>
+  <li><a href="#using-the-handy-recorder-as-an-audio-interface-real-time-playback" id="toc-using-the-handy-recorder-as-an-audio-interface-real-time-playback" class="nav-link" data-scroll-target="#using-the-handy-recorder-as-an-audio-interface-real-time-playback"><strong>Using the Handy Recorder as an Audio Interface (real-time playback)</strong></a></li>
+  <li><a href="#post-fieldwork-checklist" id="toc-post-fieldwork-checklist" class="nav-link" data-scroll-target="#post-fieldwork-checklist"><strong>Post-Fieldwork Checklist</strong></a></li>
+  </ul></li>
+  <li><a href="#additional-information" id="toc-additional-information" class="nav-link" data-scroll-target="#additional-information"><strong>Additional Information</strong></a>
+  <ul class="collapse">
+  <li><a href="#accessing-recorder-files" id="toc-accessing-recorder-files" class="nav-link" data-scroll-target="#accessing-recorder-files"><strong>Accessing Recorder Files</strong></a></li>
+  <li><a href="#recorder-not-displaying-signal-change-from-hydrophone" id="toc-recorder-not-displaying-signal-change-from-hydrophone" class="nav-link" data-scroll-target="#recorder-not-displaying-signal-change-from-hydrophone"><strong>Recorder Not Displaying Signal Change From Hydrophone</strong></a></li>
+  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><strong>Resources</strong></a>
+  <ul class="collapse">
+  <li><a href="#zoom-h4n-pro-handy-recorder" id="toc-zoom-h4n-pro-handy-recorder" class="nav-link" data-scroll-target="#zoom-h4n-pro-handy-recorder"><strong>Zoom H4n Pro Handy Recorder</strong></a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Hardware_Handheld-Hydrophone.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Hardware_Handheld-Hydrophone.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/Hardware.html">Hardware Methods</a></li><li class="breadcrumb-item"><a href="../content/Hardware_Handheld-Hydrophone.html">Handheld Hydrophone User Manual</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Handheld Hydrophone</h1>
+<h1 class="title">Handheld Hydrophone User Manual</h1>
 </div>
 
 
@@ -276,11 +323,404 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="handheld-hydrophone-user-manual" class="level2">
-<h2 class="anchored" data-anchor-id="handheld-hydrophone-user-manual">Handheld Hydrophone User Manual</h2>
-<p><a href="https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html">Link to Handheld Hydrophone User Manual</a></p>
+<p>The following information is for the use of NOAA Fisheries Southwest Acoustic Ecology Lab. The checklists and steps are specific to their usage and may not apply to all required purposes of the Handheld Hydrophone. Please reference device websites and manuals found in the <a href="https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#resources">Resources section</a> below for more information for applying this device to your specific project and goals. See <a href="https://drive.google.com/file/d/1p8Yph9cGzHTOlYvMPi__nLlBvu-0UJA0/view?usp=sharing">this video</a> for a simple overview of recording with the Handheld Hydrophone.</p>
+<section id="equipment-list" class="level2">
+<h2 class="anchored" data-anchor-id="equipment-list"><strong>Equipment List</strong></h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 36%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Home</strong></th>
+<th style="text-align: center;"><strong>Equipment</strong></th>
+<th style="text-align: center;"><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Hydrophone case</td>
+<td style="text-align: center;">Hydrophone Cable</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Hydrophone case</td>
+<td style="text-align: center;">Pre Amplifier</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Hydrophone case</td>
+<td style="text-align: center;">Manuals &amp; other paperwork</td>
+<td style="text-align: center;">Manuals &amp; Help Center in resources section</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Handy Recorder Plastic Bag</td>
+<td style="text-align: center;">Handy Recorder Device</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Handy Recorder Plastic Bag</td>
+<td style="text-align: center;">Handy Recorder manuals &amp; other paperwork</td>
+<td style="text-align: center;">Manuals &amp; Help Center in resources section</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Handy Recorder Plastic Bag</td>
+<td style="text-align: center;">Handy Recorder USB 2.0 (USB Mini B) adapter</td>
+<td style="text-align: center;">Used for direct connection to computer</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Handy Recorder Plastic Bag</td>
+<td style="text-align: center;">Handy Recorder AC power adapter</td>
+<td style="text-align: center;">Not necessary if using batteries</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Handy Audio Interface Box</td>
+<td style="text-align: center;">Audio Interface</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Handy Audio Interface Box</td>
+<td style="text-align: center;">Bus power cable</td>
+<td style="text-align: center;">Used for direct connection to computer</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Handy Audio Interface Box</td>
+<td style="text-align: center;">USB power cable</td>
+<td style="text-align: center;">Not needed if using batteries or bus power cable</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Handy Audio Interface Box</td>
+<td style="text-align: center;">USB Wall Charger</td>
+<td style="text-align: center;">Not needed unless using USB power cable</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Loose in box</td>
+<td style="text-align: center;">Headphones</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Speaker Box</td>
+<td style="text-align: center;">Speaker</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Speaker Box</td>
+<td style="text-align: center;">USB-C charger</td>
+<td style="text-align: center;">Need USB wall charger</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Additional parts bag</td>
+<td style="text-align: center;">Spare AA batteries</td>
+<td style="text-align: center;">Used for both Recorder &amp; Audio Interface</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Additional parts bag</td>
+<td style="text-align: center;">Spare SD card</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Laptop Case</td>
+<td style="text-align: center;">Laptop</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pre-fieldwork" class="level2">
+<h2 class="anchored" data-anchor-id="pre-fieldwork"><strong>Pre-Fieldwork</strong>&nbsp;</h2>
+<p>Complete all following checklists and steps prior to taking and using the Handheld Hydrophone in the field.</p>
+<section id="pre-fieldwork-checklist" class="level3">
+<h3 class="anchored" data-anchor-id="pre-fieldwork-checklist"><strong>Pre-Fieldwork Checklist</strong></h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Related Device</th>
+<th style="text-align: center;">Task</th>
+<th style="text-align: center;">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">Ensure all necessary components from equipment list are in clear box</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Hydrophone</td>
+<td style="text-align: center;">Hydrophone safe in case and secure for travel</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Hydrophone</td>
+<td style="text-align: center;">Test hydrophone with Handy Recorder</td>
+<td style="text-align: center;"><a href="https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#testing-the-hydrophone-with-handy-recorder">Additional steps here</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Handy Recorder</td>
+<td style="text-align: center;">Check batteries in recorder</td>
+<td style="text-align: center;">Bring additional batteries</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Handy Recorder</td>
+<td style="text-align: center;">Change settings as needed</td>
+<td style="text-align: center;"><a href="https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#setting-up-and-changing-settings-for-handy-recorder">Additional steps here</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Handy Recorder</td>
+<td style="text-align: center;">Check for SD card and make sure it has space</td>
+<td style="text-align: center;"><a href="https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#loading-an-sd-card">Additional steps here</a>. Bring additional SD cards</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Audio Interface</td>
+<td style="text-align: center;">Check batteries in audio interface</td>
+<td style="text-align: center;">Bring additional batteries</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Speaker</td>
+<td style="text-align: center;">Check battery level on speaker and charge if needed</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">Do a full system test run</td>
+<td style="text-align: center;">Additional Steps here</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="testing-the-hydrophone-with-handy-recorder" class="level3">
+<h3 class="anchored" data-anchor-id="testing-the-hydrophone-with-handy-recorder"><strong>Testing the Hydrophone with Handy Recorder</strong></h3>
+<p><strong>**Take extra precaution when working with the hydrophone sensor end. Do not put excess pressure on or crush the hydrophone**</strong></p>
+<ol type="1">
+<li><p>Remove hydrophone, preamplifier, and Handy Recorder from box</p></li>
+<li><p>Connect the hydrophone to the preamplifier by plugging the yellow labeled end of the hydrophone to the preamplifier box and twist the hydrophone cable to lock them together <img src="images/hh_preamp.png" class="img-fluid"></p></li>
+<li><p>Connect the other end of the preamplifier to the Handy Recorder, align three pins from preamplifier to the channel 1 recorder port, and click into place<img src="images/hh_preampCh1.png" class="img-fluid"></p></li>
+<li><p>Turn on Handy Recorder using power button on the left side, and ensure the four channel (4CH) recording option is selected at the top (see help steps below in <a href="https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#single-channel-recording">Recording Only With One Hydrophone (Single-Channel Recording)</a>)</p>
+<p><img src="images/hh_4chOn.png" class="img-fluid"></p></li>
+<li><p>Press the record button once and lightly tap on each of the two attached microphones on top of the recorder, as well as the hydrophone</p></li>
+<li><p>Check for signal changes on the recorder screen</p>
+<ol type="1">
+<li>Each of the three recording bars (MIC L &amp; R, IN 1) should be moving and the record button should be blinking red</li>
+<li>If there is no signal change for the hydrophone, follow steps in Recorder Not Displaying Signal Change From Hydrophone section</li>
+<li>If testing hydrophone in water, ensure only the end of the hydrophone is in the water, and no other components, including the preamplifier and recorder, get wet</li>
+</ol>
+<p><img src="images/hh_signalCheck.png" class="img-fluid"></p></li>
+<li><p>Once both microphones and the hydrophone has been tested, press the stop button and turn off the recorder</p></li>
+<li><p>Carefully remove the preamplifier/hydrophone cable from the recorder (press metal tab on back of recorder port while pulling the cable)</p></li>
+<li><p>Untwist the hydrophone, pull cable from preamplifier, and return all components to hydrophone and recorder cases</p></li>
+</ol>
+</section>
+<section id="setting-up-and-changing-settings-for-handy-recorder" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-and-changing-settings-for-handy-recorder"><strong>Setting Up and Changing Settings for Handy Recorder</strong></h3>
+<section id="loading-an-sd-card" class="level4">
+<h4 class="anchored" data-anchor-id="loading-an-sd-card"><strong>Loading an SD Card</strong></h4>
+<p>An SD card is required to record and save on the Handy Recorder</p>
+<ol type="1">
+<li>Make sure recorder power is off</li>
+<li>Insert SD card into slot on right side of the recorder</li>
+</ol>
+<p><strong>Cautions</strong></p>
+<ul>
+<li>SD card must be 16MB to 32GB</li>
+<li>If “Format Card” appears on the display startup, the SD card must be formatted for the device. Press DIAL and select YES to format the SD card for the H4n Pro</li>
+<li>Clear SD card before recording to ensure there is ample space</li>
+</ul>
+</section>
+<section id="single-channel-recording" class="level4">
+<h4 class="anchored" data-anchor-id="single-channel-recording"><strong>Single-Channel Recording</strong></h4>
+<p>Recorder should be set up to record on 4 channels (two attached microphones and two channel ports on the bottom of the recorder where the hydrophone is plugged in). This is useful in the event you want to narrate what is happening at the surface while the hydrophone is recording (i.e.&nbsp;whales breaching at this time). Follow these steps to change to single channel recording, to only record with the hydrophone, not the attached microphones. (Follow steps and picture below)</p>
+<ol type="1">
+<li><p>Click menu button on right side of Handy Recorder</p></li>
+<li><p>Use scroll wheel to go to Mode option and press scroll button in to select Mode</p></li>
+<li><p>Use scroll button to move to Stereo (single channel) and push scroll button in to select it&nbsp;</p></li>
+<li><p>Recorder screen should return to main screen and STEREO light indicator should be on</p>
+<p><img src="images/hh_ScrollMenuStereoButtons.png" class="img-fluid"></p></li>
+<li><p>Press the 1 button on bottom left of recorder, and channel 1 &amp; 2 light indicators should turn on (may be on already)&nbsp;</p>
+<ol type="1">
+<li>Ensure mic button is not lit up&nbsp;</li>
+</ol></li>
+<li><p>Recorder is now ready to record with only the hydrophone on channel 1</p></li>
+</ol>
+</section>
+<section id="setting-the-date-and-time" class="level4">
+<h4 class="anchored" data-anchor-id="setting-the-date-and-time"><strong>Setting the Date and Time</strong></h4>
+<p>The date/time should be correctly set. If it is not, complete these steps to check the date/time and correct it.</p>
+<ol type="1">
+<li>Press Menu button on left side of the recorder</li>
+<li>Use scroll wheel on left side of recorder to navigate to SYSTEM, press scroll wheel in to select</li>
+<li>Select DATE/TIME and press scroll wheel</li>
+<li>Use the scroll wheel to set the year, month, day, and time</li>
+<li>Select OK and press scroll wheel</li>
+</ol>
+</section>
+<section id="using-stamina-mode" class="level4">
+<h4 class="anchored" data-anchor-id="using-stamina-mode"><strong>Using Stamina Mode</strong></h4>
+<p>If you are anticipating that battery levels will be a concern while in the field, you can switch to stamina mode to conserve power.&nbsp;</p>
+<ol type="1">
+<li>On the back of the recorder, open the battery compartment and switch to stamina mode on</li>
+</ol>
+<p>This will lengthen the battery life to roughly 11 hours depending on usage. When using this mode, the recorder can only record/playback in WAV 44.1kHz/16-bit and MP43 formats. <strong>This may limit some recorder function, see <a href="https://www.bhphotovideo.com/lit_files/263141.pdf">manual</a> for more information.</strong><br>
+</p>
+<p><img src="images/hh_staminaMode.png" class="img-fluid"></p>
+</section>
+<section id="changing-the-folder-location" class="level4">
+<h4 class="anchored" data-anchor-id="changing-the-folder-location"><strong>Changing the Folder Location</strong></h4>
+<p>You can manually select which folder you would like the recorder to save files to. It will default to Folder 1 (1 out of 10), and will save a new file for each recording. To change the file, follow these steps;</p>
+<ol type="1">
+<li>Press the menu button on right side of the recorder</li>
+<li>Use scroll wheel to select folder</li>
+<li>Choose which folder you want to store your recordings in and push down on the scroll wheel to select</li>
+</ol>
+<p>When you are done recording, you can move the files out of one of the preset folders, into your own folder with a more descriptive naming format.</p>
+</section>
+</section>
+</section>
+<section id="how-to-use-handheld-hydrophone-in-the-field" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-handheld-hydrophone-in-the-field"><strong>How to Use Handheld Hydrophone in the field</strong></h2>
+<section id="device-set-up" class="level3">
+<h3 class="anchored" data-anchor-id="device-set-up"><strong>Device Set-Up</strong></h3>
+<p>&nbsp;<strong>**Take extra precaution when working with these electrical components around water. Do not put excess pressure on or crush the hydrophone receiver end. Do not get any piece of the device wet, other than the hydrophone cable**</strong></p>
+<ol type="1">
+<li>Remove all necessary components and place on a clean, dry surface</li>
+<li>Connect the hydrophone to the preamplifier by plugging them together and twisting the hydrophone wire to lock them together</li>
+<li>Connect the other end of the preamplifier to the Handy Recorder, align three pins from preamplifier to the channel 1 recorder port, and click into place&nbsp;</li>
+<li>Connect the Recorder to the Laptop</li>
+<li>Connect the bluetooth speaker to the computer</li>
+<li>Power on all devices including recorder, audio interface, computer, and speaker</li>
+<li>Test recorder using steps found in <a href="https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#testing-the-hydrophone-with-handy-recorder">Testing the Hydrophone with Handy Recorder</a></li>
+</ol>
+</section>
+<section id="recording-with-the-handheld-hydrophone-no-playback" class="level3">
+<h3 class="anchored" data-anchor-id="recording-with-the-handheld-hydrophone-no-playback"><strong>Recording with the Handheld Hydrophone (no playback)</strong></h3>
+<ol type="1">
+<li>Ensure all components of the Handheld Hydrophone are secure and in a dry place&nbsp;</li>
+<li>Drop hydrophone receiver end into the water&nbsp;
+<ol type="1">
+<li><strong>Ensure no components other than the hydrophone get wet</strong></li>
+</ol></li>
+<li>Press record button, look for signal changes on screen</li>
+<li>Press record button again to start recording</li>
+<li>After sampling, press stop button to stop recording</li>
+</ol>
+</section>
+<section id="using-the-handy-recorder-as-an-audio-interface-real-time-playback" class="level3">
+<h3 class="anchored" data-anchor-id="using-the-handy-recorder-as-an-audio-interface-real-time-playback"><strong>Using the Handy Recorder as an Audio Interface (real-time playback)</strong></h3>
+<ol type="1">
+<li><p>Connect hydrophone and pre-amplifier to the Handy Recorder channel 1</p></li>
+<li><p>Connect Handy Recorder to computer through the USB cable</p></li>
+<li><p>Handy Recorder should automatically turn on</p></li>
+<li><p>Use scroll wheel to choose audio interface option (AUDIO I/F</p></li>
+<li><p>Use the scroll wheel to change the Frequency to 48kHz</p></li>
+<li><p>Use the scroll wheel to select connect and the recorder will establish connection to the computer, once connected you should see audio signals changing on the recorder screen</p>
+<p><img src="images/hh_connectRecorder.png" class="img-fluid"></p></li>
+<li><p>Click on channel 1 to ensure the hydrophone is the chosen audio input</p></li>
+<li><p>Open up your sound settings on your computer and find the output and input options</p></li>
+<li><p>Ensure output is set to correct speaker (Bluetooth Sony speaker)</p></li>
+<li><p>Ensure input is set to Zoom Recording Mixer (Zoom H and F series Audio)</p></li>
+<li><p>Open the Sound Control Panel on your computer</p></li>
+<li><p>Click on the recording tab and open up the properties for the Zoom Recording Mixer</p></li>
+<li><p>Select the box to listen to this device, and press OK<img src="images/hh_zoomListen2Device.png" class="img-fluid"></p></li>
+<li><p>Audio from the hydrophone should start playing out of your chosen speaker</p></li>
+<li><p>Drop the hydrophone receiver end into the water, ensure all other components of the array do not get wet</p></li>
+</ol>
+</section>
+<section id="post-fieldwork-checklist" class="level3">
+<h3 class="anchored" data-anchor-id="post-fieldwork-checklist"><strong>Post-Fieldwork Checklist</strong></h3>
+<p>Complete the following steps to ensure the Handheld Hydrophone is properly cleaned and stored for next usage.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 36%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Related Device</th>
+<th style="text-align: center;">Task</th>
+<th style="text-align: center;">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Hydrophone</td>
+<td style="text-align: center;">Freshwater rinse and dry hydrophone cable</td>
+<td style="text-align: center;">Ensure no parts, other than hydrophone cable, get wet</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Hydrophone</td>
+<td style="text-align: center;">Store hydrophone securely for travel</td>
+<td style="text-align: center;">Take note to secure hydrophone receiver end</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">Turn off and return all other components to main box</td>
+<td style="text-align: center;">Ensure no saltwater or residue is left on any parts</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="additional-information" class="level2">
+<h2 class="anchored" data-anchor-id="additional-information"><strong>Additional Information</strong></h2>
+<p>Useful place for FAQs, common issues, etc.&nbsp;</p>
+<section id="accessing-recorder-files" class="level3">
+<h3 class="anchored" data-anchor-id="accessing-recorder-files"><strong>Accessing Recorder Files</strong></h3>
+<p>There are three methods for accessing the files the Handy Recorder has saved; playback on the recorder, plug recorder into computer to access files, or remove SD card and plug it into a computer to access the files<br>
+</p>
+<section id="recorder-connected-to-computer" class="level4">
+<h4 class="anchored" data-anchor-id="recorder-connected-to-computer"><strong>Recorder Connected to Computer</strong></h4>
+<ol type="1">
+<li><p>Connect Handy Recorder to computer through the USB cable</p></li>
+<li><p>Handy Recorder should automatically turn on</p></li>
+<li><p>Use scroll wheel to choose storage option</p></li>
+<li><p>Connection will be established between the recorder and the computer, and a new windows explorer window will appear with the files that have been recorded to the SD card on it</p></li>
+<li><p>Navigate to the desired folder and .wav files of your recordings will appear</p></li>
+</ol>
+</section>
+<section id="sd-card" class="level4">
+<h4 class="anchored" data-anchor-id="sd-card"><strong>SD Card</strong></h4>
+<ol type="1">
+<li><p>Remove the SD card from the Handy Recorder</p></li>
+<li><p>Plug SD card into the computer and the windows explorer window will appear</p></li>
+<li><p>Navigate to the desired folder and .wav files of your recordings will appear</p></li>
+</ol>
+</section>
+</section>
+<section id="recorder-not-displaying-signal-change-from-hydrophone" class="level3">
+<h3 class="anchored" data-anchor-id="recorder-not-displaying-signal-change-from-hydrophone"><strong>Recorder Not Displaying Signal Change From Hydrophone</strong></h3>
+<p>Complete the following steps if there is no change in signal being displayed on the recorder.</p>
+<ol type="1">
+<li><p>Click on menu button on right side of the recorder and use the scroll wheel to navigate and select INPUT from the menu</p></li>
+<li><p>Use the scroll wheel to select PHANTOM</p></li>
+<li><p>Change the phantom power to +48V if not there already</p></li>
+<li><p>Retest hydrophone and look for changes in signals</p></li>
+</ol>
+<p><img src="images/hh_phantom.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources"><strong>Resources</strong></h2>
+<section id="zoom-h4n-pro-handy-recorder" class="level3">
+<h3 class="anchored" data-anchor-id="zoom-h4n-pro-handy-recorder"><strong>Zoom H4n Pro Handy Recorder</strong></h3>
+<section id="operation-manual" class="level4">
+<h4 class="anchored" data-anchor-id="operation-manual"><a href="https://www.bhphotovideo.com/lit_files/263141.pdf">Operation Manual</a></h4>
+</section>
+<section id="quick-guide" class="level4">
+<h4 class="anchored" data-anchor-id="quick-guide"><a href="https://zoomcorp.com/media/documents/E_H4n_Pro_QuickGuide.pdf">Quick Guide</a></h4>
+</section>
+<section id="help-center" class="level4">
+<h4 class="anchored" data-anchor-id="help-center"><a href="https://www.zoom.jp/helpcenter/en/products/H4nProBlack/">Help Center</a></h4>
+</section>
+<section id="names-function-of-parts" class="level4">
+<h4 class="anchored" data-anchor-id="names-function-of-parts">Names &amp; Function of Parts</h4>
+<p><img src="images/hh_zoomFrontBackDiagram.png" class="img-fluid"></p>
+<p><img src="images/hh_zoomSideDiagram.png" class="img-fluid"></p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -848,6 +1288,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/Hardware_Sonobuoys.html" class="pagination-link" aria-label="Sonobuoys">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sonobuoys</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/SAEL-Analysis-software.html" class="pagination-link" aria-label="SAEL Acoustic Software">
+        <span class="nav-page-text">SAEL Acoustic Software</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
