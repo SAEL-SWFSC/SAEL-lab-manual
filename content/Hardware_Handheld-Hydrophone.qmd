@@ -1,7 +1,265 @@
 ---
-title: Handheld Hydrophone
+title: Handheld Hydrophone User Manual
 ---
 
-## Handheld Hydrophone User Manual
+The following information is for the use of NOAA Fisheries Southwest Acoustic Ecology Lab. The checklists and steps are specific to their usage and may not apply to all required purposes of the Handheld Hydrophone. Please reference device websites and manuals found in the [Resources section](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#resources) below for more information for applying this device to your specific project and goals. See [this video](https://drive.google.com/file/d/1p8Yph9cGzHTOlYvMPi__nLlBvu-0UJA0/view?usp=sharing) for a simple overview of recording with the Handheld Hydrophone.
 
-[Link to Handheld Hydrophone User Manual](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html)
+## **Equipment List**
+
+|          **Home**          |                **Equipment**                |                    **Notes**                     |
+|:----------------:|:------------------------:|:--------------------------:|
+|      Hydrophone case       |              Hydrophone Cable               |                                                  |
+|      Hydrophone case       |                Pre Amplifier                |                                                  |
+|      Hydrophone case       |          Manuals & other paperwork          |    Manuals & Help Center in resources section    |
+| Handy Recorder Plastic Bag |            Handy Recorder Device            |                                                  |
+| Handy Recorder Plastic Bag |  Handy Recorder manuals & other paperwork   |    Manuals & Help Center in resources section    |
+| Handy Recorder Plastic Bag | Handy Recorder USB 2.0 (USB Mini B) adapter |      Used for direct connection to computer      |
+| Handy Recorder Plastic Bag |       Handy Recorder AC power adapter       |         Not necessary if using batteries         |
+| Handy Audio Interface Box  |               Audio Interface               |                                                  |
+| Handy Audio Interface Box  |               Bus power cable               |      Used for direct connection to computer      |
+| Handy Audio Interface Box  |               USB power cable               | Not needed if using batteries or bus power cable |
+| Handy Audio Interface Box  |              USB Wall Charger               |     Not needed unless using USB power cable      |
+|        Loose in box        |                 Headphones                  |                                                  |
+|        Speaker Box         |                   Speaker                   |                                                  |
+|        Speaker Box         |                USB-C charger                |              Need USB wall charger               |
+|    Additional parts bag    |             Spare AA batteries              |     Used for both Recorder & Audio Interface     |
+|    Additional parts bag    |                Spare SD card                |                                                  |
+|        Laptop Case         |                   Laptop                    |                                                  |
+
+## **Pre-Fieldwork** 
+
+Complete all following checklists and steps prior to taking and using the Handheld Hydrophone in the field.
+
+### **Pre-Fieldwork Checklist**
+
+| Related Device  |                                 Task                                 |                                                                           Comments                                                                           |
+|:----------------:|:------------------------------:|:--------------------:|
+|       All       | Ensure all necessary components from equipment list are in clear box |                                                                                                                                                              |
+|   Hydrophone    |            Hydrophone safe in case and secure for travel             |                                                                                                                                                              |
+|   Hydrophone    |                 Test hydrophone with Handy Recorder                  |     [Additional steps here](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#testing-the-hydrophone-with-handy-recorder)      |
+| Handy Recorder  |                     Check batteries in recorder                      |                                                                  Bring additional batteries                                                                  |
+| Handy Recorder  |                      Change settings as needed                       | [Additional steps here](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#setting-up-and-changing-settings-for-handy-recorder) |
+| Handy Recorder  |             Check for SD card and make sure it has space             |    [Additional steps here](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#loading-an-sd-card). Bring additional SD cards    |
+| Audio Interface |                  Check batteries in audio interface                  |                                                                  Bring additional batteries                                                                  |
+|     Speaker     |         Check battery level on speaker and charge if needed          |                                                                                                                                                              |
+|       All       |                      Do a full system test run                       |                                                                    Additional Steps here                                                                     |
+
+### **Testing the Hydrophone with Handy Recorder**
+
+**\*\*Take extra precaution when working with the hydrophone sensor end. Do not put excess pressure on or crush the hydrophone\*\***
+
+1.  Remove hydrophone, preamplifier, and Handy Recorder from box
+
+2.  Connect the hydrophone to the preamplifier by plugging the yellow labeled end of the hydrophone to the preamplifier box and twist the hydrophone cable to lock them together ![](images/hh_preamp.png)
+
+3.  Connect the other end of the preamplifier to the Handy Recorder, align three pins from preamplifier to the channel 1 recorder port, and click into place![](images/hh_preampCh1.png)
+
+4.  Turn on Handy Recorder using power button on the left side, and ensure the four channel (4CH) recording option is selected at the top (see help steps below in [Recording Only With One Hydrophone (Single-Channel Recording)](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#single-channel-recording))
+
+    ![](images/hh_4chOn.png)
+
+5.  Press the record button once and lightly tap on each of the two attached microphones on top of the recorder, as well as the hydrophone
+
+6.  Check for signal changes on the recorder screen
+
+    1.  Each of the three recording bars (MIC L & R, IN 1) should be moving and the record button should be blinking red
+    2.  If there is no signal change for the hydrophone, follow steps in Recorder Not Displaying Signal Change From Hydrophone section
+    3.  If testing hydrophone in water, ensure only the end of the hydrophone is in the water, and no other components, including the preamplifier and recorder, get wet
+
+    ![](images/hh_signalCheck.png)
+
+7.  Once both microphones and the hydrophone has been tested, press the stop button and turn off the recorder
+
+8.  Carefully remove the preamplifier/hydrophone cable from the recorder (press metal tab on back of recorder port while pulling the cable)
+
+9.  Untwist the hydrophone, pull cable from preamplifier, and return all components to hydrophone and recorder cases
+
+### **Setting Up and Changing Settings for Handy Recorder**
+
+#### **Loading an SD Card**
+
+An SD card is required to record and save on the Handy Recorder
+
+1.  Make sure recorder power is off
+2.  Insert SD card into slot on right side of the recorder
+
+**Cautions**
+
+-   SD card must be 16MB to 32GB
+-   If "Format Card" appears on the display startup, the SD card must be formatted for the device. Press DIAL and select YES to format the SD card for the H4n Pro
+-   Clear SD card before recording to ensure there is ample space
+
+#### **Single-Channel Recording**
+
+Recorder should be set up to record on 4 channels (two attached microphones and two channel ports on the bottom of the recorder where the hydrophone is plugged in). This is useful in the event you want to narrate what is happening at the surface while the hydrophone is recording (i.e. whales breaching at this time). Follow these steps to change to single channel recording, to only record with the hydrophone, not the attached microphones. (Follow steps and picture below)
+
+1.  Click menu button on right side of Handy Recorder
+
+2.  Use scroll wheel to go to Mode option and press scroll button in to select Mode
+
+3.  Use scroll button to move to Stereo (single channel) and push scroll button in to select it 
+
+4.  Recorder screen should return to main screen and STEREO light indicator should be on
+
+    ![](images/hh_ScrollMenuStereoButtons.png)
+
+5.  Press the 1 button on bottom left of recorder, and channel 1 & 2 light indicators should turn on (may be on already) 
+
+    1.  Ensure mic button is not lit up 
+
+6.  Recorder is now ready to record with only the hydrophone on channel 1
+
+#### **Setting the Date and Time**
+
+The date/time should be correctly set. If it is not, complete these steps to check the date/time and correct it.
+
+1.  Press Menu button on left side of the recorder
+2.  Use scroll wheel on left side of recorder to navigate to SYSTEM, press scroll wheel in to select
+3.  Select DATE/TIME and press scroll wheel
+4.  Use the scroll wheel to set the year, month, day, and time
+5.  Select OK and press scroll wheel
+
+#### **Using Stamina Mode**
+
+If you are anticipating that battery levels will be a concern while in the field, you can switch to stamina mode to conserve power. 
+
+1.  On the back of the recorder, open the battery compartment and switch to stamina mode on
+
+This will lengthen the battery life to roughly 11 hours depending on usage. When using this mode, the recorder can only record/playback in WAV 44.1kHz/16-bit and MP43 formats. **This may limit some recorder function, see [manual](https://www.bhphotovideo.com/lit_files/263141.pdf) for more information.**\
+
+![](images/hh_staminaMode.png)
+
+#### **Changing the Folder Location**
+
+You can manually select which folder you would like the recorder to save files to. It will default to Folder 1 (1 out of 10), and will save a new file for each recording. To change the file, follow these steps;
+
+1.  Press the menu button on right side of the recorder
+2.  Use scroll wheel to select folder
+3.  Choose which folder you want to store your recordings in and push down on the scroll wheel to select
+
+When you are done recording, you can move the files out of one of the preset folders, into your own folder with a more descriptive naming format.
+
+## **How to Use Handheld Hydrophone in the field**
+
+### **Device Set-Up**
+
+ **\*\*Take extra precaution when working with these electrical components around water. Do not put excess pressure on or crush the hydrophone receiver end. Do not get any piece of the device wet, other than the hydrophone cable\*\***
+
+1.  Remove all necessary components and place on a clean, dry surface
+2.  Connect the hydrophone to the preamplifier by plugging them together and twisting the hydrophone wire to lock them together
+3.  Connect the other end of the preamplifier to the Handy Recorder, align three pins from preamplifier to the channel 1 recorder port, and click into place 
+4.  Connect the Recorder to the Laptop
+5.  Connect the bluetooth speaker to the computer
+6.  Power on all devices including recorder, audio interface, computer, and speaker
+7.  Test recorder using steps found in [Testing the Hydrophone with Handy Recorder](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#testing-the-hydrophone-with-handy-recorder)
+
+### **Recording with the Handheld Hydrophone (no playback)**
+
+1.  Ensure all components of the Handheld Hydrophone are secure and in a dry place 
+2.  Drop hydrophone receiver end into the water 
+    1.  **Ensure no components other than the hydrophone get wet**
+3.  Press record button, look for signal changes on screen
+4.  Press record button again to start recording
+5.  After sampling, press stop button to stop recording
+
+### **Using the Handy Recorder as an Audio Interface (real-time playback)**
+
+1.  Connect hydrophone and pre-amplifier to the Handy Recorder channel 1
+
+2.  Connect Handy Recorder to computer through the USB cable
+
+3.  Handy Recorder should automatically turn on
+
+4.  Use scroll wheel to choose audio interface option (AUDIO I/F
+
+5.  Use the scroll wheel to change the Frequency to 48kHz
+
+6.  Use the scroll wheel to select connect and the recorder will establish connection to the computer, once connected you should see audio signals changing on the recorder screen
+
+    ![](images/hh_connectRecorder.png)
+
+7.  Click on channel 1 to ensure the hydrophone is the chosen audio input
+
+8.  Open up your sound settings on your computer and find the output and input options
+
+9.  Ensure output is set to correct speaker (Bluetooth Sony speaker)
+
+10. Ensure input is set to Zoom Recording Mixer (Zoom H and F series Audio)
+
+11. Open the Sound Control Panel on your computer
+
+12. Click on the recording tab and open up the properties for the Zoom Recording Mixer
+
+13. Select the box to listen to this device, and press OK![](images/hh_zoomListen2Device.png)
+
+14. Audio from the hydrophone should start playing out of your chosen speaker
+
+15. Drop the hydrophone receiver end into the water, ensure all other components of the array do not get wet
+
+### **Post-Fieldwork Checklist**
+
+Complete the following steps to ensure the Handheld Hydrophone is properly cleaned and stored for next usage.
+
+| Related Device |                         Task                         |                       Comments                        |
+|:----------------:|:-------------------------:|:--------------------------:|
+|   Hydrophone   |      Freshwater rinse and dry hydrophone cable       | Ensure no parts, other than hydrophone cable, get wet |
+|   Hydrophone   |         Store hydrophone securely for travel         |      Take note to secure hydrophone receiver end      |
+|      All       | Turn off and return all other components to main box |  Ensure no saltwater or residue is left on any parts  |
+
+## **Additional Information**
+
+Useful place for FAQs, common issues, etc. 
+
+### **Accessing Recorder Files**
+
+There are three methods for accessing the files the Handy Recorder has saved; playback on the recorder, plug recorder into computer to access files, or remove SD card and plug it into a computer to access the files\
+
+#### **Recorder Connected to Computer**
+
+1.  Connect Handy Recorder to computer through the USB cable
+
+2.  Handy Recorder should automatically turn on
+
+3.  Use scroll wheel to choose storage option
+
+4.  Connection will be established between the recorder and the computer, and a new windows explorer window will appear with the files that have been recorded to the SD card on it
+
+5.  Navigate to the desired folder and .wav files of your recordings will appear
+
+#### **SD Card**
+
+1.  Remove the SD card from the Handy Recorder
+
+2.  Plug SD card into the computer and the windows explorer window will appear
+
+3.  Navigate to the desired folder and .wav files of your recordings will appear
+
+### **Recorder Not Displaying Signal Change From Hydrophone**
+
+Complete the following steps if there is no change in signal being displayed on the recorder.
+
+1.  Click on menu button on right side of the recorder and use the scroll wheel to navigate and select INPUT from the menu
+
+2.  Use the scroll wheel to select PHANTOM
+
+3.  Change the phantom power to +48V if not there already
+
+4.  Retest hydrophone and look for changes in signals
+
+![](images/hh_phantom.png)
+
+## **Resources**
+
+### **Zoom H4n Pro Handy Recorder**
+
+#### [Operation Manual](https://www.bhphotovideo.com/lit_files/263141.pdf)
+
+#### [Quick Guide](https://zoomcorp.com/media/documents/E_H4n_Pro_QuickGuide.pdf)
+
+#### [Help Center](https://www.zoom.jp/helpcenter/en/products/H4nProBlack/)
+
+#### Names & Function of Parts
+
+![](images/hh_zoomFrontBackDiagram.png)
+
+![](images/hh_zoomSideDiagram.png)

@@ -1,0 +1,54 @@
+---
+title: Towed Array
+---
+
+Southwest Fisheries Science Center initiated towed array research in the late 1990s using solid hydrophone arrays developed by Norris (Santa Barbara). Breakages at sea were common, and Jay Barlow began designing a custom towed hydrophone to provide more control over building and repairing equipment. The first towed hydrophones developed by SWFSC consisted of solid polyeurethane hydrophones molded onto cable (see [Construction Guide](https://repository.library.noaa.gov/view/noaa/3620)). These solid hydrophones required a long and robust 'tail' to minimize 'fish-tailing', and yet damage to internal wires at the front end of the mold were common (this area acted as a 'joint', bending and eventually leading to wear on the internal wires). A need for more robust towed arrays with the ability to repair and replace internal components lead to the design of oil-filled towed hydrophone arrays (still in use today).
+
+::: columns
+::: {.column width="50%"}
+In 2011, SWFSC led an effort to develop a standardized approach to building and using towed hydrophone arrays for marine mammal surveys. Funded by NOAA's Ocean Acoustics Program, the primary goals were to (1) develop a modular hardware/software system to be used by all NMFS science centers during shipboard cetacean surveys, and (2) host a workshop to build these systems (see [Workshop Report](supplemental/ASTWG_FY12_PAMHardwareWorkshop.pdf)). The towed array information, below, is based off the design developed for this workshop.
+:::
+
+::: {.column width="50%"}
+![](images/towed_modularArray.png){width="186"}
+:::
+:::
+
+Later, SWFSC conducted several efforts to develop a volumetric (tetrahedral) towed hydrophone array to allow for improved real-time localization. Initial efforts led by Jay Barlow led to successful tracking of beaked whales during SoCal Behavioral Response Studies (SoCal BRS), and later collaborations with external organizations via Small Business Innovation Research programs.
+
+![](images/towed_tetrahedral.jpg){width="175"} ![](images/towed_volumetric.jpg){width="200"} ![](images/towed_trident.jpg){width="200"}
+
+::: columns
+::: {.column width="50%"}
+
+Conducting real-time towed array surveys require significant expertise during surveys, and to allow for data collection when real-time data are not required, Jay Barlow developed an autonomous towed hydrophone array consisting of an autonomous recorder within a PVC housing and towed behind the ship using a strong rope.
+:::
+
+::: {.column width="50%"}
+![](images/towed_autonomousArray.jpg){width="206"}
+:::
+:::
+
+Ultimately, the need for real-time detection during surveys off the U.S. West Coast did not justify the resources required and SWFSC conducted their final towed array survey in 2016. All towed array equipment was transferred to other science centers still conducting towed array surveys, and ongoing improvement of towed array systems are being led by our colleagues at PIFSC.
+
+## Resources
+
+[A guide to constructing hydrophones and hydrophone arrays for monitoring marine mammal vocalizations.](https://repository.library.noaa.gov/view/noaa/3620) 2008. Jay Barlow, Shannon Rankin, Steve Dawson.
+
+[A guide to constructing hydrophone arrays for passive acoustic data collection during NMFS shipboard cetacean surveys.](https://repository.library.noaa.gov/view/noaa/4443) 2013. Shannon Rankin, Jay Barlow, Yvonne Barkley, Robert Valtierra.
+
+[Development and testing of two towed volumetric hydrophone array prototypes to improve localization accuracy during shipboard line-transect surveys.](https://repository.library.noaa.gov/view/noaa/8699) 2016. Yvonne Barkley, Jay Barlow, Shannon Rankin, Geral D'Spain, Erin Oleson.
+
+[Design of a flooded housing for a towed autonomous hydrophone recording system](https://doi.%20org/10.25923/rmzp-fh90) (NOAA Technical Memorandum NMFS-SWFSC-647). 2021. Jay Barlow. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 12 pp.
+
+[An assessment of the accuracy and precision of localization of a stationary sound source using a two-element towed hydrophone array](https://swfsc-publications.fisheries.noaa.gov/publications/TM/SWFSC/NOAA-TM-NMFS-SWFSC-416.PDF) (NOAA Technical Memorandum NMFS-SWFSC-416). 2008. Shannon Rankin, Jay Barlow, Julie Oswald. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 33 pp.
+
+[Acoustic Recording System: a portable hardware system for shipboard passive acoustic monitoring of cetaceans using a towed hydrophone array](https://repository.library.noaa.gov/view/noaa/4679) (NOAA Administrative Report). 2011. Shannon Rankin, Jay Barlow. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 8 pp.
+
+[Multi-bank power supply system for small towed hydrophone arrays.](https://swfsc-publications.fisheries.noaa.gov/publications/TM/SWFSC/NOAA-TM-NMFS-SWFSC-544.pdf) (NOAA Technical Memorandum NMFS-SWFSC-544). 2015. Emily Griffiths, J. Scott Ferguson, Erin Oleson, and Shannon Rankin. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 19 pp.
+
+[Development and testing of two towed volumetric hydrophone array prototypes to improve localization accuracy during shipboard line-transect cetacean surveys](https://swfsc-publications.fisheries.noaa.gov/publications/CR/2016/2016Barkley.pdf) (NOAA Technical Memorandum NMFS-PIFSC-49). 2016. Yvonne Barkley, Jay Barlow, Shannon Rankin, Gerald D'Spain, Erin Oleson. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 42 pp.
+
+Building a Better Array: Developments in towed hydrophone arrays improve identification and localization of cetacean groups. Shannon Rankin, Jay Barlow, Robert Valtierra, and Yvonne Barkley. Poster for DCLDE conference.
+
+PIFSC Blog: [NMFS acousticians collaborate to create new interchangeable hydrophone array systems](https://pifscblog.wordpress.com/2012/12/21/nmfs-acousticians-collaborate-to-create-new-interchangeable-hydrophone-array-systems/)

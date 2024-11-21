@@ -47,8 +47,11 @@ website:
           - content/Data-Archive.qmd
           - content/Data-SpeciesAndCallTypes.qmd
           - content/media.qmd
-      - href: content/Hardware.qmd
-        text: Hardware Methods
+      - section:  content/Hardware.qmd
+        contents: 
+          - content/Hardware_Towed-Hydrophone.qmd
+          - content/Hardware_Sonobuoys.qmd
+          - content/Hardware_Handheld-Hydrophone.qmd
       - section: "Software Management"
         contents:
           - content/SAEL-Analysis-software.qmd
