@@ -11,6 +11,6 @@ In 2019 we completed research funded by the Navy's Living Marine Resources to st
 
 [Sonobuoy Acoustic Data Collection during Cetacean Surveys](https://repository.library.noaa.gov/view/noaa/20265) (NOAA Technical Memorandum NMFS-SWFSC-614). 2019. Shannon Rankin, Brian Miller, Jessica Crance, Taiki Sakai, and Jennifer L. Keating. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 38 pp.
 
-Sonobuoy Manual for HICEAS 2010 Survey. 2010. Shannon Rankin
+[Sonobuoy Manual for HICEAS 2010 Survey.](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/supplemental/Sonobuoy_Instructions.pdf) 2010. Shannon Rankin
 
-Sonobuoy Channels vs Frequency Sheet. 
+[Sonobuoy Channels vs Frequency Sheet.](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/supplemental/Sonobuoy_Channels.pdf) 

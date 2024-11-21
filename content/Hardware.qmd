@@ -2,19 +2,24 @@
 title: Hardware Methods
 ---
 
-## Drifting Acoustic Recorders
+![](images/PAMplatforms.png){width="425"}
 
-All information regarding the ADRIFT in the California Current Project can be found in our Adrift Field Methods [Github Repository](https://github.com/SAEL-SWFSC/adrift-field-methods) and [web book](https://sael-swfsc.github.io/adrift-field-methods/)
+## [Gliders](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Gliders.html)
 
-## Sonobuoys
-Report on [Sonobuoy Acoustic Data Collection during Cetacean Surveys](https://repository.library.noaa.gov/view/noaa/20265) outlines suggested methods and best practices for using sonobuoys during marine mammal surveys. 
+PAM-equipped buoyancy-driven gliders allow for autonomous data collection in large regions of offshore waters for extended periods of time.
 
+## [Drifting Recorders](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Drifters.html)
 
+Drifting acoustic recorders are low-cost approaches to PAM data collection in deep, offshore waters. Hydrophones can be deployed at depth, and are ideal for studying deep-diving species, such as beaked whales.
 
-## Towed Arrays
-Our lab began in-house development of towed hydrophone arrays in 2002 and different variations on [solid polyeurethane hydrophone arrays](https://repository.library.noaa.gov/view/noaa/3620/), oil filled arrays, and tetrahedral arrays were developed. 
+## [Sonobuoys](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Sonobuoys.html)
 
+Sonobuoys are expendable drifting recorders with low-frequency vector sensor hydrophones that can provide a magnetic bearing angle to the sound source. This ability to localize provides added benefits for confirming the source of recorded sounds and is frequently used to study the vocal repertoire of baleen whales when deployed in the presence of sighted animals.
 
-## Handheld Hydrophones
+## [Towed Arrays](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Towed-Hydrophone.html)
 
-[Link to Handheld Hydrophone User Manual](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html)
+Towing hydrophone arrays behind survey vessels allows for a complementary approach to detecting marine mammals during surveys. This can be especially helpful for species that are difficult to detect using visual observation methods, or during inclement weather where visual observation is limited.
+
+## [Handheld Hydrophones](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html)
+
+Handheld hydrophones can be deployed from drifting vessels, and provides an easy to use method for collecting passive acoustic data near a vessel. This is ideal for fieldwork on small boats that work in close association with sighted animals.

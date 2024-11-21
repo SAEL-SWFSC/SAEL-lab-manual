@@ -49,6 +49,8 @@ website:
           - content/media.qmd
       - section:  content/Hardware.qmd
         contents: 
+          - content/Hardware_Gliders.qmd
+          - content/Hardware_Drifters.qmd
           - content/Hardware_Towed-Hydrophone.qmd
           - content/Hardware_Sonobuoys.qmd
           - content/Hardware_Handheld-Hydrophone.qmd
