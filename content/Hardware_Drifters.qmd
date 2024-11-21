@@ -1,0 +1,27 @@
+---
+title: Drifting Recorders
+---
+
+::: columns
+::: {.column width="50%"}
+Drifting recorders consist of hydrophones deployed at depth below a drifting buoy. They are relatively low cost, which allows for deployment of multiple instruments (increasing the spatial coverage of the area). The hydrophones are positioned near the animals in the water columns (neither at the surface nor the seafloor).
+
+Drifting recorders have been increasingly deployed during large scale shipboard surveys to augment visual line-transect surveys for cryptic and deep-diving species. As drifting recorders are neither tethered to the seafloor nor to a ship, they have shown potential as an alternative PAM platform for deep waters offshore the U.S. West Coast.
+:::
+
+::: {.column width="50%"}
+![](images/DriftingAcousticBuoyDiagram.jpg)
+:::
+:::
+
+The ADRIFT in the California Current Project (2020-2024) used passive acoustic drifting recorders to collect data on marine mammals and the ocean soundscape offshore California and Oregon. This work was co-funded by NOAA's Southwest Fisheries Science Center and the Bureau of Ocean Energy Management (BOEM). More information on the Adrift project can be found [here](https://sael-swfsc.github.io/Adrift/).
+
+Detailed information on building and using drifting acoustic recorders can be found in the [Adrift Field Methods](https://sael-swfsc.github.io/adrift-field-methods/).
+
+## Resources
+
+[Final Report for ADRIFT in the California Current: Passive Acoustic Monitoring in the California Current using Drifting Recorders.](https://github.com/SAEL-SWFSC/Adrift/blob/main/manuscript/Report_ADRIFT.Rankin_G14M20PG00013.pdf) (BOEM OCS Study BOEM 2024-047). 2024. Shannon Rankin, Kourtney Burger, Cory Hom-Weaver, Kaitlin Palmer, Taiki Sakai, Anne Simonis. U.S. Department of the Interior, Bureau of Ocean Energy Management. 97 pp.
+
+[Passive Acoustics Survey of Cetacean Abundance Levels (PASCAL-2016) Final Report](https://www.boem.gov/sites/default/files/environmental-stewardship/Environmental-Studies/Pacific-Region/Studies/BOEM-2018-025.pdf) (BOEM OCS Study BOEM 2018-025). 2018. Jennifer Keating, Jay Barlow, Emily T. Griffiths, and Jeffrey E. Moore. U.S. Department of the Interior, Bureau of Ocean Energy Management. 22 pp.
+
+[Passive Acoustic Survey Of Deep-Diving Odontocetes in the California Current Ecosystem 2018: Final Report](https://doi.org/10.25923/W5XX-JZ73) (NOAA Technical Memorandum NOAA-TM-NMFS-SWFSC-630). 2020. Anne Simonis, Jenny Trickey, Jay Barlow, Shannon Rankin, Jorge Urban, Lorenzo Rojas-Bracho, Jeffrey E. Moore. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 54 pp.

@@ -20,7 +20,6 @@ Later, SWFSC conducted several efforts to develop a volumetric (tetrahedral) tow
 
 ::: columns
 ::: {.column width="50%"}
-
 Conducting real-time towed array surveys require significant expertise during surveys, and to allow for data collection when real-time data are not required, Jay Barlow developed an autonomous towed hydrophone array consisting of an autonomous recorder within a PVC housing and towed behind the ship using a strong rope.
 :::
 
@@ -49,6 +48,6 @@ Ultimately, the need for real-time detection during surveys off the U.S. West Co
 
 [Development and testing of two towed volumetric hydrophone array prototypes to improve localization accuracy during shipboard line-transect cetacean surveys](https://swfsc-publications.fisheries.noaa.gov/publications/CR/2016/2016Barkley.pdf) (NOAA Technical Memorandum NMFS-PIFSC-49). 2016. Yvonne Barkley, Jay Barlow, Shannon Rankin, Gerald D'Spain, Erin Oleson. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 42 pp.
 
-Building a Better Array: Developments in towed hydrophone arrays improve identification and localization of cetacean groups. Shannon Rankin, Jay Barlow, Robert Valtierra, and Yvonne Barkley. Poster for DCLDE conference.
+[Building a Better Array: Developments in towed hydrophone arrays improve identification and localization of cetacean groups.](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/supplemental/rankin.etal_hydrophone.pdf)Shannon Rankin, Jay Barlow, Robert Valtierra, and Yvonne Barkley. Poster for DCLDE conference.
 
 PIFSC Blog: [NMFS acousticians collaborate to create new interchangeable hydrophone array systems](https://pifscblog.wordpress.com/2012/12/21/nmfs-acousticians-collaborate-to-create-new-interchangeable-hydrophone-array-systems/)
