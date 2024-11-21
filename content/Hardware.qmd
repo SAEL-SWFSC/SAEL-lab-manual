@@ -1,0 +1,20 @@
+---
+title: Hardware Methods
+---
+
+## Drifting Acoustic Recorders
+
+All information regarding the ADRIFT in the California Current Project can be found in our Adrift Field Methods [Github Repository](https://github.com/SAEL-SWFSC/adrift-field-methods) and [web book](https://sael-swfsc.github.io/adrift-field-methods/)
+
+## Sonobuoys
+Report on [Sonobuoy Acoustic Data Collection during Cetacean Surveys](https://repository.library.noaa.gov/view/noaa/20265) outlines suggested methods and best practices for using sonobuoys during marine mammal surveys. 
+
+
+
+## Towed Arrays
+Our lab began in-house development of towed hydrophone arrays in 2002 and different variations on [solid polyeurethane hydrophone arrays](https://repository.library.noaa.gov/view/noaa/3620/), oil filled arrays, and tetrahedral arrays were developed. 
+
+
+## Handheld Hydrophones
+
+[Link to Handheld Hydrophone User Manual](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html)
