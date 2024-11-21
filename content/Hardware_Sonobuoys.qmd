@@ -1,0 +1,16 @@
+---
+title: Sonobuoys
+---
+
+Sonobuoys are expendable drifting recorders with vector sensing hydrophones deployed at depth, and signal is transmitted via radio frequency from the buoy to a nearby receiver for recording. Surplus Navy sonobuoys have been provided periodically for our shipboard surveys. 
+
+In 2019 we completed research funded by the Navy's Living Marine Resources to study the potential to use sonobuoys during large scale surveys for population estimation of marine mammals. During this dedicated research project, our understanding of the strengths and limitations of sonobuoys was expanded, and we identified a few myths that had been transmitted through the bioacoustics community. In an effort to share learned best practices, the following report was developed.
+
+
+## Resources
+
+[Sonobuoy Acoustic Data Collection during Cetacean Surveys](https://repository.library.noaa.gov/view/noaa/20265) (NOAA Technical Memorandum NMFS-SWFSC-614). 2019. Shannon Rankin, Brian Miller, Jessica Crance, Taiki Sakai, and Jennifer L. Keating. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 38 pp.
+
+Sonobuoy Manual for HICEAS 2010 Survey. 2010. Shannon Rankin
+
+Sonobuoy Channels vs Frequency Sheet. 
