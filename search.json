@@ -219,69 +219,53 @@
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html",
-    "href": "content/SAEL-Analysis-software.html",
-    "title": "SAEL Acoustic Software",
+    "objectID": "content/Hardware.html",
+    "href": "content/Hardware.html",
+    "title": "Hardware Methods",
     "section": "",
-    "text": "The Southwest Acoustic Ecology Lab has focused effort on developing a streamlined approach to passive acoustic data analysis that relies an Open Science approach, including a reliance on open-source software.",
+    "text": "All information regarding the ADRIFT in the California Current Project can be found in our Adrift Field Methods Github Repository and web book",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Hardware Methods"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#pampal",
-    "href": "content/SAEL-Analysis-software.html#pampal",
-    "title": "SAEL Acoustic Software",
-    "section": "PAMpal",
-    "text": "PAMpal\nPAMpal is an R package for processing passive acoustic data. Currently PAMpal only supports data collected using PAMGuard (pamguard.org), but in the future we hope to support other platforms. PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, with the help of numerous partners, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPampal Tutorial (https://taikisan21.github.io/PAMpal/)\nPAMpal CRAN (https://CRAN.R-project.org/package=PAMpal)\nPAMpal Github (https://github.com/TaikiSan21/PAMpal)\n\nIn addition, we have developed these R software packages to address other needs:",
+    "objectID": "content/Hardware.html#drifting-acoustic-recorders",
+    "href": "content/Hardware.html#drifting-acoustic-recorders",
+    "title": "Hardware Methods",
+    "section": "",
+    "text": "All information regarding the ADRIFT in the California Current Project can be found in our Adrift Field Methods Github Repository and web book",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Hardware Methods"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#pammisc",
-    "href": "content/SAEL-Analysis-software.html#pammisc",
-    "title": "SAEL Acoustic Software",
-    "section": "PAMmisc",
-    "text": "PAMmisc\nA collection of miscellaneous functions for passive acoustics (much of the content is adapted from R code written by other people). PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPAMmisc CRAN (https://CRAN.R-project.org/package=PAMpal)",
+    "objectID": "content/Hardware.html#sonobuoys",
+    "href": "content/Hardware.html#sonobuoys",
+    "title": "Hardware Methods",
+    "section": "Sonobuoys",
+    "text": "Sonobuoys\nReport on Sonobuoy Acoustic Data Collection during Cetacean Surveys outlines suggested methods and best practices for using sonobuoys during marine mammal surveys.",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Hardware Methods"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#banter",
-    "href": "content/SAEL-Analysis-software.html#banter",
-    "title": "SAEL Acoustic Software",
-    "section": "BANTER",
-    "text": "BANTER\nBANTER is a hierarchical species classifier for acoustic events developed using multiple call type detectors (see Rankin et al. 2017). Banter User’s Guide available here. Banter was originally developed for dolphins, but has also been applied to beaked whales (Rankin et al. 2024), among other species. BANTER was developed by a collaboration between Shannon Rankin (SWFSC) and Eric Archer (SWFSC) and was funded by NOAA’s Ocean Acoustics Program.\n\nBANTER User’s Guide (https://taikisan21.github.io/PAMpal/banterGuide.html)\nBANTER CRAN (https://CRAN.R-project.org/package=banter)\nBANTER Github (https://github.com/EricArcher/banter)",
+    "objectID": "content/Hardware.html#towed-arrays",
+    "href": "content/Hardware.html#towed-arrays",
+    "title": "Hardware Methods",
+    "section": "Towed Arrays",
+    "text": "Towed Arrays\nOur lab began in-house development of towed hydrophone arrays in 2002 and different variations on solid polyeurethane hydrophone arrays, oil filled arrays, and tetrahedral arrays were developed.",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Hardware Methods"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#pamscapes",
-    "href": "content/SAEL-Analysis-software.html#pamscapes",
-    "title": "SAEL Acoustic Software",
-    "section": "PAMscapes",
-    "text": "PAMscapes\nA variety of tools relevant to the analysis of marine soundscape data (including tools for downloading AIS data from Marine Cadastre, connecting AIS data to GPS coordinates, plotting summaries of various soundscape measurements, and downloading relevant environmental variables (wind, swell height) from the National Center for Atmospheric Research. PAMscapes development was a collaboration between Shannon Rankin (SWFSC), Taiki Sakai (SWFSC), Anne Simonis (SWFSC), and Megan McKenna (National Marine Sanctuary Foundation); funding provided by NOAA’s Ocean Acoustics Program.\n\nPAMscapes CRAN (https://CRAN.R-project.org/package=PAMscapes)\nPAMscapes Github (https://github.com/cran/PAMscapes)\nPAMscapes Report to NOAA’s Ocean Acoustics Program (link to download)",
+    "objectID": "content/Hardware.html#handheld-hydrophones",
+    "href": "content/Hardware.html#handheld-hydrophones",
+    "title": "Hardware Methods",
+    "section": "Handheld Hydrophones",
+    "text": "Handheld Hydrophones\nLink to Handheld Hydrophone User Manual",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
-    ]
-  },
-  {
-    "objectID": "content/SAEL-Analysis-software.html#driftwatch",
-    "href": "content/SAEL-Analysis-software.html#driftwatch",
-    "title": "SAEL Acoustic Software",
-    "section": "Driftwatch",
-    "text": "Driftwatch\nDriftwatch was developed to help with tracking of drifting acoustic buoys using satellite GPS. The basic code is available on Github, but there are a number of steps required to get it to function for outside use. Driftwatch was developed by Taiki Sakai and was funded by the Bureau of Ocean Energy Management (Inter-Agency Agreement G14-M20PG00013).\n\nDriftwatch Github (https://github.com/TaikiSan21/DriftWatch)\nWhere to Start: Setting_Up_Driftwatch.rmd (in Driftwatch Github Repository)",
-    "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Hardware Methods"
     ]
   },
   {
@@ -289,22 +273,14 @@
     "href": "content/Hardware_Handheld-Hydrophone.html",
     "title": "Handheld Hydrophone",
     "section": "",
-    "text": "Link to Handheld Hydrophone User Manual",
-    "crumbs": [
-      "Hardware Methods",
-      "Handheld Hydrophone"
-    ]
+    "text": "Link to Handheld Hydrophone User Manual"
   },
   {
     "objectID": "content/Hardware_Handheld-Hydrophone.html#handheld-hydrophone-user-manual",
     "href": "content/Hardware_Handheld-Hydrophone.html#handheld-hydrophone-user-manual",
     "title": "Handheld Hydrophone",
     "section": "",
-    "text": "Link to Handheld Hydrophone User Manual",
-    "crumbs": [
-      "Hardware Methods",
-      "Handheld Hydrophone"
-    ]
+    "text": "Link to Handheld Hydrophone User Manual"
   },
   {
     "objectID": "content/Data-SpeciesAndCallTypes.html",
@@ -360,7 +336,6 @@
     "section": "",
     "text": "Detailed Analysis methods for the ADRIFT project can be found here",
     "crumbs": [
-      "Analysis",
       "Analysis Methods"
     ]
   },
@@ -371,7 +346,6 @@
     "section": "",
     "text": "PR1 Permit #0774-1437 from 4/16/1998 - 6/30/2004\nPR1 Permit #774-1714 from 06/30/2004 - 7/7/2010\nPermit # 14097 from 07/07/2010-06/30/2016*\nPermit #19091 from 05/17/2016 – 04/21/2021\nPermit #22306 04/21/2021 – 04/30/2026\n\n\n\nAn automated script can be found here for pulling the necessary protected resources reporting data from our sightings data. This script does not produce the final Take Report needed for this permit. It does return takes per species, which can be added to the final Take Report provided by the permit coordinator. Download the script and follow the directions for each reporting cycle. Contact Kourtney Burger (kourtney.burger@noaa.gov) with any questions/concerns.",
     "crumbs": [
-      "Reporting",
       "Permits & Reporting"
     ]
   },
@@ -382,7 +356,6 @@
     "section": "",
     "text": "PR1 Permit #0774-1437 from 4/16/1998 - 6/30/2004\nPR1 Permit #774-1714 from 06/30/2004 - 7/7/2010\nPermit # 14097 from 07/07/2010-06/30/2016*\nPermit #19091 from 05/17/2016 – 04/21/2021\nPermit #22306 04/21/2021 – 04/30/2026\n\n\n\nAn automated script can be found here for pulling the necessary protected resources reporting data from our sightings data. This script does not produce the final Take Report needed for this permit. It does return takes per species, which can be added to the final Take Report provided by the permit coordinator. Download the script and follow the directions for each reporting cycle. Contact Kourtney Burger (kourtney.burger@noaa.gov) with any questions/concerns.",
     "crumbs": [
-      "Reporting",
       "Permits & Reporting"
     ]
   },
@@ -393,7 +366,6 @@
     "section": "NOAA Sanctuaries Permit",
     "text": "NOAA Sanctuaries Permit\n\nPermit Numbers\nMULTI-2019-005 from 06/04/2019 - 04/20/2024\n\n\nPermit Reporting\nAn automated script can be found here for pulling the necessary Sanctuary reporting data from our Deployment Details spreadsheet. Download the script and follow the directions for each reporting cycle. Contact Kourtney Burger (kourtney.burger@noaa.gov) with any questions/concerns.",
     "crumbs": [
-      "Reporting",
       "Permits & Reporting"
     ]
   },
@@ -404,7 +376,6 @@
     "section": "Fish & Wildlife Permits",
     "text": "Fish & Wildlife Permits\nWe are no longer conducting research requiring Fish & Wildlife Permits",
     "crumbs": [
-      "Reporting",
       "Permits & Reporting"
     ]
   },
@@ -415,7 +386,6 @@
     "section": "Navy Agreement",
     "text": "Navy Agreement\n\nReporting\nAn automated script can be found here for pulling the necessary Navy reporting data from our Deployment Details spreadsheet. Download the script and follow the directions for each reporting cycle. Contact Kourtney Burger (kourtney.burger@noaa.gov) with any questions/concerns.",
     "crumbs": [
-      "Reporting",
       "Permits & Reporting"
     ]
   },
@@ -426,7 +396,6 @@
     "section": "InPort Metadata Archive",
     "text": "InPort Metadata Archive\nMost of our data/metadata are archived and publicly available at NCEI, but there are also expectations regarding submitting metadata to InPort (SR has requested info on what must be submitted to InPort if metadata is already being supplied to NCEI; in the least, if we get NOAA Ocean Acoustics Program funding, we must submit metadata to InPort in order to be considered for future funding). To submit metadata, you must first create an Account by contacting one of these SWFSC InPort Librarians: Arnold Ammann arnold.ammann@noaa.gov\nGabriel Arce Gabriel.Arce@noaa.gov\nThanh T Vu thanh.vu@noaa.gov\nLogin, Navigate to the SWFSC Organization page, and you can then navigate to Passive Acoustics (as long as you are logged in).\nThen select “Add Child Item” (on the right).\nComplete Metadata according to expectations (see InPort Help)",
     "crumbs": [
-      "Reporting",
       "Permits & Reporting"
     ]
   },
@@ -580,25 +549,69 @@
     "text": "Slide with Highlighted Code Lines\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\nMore line highlighting options here\n\n\n\n\nSource Code"
   },
   {
-    "objectID": "content/Hardware_ADRIFT.html",
-    "href": "content/Hardware_ADRIFT.html",
-    "title": "ADRIFT",
+    "objectID": "content/SAEL-Analysis-software.html",
+    "href": "content/SAEL-Analysis-software.html",
+    "title": "SAEL Acoustic Software",
     "section": "",
-    "text": "All information regarding the ADRIFT in the California Current Project can be found in our Adrift Field Methods Github Repository and web book",
+    "text": "The Southwest Acoustic Ecology Lab has focused effort on developing a streamlined approach to passive acoustic data analysis that relies an Open Science approach, including a reliance on open-source software.",
     "crumbs": [
-      "Hardware Methods",
-      "ADRIFT"
+      "Software Management",
+      "SAEL Acoustic Software"
     ]
   },
   {
-    "objectID": "content/Hardware_ADRIFT.html#adrift-field-methods-and-hardware",
-    "href": "content/Hardware_ADRIFT.html#adrift-field-methods-and-hardware",
-    "title": "ADRIFT",
-    "section": "",
-    "text": "All information regarding the ADRIFT in the California Current Project can be found in our Adrift Field Methods Github Repository and web book",
+    "objectID": "content/SAEL-Analysis-software.html#pampal",
+    "href": "content/SAEL-Analysis-software.html#pampal",
+    "title": "SAEL Acoustic Software",
+    "section": "PAMpal",
+    "text": "PAMpal\nPAMpal is an R package for processing passive acoustic data. Currently PAMpal only supports data collected using PAMGuard (pamguard.org), but in the future we hope to support other platforms. PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, with the help of numerous partners, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPampal Tutorial (https://taikisan21.github.io/PAMpal/)\nPAMpal CRAN (https://CRAN.R-project.org/package=PAMpal)\nPAMpal Github (https://github.com/TaikiSan21/PAMpal)\n\nIn addition, we have developed these R software packages to address other needs:",
     "crumbs": [
-      "Hardware Methods",
-      "ADRIFT"
+      "Software Management",
+      "SAEL Acoustic Software"
+    ]
+  },
+  {
+    "objectID": "content/SAEL-Analysis-software.html#pammisc",
+    "href": "content/SAEL-Analysis-software.html#pammisc",
+    "title": "SAEL Acoustic Software",
+    "section": "PAMmisc",
+    "text": "PAMmisc\nA collection of miscellaneous functions for passive acoustics (much of the content is adapted from R code written by other people). PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPAMmisc CRAN (https://CRAN.R-project.org/package=PAMpal)",
+    "crumbs": [
+      "Software Management",
+      "SAEL Acoustic Software"
+    ]
+  },
+  {
+    "objectID": "content/SAEL-Analysis-software.html#banter",
+    "href": "content/SAEL-Analysis-software.html#banter",
+    "title": "SAEL Acoustic Software",
+    "section": "BANTER",
+    "text": "BANTER\nBANTER is a hierarchical species classifier for acoustic events developed using multiple call type detectors (see Rankin et al. 2017). Banter User’s Guide available here. Banter was originally developed for dolphins, but has also been applied to beaked whales (Rankin et al. 2024), among other species. BANTER was developed by a collaboration between Shannon Rankin (SWFSC) and Eric Archer (SWFSC) and was funded by NOAA’s Ocean Acoustics Program.\n\nBANTER User’s Guide (https://taikisan21.github.io/PAMpal/banterGuide.html)\nBANTER CRAN (https://CRAN.R-project.org/package=banter)\nBANTER Github (https://github.com/EricArcher/banter)",
+    "crumbs": [
+      "Software Management",
+      "SAEL Acoustic Software"
+    ]
+  },
+  {
+    "objectID": "content/SAEL-Analysis-software.html#pamscapes",
+    "href": "content/SAEL-Analysis-software.html#pamscapes",
+    "title": "SAEL Acoustic Software",
+    "section": "PAMscapes",
+    "text": "PAMscapes\nA variety of tools relevant to the analysis of marine soundscape data (including tools for downloading AIS data from Marine Cadastre, connecting AIS data to GPS coordinates, plotting summaries of various soundscape measurements, and downloading relevant environmental variables (wind, swell height) from the National Center for Atmospheric Research. PAMscapes development was a collaboration between Shannon Rankin (SWFSC), Taiki Sakai (SWFSC), Anne Simonis (SWFSC), and Megan McKenna (National Marine Sanctuary Foundation); funding provided by NOAA’s Ocean Acoustics Program.\n\nPAMscapes CRAN (https://CRAN.R-project.org/package=PAMscapes)\nPAMscapes Github (https://github.com/cran/PAMscapes)\nPAMscapes Report to NOAA’s Ocean Acoustics Program (link to download)",
+    "crumbs": [
+      "Software Management",
+      "SAEL Acoustic Software"
+    ]
+  },
+  {
+    "objectID": "content/SAEL-Analysis-software.html#driftwatch",
+    "href": "content/SAEL-Analysis-software.html#driftwatch",
+    "title": "SAEL Acoustic Software",
+    "section": "Driftwatch",
+    "text": "Driftwatch\nDriftwatch was developed to help with tracking of drifting acoustic buoys using satellite GPS. The basic code is available on Github, but there are a number of steps required to get it to function for outside use. Driftwatch was developed by Taiki Sakai and was funded by the Bureau of Ocean Energy Management (Inter-Agency Agreement G14-M20PG00013).\n\nDriftwatch Github (https://github.com/TaikiSan21/DriftWatch)\nWhere to Start: Setting_Up_Driftwatch.rmd (in Driftwatch Github Repository)",
+    "crumbs": [
+      "Software Management",
+      "SAEL Acoustic Software"
     ]
   },
   {
