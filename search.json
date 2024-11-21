@@ -120,146 +120,163 @@
     ]
   },
   {
-    "objectID": "content/media.html",
-    "href": "content/media.html",
-    "title": "Media",
+    "objectID": "content/Hardware_Drifters.html",
+    "href": "content/Hardware_Drifters.html",
+    "title": "Drifting Recorders",
     "section": "",
-    "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
-    "crumbs": [
-      "Data Management",
-      "Media"
-    ]
-  },
-  {
-    "objectID": "content/media.html#public-sound-archive",
-    "href": "content/media.html#public-sound-archive",
-    "title": "Media",
-    "section": "",
-    "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
-    "crumbs": [
-      "Data Management",
-      "Media"
-    ]
-  },
-  {
-    "objectID": "content/media.html#internal-media-archive",
-    "href": "content/media.html#internal-media-archive",
-    "title": "Media",
-    "section": "Internal Media Archive",
-    "text": "Internal Media Archive\nWe have internal archives for sounds, images, and videos on our lab Google Drive (see link here). Please document all submissions according to the instructions posted in their respective folders.",
-    "crumbs": [
-      "Data Management",
-      "Media"
-    ]
-  },
-  {
-    "objectID": "content/media.html#web-site",
-    "href": "content/media.html#web-site",
-    "title": "Media",
-    "section": "Web Site",
-    "text": "Web Site\nThe website for the Southwest Acoustic Ecology Lab main web page currently includes information about our current research activities. For modifications to the website, contact cory.hom-weaver@noaa.gov.",
-    "crumbs": [
-      "Data Management",
-      "Media"
-    ]
-  },
-  {
-    "objectID": "content/media.html#sound-bytes-blog",
-    "href": "content/media.html#sound-bytes-blog",
-    "title": "Media",
-    "section": "Sound Bytes Blog",
-    "text": "Sound Bytes Blog\nOur periodic ‘Sound Bytes’ blog shares stories about how we develop tools, build partnerships, and make discoveries. We encourage all team members and collaborators to consider submitting a blog describing the work you do with the SAEL team. Contact cory.hom-weaver@noaa.gov for more information.\nSee link to all blogs here.",
-    "crumbs": [
-      "Data Management",
-      "Media"
-    ]
-  },
-  {
-    "objectID": "content/Hardware_Sonobuoys.html",
-    "href": "content/Hardware_Sonobuoys.html",
-    "title": "Sonobuoys",
-    "section": "",
-    "text": "Sonobuoys are expendable drifting recorders with vector sensing hydrophones deployed at depth, and signal is transmitted via radio frequency from the buoy to a nearby receiver for recording. Surplus Navy sonobuoys have been provided periodically for our shipboard surveys.\nIn 2019 we completed research funded by the Navy’s Living Marine Resources to study the potential to use sonobuoys during large scale surveys for population estimation of marine mammals. During this dedicated research project, our understanding of the strengths and limitations of sonobuoys was expanded, and we identified a few myths that had been transmitted through the bioacoustics community. In an effort to share learned best practices, the following report was developed.",
+    "text": "Drifting recorders consist of hydrophones deployed at depth below a drifting buoy. They are relatively low cost, which allows for deployment of multiple instruments (increasing the spatial coverage of the area). The hydrophones are positioned near the animals in the water columns (neither at the surface nor the seafloor).\nDrifting recorders have been increasingly deployed during large scale shipboard surveys to augment visual line-transect surveys for cryptic and deep-diving species. As drifting recorders are neither tethered to the seafloor nor to a ship, they have shown potential as an alternative PAM platform for deep waters offshore the U.S. West Coast.\nThe ADRIFT in the California Current Project (2020-2024) used passive acoustic drifting recorders to collect data on marine mammals and the ocean soundscape offshore California and Oregon. This work was co-funded by NOAA’s Southwest Fisheries Science Center and the Bureau of Ocean Energy Management (BOEM). More information on the Adrift project can be found here.\nDetailed information on building and using drifting acoustic recorders can be found in the Adrift Field Methods.",
     "crumbs": [
       "Hardware Methods",
-      "Sonobuoys"
+      "Drifting Recorders"
     ]
   },
   {
-    "objectID": "content/Hardware_Sonobuoys.html#resources",
-    "href": "content/Hardware_Sonobuoys.html#resources",
-    "title": "Sonobuoys",
+    "objectID": "content/Hardware_Drifters.html#resources",
+    "href": "content/Hardware_Drifters.html#resources",
+    "title": "Drifting Recorders",
     "section": "Resources",
-    "text": "Resources\nSonobuoy Acoustic Data Collection during Cetacean Surveys (NOAA Technical Memorandum NMFS-SWFSC-614). 2019. Shannon Rankin, Brian Miller, Jessica Crance, Taiki Sakai, and Jennifer L. Keating. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 38 pp.\nSonobuoy Manual for HICEAS 2010 Survey. 2010. Shannon Rankin\nSonobuoy Channels vs Frequency Sheet.",
+    "text": "Resources\nFinal Report for ADRIFT in the California Current: Passive Acoustic Monitoring in the California Current using Drifting Recorders. (BOEM OCS Study BOEM 2024-047). 2024. Shannon Rankin, Kourtney Burger, Cory Hom-Weaver, Kaitlin Palmer, Taiki Sakai, Anne Simonis. U.S. Department of the Interior, Bureau of Ocean Energy Management. 97 pp.\nPassive Acoustics Survey of Cetacean Abundance Levels (PASCAL-2016) Final Report (BOEM OCS Study BOEM 2018-025). 2018. Jennifer Keating, Jay Barlow, Emily T. Griffiths, and Jeffrey E. Moore. U.S. Department of the Interior, Bureau of Ocean Energy Management. 22 pp.\nPassive Acoustic Survey Of Deep-Diving Odontocetes in the California Current Ecosystem 2018: Final Report (NOAA Technical Memorandum NOAA-TM-NMFS-SWFSC-630). 2020. Anne Simonis, Jenny Trickey, Jay Barlow, Shannon Rankin, Jorge Urban, Lorenzo Rojas-Bracho, Jeffrey E. Moore. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 54 pp.",
     "crumbs": [
       "Hardware Methods",
-      "Sonobuoys"
+      "Drifting Recorders"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html",
-    "href": "content/SAEL-Analysis-software.html",
-    "title": "SAEL Acoustic Software",
+    "objectID": "content/Safety-Lab.html",
+    "href": "content/Safety-Lab.html",
+    "title": "General Lab Safety",
     "section": "",
-    "text": "The Southwest Acoustic Ecology Lab has focused effort on developing a streamlined approach to passive acoustic data analysis that relies an Open Science approach, including a reliance on open-source software.",
+    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Lab Management",
+      "General Lab Safety"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#pampal",
-    "href": "content/SAEL-Analysis-software.html#pampal",
-    "title": "SAEL Acoustic Software",
-    "section": "PAMpal",
-    "text": "PAMpal\nPAMpal is an R package for processing passive acoustic data. Currently PAMpal only supports data collected using PAMGuard (pamguard.org), but in the future we hope to support other platforms. PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, with the help of numerous partners, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPampal Tutorial (https://taikisan21.github.io/PAMpal/)\nPAMpal CRAN (https://CRAN.R-project.org/package=PAMpal)\nPAMpal Github (https://github.com/TaikiSan21/PAMpal)\n\nIn addition, we have developed these R software packages to address other needs:",
+    "objectID": "content/Safety-Lab.html#safety-resources",
+    "href": "content/Safety-Lab.html#safety-resources",
+    "title": "General Lab Safety",
+    "section": "",
+    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Lab Management",
+      "General Lab Safety"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#pammisc",
-    "href": "content/SAEL-Analysis-software.html#pammisc",
-    "title": "SAEL Acoustic Software",
-    "section": "PAMmisc",
-    "text": "PAMmisc\nA collection of miscellaneous functions for passive acoustics (much of the content is adapted from R code written by other people). PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPAMmisc CRAN (https://CRAN.R-project.org/package=PAMpal)",
+    "objectID": "content/Safety-Lab.html#chemical-inventory",
+    "href": "content/Safety-Lab.html#chemical-inventory",
+    "title": "General Lab Safety",
+    "section": "Chemical Inventory",
+    "text": "Chemical Inventory\n\nCurrently SAEL only possesses commercially available (over the counter) products and these are not required to be a part of the chemical inventory.\n\nAs such, we do not currently have a chemical inventory (updated Feb 2023).",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Lab Management",
+      "General Lab Safety"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#banter",
-    "href": "content/SAEL-Analysis-software.html#banter",
-    "title": "SAEL Acoustic Software",
-    "section": "BANTER",
-    "text": "BANTER\nBANTER is a hierarchical species classifier for acoustic events developed using multiple call type detectors (see Rankin et al. 2017). Banter User’s Guide available here. Banter was originally developed for dolphins, but has also been applied to beaked whales (Rankin et al. 2024), among other species. BANTER was developed by a collaboration between Shannon Rankin (SWFSC) and Eric Archer (SWFSC) and was funded by NOAA’s Ocean Acoustics Program.\n\nBANTER User’s Guide (https://taikisan21.github.io/PAMpal/banterGuide.html)\nBANTER CRAN (https://CRAN.R-project.org/package=banter)\nBANTER Github (https://github.com/EricArcher/banter)",
+    "objectID": "content/Safety-Lab.html#organization",
+    "href": "content/Safety-Lab.html#organization",
+    "title": "General Lab Safety",
+    "section": "Organization",
+    "text": "Organization\n\nKeep lab tidy and clean. If you start on a project and intend to keep working on it over a few days (i.e. building equipment) please clean up after you have completed work.\nIf you notice that something is running low (i.e. electrical tape, crab floats, nuts and bolts) please contact Shannon Rankin or Kourtney Burger so that they may order more supplies.",
     "crumbs": [
-      "Software Management",
-      "SAEL Acoustic Software"
+      "Lab Management",
+      "General Lab Safety"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#pamscapes",
-    "href": "content/SAEL-Analysis-software.html#pamscapes",
-    "title": "SAEL Acoustic Software",
-    "section": "PAMscapes",
-    "text": "PAMscapes\nA variety of tools relevant to the analysis of marine soundscape data (including tools for downloading AIS data from Marine Cadastre, connecting AIS data to GPS coordinates, plotting summaries of various soundscape measurements, and downloading relevant environmental variables (wind, swell height) from the National Center for Atmospheric Research. PAMscapes development was a collaboration between Shannon Rankin (SWFSC), Taiki Sakai (SWFSC), Anne Simonis (SWFSC), and Megan McKenna (National Marine Sanctuary Foundation); funding provided by NOAA’s Ocean Acoustics Program.\n\nPAMscapes CRAN (https://CRAN.R-project.org/package=PAMscapes)\nPAMscapes Github (https://github.com/cran/PAMscapes)\nPAMscapes Report to NOAA’s Ocean Acoustics Program (link to download)",
+    "objectID": "content/Acoustic-Analysis-software.html",
+    "href": "content/Acoustic-Analysis-software.html",
+    "title": "Acoustic Analysis Software",
+    "section": "",
+    "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
     "crumbs": [
       "Software Management",
-      "SAEL Acoustic Software"
+      "Acoustic Analysis Software"
     ]
   },
   {
-    "objectID": "content/SAEL-Analysis-software.html#driftwatch",
-    "href": "content/SAEL-Analysis-software.html#driftwatch",
-    "title": "SAEL Acoustic Software",
-    "section": "Driftwatch",
-    "text": "Driftwatch\nDriftwatch was developed to help with tracking of drifting acoustic buoys using satellite GPS. The basic code is available on Github, but there are a number of steps required to get it to function for outside use. Driftwatch was developed by Taiki Sakai and was funded by the Bureau of Ocean Energy Management (Inter-Agency Agreement G14-M20PG00013).\n\nDriftwatch Github (https://github.com/TaikiSan21/DriftWatch)\nWhere to Start: Setting_Up_Driftwatch.rmd (in Driftwatch Github Repository)",
+    "objectID": "content/Acoustic-Analysis-software.html#pamguard",
+    "href": "content/Acoustic-Analysis-software.html#pamguard",
+    "title": "Acoustic Analysis Software",
+    "section": "",
+    "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
     "crumbs": [
       "Software Management",
-      "SAEL Acoustic Software"
+      "Acoustic Analysis Software"
+    ]
+  },
+  {
+    "objectID": "content/Acoustic-Analysis-software.html#matlab",
+    "href": "content/Acoustic-Analysis-software.html#matlab",
+    "title": "Acoustic Analysis Software",
+    "section": "Matlab",
+    "text": "Matlab\nMatlab\n\nTriton\nTriton",
+    "crumbs": [
+      "Software Management",
+      "Acoustic Analysis Software"
+    ]
+  },
+  {
+    "objectID": "content/Acoustic-Analysis-software.html#raven",
+    "href": "content/Acoustic-Analysis-software.html#raven",
+    "title": "Acoustic Analysis Software",
+    "section": "Raven",
+    "text": "Raven\nRaven",
+    "crumbs": [
+      "Software Management",
+      "Acoustic Analysis Software"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#gliders",
+    "href": "content/Hardware.html#gliders",
+    "title": "Hardware Methods",
+    "section": "Gliders",
+    "text": "Gliders\nPAM-equipped buoyancy-driven gliders allow for autonomous data collection in large regions of offshore waters for extended periods of time.",
+    "crumbs": [
+      "Hardware Methods"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#drifting-recorders",
+    "href": "content/Hardware.html#drifting-recorders",
+    "title": "Hardware Methods",
+    "section": "Drifting Recorders",
+    "text": "Drifting Recorders\nDrifting acoustic recorders are low-cost approaches to PAM data collection in deep, offshore waters. Hydrophones can be deployed at depth, and are ideal for studying deep-diving species, such as beaked whales.",
+    "crumbs": [
+      "Hardware Methods"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#sonobuoys",
+    "href": "content/Hardware.html#sonobuoys",
+    "title": "Hardware Methods",
+    "section": "Sonobuoys",
+    "text": "Sonobuoys\nSonobuoys are expendable drifting recorders with low-frequency vector sensor hydrophones that can provide a magnetic bearing angle to the sound source. This ability to localize provides added benefits for confirming the source of recorded sounds and is frequently used to study the vocal repertoire of baleen whales when deployed in the presence of sighted animals.",
+    "crumbs": [
+      "Hardware Methods"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#towed-arrays",
+    "href": "content/Hardware.html#towed-arrays",
+    "title": "Hardware Methods",
+    "section": "Towed Arrays",
+    "text": "Towed Arrays\nTowing hydrophone arrays behind survey vessels allows for a complementary approach to detecting marine mammals during surveys. This can be especially helpful for species that are difficult to detect using visual observation methods, or during inclement weather where visual observation is limited.",
+    "crumbs": [
+      "Hardware Methods"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#handheld-hydrophones",
+    "href": "content/Hardware.html#handheld-hydrophones",
+    "title": "Hardware Methods",
+    "section": "Handheld Hydrophones",
+    "text": "Handheld Hydrophones\nHandheld hydrophones can be deployed from drifting vessels, and provides an easy to use method for collecting passive acoustic data near a vessel. This is ideal for fieldwork on small boats that work in close association with sighted animals.",
+    "crumbs": [
+      "Hardware Methods"
     ]
   },
   {
@@ -544,7 +561,7 @@
     "href": "content/Hardware_Towed-Hydrophone.html#resources",
     "title": "Towed Array",
     "section": "Resources",
-    "text": "Resources\nA guide to constructing hydrophones and hydrophone arrays for monitoring marine mammal vocalizations. 2008. Jay Barlow, Shannon Rankin, Steve Dawson.\nA guide to constructing hydrophone arrays for passive acoustic data collection during NMFS shipboard cetacean surveys. 2013. Shannon Rankin, Jay Barlow, Yvonne Barkley, Robert Valtierra.\nDevelopment and testing of two towed volumetric hydrophone array prototypes to improve localization accuracy during shipboard line-transect surveys. 2016. Yvonne Barkley, Jay Barlow, Shannon Rankin, Geral D’Spain, Erin Oleson.\nDesign of a flooded housing for a towed autonomous hydrophone recording system (NOAA Technical Memorandum NMFS-SWFSC-647). 2021. Jay Barlow. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 12 pp.\nAn assessment of the accuracy and precision of localization of a stationary sound source using a two-element towed hydrophone array (NOAA Technical Memorandum NMFS-SWFSC-416). 2008. Shannon Rankin, Jay Barlow, Julie Oswald. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 33 pp.\nAcoustic Recording System: a portable hardware system for shipboard passive acoustic monitoring of cetaceans using a towed hydrophone array (NOAA Administrative Report). 2011. Shannon Rankin, Jay Barlow. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 8 pp.\nMulti-bank power supply system for small towed hydrophone arrays. (NOAA Technical Memorandum NMFS-SWFSC-544). 2015. Emily Griffiths, J. Scott Ferguson, Erin Oleson, and Shannon Rankin. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 19 pp.\nDevelopment and testing of two towed volumetric hydrophone array prototypes to improve localization accuracy during shipboard line-transect cetacean surveys (NOAA Technical Memorandum NMFS-PIFSC-49). 2016. Yvonne Barkley, Jay Barlow, Shannon Rankin, Gerald D’Spain, Erin Oleson. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 42 pp.\nBuilding a Better Array: Developments in towed hydrophone arrays improve identification and localization of cetacean groups. Shannon Rankin, Jay Barlow, Robert Valtierra, and Yvonne Barkley. Poster for DCLDE conference.\nPIFSC Blog: NMFS acousticians collaborate to create new interchangeable hydrophone array systems",
+    "text": "Resources\nA guide to constructing hydrophones and hydrophone arrays for monitoring marine mammal vocalizations. 2008. Jay Barlow, Shannon Rankin, Steve Dawson.\nA guide to constructing hydrophone arrays for passive acoustic data collection during NMFS shipboard cetacean surveys. 2013. Shannon Rankin, Jay Barlow, Yvonne Barkley, Robert Valtierra.\nDevelopment and testing of two towed volumetric hydrophone array prototypes to improve localization accuracy during shipboard line-transect surveys. 2016. Yvonne Barkley, Jay Barlow, Shannon Rankin, Geral D’Spain, Erin Oleson.\nDesign of a flooded housing for a towed autonomous hydrophone recording system (NOAA Technical Memorandum NMFS-SWFSC-647). 2021. Jay Barlow. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 12 pp.\nAn assessment of the accuracy and precision of localization of a stationary sound source using a two-element towed hydrophone array (NOAA Technical Memorandum NMFS-SWFSC-416). 2008. Shannon Rankin, Jay Barlow, Julie Oswald. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 33 pp.\nAcoustic Recording System: a portable hardware system for shipboard passive acoustic monitoring of cetaceans using a towed hydrophone array (NOAA Administrative Report). 2011. Shannon Rankin, Jay Barlow. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 8 pp.\nMulti-bank power supply system for small towed hydrophone arrays. (NOAA Technical Memorandum NMFS-SWFSC-544). 2015. Emily Griffiths, J. Scott Ferguson, Erin Oleson, and Shannon Rankin. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 19 pp.\nDevelopment and testing of two towed volumetric hydrophone array prototypes to improve localization accuracy during shipboard line-transect cetacean surveys (NOAA Technical Memorandum NMFS-PIFSC-49). 2016. Yvonne Barkley, Jay Barlow, Shannon Rankin, Gerald D’Spain, Erin Oleson. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 42 pp.\nBuilding a Better Array: Developments in towed hydrophone arrays improve identification and localization of cetacean groups.Shannon Rankin, Jay Barlow, Robert Valtierra, and Yvonne Barkley. Poster for DCLDE conference.\nPIFSC Blog: NMFS acousticians collaborate to create new interchangeable hydrophone array systems",
     "crumbs": [
       "Hardware Methods",
       "Towed Array"
@@ -617,141 +634,157 @@
     ]
   },
   {
-    "objectID": "content/Hardware.html",
-    "href": "content/Hardware.html",
-    "title": "Hardware Methods",
+    "objectID": "content/Hardware_Gliders.html",
+    "href": "content/Hardware_Gliders.html",
+    "title": "PAM Gliders",
     "section": "",
-    "text": "All information regarding the ADRIFT in the California Current Project can be found in our Adrift Field Methods Github Repository and web book",
+    "text": "NOAA Fisheries will lead a 3 year effort to accelerate a transition to operations for using PAM-based glider surveys to augment existing surveys. To expand on these efforts, PIFSC and SWFSC will lead a 3 year effort to accelerate the transition to operations for PAM-based glider surveys. The work will be focused in the Pacific initially because these Centers are ready to act and they are collectively responsible for the largest area under NMFS jurisdiction, have acute shortages of adequate shiptime, and must find alternative survey modalities to maintain their assessment operations. Despite the regional focus, the goal will be to develop a Research to Operations plan that can be adapted or applied in other regions seeking to implement PAM-equipped glider surveys to support their marine mammal assessments. The effort includes:\n\n\n\n\n\nBuild capacity to sustain glider operations. PIFSC and SWFSC will increase capacity to sustain PAM-glider operations through support for glider technicians at each Center and for pilot and technician training. The Pacific-wide R2O plan will include considerations of operational costs for conducting PAM-glider surveys into the future.\nIn-water instrumentation testing of several PAM-glider systems with the goal of examining hardware and sensor choices and how these choices may vary based on regional differences in assessment needs and oceanographic realities.\nConcurrent glider and shipboard surveys. We will deploy several PAM-equipped gliders in association with two large-scale assessment surveys- PacMAPPS west coast in 2024 and PacMAPPS Hawaiʻi in 2025. These surveys provide an opportunity to collect glider datasets that can be compared alongside traditional cetacean survey data to guide future survey design and analytical advancements. These surveys happen infrequently, such that this is a time-sensitive opportunity to begin validation of glider-based work.\nDevelop Spatial Modeling Methods. We will initiate development of statistical models to accommodate marine mammal acoustic detection data from PAM Gliders, facilitating adoption of these methods to address our stock assessment needs.\n\nThis is a new and ongoing effort, and updates can be found on the NOAA Fisheries PAM-Equipped Glider Research site.",
     "crumbs": [
-      "Hardware Methods"
+      "Hardware Methods",
+      "PAM Gliders"
     ]
   },
   {
-    "objectID": "content/Hardware.html#drifting-acoustic-recorders",
-    "href": "content/Hardware.html#drifting-acoustic-recorders",
-    "title": "Hardware Methods",
+    "objectID": "content/SAEL-Analysis-software.html",
+    "href": "content/SAEL-Analysis-software.html",
+    "title": "SAEL Acoustic Software",
     "section": "",
-    "text": "All information regarding the ADRIFT in the California Current Project can be found in our Adrift Field Methods Github Repository and web book",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#sonobuoys",
-    "href": "content/Hardware.html#sonobuoys",
-    "title": "Hardware Methods",
-    "section": "Sonobuoys",
-    "text": "Sonobuoys\nReport on Sonobuoy Acoustic Data Collection during Cetacean Surveys outlines suggested methods and best practices for using sonobuoys during marine mammal surveys.",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#towed-arrays",
-    "href": "content/Hardware.html#towed-arrays",
-    "title": "Hardware Methods",
-    "section": "Towed Arrays",
-    "text": "Towed Arrays\nOur lab began in-house development of towed hydrophone arrays in 2002 and different variations on solid polyeurethane hydrophone arrays, oil filled arrays, and tetrahedral arrays were developed.",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#handheld-hydrophones",
-    "href": "content/Hardware.html#handheld-hydrophones",
-    "title": "Hardware Methods",
-    "section": "Handheld Hydrophones",
-    "text": "Handheld Hydrophones\nLink to Handheld Hydrophone User Manual",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Acoustic-Analysis-software.html",
-    "href": "content/Acoustic-Analysis-software.html",
-    "title": "Acoustic Analysis Software",
-    "section": "",
-    "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
+    "text": "The Southwest Acoustic Ecology Lab has focused effort on developing a streamlined approach to passive acoustic data analysis that relies an Open Science approach, including a reliance on open-source software.",
     "crumbs": [
       "Software Management",
-      "Acoustic Analysis Software"
+      "SAEL Acoustic Software"
     ]
   },
   {
-    "objectID": "content/Acoustic-Analysis-software.html#pamguard",
-    "href": "content/Acoustic-Analysis-software.html#pamguard",
-    "title": "Acoustic Analysis Software",
-    "section": "",
-    "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
+    "objectID": "content/SAEL-Analysis-software.html#pampal",
+    "href": "content/SAEL-Analysis-software.html#pampal",
+    "title": "SAEL Acoustic Software",
+    "section": "PAMpal",
+    "text": "PAMpal\nPAMpal is an R package for processing passive acoustic data. Currently PAMpal only supports data collected using PAMGuard (pamguard.org), but in the future we hope to support other platforms. PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, with the help of numerous partners, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPampal Tutorial (https://taikisan21.github.io/PAMpal/)\nPAMpal CRAN (https://CRAN.R-project.org/package=PAMpal)\nPAMpal Github (https://github.com/TaikiSan21/PAMpal)\n\nIn addition, we have developed these R software packages to address other needs:",
     "crumbs": [
       "Software Management",
-      "Acoustic Analysis Software"
+      "SAEL Acoustic Software"
     ]
   },
   {
-    "objectID": "content/Acoustic-Analysis-software.html#matlab",
-    "href": "content/Acoustic-Analysis-software.html#matlab",
-    "title": "Acoustic Analysis Software",
-    "section": "Matlab",
-    "text": "Matlab\nMatlab\n\nTriton\nTriton",
+    "objectID": "content/SAEL-Analysis-software.html#pammisc",
+    "href": "content/SAEL-Analysis-software.html#pammisc",
+    "title": "SAEL Acoustic Software",
+    "section": "PAMmisc",
+    "text": "PAMmisc\nA collection of miscellaneous functions for passive acoustics (much of the content is adapted from R code written by other people). PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPAMmisc CRAN (https://CRAN.R-project.org/package=PAMpal)",
     "crumbs": [
       "Software Management",
-      "Acoustic Analysis Software"
+      "SAEL Acoustic Software"
     ]
   },
   {
-    "objectID": "content/Acoustic-Analysis-software.html#raven",
-    "href": "content/Acoustic-Analysis-software.html#raven",
-    "title": "Acoustic Analysis Software",
-    "section": "Raven",
-    "text": "Raven\nRaven",
+    "objectID": "content/SAEL-Analysis-software.html#banter",
+    "href": "content/SAEL-Analysis-software.html#banter",
+    "title": "SAEL Acoustic Software",
+    "section": "BANTER",
+    "text": "BANTER\nBANTER is a hierarchical species classifier for acoustic events developed using multiple call type detectors (see Rankin et al. 2017). Banter User’s Guide available here. Banter was originally developed for dolphins, but has also been applied to beaked whales (Rankin et al. 2024), among other species. BANTER was developed by a collaboration between Shannon Rankin (SWFSC) and Eric Archer (SWFSC) and was funded by NOAA’s Ocean Acoustics Program.\n\nBANTER User’s Guide (https://taikisan21.github.io/PAMpal/banterGuide.html)\nBANTER CRAN (https://CRAN.R-project.org/package=banter)\nBANTER Github (https://github.com/EricArcher/banter)",
     "crumbs": [
       "Software Management",
-      "Acoustic Analysis Software"
+      "SAEL Acoustic Software"
     ]
   },
   {
-    "objectID": "content/Safety-Lab.html",
-    "href": "content/Safety-Lab.html",
-    "title": "General Lab Safety",
+    "objectID": "content/SAEL-Analysis-software.html#pamscapes",
+    "href": "content/SAEL-Analysis-software.html#pamscapes",
+    "title": "SAEL Acoustic Software",
+    "section": "PAMscapes",
+    "text": "PAMscapes\nA variety of tools relevant to the analysis of marine soundscape data (including tools for downloading AIS data from Marine Cadastre, connecting AIS data to GPS coordinates, plotting summaries of various soundscape measurements, and downloading relevant environmental variables (wind, swell height) from the National Center for Atmospheric Research. PAMscapes development was a collaboration between Shannon Rankin (SWFSC), Taiki Sakai (SWFSC), Anne Simonis (SWFSC), and Megan McKenna (National Marine Sanctuary Foundation); funding provided by NOAA’s Ocean Acoustics Program.\n\nPAMscapes CRAN (https://CRAN.R-project.org/package=PAMscapes)\nPAMscapes Github (https://github.com/cran/PAMscapes)\nPAMscapes Report to NOAA’s Ocean Acoustics Program (link to download)",
+    "crumbs": [
+      "Software Management",
+      "SAEL Acoustic Software"
+    ]
+  },
+  {
+    "objectID": "content/SAEL-Analysis-software.html#driftwatch",
+    "href": "content/SAEL-Analysis-software.html#driftwatch",
+    "title": "SAEL Acoustic Software",
+    "section": "Driftwatch",
+    "text": "Driftwatch\nDriftwatch was developed to help with tracking of drifting acoustic buoys using satellite GPS. The basic code is available on Github, but there are a number of steps required to get it to function for outside use. Driftwatch was developed by Taiki Sakai and was funded by the Bureau of Ocean Energy Management (Inter-Agency Agreement G14-M20PG00013).\n\nDriftwatch Github (https://github.com/TaikiSan21/DriftWatch)\nWhere to Start: Setting_Up_Driftwatch.rmd (in Driftwatch Github Repository)",
+    "crumbs": [
+      "Software Management",
+      "SAEL Acoustic Software"
+    ]
+  },
+  {
+    "objectID": "content/Hardware_Sonobuoys.html",
+    "href": "content/Hardware_Sonobuoys.html",
+    "title": "Sonobuoys",
     "section": "",
-    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
+    "text": "Sonobuoys are expendable drifting recorders with vector sensing hydrophones deployed at depth, and signal is transmitted via radio frequency from the buoy to a nearby receiver for recording. Surplus Navy sonobuoys have been provided periodically for our shipboard surveys.\nIn 2019 we completed research funded by the Navy’s Living Marine Resources to study the potential to use sonobuoys during large scale surveys for population estimation of marine mammals. During this dedicated research project, our understanding of the strengths and limitations of sonobuoys was expanded, and we identified a few myths that had been transmitted through the bioacoustics community. In an effort to share learned best practices, the following report was developed.",
     "crumbs": [
-      "Lab Management",
-      "General Lab Safety"
+      "Hardware Methods",
+      "Sonobuoys"
     ]
   },
   {
-    "objectID": "content/Safety-Lab.html#safety-resources",
-    "href": "content/Safety-Lab.html#safety-resources",
-    "title": "General Lab Safety",
+    "objectID": "content/Hardware_Sonobuoys.html#resources",
+    "href": "content/Hardware_Sonobuoys.html#resources",
+    "title": "Sonobuoys",
+    "section": "Resources",
+    "text": "Resources\nSonobuoy Acoustic Data Collection during Cetacean Surveys (NOAA Technical Memorandum NMFS-SWFSC-614). 2019. Shannon Rankin, Brian Miller, Jessica Crance, Taiki Sakai, and Jennifer L. Keating. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 38 pp.\nSonobuoy Manual for HICEAS 2010 Survey. 2010. Shannon Rankin\nSonobuoy Channels vs Frequency Sheet.",
+    "crumbs": [
+      "Hardware Methods",
+      "Sonobuoys"
+    ]
+  },
+  {
+    "objectID": "content/media.html",
+    "href": "content/media.html",
+    "title": "Media",
     "section": "",
-    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
+    "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
     "crumbs": [
-      "Lab Management",
-      "General Lab Safety"
+      "Data Management",
+      "Media"
     ]
   },
   {
-    "objectID": "content/Safety-Lab.html#chemical-inventory",
-    "href": "content/Safety-Lab.html#chemical-inventory",
-    "title": "General Lab Safety",
-    "section": "Chemical Inventory",
-    "text": "Chemical Inventory\n\nCurrently SAEL only possesses commercially available (over the counter) products and these are not required to be a part of the chemical inventory.\n\nAs such, we do not currently have a chemical inventory (updated Feb 2023).",
+    "objectID": "content/media.html#public-sound-archive",
+    "href": "content/media.html#public-sound-archive",
+    "title": "Media",
+    "section": "",
+    "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
     "crumbs": [
-      "Lab Management",
-      "General Lab Safety"
+      "Data Management",
+      "Media"
     ]
   },
   {
-    "objectID": "content/Safety-Lab.html#organization",
-    "href": "content/Safety-Lab.html#organization",
-    "title": "General Lab Safety",
-    "section": "Organization",
-    "text": "Organization\n\nKeep lab tidy and clean. If you start on a project and intend to keep working on it over a few days (i.e. building equipment) please clean up after you have completed work.\nIf you notice that something is running low (i.e. electrical tape, crab floats, nuts and bolts) please contact Shannon Rankin or Kourtney Burger so that they may order more supplies.",
+    "objectID": "content/media.html#internal-media-archive",
+    "href": "content/media.html#internal-media-archive",
+    "title": "Media",
+    "section": "Internal Media Archive",
+    "text": "Internal Media Archive\nWe have internal archives for sounds, images, and videos on our lab Google Drive (see link here). Please document all submissions according to the instructions posted in their respective folders.",
     "crumbs": [
-      "Lab Management",
-      "General Lab Safety"
+      "Data Management",
+      "Media"
+    ]
+  },
+  {
+    "objectID": "content/media.html#web-site",
+    "href": "content/media.html#web-site",
+    "title": "Media",
+    "section": "Web Site",
+    "text": "Web Site\nThe website for the Southwest Acoustic Ecology Lab main web page currently includes information about our current research activities. For modifications to the website, contact cory.hom-weaver@noaa.gov.",
+    "crumbs": [
+      "Data Management",
+      "Media"
+    ]
+  },
+  {
+    "objectID": "content/media.html#sound-bytes-blog",
+    "href": "content/media.html#sound-bytes-blog",
+    "title": "Media",
+    "section": "Sound Bytes Blog",
+    "text": "Sound Bytes Blog\nOur periodic ‘Sound Bytes’ blog shares stories about how we develop tools, build partnerships, and make discoveries. We encourage all team members and collaborators to consider submitting a blog describing the work you do with the SAEL team. Contact cory.hom-weaver@noaa.gov for more information.\nSee link to all blogs here.",
+    "crumbs": [
+      "Data Management",
+      "Media"
     ]
   },
   {
