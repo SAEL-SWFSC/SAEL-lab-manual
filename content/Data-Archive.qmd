@@ -39,3 +39,16 @@ All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived
 ## OBIS Seamap
 
 We are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available [here](https://github.com/TaikiSan21/PAMpal/blob/735dfec50b3c6feaa8772765d752e8260363a2c5/devel/OBIS_Functions.R). 
+
+## InPort Metadata Archive
+Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM. 
+
+To submit metadata, you must first create an Account by contacting one of these SWFSC InPort Librarians: Arnold Ammann (arnold.ammann@noaa.gov), Gabriel Arce (Gabriel.Arce@noaa.gov), or Thanh T Vu (thanh.vu@noaa.gov).
+
+Login, Navigate to the [SWFSC Organization page](https://www.fisheries.noaa.gov/inport/hierarchy/1370), and you can then navigate to Passive Acoustics (as long as you are logged in).
+
+Then select "Add Child Item" (on the right). 
+
+Complete Metadata according to expectations (see [InPort Help](https://www.fisheries.noaa.gov/inport/help))
+
+
