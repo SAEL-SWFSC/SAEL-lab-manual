@@ -6,7 +6,7 @@ Southwest Fisheries Science Center initiated towed array research in the late 19
 
 ::: columns
 ::: {.column width="50%"}
-In 2011, SWFSC led an effort to develop a standardized approach to building and using towed hydrophone arrays for marine mammal surveys. Funded by NOAA's Ocean Acoustics Program, the primary goals were to (1) develop a modular hardware/software system to be used by all NMFS science centers during shipboard cetacean surveys, and (2) host a workshop to build these systems (see [Workshop Report](supplemental/ASTWG_FY12_PAMHardwareWorkshop.pdf)). The towed array information, below, is based off the design developed for this workshop.
+In 2011, SWFSC led an effort to develop a standardized approach to building and using towed hydrophone arrays for marine mammal surveys. Funded by NOAA's Ocean Acoustics Program, the primary goals were to (1) develop a modular hardware/software system to be used by all NMFS science centers during shipboard cetacean surveys, and (2) host a workshop to build these systems (see [Workshop Report](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/supplemental/ASTWG_FY12_PAMHardwareWorkshop.pdf)). The towed array information, below, is based off the design developed for this workshop.
 :::
 
 ::: {.column width="50%"}
@@ -38,7 +38,7 @@ Ultimately, the need for real-time detection during surveys off the U.S. West Co
 
 [Development and testing of two towed volumetric hydrophone array prototypes to improve localization accuracy during shipboard line-transect surveys.](https://repository.library.noaa.gov/view/noaa/8699) 2016. Yvonne Barkley, Jay Barlow, Shannon Rankin, Geral D'Spain, Erin Oleson.
 
-[Design of a flooded housing for a towed autonomous hydrophone recording system](https://doi.%20org/10.25923/rmzp-fh90) (NOAA Technical Memorandum NMFS-SWFSC-647). 2021. Jay Barlow. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 12 pp.
+[Design of a flooded housing for a towed autonomous hydrophone recording system](https://swfsc-publications.fisheries.noaa.gov/publications/CR/2021/2021Barlow3.pdf) (NOAA Technical Memorandum NMFS-SWFSC-647). 2021. Jay Barlow. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 12 pp.
 
 [An assessment of the accuracy and precision of localization of a stationary sound source using a two-element towed hydrophone array](https://swfsc-publications.fisheries.noaa.gov/publications/TM/SWFSC/NOAA-TM-NMFS-SWFSC-416.PDF) (NOAA Technical Memorandum NMFS-SWFSC-416). 2008. Shannon Rankin, Jay Barlow, Julie Oswald. National Oceanic and Atmospheric Administration, U.S. Department of Commerce. 33 pp.
 
