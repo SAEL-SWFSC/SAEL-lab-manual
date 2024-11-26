@@ -393,7 +393,7 @@
     "href": "content/Slides/methodsSlidesTemplate.html#slide-with-highlighted-code-lines",
     "title": "Methods Template",
     "section": "Slide with Highlighted Code Lines",
-    "text": "Slide with Highlighted Code Lines\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\nMore line highlighting options here\n\n\n\n\nSource Code"
+    "text": "Slide with Highlighted Code Lines\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\nMore line highlighting options here"
   },
   {
     "objectID": "content/ProjectManagement.html",
@@ -793,7 +793,7 @@
     "href": "content/OpenScience.html",
     "title": "Open Science",
     "section": "",
-    "text": "Open Science\n\n\n\n\n\nWe firmly believe in the power of Open Science, and the reponsibility for federal scientists to actively engage in Open Science. As our efforts have expanded, we have shifted our Open Science materials to a stand-alone repository that can be accessed here: Open Science.",
+    "text": "We firmly believe in the power of Open Science, and the reponsibility for federal scientists to actively engage in Open Science. As our efforts have expanded, we have shifted our Open Science materials to a stand-alone repository that can be accessed here: Open Science.",
     "crumbs": [
       "Open Science"
     ]
