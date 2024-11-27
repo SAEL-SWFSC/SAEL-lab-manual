@@ -143,7 +143,7 @@ When you are done recording, you can move the files out of one of the preset fol
 
 ### **Device Set-Up**
 
- **\*\*Take extra precaution when working with these electrical components around water. Do not put excess pressure on or crush the hydrophone receiver end. Do not get any piece of the device wet, other than the hydrophone cable\*\***
+Take extra precaution when working with these electrical components around water. Do not put excess pressure on or crush the hydrophone receiver end. Do not get any piece of the device wet, other than the hydrophone cable
 
 1.  Remove all necessary components and place on a clean, dry surface
 2.  Connect the hydrophone to the preamplifier by plugging them together and twisting the hydrophone wire to lock them together
