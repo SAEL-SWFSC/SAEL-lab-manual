@@ -1,8 +1,8 @@
 ---
-title: Handheld Hydrophone User Manual
+title: Handheld Hydrophone User Manual 
 ---
 
-The following information is for the use of NOAA Fisheries Southwest Acoustic Ecology Lab. The checklists and steps are specific to their usage and may not apply to all required purposes of the Handheld Hydrophone. Please reference device websites and manuals found in the [Resources section](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#resources) below for more information for applying this device to your specific project and goals. See [this video](https://drive.google.com/file/d/1p8Yph9cGzHTOlYvMPi__nLlBvu-0UJA0/view?usp=sharing) for a simple overview of recording with the Handheld Hydrophone.
+The following information is for the use of NOAA Fisheries Southwest Acoustic Ecology Lab. The checklists and steps are specific to their usage and may not apply to all required purposes of the Handheld Hydrophone. Please reference device websites and manuals found in the [Resources section](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html#resources) below for more information for applying this device to your specific project and goals. See [this video](https://drive.google.com/file/d/1p8Yph9cGzHTOlYvMPi__nLlBvu-0UJA0/view?usp=sharing) for a simple overview of recording with the Handheld Hydrophone.
 
 ## **Equipment List**
 
@@ -32,17 +32,17 @@ Complete all following checklists and steps prior to taking and using the Handhe
 
 ### **Pre-Fieldwork Checklist**
 
-| Related Device  |                                 Task                                 |                                                                           Comments                                                                           |
+| Related Device  |                                 Task                                 |                                                                              Comments                                                                               |
 |:----------------:|:------------------------------:|:--------------------:|
-|       All       | Ensure all necessary components from equipment list are in clear box |                                                                                                                                                              |
-|   Hydrophone    |            Hydrophone safe in case and secure for travel             |                                                                                                                                                              |
-|   Hydrophone    |                 Test hydrophone with Handy Recorder                  |     [Additional steps here](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#testing-the-hydrophone-with-handy-recorder)      |
-| Handy Recorder  |                     Check batteries in recorder                      |                                                                  Bring additional batteries                                                                  |
-| Handy Recorder  |                      Change settings as needed                       | [Additional steps here](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#setting-up-and-changing-settings-for-handy-recorder) |
-| Handy Recorder  |             Check for SD card and make sure it has space             |    [Additional steps here](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#loading-an-sd-card). Bring additional SD cards    |
-| Audio Interface |                  Check batteries in audio interface                  |                                                                  Bring additional batteries                                                                  |
-|     Speaker     |         Check battery level on speaker and charge if needed          |                                                                                                                                                              |
-|       All       |                      Do a full system test run                       |                                                                    Additional Steps here                                                                     |
+|       All       | Ensure all necessary components from equipment list are in clear box |                                                                                                                                                                     |
+|   Hydrophone    |            Hydrophone safe in case and secure for travel             |                                                                                                                                                                     |
+|   Hydrophone    |                 Test hydrophone with Handy Recorder                  |     [Additional steps here](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html#testing-the-hydrophone-with-handy-recorder)      |
+| Handy Recorder  |                     Check batteries in recorder                      |                                                                     Bring additional batteries                                                                      |
+| Handy Recorder  |                      Change settings as needed                       | [Additional steps here](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html#setting-up-and-changing-settings-for-handy-recorder) |
+| Handy Recorder  |             Check for SD card and make sure it has space             |    [Additional steps here](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html#loading-an-sd-card) Bring additional SD cards     |
+| Audio Interface |                  Check batteries in audio interface                  |                                                                     Bring additional batteries                                                                      |
+|     Speaker     |         Check battery level on speaker and charge if needed          |                                                                                                                                                                     |
+|       All       |                      Do a full system test run                       |                                                                        Additional Steps here                                                                        |
 
 ### **Testing the Hydrophone with Handy Recorder**
 
@@ -54,7 +54,7 @@ Complete all following checklists and steps prior to taking and using the Handhe
 
 3.  Connect the other end of the preamplifier to the Handy Recorder, align three pins from preamplifier to the channel 1 recorder port, and click into place![](images/hh_preampCh1.png)
 
-4.  Turn on Handy Recorder using power button on the left side, and ensure the four channel (4CH) recording option is selected at the top (see help steps below in [Recording Only With One Hydrophone (Single-Channel Recording)](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#single-channel-recording))
+4.  Turn on Handy Recorder using power button on the left side, and ensure the four channel (4CH) recording option is selected at the top (see help steps below in [Recording Only With One Hydrophone (Single-Channel Recording](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html#single-channel-recording))
 
     ![](images/hh_4chOn.png)
 
@@ -151,7 +151,7 @@ When you are done recording, you can move the files out of one of the preset fol
 4.  Connect the Recorder to the Laptop
 5.  Connect the bluetooth speaker to the computer
 6.  Power on all devices including recorder, audio interface, computer, and speaker
-7.  Test recorder using steps found in [Testing the Hydrophone with Handy Recorder](https://sael-swfsc.github.io/SAEL-Lab-Hardware/content/handheld-hydrophone.html#testing-the-hydrophone-with-handy-recorder)
+7.  Test recorder using steps found in [Testing the Hydrophone with Handy Recorder](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html#testing-the-hydrophone-with-handy-recorder)
 
 ### **Recording with the Handheld Hydrophone (no playback)**
 
@@ -201,7 +201,7 @@ When you are done recording, you can move the files out of one of the preset fol
 Complete the following steps to ensure the Handheld Hydrophone is properly cleaned and stored for next usage.
 
 | Related Device |                         Task                         |                       Comments                        |
-|:----------------:|:-------------------------:|:--------------------------:|
+|:-----------------:|:------------------------:|:-------------------------:|
 |   Hydrophone   |      Freshwater rinse and dry hydrophone cable       | Ensure no parts, other than hydrophone cable, get wet |
 |   Hydrophone   |         Store hydrophone securely for travel         |      Take note to secure hydrophone receiver end      |
 |      All       | Turn off and return all other components to main box |  Ensure no saltwater or residue is left on any parts  |
