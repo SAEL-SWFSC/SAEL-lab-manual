@@ -22,7 +22,7 @@ Drifting recorders have been increasingly deployed during large scale shipboard 
 
 These drifting buoys can use two types of [Ocean Instrument SoundTrap Recoders](https://www.oceaninstruments.co.nz/); ST640 and ST4300
 
-There are common hardware and software errors associated with these instruments. See [this spreadsheet](https://sael-swfsc.github.io/adrift-field-methods/content/Hardware-Subsurface.html#recorder) for a list of common errors.
+There are common hardware and software errors associated with these instruments. See [this spreadsheet](https://docs.google.com/spreadsheets/d/1HYPw2-IsgiTonLoSUGJ00FHVmN4wSoPqCmpd0fQESbk/edit?gid=0#gid=0) for a list of common errors.
 
 See [here](https://sael-swfsc.github.io/adrift-field-methods/content/Hardware-Subsurface.html#recorder) for more information of recorder types
 
