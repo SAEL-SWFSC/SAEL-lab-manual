@@ -135,7 +135,40 @@
     "href": "content/Hardware_Drifters.html",
     "title": "Drifting Recorders",
     "section": "",
-    "text": "Drifting recorders consist of hydrophones deployed at depth below a drifting buoy. They are relatively low cost, which allows for deployment of multiple instruments (increasing the spatial coverage of the area). The hydrophones are positioned near the animals in the water columns (neither at the surface nor the seafloor).\nDrifting recorders have been increasingly deployed during large scale shipboard surveys to augment visual line-transect surveys for cryptic and deep-diving species. As drifting recorders are neither tethered to the seafloor nor to a ship, they have shown potential as an alternative PAM platform for deep waters offshore the U.S. West Coast.\nThe ADRIFT in the California Current Project (2020-2024) used passive acoustic drifting recorders to collect data on marine mammals and the ocean soundscape offshore California and Oregon. This work was co-funded by NOAA’s Southwest Fisheries Science Center and the Bureau of Ocean Energy Management (BOEM). More information on the Adrift project can be found here.\nDetailed information on building and using drifting acoustic recorders can be found in the Adrift Field Methods.",
+    "text": "Drifting recorders consist of hydrophones deployed at depth below a drifting buoy. They are relatively low cost, which allows for deployment of multiple instruments (increasing the spatial coverage of the area). The hydrophones are positioned near the animals in the water columns (neither at the surface nor the seafloor).\nDrifting recorders have been increasingly deployed during large scale shipboard surveys to augment visual line-transect surveys for cryptic and deep-diving species. As drifting recorders are neither tethered to the seafloor nor to a ship, they have shown potential as an alternative PAM platform for deep waters offshore the U.S. West Coast.",
+    "crumbs": [
+      "Hardware Methods",
+      "Drifting Recorders"
+    ]
+  },
+  {
+    "objectID": "content/Hardware_Drifters.html#overview",
+    "href": "content/Hardware_Drifters.html#overview",
+    "title": "Drifting Recorders",
+    "section": "",
+    "text": "Drifting recorders consist of hydrophones deployed at depth below a drifting buoy. They are relatively low cost, which allows for deployment of multiple instruments (increasing the spatial coverage of the area). The hydrophones are positioned near the animals in the water columns (neither at the surface nor the seafloor).\nDrifting recorders have been increasingly deployed during large scale shipboard surveys to augment visual line-transect surveys for cryptic and deep-diving species. As drifting recorders are neither tethered to the seafloor nor to a ship, they have shown potential as an alternative PAM platform for deep waters offshore the U.S. West Coast.",
+    "crumbs": [
+      "Hardware Methods",
+      "Drifting Recorders"
+    ]
+  },
+  {
+    "objectID": "content/Hardware_Drifters.html#components",
+    "href": "content/Hardware_Drifters.html#components",
+    "title": "Drifting Recorders",
+    "section": "Components",
+    "text": "Components\n\nRecorder\nThese drifting buoys can use two types of Ocean Instrument SoundTrap Recoders; ST640 and ST4300\nThere are common hardware and software errors associated with these instruments. See this spreadsheet for a list of common errors.\nSee here for more information of recorder types",
+    "crumbs": [
+      "Hardware Methods",
+      "Drifting Recorders"
+    ]
+  },
+  {
+    "objectID": "content/Hardware_Drifters.html#projects",
+    "href": "content/Hardware_Drifters.html#projects",
+    "title": "Drifting Recorders",
+    "section": "Projects",
+    "text": "Projects\n\nADRIFT\nThe ADRIFT in the California Current Project (2020-2024) used passive acoustic drifting recorders to collect data on marine mammals and the ocean soundscape offshore California and Oregon. This work was co-funded by NOAA’s Southwest Fisheries Science Center and the Bureau of Ocean Energy Management (BOEM). More information on the Adrift project can be found here.\nDetailed information on building and using drifting acoustic recorders can be found in the Adrift Field Methods.",
     "crumbs": [
       "Hardware Methods",
       "Drifting Recorders"
