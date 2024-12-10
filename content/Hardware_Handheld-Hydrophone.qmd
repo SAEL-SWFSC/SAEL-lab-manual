@@ -7,7 +7,7 @@ The following information is for the use of NOAA Fisheries Southwest Acoustic Ec
 ## **Equipment List**
 
 |          **Home**          |                **Equipment**                |                    **Notes**                     |
-|:----------------:|:------------------------:|:--------------------------:|
+|:--------------------------:|:-------------------------------------------:|:------------------------------------------------:|
 |      Hydrophone case       |              Hydrophone Cable               |                                                  |
 |      Hydrophone case       |                Pre Amplifier                |                                                  |
 |      Hydrophone case       |          Manuals & other paperwork          |    Manuals & Help Center in resources section    |
@@ -33,7 +33,7 @@ Complete all following checklists and steps prior to taking and using the Handhe
 ### **Pre-Fieldwork Checklist**
 
 | Related Device  |                                 Task                                 |                                                                              Comments                                                                               |
-|:----------------:|:------------------------------:|:--------------------:|
+|:---------------:|:--------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |       All       | Ensure all necessary components from equipment list are in clear box |                                                                                                                                                                     |
 |   Hydrophone    |            Hydrophone safe in case and secure for travel             |                                                                                                                                                                     |
 |   Hydrophone    |                 Test hydrophone with Handy Recorder                  |     [Additional steps here](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html#testing-the-hydrophone-with-handy-recorder)      |
@@ -201,7 +201,7 @@ Take extra precaution when working with these electrical components around water
 Complete the following steps to ensure the Handheld Hydrophone is properly cleaned and stored for next usage.
 
 | Related Device |                         Task                         |                       Comments                        |
-|:-----------------:|:------------------------:|:-------------------------:|
+|:--------------:|:----------------------------------------------------:|:-----------------------------------------------------:|
 |   Hydrophone   |      Freshwater rinse and dry hydrophone cable       | Ensure no parts, other than hydrophone cable, get wet |
 |   Hydrophone   |         Store hydrophone securely for travel         |      Take note to secure hydrophone receiver end      |
 |      All       | Turn off and return all other components to main box |  Ensure no saltwater or residue is left on any parts  |

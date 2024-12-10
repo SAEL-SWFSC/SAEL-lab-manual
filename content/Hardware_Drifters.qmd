@@ -2,6 +2,8 @@
 title: Drifting Recorders
 ---
 
+## Overview
+
 ::: columns
 ::: {.column width="50%"}
 Drifting recorders consist of hydrophones deployed at depth below a drifting buoy. They are relatively low cost, which allows for deployment of multiple instruments (increasing the spatial coverage of the area). The hydrophones are positioned near the animals in the water columns (neither at the surface nor the seafloor).
@@ -13,6 +15,20 @@ Drifting recorders have been increasingly deployed during large scale shipboard 
 ![](images/DriftingAcousticBuoyDiagram.jpg)
 :::
 :::
+
+## Components
+
+### Recorder
+
+These drifting buoys can use two types of [Ocean Instrument SoundTrap Recoders](https://www.oceaninstruments.co.nz/); ST640 and ST4300
+
+There are common hardware and software errors associated with these instruments. See [this spreadsheet](https://sael-swfsc.github.io/adrift-field-methods/content/Hardware-Subsurface.html#recorder) for a list of common errors.
+
+See [here](https://sael-swfsc.github.io/adrift-field-methods/content/Hardware-Subsurface.html#recorder) for more information of recorder types
+
+## Projects
+
+### ADRIFT
 
 The ADRIFT in the California Current Project (2020-2024) used passive acoustic drifting recorders to collect data on marine mammals and the ocean soundscape offshore California and Oregon. This work was co-funded by NOAA's Southwest Fisheries Science Center and the Bureau of Ocean Energy Management (BOEM). More information on the Adrift project can be found [here](https://sael-swfsc.github.io/Adrift/).
 
