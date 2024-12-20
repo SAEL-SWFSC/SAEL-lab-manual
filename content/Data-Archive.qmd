@@ -68,7 +68,7 @@ You do not need an account to view metadata on InPort. Open the [InPort home pag
 
 To submit metadata, you first must contact your center InPort Librarians to get an account set up. To submit to the [SWFSC library](https://www.fisheries.noaa.gov/inport/organization/SWFSC), contact Arnold Ammann (arnold.ammann\@noaa.gov), Gabriel Arce (Gabriel.Arce\@noaa.gov), or Thanh T Vu (thanh.vu\@noaa.gov).
 
-Follow detailed methods here to submit metadata according to InPort expectations
+Follow detailed methods [here](https://sael-swfsc.github.io/SAEL-lab-manual/content/Slides/InPortDataArchiveMethods.qmd) to submit metadata according to InPort expectations
 
 ### InPort Resources
 
