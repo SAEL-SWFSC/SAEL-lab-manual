@@ -289,11 +289,21 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#local-data-archive" id="toc-local-data-archive" class="nav-link active" data-scroll-target="#local-data-archive">Local Data Archive</a></li>
   <li><a href="#public-repositories" id="toc-public-repositories" class="nav-link" data-scroll-target="#public-repositories">Public Repositories</a></li>
-  <li><a href="#ncei-data-archive" id="toc-ncei-data-archive" class="nav-link" data-scroll-target="#ncei-data-archive">NCEI Data Archive</a></li>
+  <li><a href="#ncei-data-archive" id="toc-ncei-data-archive" class="nav-link" data-scroll-target="#ncei-data-archive">NCEI Data Archive</a>
+  <ul class="collapse">
+  <li><a href="#accessing-data" id="toc-accessing-data" class="nav-link" data-scroll-target="#accessing-data">Accessing Data</a></li>
+  <li><a href="#submitting-data" id="toc-submitting-data" class="nav-link" data-scroll-target="#submitting-data">Submitting Data</a></li>
+  </ul></li>
   <li><a href="#pacm" id="toc-pacm" class="nav-link" data-scroll-target="#pacm">PACM</a></li>
   <li><a href="#tethys" id="toc-tethys" class="nav-link" data-scroll-target="#tethys">Tethys</a></li>
   <li><a href="#obis-seamap" id="toc-obis-seamap" class="nav-link" data-scroll-target="#obis-seamap">OBIS Seamap</a></li>
-  <li><a href="#inport-metadata-archive" id="toc-inport-metadata-archive" class="nav-link" data-scroll-target="#inport-metadata-archive">InPort Metadata Archive</a></li>
+  <li><a href="#inport-metadata-archive" id="toc-inport-metadata-archive" class="nav-link" data-scroll-target="#inport-metadata-archive">InPort Metadata Archive</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#access-metadata" id="toc-access-metadata" class="nav-link" data-scroll-target="#access-metadata">Access Metadata</a></li>
+  <li><a href="#submitting-metadata" id="toc-submitting-metadata" class="nav-link" data-scroll-target="#submitting-metadata">Submitting Metadata</a></li>
+  <li><a href="#inport-resources" id="toc-inport-resources" class="nav-link" data-scroll-target="#inport-resources">InPort Resources</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -329,20 +339,39 @@ ul.task-list li input[type="checkbox"] {
 <section id="public-repositories" class="level2">
 <h2 class="anchored" data-anchor-id="public-repositories">Public Repositories</h2>
 <p>SAEL Github Organization (https://github.com/SAEL-SWFSC) is for new and recent repositories.</p>
-<p>Specific publicly accessible projects include: - Adrift in the California Current ([Github Repository[(https://github.com/SAEL-SWFSC/Adrift)] and <a href="https://sael-swfsc.github.io/Adrift/">website</a>) - <a href="https://figshare.com/projects/Beaked_Whale_Acoustic_Events_from_Drifting_Acoustic_Recordings_during_NOAA_s_CCES_2018_Survey/94511">Beaked Whales from NOAA’s CCES 2018 Survey (Figshare)</a></p>
+<p>Specific publicly accessible projects include:</p>
+<ul>
+<li><p>Adrift in the California Current (<a href="https://github.com/SAEL-SWFSC/Adrift">Github Repository</a> and <a href="https://sael-swfsc.github.io/Adrift/">website</a>)</p></li>
+<li><p><a href="https://figshare.com/projects/Beaked_Whale_Acoustic_Events_from_Drifting_Acoustic_Recordings_during_NOAA_s_CCES_2018_Survey/94511">Beaked Whales from NOAA’s CCES 2018 Survey (Figshare)</a></p></li>
+</ul>
 </section>
 <section id="ncei-data-archive" class="level2">
 <h2 class="anchored" data-anchor-id="ncei-data-archive">NCEI Data Archive</h2>
-<p>All ADRIFT, CCES, and PASCAL raw data is publicly accessible through <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">NCEI Passive Acoustics Data Archive</a>. Sound level metrics can also be accessed from this archive.</p>
-<p>All data were packaged using a combination of automated scripts and the NCEI Passive Packer tool. Several automation scripts were used to create Passive Packer ready databases from our deployment details metadata. Detailed methods can be found <a href="https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/NCEI.html">here</a>.</p>
+<section id="accessing-data" class="level3">
+<h3 class="anchored" data-anchor-id="accessing-data">Accessing Data</h3>
+<p>All ADRIFT, CCES, and PASCAL raw data are publicly accessible through <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">NCEI Passive Acoustics Data Archive</a>. Sound level metrics can also be accessed from this archive.</p>
+<p>Users can access data through the <a href="https://www.ncei.noaa.gov/maps/passive-acoustic-data/">interactive map</a> or request data using <a href="https://console.cloud.google.com/marketplace/details/noaa-public/passive_acoustic_monitoring?pli=1&amp;project=ggn-nmfs-pamdata-prod-1">Google Cloud Platform</a></p>
+</section>
+<section id="submitting-data" class="level3">
+<h3 class="anchored" data-anchor-id="submitting-data">Submitting Data</h3>
+<section id="passive-packer" class="level4">
+<h4 class="anchored" data-anchor-id="passive-packer">Passive Packer</h4>
+<p>All ADRIFT, CCES, and PASCAL data were packaged using a combination of automated scripts and the NCEI Passive Packer tool. Several automation scripts were used to create Passive Packer ready databases from our deployment details metadata. Detailed methods can be found <a href="https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/NCEI.html">here</a>.</p>
+</section>
+<section id="pace" class="level4">
+<h4 class="anchored" data-anchor-id="pace">PACE</h4>
+<p>Future PAM data (CalCurCEAS 2024, gliders, etc) will be packaged and submitted using NCEI’s new <a href="https://github.com/CI-CMG/pace">Passive Acoustic Collection Engine (PACE)</a>. These methods are being developed and will be accessible <a href="https://github.com/Kourtney-Burger/NCEI-PACE-Data-Archive">here</a> once completed.</p>
+</section>
+</section>
 </section>
 <section id="pacm" class="level2">
 <h2 class="anchored" data-anchor-id="pacm">PACM</h2>
-<p>All ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/">Passive Acoustic Cetacean Map</a>. Archive methods can be found <a href="https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/PACM.html">here</a>.</p>
+<p>All ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/">Passive Acoustic Cetacean Map</a>. Archive methods can be found <a href="https://github.com/Kourtney-Burger/ADRIFT-PACM">here</a>.</p>
+<p>CalCurCEAS 2024 detection data - work in progress</p>
 </section>
 <section id="tethys" class="level2">
 <h2 class="anchored" data-anchor-id="tethys">Tethys</h2>
-<p>All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived in our lab’s <a href="https://tethys.sdsu.edu/">Tethys database</a>. See <a href="https://github.com/asimonis/TethysSAEL">Tethys SAEL GitHub repository</a> and our <a href="https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html">detailed methods</a> for more information.</p>
+<p>All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s <a href="https://tethys.sdsu.edu/">Tethys database</a>. See <a href="https://github.com/asimonis/TethysSAEL">Tethys SAEL GitHub repository</a> and our <a href="https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html">detailed methods</a> for more information.</p>
 </section>
 <section id="obis-seamap" class="level2">
 <h2 class="anchored" data-anchor-id="obis-seamap">OBIS Seamap</h2>
@@ -350,13 +379,27 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="inport-metadata-archive" class="level2">
 <h2 class="anchored" data-anchor-id="inport-metadata-archive">InPort Metadata Archive</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
 <p>Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.</p>
-<p>To submit metadata, you must first create an Account by contacting one of these SWFSC InPort Librarians: Arnold Ammann (arnold.ammann@noaa.gov), Gabriel Arce (Gabriel.Arce@noaa.gov), or Thanh T Vu (thanh.vu@noaa.gov).</p>
-<p>Login, Navigate to the <a href="https://www.fisheries.noaa.gov/inport/hierarchy/1370">SWFSC Organization page</a>, and you can then navigate to Passive Acoustics (as long as you are logged in).</p>
-<p>Then select “Add Child Item” (on the right).</p>
-<p>Complete Metadata according to expectations (see <a href="https://www.fisheries.noaa.gov/inport/help">InPort Help</a>)</p>
+</section>
+<section id="access-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="access-metadata">Access Metadata</h3>
+<p>You do not need an account to view metadata on InPort. Open the <a href="https://www.fisheries.noaa.gov/inport/">InPort home page</a> and enter keywords to search the library</p>
+</section>
+<section id="submitting-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="submitting-metadata">Submitting Metadata</h3>
+<p>To submit metadata, you first must contact your center InPort Librarians to get an account set up. To submit to the <a href="https://www.fisheries.noaa.gov/inport/organization/SWFSC">SWFSC library</a>, contact Arnold Ammann (arnold.ammann@noaa.gov), Gabriel Arce (Gabriel.Arce@noaa.gov), or Thanh T Vu (thanh.vu@noaa.gov).</p>
+<p>Follow detailed methods here to submit metadata according to InPort expectations</p>
+</section>
+<section id="inport-resources" class="level3">
+<h3 class="anchored" data-anchor-id="inport-resources">InPort Resources</h3>
+<p><a href="https://www.fisheries.noaa.gov/inport/">InPort Home Page</a></p>
+<p><a href="https://www.fisheries.noaa.gov/inport/hierarchy/1370">SWFSC Organization Library</a></p>
+<p><a href="https://www.fisheries.noaa.gov/inport/help">Help Page</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
