@@ -3,8 +3,8 @@
 
 # Lines to update
   # Set your working directory in line 10
-  # Set the reporting date range (start and end date) in line 20
-  # Set the path to save file outputs in lines 72 & 73
+  # Set the reporting date range in line 20 (start and end date in m/d/yyyy format)
+  # Set the path to save file outputs in lines 73 & 74
 
 #SET WORKING DIRECTORY AND LOAD PACKAGES
 setwd('Path to working directory')
@@ -17,12 +17,12 @@ DeployDetails <- read.csv('Deployment Details - NEW DEPLOYMENT TO SAVE.csv')
 
 # Use lubridate package to convert date format and exclude drifts outside of reporting date
 DeployDetails$Date..UTC <- mdy(DeployDetails$Date..UTC) # convert Character to proper Date format
-DeployDetails <- DeployDetails[DeployDetails$Date..UTC >= ymd("Report Start Date") & DeployDetails$Date..UTC <= ymd("Report End Date"), ] #used 'Date UTC' column to avoid issues with drifts missing deployment/recovery dates (i.e. sunk or lost drifts)
+DeployDetails <- DeployDetails[DeployDetails$Date..UTC >= mdy("Report Start Date") & DeployDetails$Date..UTC <= mdy("Report End Date"), ] #used 'Date UTC' column to avoid issues with drifts missing deployment/recovery dates (i.e. sunk or lost drifts)
 
 # Subset required columns and save as new dataframe
-NavyDF_completed <- subset(DeployDetails, select = c(Status...In.Prep.....preparing.buoy.for.deployment..Active....at.sea.and.we.plan.to.recover..Lost....at.sea.but.unlikely.we.can.recover..Sunk....only.recovered.partial.buoy..assumed.dead..sunk..and.highly.unlikely.to.recover..Complete.....buoy.recovered.and.data.is.in.house, 
-                                                     Platform, Deployment_Latitude, Deployment_Longitude, Deployment_Date_UTC, Recovery_Date_UTC, SampleRate_kHz, 
-                                                     RecordingDuration_m, RecordingInterval_m, Deployment_Depth_m.))
+NavyDF_completed <- subset(DeployDetails, select = c("Status...In.Prep.....preparing.buoy.for.deployment..Active....at.sea.and.we.plan.to.recover..Lost....at.sea.but.unlikely.we.can.recover..Sunk....only.recovered.partial.buoy..assumed.dead..sunk..and.highly.unlikely.to.recover..Complete.....buoy.recovered.and.data.is.in.house..Unusable....buoy.recovered.but.data.is.unusable", 
+                                                     "Platform", "Deployment_Latitude", "Deployment_Longitude", "Deployment_Date_UTC", "Recovery_Date_UTC", "SampleRate_kHz", 
+                                                     "RecordingDuration_m", "RecordingInterval_m", "Deployment_Depth_m."))
 
 # Convert dates and combine into one date range column
 NavyDF_completed$Deployment_Date_UTC <- mdy_hms(NavyDF_completed$Deployment_Date_UTC, truncated = 3) # convert Character deployment date to proper Date format
@@ -37,9 +37,9 @@ NavyDF_completed$DeploymentRecovery_Dates <- paste(NavyDF_completed$Deployment_D
 NavyDF_completed$Location <- paste(NavyDF_completed$Deployment_Latitude, ',', NavyDF_completed$Deployment_Longitude)
 
 #Subset again to remove separated columns (deployment/recover dates and lat/lon)
-NavyDF_completed <- subset(NavyDF_completed, select = c(Status...In.Prep.....preparing.buoy.for.deployment..Active....at.sea.and.we.plan.to.recover..Lost....at.sea.but.unlikely.we.can.recover..Sunk....only.recovered.partial.buoy..assumed.dead..sunk..and.highly.unlikely.to.recover..Complete.....buoy.recovered.and.data.is.in.house, 
-                                                        Platform, Location, DeploymentRecovery_Dates, SampleRate_kHz, 
-                                                        RecordingDuration_m, RecordingInterval_m, Deployment_Depth_m.))
+NavyDF_completed <- subset(NavyDF_completed, select = c("Status...In.Prep.....preparing.buoy.for.deployment..Active....at.sea.and.we.plan.to.recover..Lost....at.sea.but.unlikely.we.can.recover..Sunk....only.recovered.partial.buoy..assumed.dead..sunk..and.highly.unlikely.to.recover..Complete.....buoy.recovered.and.data.is.in.house..Unusable....buoy.recovered.but.data.is.unusable", 
+                                                        "Platform", "Location", "DeploymentRecovery_Dates", "SampleRate_kHz", 
+                                                        "RecordingDuration_m", "RecordingInterval_m", "Deployment_Depth_m."))
 
 # Change sensor types to be more descriptive
 NavyDF_completed[NavyDF_completed == 'drift'] <- 'Drifting Vertical Array w/Soundtraps'
@@ -59,6 +59,7 @@ colnames(NavyDF_completed) <- c('Status', 'Sensor Type', 'Location',	'Deployment
 
 #PLANNED DEPLOYMENTS
 # Create dataframe
+## NOTE - This is an example from 2023 where we planned to deploy an unknown number of DASBRs in offshore wind energy areas. Add more details if known
 NavyDF_planned <- data.frame(Status = c("Planned", "Planned", "Planned", "Planned"), 
                              Sensor_Type = c("Drifting Vertical array w/Soundtraps", "Drifting Vertical array w/Soundtraps", "Drifting Vertical array w/Soundtraps", "Drifting Vertical array w/Soundtraps"), 
                              Location = c("~30 miles offshore Newport", "~30 miles offshore Eureka", "~15 miles offshore San Francisco", "~30 miles offshore Morro Bay"),	
