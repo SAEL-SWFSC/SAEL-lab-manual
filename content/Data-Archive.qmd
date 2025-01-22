@@ -38,7 +38,7 @@ All ADRIFT, CCES, and PASCAL data were packaged using a combination of automated
 
 #### PACE
 
-Future PAM data (CalCurCEAS 2024, gliders, etc) will be packaged and submitted using NCEI's new [Passive Acoustic Collection Engine (PACE)](https://github.com/CI-CMG/pace). These methods are being developed and will be accessible [here](https://github.com/Kourtney-Burger/NCEI-PACE-Data-Archive) once completed.
+Future PAM data (CalCurCEAS 2024, gliders, etc) will be packaged and submitted using NCEI's new [Passive Acoustic Collection Engine (PACE)](https://github.com/CI-CMG/pace). Detailed methods for preparing raw audio data for packaging and archive can be found [here](https://github.com/Kourtney-Burger/NCEI-PACE-Data-Archive).
 
 ## PACM
 
