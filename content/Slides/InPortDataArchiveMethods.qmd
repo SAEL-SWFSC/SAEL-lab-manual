@@ -43,7 +43,7 @@ You can add text and images side by side using columns
 
 Edit the number of columns and column width as needed
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 Left column
 
@@ -55,7 +55,7 @@ Right column
 
 ![](images/dog1.jpg){fig-align="left"}
 :::
-:::
+:::::
 
 ## Absolute Positions {.smaller}
 
@@ -115,7 +115,7 @@ You can add code blocks and executable code to your slides. There are a wide var
 
 ## Text and Image Side by Side {.smaller}
 
-::: columns
+::::: columns
 ::: {.column width="30%"}
 -   Currently we are using Matlab 2021b
 
@@ -131,11 +131,11 @@ You can add code blocks and executable code to your slides. There are a wide var
 ::: {.column width="70%"}
 ![](images/Screenshot%202023-09-12%20141454.png){fig-align="center" width="669"}
 :::
-:::
+:::::
 
 ## Slide with Multiple Columns {.smaller}
 
-::: columns
+:::::::: columns
 ::: {.column width="33%"}
 -   **Start Matlab and at the command prompt type 'triton' and press enter to run the application**
 
@@ -165,7 +165,7 @@ Message Window - Keeps a record of the users actions and displays Plot Window cu
 
 Plot Window - Displays Long Term Spectral Average (LTSA), spectrogram, spectra, and time series plots
 :::
-:::
+::::::::
 
 ## Slide with Scrollable Figure Panel {.scrollable}
 

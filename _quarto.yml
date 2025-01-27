@@ -44,7 +44,9 @@ website:
           - content/Inventory.qmd
       - section: "Data Management"
         contents:
-          - content/Data-Archive.qmd
+          - section: content/Data-Archive.qmd
+            contents:
+              - content/Data-Archive-Tethys.qmd
           - content/Data-SpeciesAndCallTypes.qmd
           - content/media.qmd
       - section:  content/Hardware.qmd
