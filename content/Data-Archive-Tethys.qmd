@@ -6,24 +6,48 @@ title: Tethys
 
 All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab's Tethys database.
 
-The Tethys database is saved locally on the DON server (Z:\ANALYSIS\Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).
+The Tethys database is saved locally on the DON server (*Z:/ANALYSIS/Tethys*). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).
 
-1.  Open Tethys batch file (Z:\ANALYSIS\Tethys\databases\metadata\\tethys.bat)
+### Tethys Web Interface
+
+1.  Open Tethys batch file (*Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat*)
 
     ::: callout-note
     This may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)
     :::
 
-2.  Open Data Explorer batch file (Z:\ANALYSIS\Tethys\DataExplorer\data\_explorer.bat)
+2.  Once the *tethys.bat* file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)
 
-3.  Once the tethys.bat file has loaded, you should see a prompt to open the main local website
+    ![](images/TethysCLI.jpg)
 
-4.  Open \_\_\_ to access the data explorer
+3.  Navigate to the web address and you should see the following screen
 
-5.  Follow the Tethys documentation for [interacting with the web client](https://tethys.sdsu.edu/distribution/current-docs/WebClient.pdf) and [data explorer](https://tethys.sdsu.edu/distribution/current-docs/DataExplorerManual.pdf)
+    ![](images/tethysWebInterface.jpg)
+
+4.  Follow the Tethys documentation for [interacting with the web client](https://tethys.sdsu.edu/distribution/current-docs/WebClient.pdf)
+
+### Tethys Data Explorer
+
+::: callout-important
+## The Tethys server (*tethys.bat*) must be running to use the Data Explorer
+:::
+
+1.  Navigate to the Data Explorer batch file (*Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat*)
+2.  If you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3
+3.  Right click on *data_explorer.bat, and select edit*
+4.  Update the server argument to point to your computer/server name (changing "*..*/python*39/python.exe data_explorer.py --server <http://swc-srankin1-d.nmfs.local:9779>*" to "*..*/python*39/python.exe data_explorer.py --server <http://swc-kourtney-l.nmfs.local:9779>*"
+5.  Save and close, and double click on *data_explorer.bat* to run the batch file
+6.  There will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be [*http://127.0.0.1:8050/*](http://127.0.0.1:8050/)
+7.  See Tethys [Data Explorer documentation](https://tethys.sdsu.edu/distribution/current-docs/DataExplorerManual.pdf) for more information
 
 ## Archiving Deployment Metadata
 
+in progress
+
 ## Archiving Detections
+
+in progress
+
+## More info
 
 See [Tethys SAEL GitHub repository](https://github.com/asimonis/TethysSAEL) and our [detailed methods](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html) for more information.
