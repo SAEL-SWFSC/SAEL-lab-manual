@@ -904,7 +904,7 @@
     "href": "content/Data-Archive-Tethys.html",
     "title": "Tethys",
     "section": "",
-    "text": "All ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.\nAll raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on the DON\n(\\swc-storage4-s-ACOUSTICS)\nAll archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)",
+    "text": "All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\n\nOpen Tethys batch file (Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat)\n\n\n\n\n\n\nNote\n\n\n\nThis may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)\n\n\nOnce the tethys.bat file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)\n\nNavigate to the web address and you should see the following screen\n\nFollow the Tethys documentation for interacting with the web client\n\n\n\n\n\n\n\n\n\n\nThe Tethys server (tethys.bat) must be running to use the Data Explorer\n\n\n\n\n\n\n\nNavigate to the Data Explorer batch file (Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat)\nIf you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3\nRight click on data_explorer.bat, and select edit\nUpdate the server argument to point to your computer/server name (changing “../python39/python.exe data_explorer.py –server http://swc-srankin1-d.nmfs.local:9779” to “../python39/python.exe data_explorer.py –server http://swc-kourtney-l.nmfs.local:9779”\nSave and close, and double click on data_explorer.bat to run the batch file\nThere will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be http://127.0.0.1:8050/\nSee Tethys Data Explorer documentation for more information",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -912,11 +912,11 @@
     ]
   },
   {
-    "objectID": "content/Data-Archive-Tethys.html#local-data-archive",
-    "href": "content/Data-Archive-Tethys.html#local-data-archive",
+    "objectID": "content/Data-Archive-Tethys.html#accessing-data",
+    "href": "content/Data-Archive-Tethys.html#accessing-data",
     "title": "Tethys",
     "section": "",
-    "text": "All ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.\nAll raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on the DON\n(\\swc-storage4-s-ACOUSTICS)\nAll archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)",
+    "text": "All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\n\nOpen Tethys batch file (Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat)\n\n\n\n\n\n\nNote\n\n\n\nThis may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)\n\n\nOnce the tethys.bat file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)\n\nNavigate to the web address and you should see the following screen\n\nFollow the Tethys documentation for interacting with the web client\n\n\n\n\n\n\n\n\n\n\nThe Tethys server (tethys.bat) must be running to use the Data Explorer\n\n\n\n\n\n\n\nNavigate to the Data Explorer batch file (Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat)\nIf you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3\nRight click on data_explorer.bat, and select edit\nUpdate the server argument to point to your computer/server name (changing “../python39/python.exe data_explorer.py –server http://swc-srankin1-d.nmfs.local:9779” to “../python39/python.exe data_explorer.py –server http://swc-kourtney-l.nmfs.local:9779”\nSave and close, and double click on data_explorer.bat to run the batch file\nThere will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be http://127.0.0.1:8050/\nSee Tethys Data Explorer documentation for more information",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -924,11 +924,11 @@
     ]
   },
   {
-    "objectID": "content/Data-Archive-Tethys.html#public-repositories",
-    "href": "content/Data-Archive-Tethys.html#public-repositories",
+    "objectID": "content/Data-Archive-Tethys.html#archiving-deployment-metadata",
+    "href": "content/Data-Archive-Tethys.html#archiving-deployment-metadata",
     "title": "Tethys",
-    "section": "Public Repositories",
-    "text": "Public Repositories\nSAEL Github Organization (https://github.com/SAEL-SWFSC) is for new and recent repositories.\nSpecific publicly accessible projects include:\n\nAdrift in the California Current (Github Repository and website)\nBeaked Whales from NOAA’s CCES 2018 Survey (Figshare)",
+    "section": "Archiving Deployment Metadata",
+    "text": "Archiving Deployment Metadata\nin progress",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -936,11 +936,11 @@
     ]
   },
   {
-    "objectID": "content/Data-Archive-Tethys.html#ncei-data-archive",
-    "href": "content/Data-Archive-Tethys.html#ncei-data-archive",
+    "objectID": "content/Data-Archive-Tethys.html#archiving-detections",
+    "href": "content/Data-Archive-Tethys.html#archiving-detections",
     "title": "Tethys",
-    "section": "NCEI Data Archive",
-    "text": "NCEI Data Archive\n\nAccessing Data\nAll ADRIFT, CCES, and PASCAL raw data are publicly accessible through NCEI Passive Acoustics Data Archive. Sound level metrics can also be accessed from this archive.\nUsers can access data through the interactive map or request data using Google Cloud Platform\n\n\nSubmitting Data\n\nPassive Packer\nAll ADRIFT, CCES, and PASCAL data were packaged using a combination of automated scripts and the NCEI Passive Packer tool. Several automation scripts were used to create Passive Packer ready databases from our deployment details metadata. Detailed methods can be found here.\n\n\nPACE\nFuture PAM data (CalCurCEAS 2024, gliders, etc) will be packaged and submitted using NCEI’s new Passive Acoustic Collection Engine (PACE). Detailed methods for preparing raw audio data for packaging and archive can be found here.",
+    "section": "Archiving Detections",
+    "text": "Archiving Detections\nin progress",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -948,47 +948,11 @@
     ]
   },
   {
-    "objectID": "content/Data-Archive-Tethys.html#pacm",
-    "href": "content/Data-Archive-Tethys.html#pacm",
+    "objectID": "content/Data-Archive-Tethys.html#more-info",
+    "href": "content/Data-Archive-Tethys.html#more-info",
     "title": "Tethys",
-    "section": "PACM",
-    "text": "PACM\nAll ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map. Archive methods can be found here.\nCalCurCEAS 2024 detection data - work in progress",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Tethys"
-    ]
-  },
-  {
-    "objectID": "content/Data-Archive-Tethys.html#tethys",
-    "href": "content/Data-Archive-Tethys.html#tethys",
-    "title": "Tethys",
-    "section": "Tethys",
-    "text": "Tethys\nAll ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database. See Tethys SAEL GitHub repository and our detailed methods for more information.",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Tethys"
-    ]
-  },
-  {
-    "objectID": "content/Data-Archive-Tethys.html#obis-seamap",
-    "href": "content/Data-Archive-Tethys.html#obis-seamap",
-    "title": "Tethys",
-    "section": "OBIS Seamap",
-    "text": "OBIS Seamap\nWe are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available here.",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Tethys"
-    ]
-  },
-  {
-    "objectID": "content/Data-Archive-Tethys.html#inport-metadata-archive",
-    "href": "content/Data-Archive-Tethys.html#inport-metadata-archive",
-    "title": "Tethys",
-    "section": "InPort Metadata Archive",
-    "text": "InPort Metadata Archive\n\nOverview\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\n\n\nAccess Metadata\nYou do not need an account to view metadata on InPort. Open the InPort home page and enter keywords to search the library\n\n\nSubmitting Metadata\nTo submit metadata, you first must contact your center InPort Librarians to get an account set up. To submit to the SWFSC library, contact Arnold Ammann (arnold.ammann@noaa.gov), Gabriel Arce (Gabriel.Arce@noaa.gov), or Thanh T Vu (thanh.vu@noaa.gov).\nFollow detailed methods here to submit metadata according to InPort expectations\n\n\nInPort Resources\nInPort Home Page\nSWFSC Organization Library\nHelp Page",
+    "section": "More info",
+    "text": "More info\nSee Tethys SAEL GitHub repository and our detailed methods for more information.",
     "crumbs": [
       "Data Management",
       "Data Archive",
