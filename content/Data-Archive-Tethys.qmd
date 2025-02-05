@@ -42,12 +42,89 @@ The Tethys database is saved locally on the DON server (*Z:/ANALYSIS/Tethys*). T
 
 ## Archiving Deployment Metadata
 
-in progress
+Any new deployments saved in the Deployment Details spreadsheet need to be archived to our Tethys database.
+
+### Deployment Worksheet Prep Script
+
+Follow these steps to prepare a Deployment Worksheet for Tethys
+
+1.  Clone the [TethysSAEL repository](https://github.com/asimonis/TethysSAEL) to your local computer and open the [*Create_Deployment_Worksheet.R*](https://github.com/asimonis/TethysSAEL/blob/main/R/Create_Deployment_Worksheet.R)file
+
+2.  Make sure the deployments you want to archive are saved to the *deployDetails* sheet in *Deployment Details*, download the file as a .xslx, and save it to '\~TethysSAEL\\Deployment Worksheets', overwriting the previous version if needed
+
+3.  In the *Create_Deployment_Worksheet.R* file, run lines 24-104 to create the function to make the worksheet
+
+4.  See the example function use in lines 9-14
+
+    ``` r
+    ##Example
+    # change your project name as needed and number of repetitions
+    ProjectID = rep('CalCurCEAS',25) 
+    # List out the deployment ID for each deployment you want to package
+    DepID=c('006','008','009','010','011','012','013','014','015','016','017','018','019','020','021','022','023','024','025','026','027')
+    # Run the function for the deployments set above
+    mapply(makeTethysDep,ProjectID,DepID)
+    ```
+
+5.  The output worksheets will be save to the main Deployment Worksheet folder. Move them to a project specific folder
+
+6.  Push your new Deployment Worksheets back to the repository
+
+### Importing Deployment Worksheets To Tethys
+
+There are a variety of ways to import data to Tethys, these directions will cover the web client and Matlab based uploads. See [Tethys Documentation](https://tethys.sdsu.edu/documentation/) for other options and more details
+
+#### Web Client Uploads
+
+1.  Follow the steps in the Tethys Web Interface section above to start the server and open the Web Client
+
+2.  In the top right, click on the dropdown and select 'Import data'
+
+    ![](images/tethysImportData1.jpg){width="359"}
+
+3.  Set the Import Map to SWFSC.Mobile.Deployments.MultiChannel.wGPS.wSensors.wNotes, Collection to Deployments, and Species Coding to NOAA.NMFS.v4
+
+4.  Click on + Data Source, and ensure Microsoft Excel Driver is selected. Set the Source Name to swfsc
+
+5.  Click Select to choose a deployment worksheet to upload, or drag a file into the window.
+
+6.  Your screen should now look something like this
+
+    ![](images/tethysimport.jpg)
+
+7.  If you are making corrections to an existing Deployment Sheet, check the 'Overwrite existing' box. Click Upload to Tethys and the processing will start. If there is an error it will show up below step 3 in the image above. If there are no errors it will show the following message
+
+    ![](images/tethysImportSuccess.jpg)
+
+#### Matlab Based Uploads
+
+Note: This is currently not working so these are the general directions, however no screenshots are available to show step by step changes
+
+1.  Follow the steps in the Tethys Web Interface section above to start the server. Note, the web interface does not need to be open at this time
+
+2.  Open Matlab and enter the following into the command window
+
+    ``` matlab
+    % Fill in your server name in the second argument
+    dbSubmit('Server', 'http://SWC-SRANKIN1-D.nmfs.local:9779')
+    ```
+
+3.  A new window should open called 'Tethys Import Metadata'
+
+4.  If not already set, change the Tethys Server to match your server
+
+5.  Set Collection to Deployments, Import Map to SWFSC.Mobile.Deployments.MultiChannel.wGPS.wSensors.wNotes, and Species Abbreviations to NOAA.NMFS.v4
+
+6.  Select the file you want to import by setting the path in the File import Tab (select Overwrite existing if making updates to existing files)
+
+7.  Click Submit to Tethys and the process will start. Similar to the web client, messages will appear in the box below to indicate any errors or if the file upload was a success.
+
+8.  You can use this option to batch process by setting the path to a folder, rather than an individual file
 
 ## Archiving Detections
 
-in progress
+Similar to archiving deployments, in progress
 
 ## More info
 
-See [Tethys SAEL GitHub repository](https://github.com/asimonis/TethysSAEL) and our [detailed methods](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html) for more information.
+See [Tethys Documentation](https://tethys.sdsu.edu/documentation/), [Tethys SAEL GitHub repository](https://github.com/asimonis/TethysSAEL), and our [detailed ADRIFT methods](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html) for more information.
