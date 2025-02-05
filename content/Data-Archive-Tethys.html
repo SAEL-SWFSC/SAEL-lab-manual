@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -303,7 +337,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#tethys-web-interface" id="toc-tethys-web-interface" class="nav-link" data-scroll-target="#tethys-web-interface">Tethys Web Interface</a></li>
   <li><a href="#tethys-data-explorer" id="toc-tethys-data-explorer" class="nav-link" data-scroll-target="#tethys-data-explorer">Tethys Data Explorer</a></li>
   </ul></li>
-  <li><a href="#archiving-deployment-metadata" id="toc-archiving-deployment-metadata" class="nav-link" data-scroll-target="#archiving-deployment-metadata">Archiving Deployment Metadata</a></li>
+  <li><a href="#archiving-deployment-metadata" id="toc-archiving-deployment-metadata" class="nav-link" data-scroll-target="#archiving-deployment-metadata">Archiving Deployment Metadata</a>
+  <ul class="collapse">
+  <li><a href="#deployment-worksheet-prep-script" id="toc-deployment-worksheet-prep-script" class="nav-link" data-scroll-target="#deployment-worksheet-prep-script">Deployment Worksheet Prep Script</a></li>
+  <li><a href="#importing-deployment-worksheets-to-tethys" id="toc-importing-deployment-worksheets-to-tethys" class="nav-link" data-scroll-target="#importing-deployment-worksheets-to-tethys">Importing Deployment Worksheets To Tethys</a></li>
+  </ul></li>
   <li><a href="#archiving-detections" id="toc-archiving-detections" class="nav-link" data-scroll-target="#archiving-detections">Archiving Detections</a></li>
   <li><a href="#more-info" id="toc-more-info" class="nav-link" data-scroll-target="#more-info">More info</a></li>
   </ul>
@@ -387,15 +425,69 @@ The Tethys server (<em>tethys.bat</em>) must be running to use the Data Explorer
 </section>
 <section id="archiving-deployment-metadata" class="level2">
 <h2 class="anchored" data-anchor-id="archiving-deployment-metadata">Archiving Deployment Metadata</h2>
-<p>in progress</p>
+<p>Any new deployments saved in the Deployment Details spreadsheet need to be archived to our Tethys database.</p>
+<section id="deployment-worksheet-prep-script" class="level3">
+<h3 class="anchored" data-anchor-id="deployment-worksheet-prep-script">Deployment Worksheet Prep Script</h3>
+<p>Follow these steps to prepare a Deployment Worksheet for Tethys</p>
+<ol type="1">
+<li><p>Clone the <a href="https://github.com/asimonis/TethysSAEL">TethysSAEL repository</a> to your local computer and open the <a href="https://github.com/asimonis/TethysSAEL/blob/main/R/Create_Deployment_Worksheet.R"><em>Create_Deployment_Worksheet.R</em></a>file</p></li>
+<li><p>Make sure the deployments you want to archive are saved to the <em>deployDetails</em> sheet in <em>Deployment Details</em>, download the file as a .xslx, and save it to ‘~TethysSAEL\Deployment Worksheets’, overwriting the previous version if needed</p></li>
+<li><p>In the <em>Create_Deployment_Worksheet.R</em> file, run lines 24-104 to create the function to make the worksheet</p></li>
+<li><p>See the example function use in lines 9-14</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">##Example</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># change your project name as needed and number of repetitions</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>ProjectID <span class="ot">=</span> <span class="fu">rep</span>(<span class="st">'CalCurCEAS'</span>,<span class="dv">25</span>) </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># List out the deployment ID for each deployment you want to package</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>DepID<span class="ot">=</span><span class="fu">c</span>(<span class="st">'006'</span>,<span class="st">'008'</span>,<span class="st">'009'</span>,<span class="st">'010'</span>,<span class="st">'011'</span>,<span class="st">'012'</span>,<span class="st">'013'</span>,<span class="st">'014'</span>,<span class="st">'015'</span>,<span class="st">'016'</span>,<span class="st">'017'</span>,<span class="st">'018'</span>,<span class="st">'019'</span>,<span class="st">'020'</span>,<span class="st">'021'</span>,<span class="st">'022'</span>,<span class="st">'023'</span>,<span class="st">'024'</span>,<span class="st">'025'</span>,<span class="st">'026'</span>,<span class="st">'027'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the function for the deployments set above</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">mapply</span>(makeTethysDep,ProjectID,DepID)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>The output worksheets will be save to the main Deployment Worksheet folder. Move them to a project specific folder</p></li>
+<li><p>Push your new Deployment Worksheets back to the repository</p></li>
+</ol>
+</section>
+<section id="importing-deployment-worksheets-to-tethys" class="level3">
+<h3 class="anchored" data-anchor-id="importing-deployment-worksheets-to-tethys">Importing Deployment Worksheets To Tethys</h3>
+<p>There are a variety of ways to import data to Tethys, these directions will cover the web client and Matlab based uploads. See <a href="https://tethys.sdsu.edu/documentation/">Tethys Documentation</a> for other options and more details</p>
+<section id="web-client-uploads" class="level4">
+<h4 class="anchored" data-anchor-id="web-client-uploads">Web Client Uploads</h4>
+<ol type="1">
+<li><p>Follow the steps in the Tethys Web Interface section above to start the server and open the Web Client</p></li>
+<li><p>In the top right, click on the dropdown and select ‘Import data’</p>
+<p><img src="images/tethysImportData1.jpg" class="img-fluid" width="359"></p></li>
+<li><p>Set the Import Map to SWFSC.Mobile.Deployments.MultiChannel.wGPS.wSensors.wNotes, Collection to Deployments, and Species Coding to NOAA.NMFS.v4</p></li>
+<li><p>Click on + Data Source, and ensure Microsoft Excel Driver is selected. Set the Source Name to swfsc</p></li>
+<li><p>Click Select to choose a deployment worksheet to upload, or drag a file into the window.</p></li>
+<li><p>Your screen should now look something like this</p>
+<p><img src="images/tethysimport.jpg" class="img-fluid"></p></li>
+<li><p>If you are making corrections to an existing Deployment Sheet, check the ‘Overwrite existing’ box. Click Upload to Tethys and the processing will start. If there is an error it will show up below step 3 in the image above. If there are no errors it will show the following message</p>
+<p><img src="images/tethysImportSuccess.jpg" class="img-fluid"></p></li>
+</ol>
+</section>
+<section id="matlab-based-uploads" class="level4">
+<h4 class="anchored" data-anchor-id="matlab-based-uploads">Matlab Based Uploads</h4>
+<p>Note: This is currently not working so these are the general directions, however no screenshots are available to show step by step changes</p>
+<ol type="1">
+<li><p>Follow the steps in the Tethys Web Interface section above to start the server. Note, the web interface does not need to be open at this time</p></li>
+<li><p>Open Matlab and enter the following into the command window</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">% Fill in your server name in the second argument</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="va">dbSubmit</span>(<span class="ss">'Server'</span><span class="op">,</span> <span class="ss">'http://SWC-SRANKIN1-D.nmfs.local:9779'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>A new window should open called ‘Tethys Import Metadata’</p></li>
+<li><p>If not already set, change the Tethys Server to match your server</p></li>
+<li><p>Set Collection to Deployments, Import Map to SWFSC.Mobile.Deployments.MultiChannel.wGPS.wSensors.wNotes, and Species Abbreviations to NOAA.NMFS.v4</p></li>
+<li><p>Select the file you want to import by setting the path in the File import Tab (select Overwrite existing if making updates to existing files)</p></li>
+<li><p>Click Submit to Tethys and the process will start. Similar to the web client, messages will appear in the box below to indicate any errors or if the file upload was a success.</p></li>
+<li><p>You can use this option to batch process by setting the path to a folder, rather than an individual file</p></li>
+</ol>
+</section>
+</section>
 </section>
 <section id="archiving-detections" class="level2">
 <h2 class="anchored" data-anchor-id="archiving-detections">Archiving Detections</h2>
-<p>in progress</p>
+<p>Similar to archiving deployments, in progress</p>
 </section>
 <section id="more-info" class="level2">
 <h2 class="anchored" data-anchor-id="more-info">More info</h2>
-<p>See <a href="https://github.com/asimonis/TethysSAEL">Tethys SAEL GitHub repository</a> and our <a href="https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html">detailed methods</a> for more information.</p>
+<p>See <a href="https://tethys.sdsu.edu/documentation/">Tethys Documentation</a>, <a href="https://github.com/asimonis/TethysSAEL">Tethys SAEL GitHub repository</a>, and our <a href="https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html">detailed ADRIFT methods</a> for more information.</p>
 
 
 </section>

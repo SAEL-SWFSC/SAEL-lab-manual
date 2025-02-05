@@ -928,7 +928,7 @@
     "href": "content/Data-Archive-Tethys.html#archiving-deployment-metadata",
     "title": "Tethys",
     "section": "Archiving Deployment Metadata",
-    "text": "Archiving Deployment Metadata\nin progress",
+    "text": "Archiving Deployment Metadata\nAny new deployments saved in the Deployment Details spreadsheet need to be archived to our Tethys database.\n\nDeployment Worksheet Prep Script\nFollow these steps to prepare a Deployment Worksheet for Tethys\n\nClone the TethysSAEL repository to your local computer and open the Create_Deployment_Worksheet.Rfile\nMake sure the deployments you want to archive are saved to the deployDetails sheet in Deployment Details, download the file as a .xslx, and save it to ‘~TethysSAEL\\Deployment Worksheets’, overwriting the previous version if needed\nIn the Create_Deployment_Worksheet.R file, run lines 24-104 to create the function to make the worksheet\nSee the example function use in lines 9-14\n##Example\n# change your project name as needed and number of repetitions\nProjectID = rep('CalCurCEAS',25) \n# List out the deployment ID for each deployment you want to package\nDepID=c('006','008','009','010','011','012','013','014','015','016','017','018','019','020','021','022','023','024','025','026','027')\n# Run the function for the deployments set above\nmapply(makeTethysDep,ProjectID,DepID)\nThe output worksheets will be save to the main Deployment Worksheet folder. Move them to a project specific folder\nPush your new Deployment Worksheets back to the repository\n\n\n\nImporting Deployment Worksheets To Tethys\nThere are a variety of ways to import data to Tethys, these directions will cover the web client and Matlab based uploads. See Tethys Documentation for other options and more details\n\nWeb Client Uploads\n\nFollow the steps in the Tethys Web Interface section above to start the server and open the Web Client\nIn the top right, click on the dropdown and select ‘Import data’\n\nSet the Import Map to SWFSC.Mobile.Deployments.MultiChannel.wGPS.wSensors.wNotes, Collection to Deployments, and Species Coding to NOAA.NMFS.v4\nClick on + Data Source, and ensure Microsoft Excel Driver is selected. Set the Source Name to swfsc\nClick Select to choose a deployment worksheet to upload, or drag a file into the window.\nYour screen should now look something like this\n\nIf you are making corrections to an existing Deployment Sheet, check the ‘Overwrite existing’ box. Click Upload to Tethys and the processing will start. If there is an error it will show up below step 3 in the image above. If there are no errors it will show the following message\n\n\n\n\nMatlab Based Uploads\nNote: This is currently not working so these are the general directions, however no screenshots are available to show step by step changes\n\nFollow the steps in the Tethys Web Interface section above to start the server. Note, the web interface does not need to be open at this time\nOpen Matlab and enter the following into the command window\n% Fill in your server name in the second argument\ndbSubmit('Server', 'http://SWC-SRANKIN1-D.nmfs.local:9779')\nA new window should open called ‘Tethys Import Metadata’\nIf not already set, change the Tethys Server to match your server\nSet Collection to Deployments, Import Map to SWFSC.Mobile.Deployments.MultiChannel.wGPS.wSensors.wNotes, and Species Abbreviations to NOAA.NMFS.v4\nSelect the file you want to import by setting the path in the File import Tab (select Overwrite existing if making updates to existing files)\nClick Submit to Tethys and the process will start. Similar to the web client, messages will appear in the box below to indicate any errors or if the file upload was a success.\nYou can use this option to batch process by setting the path to a folder, rather than an individual file",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -940,7 +940,7 @@
     "href": "content/Data-Archive-Tethys.html#archiving-detections",
     "title": "Tethys",
     "section": "Archiving Detections",
-    "text": "Archiving Detections\nin progress",
+    "text": "Archiving Detections\nSimilar to archiving deployments, in progress",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -952,7 +952,7 @@
     "href": "content/Data-Archive-Tethys.html#more-info",
     "title": "Tethys",
     "section": "More info",
-    "text": "More info\nSee Tethys SAEL GitHub repository and our detailed methods for more information.",
+    "text": "More info\nSee Tethys Documentation, Tethys SAEL GitHub repository, and our detailed ADRIFT methods for more information.",
     "crumbs": [
       "Data Management",
       "Data Archive",
