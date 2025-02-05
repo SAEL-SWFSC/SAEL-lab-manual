@@ -3,3 +3,7 @@ title: Analysis Methods
 ---
 
 Detailed Analysis methods for the [ADRIFT project](https://sael-swfsc.github.io/Adrift/) can be found [here](https://sael-swfsc.github.io/adrift-analysis-methods/)
+
+## PAMGuard Tutorials
+We have an in-house PAMGuard Tutorial (2021). [Link to materials](https://drive.google.com/drive/folders/1P3DRVoI7rKEUHz66Z_L2nztE49npRHKN?usp=sharing) in google drive available (restricted to NOAA employees). 
+
