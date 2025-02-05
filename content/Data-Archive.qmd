@@ -24,21 +24,11 @@ Specific publicly accessible projects include:
 
 ## NCEI Data Archive
 
-### Accessing Data
-
-All ADRIFT, CCES, and PASCAL raw data are publicly accessible through [NCEI Passive Acoustics Data Archive](https://www.ncei.noaa.gov/products/passive-acoustic-data). Sound level metrics can also be accessed from this archive.
+NCEI hosts a [Passive Acoustic Data Archive](https://www.ncei.noaa.gov/products/passive-acoustic-data), where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.
 
 Users can access data through the [interactive map](https://www.ncei.noaa.gov/maps/passive-acoustic-data/) or request data using [Google Cloud Platform](https://console.cloud.google.com/marketplace/details/noaa-public/passive_acoustic_monitoring?pli=1&project=ggn-nmfs-pamdata-prod-1)
 
-### Submitting Data
-
-#### Passive Packer
-
-All ADRIFT, CCES, and PASCAL data were packaged using a combination of automated scripts and the NCEI Passive Packer tool. Several automation scripts were used to create Passive Packer ready databases from our deployment details metadata. Detailed methods can be found [here](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/NCEI.html).
-
-#### PACE
-
-Future PAM data (CalCurCEAS 2024, gliders, etc) will be packaged and submitted using NCEI's new [Passive Acoustic Collection Engine (PACE)](https://github.com/CI-CMG/pace). Detailed methods for preparing raw audio data for packaging and archive can be found [here](https://github.com/Kourtney-Burger/NCEI-PACE-Data-Archive).
+See NCEI section for more information and detailed archive methods
 
 ## PACM
 
@@ -48,32 +38,14 @@ CalCurCEAS 2024 detection data - work in progress
 
 ## Tethys
 
-All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab's [Tethys database](https://tethys.sdsu.edu/). See [Tethys SAEL GitHub repository](https://github.com/asimonis/TethysSAEL) and our [detailed methods](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html) for more information.
+All ADRIFT, PASCAL, CCES, and CalCurCEAS deployment metadata and detection data are archived locally in our lab's [Tethys database](https://tethys.sdsu.edu/). See the [Tethys section](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Tethys.html) for detailed archive methods and more information.
+
+## InPort Metadata Archive
+
+Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.
+
+See InPort section for more information on accessing and submitting metadata
 
 ## OBIS Seamap
 
 We are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available [here](https://github.com/TaikiSan21/PAMpal/blob/735dfec50b3c6feaa8772765d752e8260363a2c5/devel/OBIS_Functions.R).
-
-## InPort Metadata Archive
-
-### Overview
-
-Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.
-
-### Access Metadata
-
-You do not need an account to view metadata on InPort. Open the [InPort home page](https://www.fisheries.noaa.gov/inport/) and enter keywords to search the library
-
-### Submitting Metadata
-
-To submit metadata, you first must contact your center InPort Librarians to get an account set up. To submit to the [SWFSC library](https://www.fisheries.noaa.gov/inport/organization/SWFSC), contact Arnold Ammann (arnold.ammann\@noaa.gov), Gabriel Arce (Gabriel.Arce\@noaa.gov), or Thanh T Vu (thanh.vu\@noaa.gov).
-
-Follow detailed methods [here](https://sael-swfsc.github.io/SAEL-lab-manual/content/Slides/InPortDataArchiveMethods.html#/title-slide) to submit metadata according to InPort expectations
-
-### InPort Resources
-
-[InPort Home Page](https://www.fisheries.noaa.gov/inport/)
-
-[SWFSC Organization Library](https://www.fisheries.noaa.gov/inport/hierarchy/1370)
-
-[Help Page](https://www.fisheries.noaa.gov/inport/help)
