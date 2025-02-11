@@ -14,11 +14,11 @@ All archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be fo
 
 ## Public Repositories
 
-SAEL Github Organization (https://github.com/SAEL-SWFSC){target="_blank"} is for new and recent repositories.
+SAEL Github Organization (https://github.com/SAEL-SWFSC) is for new and recent repositories.
 
 Specific publicly accessible projects include:
 
--   Adrift in the California Current ([Github Repository](https://github.com/SAEL-SWFSC/Adrift) and [website](https://sael-swfsc.github.io/Adrift/))
+-   Adrift in the California Current ([Github Repository](https://github.com/SAEL-SWFSC/Adrift){target="_blank"} and [website](https://sael-swfsc.github.io/Adrift/))
 
 -   [Beaked Whales from NOAA's CCES 2018 Survey (Figshare)](https://figshare.com/projects/Beaked_Whale_Acoustic_Events_from_Drifting_Acoustic_Recordings_during_NOAA_s_CCES_2018_Survey/94511)
 
