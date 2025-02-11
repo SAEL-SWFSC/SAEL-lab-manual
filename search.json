@@ -486,7 +486,7 @@
     "href": "content/Data-Archive.html#public-repositories",
     "title": "Data Archive",
     "section": "Public Repositories",
-    "text": "Public Repositories\nSAEL Github Organization (https://github.com/SAEL-SWFSC){.external target=“_blank”} is for new and recent repositories.\nSpecific publicly accessible projects include:\n\nAdrift in the California Current (Github Repository and website)\nBeaked Whales from NOAA’s CCES 2018 Survey (Figshare)",
+    "text": "Public Repositories\nSAEL Github Organization (https://github.com/SAEL-SWFSC){target=“_blank”} is for new and recent repositories.\nSpecific publicly accessible projects include:\n\nAdrift in the California Current (Github Repository and website)\nBeaked Whales from NOAA’s CCES 2018 Survey (Figshare)",
     "crumbs": [
       "Data Management",
       "Data Archive"
