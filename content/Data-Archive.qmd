@@ -14,7 +14,7 @@ All archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be fo
 
 ## Public Repositories
 
-SAEL Github Organization (https://github.com/SAEL-SWFSC){.external target="_blank"} is for new and recent repositories.
+SAEL Github Organization (https://github.com/SAEL-SWFSC){target="_blank"} is for new and recent repositories.
 
 Specific publicly accessible projects include:
 
