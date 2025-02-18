@@ -73,8 +73,7 @@ website:
       - href: content/OpenScience.qmd
         text: Open Science
 
-
-        
+   
 
 format:
   html:
@@ -84,10 +83,9 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-
+    link-external-newwindow: true
    
      
-
 
 filters:
   - include-files.lua
