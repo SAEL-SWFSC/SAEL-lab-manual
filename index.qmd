@@ -2,6 +2,7 @@
 title: "Lab Manual"
 subtitle: "Southwest Acoustics Ecology Lab, SWFSC"
 page-layout: full
+link-external-newwindow: true
 ---
 
 The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA's management needs. We are part of the Marine Mammal and Turtle Division at NOAA's Southwest Fisheries Science Center in La Jolla, California.
