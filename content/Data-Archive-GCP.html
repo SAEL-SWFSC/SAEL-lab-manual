@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reporting – SAEL Lab Manual</title>
+<title>Google Cloud Archive and Analysis – SAEL Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/OpenScience.html" rel="next">
-<link href="../content/Permits_Reporting.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/publications.html">Publications</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Google Cloud Archive and Analysis</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -290,7 +288,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/publications.html" class="sidebar-item-text sidebar-link active">
+  <a href="../content/publications.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publications</span></a>
   </div>
 </li>
@@ -305,15 +303,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bulk-upload-using-gcloud-cli" id="toc-bulk-upload-using-gcloud-cli" class="nav-link active" data-scroll-target="#bulk-upload-using-gcloud-cli">Bulk upload using gcloud CLI</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive-GCP.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive-GCP.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reporting</h1>
+<h1 class="title">Google Cloud Archive and Analysis</h1>
 </div>
 
 
@@ -330,22 +334,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Please see links, below, to publications and reports</p>
-<p><a href="https://www.sciencedirect.com/science/article/am/pii/S1574954124000530">Rankin, S., Sakai, T., Archer, F. I., Barlow, J., Cholewiak, D., DeAngelis, A. I., … &amp; Trickey, J. S. (2024). <em>Open-source machine learning BANTER acoustic classification of beaked whale echolocation pulses.</em> Ecological Informatics, 80, 102511.</a></p>
-<p><a href="https://repository.library.noaa.gov/view/noaa/36758/noaa_36758_DS1.pdf">Barlow, J., Cárdenas‐Hinojosa, G., Henderson, E. E., Breese, D., López‐Arzate, D., Hidalgo Pla, E., &amp; Taylor, B. L. (2022). <em>Unique morphological and acoustic characteristics of beaked whales (Mesoplodon sp.) off the west coast of Baja California, Mexico.</em></a></p>
-<p><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/mms.12872?casa_token=wxl1vZW3UXoAAAAA:9H5p0y9ZHNtrmTPG4xP3cBn6nyFnb7XMz22UHL6HxWDsbMwZUV5zAP4tgExK6Lji0z4ALf9KoohU6w">Barlow, J., Moore, J. E., McCullough, J. L., &amp; Griffiths, E. T. (2022). <em>Acoustic‐based estimates of Cuvier’s beaked whale (Ziphius cavirostris) density and abundance along the US West Coast from drifting hydrophone recorders.</em> Marine Mammal Science, 38(2), 517-538.</a></p>
-<p><a href="https://pubs.aip.org/asa/jasa/article/149/1/111/610260">Barlow, J., Fregosi, S., Thomas, L., Harris, D., &amp; Griffiths, E. T. (2021). <em>Acoustic detection range and population density of Cuvier’s beaked whales estimated from near-surface hydrophones.</em> The Journal of the Acoustical Society of America, 149(1), 111-125.</a></p>
-<p><a href="https://pubs.aip.org/asa/jasa/article/149/6/3830/1059293">Barlow, J., Trickey, J. S., Schorr, G. S., Rankin, S., &amp; Moore, J. E. (2021). <em>Recommended snapshot length for acoustic point-transect surveys of intermittently available Cuvier’s beaked whales.</em> The Journal of the Acoustical Society of America, 149(6), 3830-3840.</a></p>
-<p><a href="https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10651-020-00443-7&amp;casa_token=A29BMsW3h5QAAAAA:wNqimuNiFynryJJMqaAD3pvM0TKGqupGKj3dNUBJezoXIpxdCRZFbesIdl287Uoihl7nisb09YqTuHY7">Rankin, S., Oedekoven, C., &amp; Archer, F. (2020). <em>Mark recapture distance sampling: using acoustics to estimate the fraction of dolphins missed by observers during shipboard line-transect surveys.</em> Environmental and ecological statistics, 27(2), 233-251.</a></p>
-<p><a href="https://www.frontiersin.org/articles/10.3389/fmars.2020.00142/pdf">Simonis, A. E., Forney, K. A., Rankin, S., Ryan, J., Zhang, Y., DeVogelaere, A., … &amp; Baumann-Pickering, S. (2020). <em>Seal bomb noise as a potential threat to Monterey Bay harbor porpoise.</em> Frontiers in Marine Science, 7, 142.</a></p>
-<p><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/mms.12640?casa_token=_n2o8hHVU94AAAAA:UQOVnE5h3JLalnqs_xfYA5tHLl34TjwWSmYQSfrU4kbxCXNPOJ0sowjKOssoZIISOgUhT45BbAy5wg">Archer, F. I., Rankin, S., Stafford, K. M., Castellote, M., &amp; Delarue, J. (2020). <em>Quantifying spatial and temporal variation of North Pacific fin whale (Balaenoptera physalus) acoustic behavior.</em> Marine Mammal Science, 36(1), 224-245.</a></p>
-<p><a href="https://repository.library.noaa.gov/view/noaa/27223/noaa_27223_DS1.pdf">Simonis, A. E., Trickey, J. S., Barlow, J., Rankin, S., Urbán, J., Rojas-Bracho, L., &amp; Moore, J. E. (2020). <em>Passive Acoustic Survey Of Deep-Diving Odontocetes in the California Current Ecosystem 2018.</em></a></p>
-<p><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/mms.12381?casa_token=Jaz6sOXObnwAAAAA:Hcvb3lN62_gG28XJ0AljbP7hbfNgBhgEpVFKpjlS30PnPKpP7-FYDsSYLrGvxfgpLjGqHfiYyrnVWA">Rankin, S., Archer, F., Keating, J. L., Oswald, J. N., Oswald, M., Curtis, A., &amp; Barlow, J. (2017). <em>Acoustic classification of dolphins in the California Current using whistles, echolocation clicks, and burst pulses. Marine Mammal Science, 33(2), 520-540.</em></a></p>
-<p><a href="https://repository.library.noaa.gov/view/noaa/17737/noaa_17737_DS1.pdf">Rankin, S., Castellote, M., Delarue, J., Stafford, K. M., Archer, F. I., Koot, B., … &amp; Morano, J. L. (2018). <em>Methods for characterizing fin whale song notes for comparative studies of geographic variation in song.</em></a></p>
-<p><a href="https://repository.library.noaa.gov/view/noaa/3608/noaa_3608_DS1.pdf">Rankin, S. (2008). <em>Acoustic studies of marine mammals during seven years of combined visual and acoustic line-transect surveys for cetaceans in the eastern and central Pacific Ocean.</em></a></p>
-<p><a href="https://jcaa.caa-aca.ca/index.php/jcaa/article/download/1996/1743">Rankin, S., Oswald, J. N., &amp; Barlow, J. (2008). <em>Acoustic behavior of dolphins in the Pacific Ocean: Implications for using passive acoustic methods for population studies.</em> Canadian Acoustics, 36(1), 88-92.</a></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+All of this is temporary. End goal is to have all of this documented on the national PAM repo, and link to it here.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p><a href="https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&amp;project=ggn-nmfs-pamdata-prod-1&amp;prefix=&amp;forceOnObjectsSortingFiltering=false">Link to SWFSC GCP Bucket</a></p>
+<p>You can use the built in upload tool to upload small amounts of data directly to GCP</p>
+<section id="bulk-upload-using-gcloud-cli" class="level2">
+<h2 class="anchored" data-anchor-id="bulk-upload-using-gcloud-cli">Bulk upload using gcloud CLI</h2>
+<ol type="1">
+<li>See <a href="https://docs.google.com/document/d/1iEOwgTPGklLWzLoooAFkvG6n1v8e4yuhw7xcYuzj_-4/edit?tab=t.0">this document for PAM GCP Technical System documentation</a> and a link to the PAM buckets</li>
+<li>Follow <a href="https://docs.google.com/document/d/1UsBBN7FPLlIAlPG0g5q9nsNGpyODL7wscYrzBiR2hlY/edit?pli=1&amp;tab=t.0">steps 1-4 under the Configure gcloud section in this document</a> to install Google Cloud SDK on your computer</li>
+<li>Open the command prompt and type “gsutil -m cp -r F:/* <a href="gs://swfsc-1/drifting_recorder/">gs://swfsc-1/drifting_recorder/</a>”, where “F:/*” is the directory with data to upload and “<a href="gs://swfsc-1/drifting_recorder/">gs://swfsc-1/drifting_recorder/</a>” is the cloud bucket and folder you want to upload data to</li>
+<li>Processing should start, wait for command prompt to update then refresh the SWFSC bucket website to see your uploaded data</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+If you are uploaded a large dataset, it is recommended to run this after normal work hours and on the weekends. See <a href="https://docs.google.com/document/d/1FrbaNNepsr5Jz54U4fataQN1tqBLDSYWwYj9yApDexc/edit?tab=t.0#heading=h.tr521ujctakv">this document</a> with more directions or contact Dan Woodrich (<a href="mailto:daniel.woodrich@noaa.gov">daniel.woodrich@noaa.gov</a>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -909,18 +936,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../content/Permits_Reporting.html" class="pagination-link" aria-label="Permits &amp; Reporting">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Permits &amp; Reporting</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../content/OpenScience.html" class="pagination-link" aria-label="Open Science">
-        <span class="nav-page-text">Open Science</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -929,7 +944,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/publications.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/publications.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive-GCP.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive-GCP.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
