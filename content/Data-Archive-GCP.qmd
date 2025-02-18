@@ -1,0 +1,22 @@
+---
+title: Google Cloud Archive and Analysis
+---
+
+::: callout-important
+## All of this is temporary. End goal is to have all of this documented on the national PAM repo, and link to it here.
+:::
+
+[Link to SWFSC GCP Bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false)
+
+You can use the built in upload tool to upload small amounts of data directly to GCP
+
+## Bulk upload using gcloud CLI
+
+1.  See [this document for PAM GCP Technical System documentation](https://docs.google.com/document/d/1iEOwgTPGklLWzLoooAFkvG6n1v8e4yuhw7xcYuzj_-4/edit?tab=t.0) and a link to the PAM buckets
+2.  Follow [steps 1-4 under the Configure gcloud section in this document](https://docs.google.com/document/d/1UsBBN7FPLlIAlPG0g5q9nsNGpyODL7wscYrzBiR2hlY/edit?pli=1&tab=t.0) to install Google Cloud SDK on your computer
+3.  Open the command prompt and type "gsutil -m cp -r F:/\* [gs://swfsc-1/drifting_recorder/](gs://swfsc-1/drifting_recorder/)", where "F:/\*" is the directory with data to upload and "[gs://swfsc-1/drifting_recorder/](gs://swfsc-1/drifting_recorder/)" is the cloud bucket and folder you want to upload data to
+4.  Processing should start, wait for command prompt to update then refresh the SWFSC bucket website to see your uploaded data
+
+::: callout-note
+## If you are uploaded a large dataset, it is recommended to run this after normal work hours and on the weekends. See [this document](https://docs.google.com/document/d/1FrbaNNepsr5Jz54U4fataQN1tqBLDSYWwYj9yApDexc/edit?tab=t.0#heading=h.tr521ujctakv) with more directions or contact Dan Woodrich ([daniel.woodrich\@noaa.gov](mailto:daniel.woodrich@noaa.gov))
+:::

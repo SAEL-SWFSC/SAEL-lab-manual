@@ -12,15 +12,21 @@ All raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on t
 
 All archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)
 
-## Public Repositories
+## Public Repositories (*in progress)* 
 
-SAEL Github Organization (https://github.com/SAEL-SWFSC) is for new and recent repositories.
+*Add links to PAM national repo and OST*
+
+[SAEL Github Organization](https://github.com/SAEL-SWFSC) is for new and recent repositories.
 
 Specific publicly accessible projects include:
 
 -   Adrift in the California Current ([Github Repository](https://github.com/SAEL-SWFSC/Adrift){target="_blank"} and [website](https://sael-swfsc.github.io/Adrift/))
 
 -   [Beaked Whales from NOAA's CCES 2018 Survey (Figshare)](https://figshare.com/projects/Beaked_Whale_Acoustic_Events_from_Drifting_Acoustic_Recordings_during_NOAA_s_CCES_2018_Survey/94511)
+
+## Google Cloud Storage 
+
+*Link to GCP methods and archive (work in progress)*
 
 ## NCEI Data Archive
 
