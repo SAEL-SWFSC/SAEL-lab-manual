@@ -75,8 +75,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4958dc29e5427858b9ccb93b2b1472a5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c13297a0c0f19e44ce6aa61b2c2c5ec9.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-2060c1fdc48bdcd166b162226a62f917.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0045eb1c33f61f19c2496553aa0e9380.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -206,6 +206,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">content/Data-Arhcive-GCP.qmd</span>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Data-Archive-NCEI.html" class="sidebar-item-text sidebar-link">
@@ -355,6 +358,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#importing-deployment-worksheets-to-tethys" id="toc-importing-deployment-worksheets-to-tethys" class="nav-link" data-scroll-target="#importing-deployment-worksheets-to-tethys">Importing Deployment Worksheets To Tethys</a></li>
   </ul></li>
   <li><a href="#archiving-detections" id="toc-archiving-detections" class="nav-link" data-scroll-target="#archiving-detections">Archiving Detections</a></li>
+  <li><a href="#updating-the-database" id="toc-updating-the-database" class="nav-link" data-scroll-target="#updating-the-database">Updating the Database</a>
+  <ul class="collapse">
+  <li><a href="#xqueries" id="toc-xqueries" class="nav-link" data-scroll-target="#xqueries">XQueries</a></li>
+  <li><a href="#reuploading-data" id="toc-reuploading-data" class="nav-link" data-scroll-target="#reuploading-data">Reuploading Data</a></li>
+  </ul></li>
   <li><a href="#more-info" id="toc-more-info" class="nav-link" data-scroll-target="#more-info">More info</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive-Tethys.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive-Tethys.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -497,9 +505,66 @@ The Tethys server (<em>tethys.bat</em>) must be running to use the Data Explorer
 <h2 class="anchored" data-anchor-id="archiving-detections">Archiving Detections</h2>
 <p>Similar to archiving deployments, in progress</p>
 </section>
+<section id="updating-the-database" class="level2">
+<h2 class="anchored" data-anchor-id="updating-the-database">Updating the Database</h2>
+<p>There are several methods to update existing documents in the database. These directions will cover Matlab based XQuery methods and a simple reuploading method.</p>
+<section id="xqueries" class="level3">
+<h3 class="anchored" data-anchor-id="xqueries">XQueries</h3>
+<p>To update existing database entries, you can pass Matlab an XQuery that points to a specific node and includes an updated value for that node. An example XQuery and sample Matlab script is included here.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Make sure you have backed up a copy of your database before attempting to update
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<section id="creating-a-new-xquery" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-new-xquery">Creating a new XQuery</h4>
+<p>Follow the format of the example XQuery here</p>
+<ol type="1">
+<li>Identify the specific node you want to change. You can find deployments and detection files in the Tethys web browser (click on Tethys icon in top right and select an option from ‘Document listings per collection’. In the example file, we are interested in the audio sensor number from ADRIFT 102 and we want to change it from 856142 to 856141. Change this information to match your node of interest</li>
+<li>Save the XQuery with a descriptive name to ‘Z:’</li>
+</ol>
+</section>
+<section id="running-query-and-updated-database" class="level4">
+<h4 class="anchored" data-anchor-id="running-query-and-updated-database">Running Query and Updated Database</h4>
+<ol type="1">
+<li>Open the Tethys batch file (see directions above) and check the server name. You should see something like http://YourComputerName.local:9779 or just http://localhost:9779</li>
+<li>Open TethysXQueryExample.m script in Matlab</li>
+<li>Add a new Matlab path with subfolders to “Z:”. This will point you to the correct path in the SAEL lab Tethys database and allow you to use Tethys functions and commands</li>
+<li>Run line 5 in the script to initiate connection to the database. If your server name from step 1 is different then ‘localhost:9779’ you will need to change the second argument from ‘localhost’ to the name of your server (example YourComputerName.local)</li>
+<li>Test the connection to the database by running line 7. If you see a new item in the workspace title DeploymentInfo with all deployments listed you can proceed to step 6</li>
+<li>Ensure the path to the .xq file is correct and run line 12</li>
+<li>To check if the database was uploaded, you can navigate to the specific node using the Tethys web interface query tools</li>
+</ol>
+</section>
+</section>
+<section id="reuploading-data" class="level3">
+<h3 class="anchored" data-anchor-id="reuploading-data">Reuploading Data</h3>
+<p>You can also update the database by editing the existing document and reuploading it to the Database.</p>
+<section id="deployment-example" class="level4">
+<h4 class="anchored" data-anchor-id="deployment-example">Deployment Example</h4>
+<p>In this example, I want to change the ADRIFT 102 audio sensor channel 1 number from 856142 to 856141</p>
+<ol type="1">
+<li>Find and download the ADRIFT 102 deployment worksheet (all deployment worksheets should be stored <a href="https://github.com/asimonis/TethysSAEL/tree/main/Deployment%20Worksheets">here</a></li>
+<li>Open the worksheet and navigate to the SensorNumber field on the Sensor tab. Change the sensor number for channel 1</li>
+<li>Save the worksheet and ensure the updated one is reuploaded <a href="https://github.com/asimonis/TethysSAEL/tree/main/Deployment%20Worksheets">here</a></li>
+<li>Follow the directions here to import the updated deployment worksheet using one of the methods described. Make sure the ‘Overwrite existing’ box is selected to add your updates to the database</li>
+<li>To check if the database was uploaded, you can navigate to the specific node using the Tethys web interface query tools</li>
+</ol>
+</section>
+</section>
+</section>
 <section id="more-info" class="level2">
 <h2 class="anchored" data-anchor-id="more-info">More info</h2>
 <p>See <a href="https://tethys.sdsu.edu/documentation/">Tethys Documentation</a>, <a href="https://github.com/asimonis/TethysSAEL">Tethys SAEL GitHub repository</a>, and our <a href="https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html">detailed ADRIFT methods</a> for more information.</p>
+<p>Contact Kourtney Burger (kourtney.burger@noaa.gov) with any questions</p>
 
 
 </section>
@@ -753,11 +818,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          if (link.getAttribute("rel") === null) {
-            link.setAttribute("rel", "noopener");
-          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
