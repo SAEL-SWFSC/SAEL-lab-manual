@@ -125,6 +125,51 @@ Note: This is currently not working so these are the general directions, however
 
 Similar to archiving deployments, in progress
 
+## Updating the Database
+
+There are several methods to update existing documents in the database. These directions will cover Matlab based XQuery methods and a simple reuploading method.
+
+### XQueries
+
+To update existing database entries, you can pass Matlab an XQuery that points to a specific node and includes an updated value for that node. An example XQuery and sample Matlab script is included here.
+
+::: callout-warning
+## Make sure you have backed up a copy of your database before attempting to update
+:::
+
+#### Creating a new XQuery
+
+Follow the format of the example XQuery here
+
+1.  Identify the specific node you want to change. You can find deployments and detection files in the Tethys web browser (click on Tethys icon in top right and select an option from 'Document listings per collection'. In the example file, we are interested in the audio sensor number from ADRIFT 102 and we want to change it from 856142 to 856141. Change this information to match your node of interest
+2.  Save the XQuery with a descriptive name to 'Z:\ANALYSIS\Tethys\MatlabClient\db\xqueries'
+
+#### Running Query and Updated Database
+
+1.  Open the Tethys batch file (see directions above) and check the server name. You should see something like http://YourComputerName.local:9779 or just http://localhost:9779
+2.  Open TethysXQueryExample.m script in Matlab
+3.  Add a new Matlab path with subfolders to "Z:\ANALYSIS\Tethys\MatlabClient". This will point you to the correct path in the SAEL lab Tethys database and allow you to use Tethys functions and commands
+4.   Run line 5 in the script to initiate connection to the database. If your server name from step 1 is different then 'localhost:9779' you will need to change the second argument from 'localhost' to the name of your server (example YourComputerName.local)
+5.  Test the connection to the database by running line 7. If you see a new item in the workspace title DeploymentInfo with all deployments listed you can proceed to step 6
+6.  Ensure the path to the .xq file is correct and run line 12
+7.  To check if the database was uploaded, you can navigate to the specific node using the Tethys web interface query tools
+
+### Reuploading Data
+
+You can also update the database by editing the existing document and reuploading it to the Database.
+
+#### Deployment Example
+
+In this example, I want to change the ADRIFT 102 audio sensor channel 1 number from 856142 to 856141
+
+1.  Find and download the ADRIFT 102 deployment worksheet (all deployment worksheets should be stored [here](https://github.com/asimonis/TethysSAEL/tree/main/Deployment%20Worksheets)
+2.  Open the worksheet and navigate to the SensorNumber field on the Sensor tab. Change the sensor number for channel 1
+3.  Save the worksheet and ensure the updated one is reuploaded [here](https://github.com/asimonis/TethysSAEL/tree/main/Deployment%20Worksheets)
+4.  Follow the directions here to import the updated deployment worksheet using one of the methods described. Make sure the 'Overwrite existing' box is selected to add your updates to the database
+5.  To check if the database was uploaded, you can navigate to the specific node using the Tethys web interface query tools
+
 ## More info
 
 See [Tethys Documentation](https://tethys.sdsu.edu/documentation/), [Tethys SAEL GitHub repository](https://github.com/asimonis/TethysSAEL), and our [detailed ADRIFT methods](https://sael-swfsc.github.io/adrift-analysis-methods/content/DataArchive/TethysDeployments.html) for more information.
+
+Contact Kourtney Burger (kourtney.burger\@noaa.gov) with any questions

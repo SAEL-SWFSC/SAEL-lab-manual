@@ -12,7 +12,7 @@ All raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on t
 
 All archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)
 
-## Public Repositories (*in progress)* 
+## Public Repositories (*in progress)*
 
 *Add links to PAM national repo and OST*
 
@@ -24,7 +24,7 @@ Specific publicly accessible projects include:
 
 -   [Beaked Whales from NOAA's CCES 2018 Survey (Figshare)](https://figshare.com/projects/Beaked_Whale_Acoustic_Events_from_Drifting_Acoustic_Recordings_during_NOAA_s_CCES_2018_Survey/94511)
 
-## Google Cloud Storage 
+## Google Cloud Storage
 
 *Link to GCP methods and archive (work in progress)*
 

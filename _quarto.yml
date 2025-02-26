@@ -46,7 +46,7 @@ website:
         contents:
           - section: content/Data-Archive.qmd
             contents:
-#              - content/Data-Arhcive-GCP.qmd
+              - content/Data-Arhcive-GCP.qmd
               - content/Data-Archive-NCEI.qmd
               - content/Data-Archive-Tethys.qmd
               - content/Data-Archive-InPort.qmd
@@ -83,7 +83,7 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-    link-external-newwindow: true
+#     link-external-newwindow: true
    
      
 
