@@ -319,6 +319,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#triton" id="toc-triton" class="nav-link" data-scroll-target="#triton">Triton</a></li>
   </ul></li>
   <li><a href="#raven" id="toc-raven" class="nav-link" data-scroll-target="#raven">Raven</a></li>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a>
+  <ul class="collapse">
+  <li><a href="#downloading-and-installing-python" id="toc-downloading-and-installing-python" class="nav-link" data-scroll-target="#downloading-and-installing-python">Downloading and Installing Python</a></li>
+  <li><a href="#python-environments" id="toc-python-environments" class="nav-link" data-scroll-target="#python-environments">Python Environments</a></li>
+  <li><a href="#python-ides" id="toc-python-ides" class="nav-link" data-scroll-target="#python-ides">Python IDEs</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Acoustic-Analysis-software.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Acoustic-Analysis-software.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -359,8 +365,60 @@ ul.task-list li input[type="checkbox"] {
 <section id="raven" class="level2">
 <h2 class="anchored" data-anchor-id="raven">Raven</h2>
 <p><a href="https://www.ravensoundsoftware.com/software/raven-pro/">Raven</a></p>
+</section>
+<section id="python" class="level2">
+<h2 class="anchored" data-anchor-id="python">Python</h2>
+<p>Our lab uses Python to run soundscape analyses using <a href="https://github.com/lifewatch/pypam">PyPAM</a> and <a href="https://github.com/mbari-org/pbp">PBP</a></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+These directions are written by a new Python user. If you are an experienced user, please make suggestions/corrections as needed!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<section id="downloading-and-installing-python" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-and-installing-python">Downloading and Installing Python</h3>
+<p>There are several different ways to install and use Python, use what works best for you!</p>
+<ol type="1">
+<li>Go to <a href="https://www.anaconda.com/download/success">Anaconda distribution website</a></li>
+<li>Select your operating system and download the installer (standard/default settings are ok). Anaconda Navigator comes bundled with a Python distributor and will automatically install the latest Python version (currently 3.12), go here for directions on using other versions</li>
+<li>You’re ready to use Python!</li>
+</ol>
+</section>
+<section id="python-environments" class="level3">
+<h3 class="anchored" data-anchor-id="python-environments">Python Environments</h3>
+<p>Python environments allow you to manage packages and Python versions, and ensures your project has the necessary dependencies. Anaconda Navigator allows you to set and work in different environments.</p>
+<section id="creating-new-environments" class="level4">
+<h4 class="anchored" data-anchor-id="creating-new-environments">Creating New Environments</h4>
+<p>PyPAM requires a specific Python version (3.9-3.11) and some analyses require specific packages that are not included in the base Anaconda channels or Python Package Index (PyPI). Follow the directions below to set up a custom environment for PyPAM (the same directions can be applied to make other environments)</p>
+<ol type="1">
+<li><p>Open Anaconda Navigator and click on the ‘Environments’ tab on the left</p></li>
+<li><p>Click the ‘Create’ button on bottom left</p></li>
+<li><p>Set the Environment name (PyPAM for example) and ensure the Python box is checked with 3.9-3.11 version. You can also select the R box and choose a version</p></li>
+<li><p>Click ‘Create’ and the environment will establish itself (Note: This may take a few minutes to set up)</p></li>
+<li><p>Once established you can see your new environment in the list and all of the packages that are installed</p></li>
+<li><p>Click on the green arrow and select “Open Terminal”</p>
+<p><img src="images/AnacondaTerminal.jpg" class="img-fluid"></p></li>
+<li><p>This will open a command prompt where you can write Python code to edit the environment</p></li>
+<li><p>Double check the python version by typing <code>python –version</code>, this should return a version between 3.9-3.11</p></li>
+<li><p>To install packages more packages type <code>conda install &lt;package name&gt;</code> or <code>pip install &lt;package name&gt;</code>. If the package is included in the base libraries, you can use the <code>conda install</code> format (i.e.&nbsp;<code>conda install netcdf4</code>). If the package is not included, use the pip format (i.e.&nbsp;<code>pip install mbari-pbp</code>)</p></li>
+<li><p>Installing mbari-pbp should also automatically install PyPAM, if you are still missing the PyPAM package type <code>pip install lifewatch-pypam</code> into the environment command window</p></li>
+<li><p>You should now be ready to use PyPAM and PBP functions!</p></li>
+</ol>
+</section>
+</section>
+<section id="python-ides" class="level3">
+<h3 class="anchored" data-anchor-id="python-ides">Python IDEs</h3>
+<p>There are also several ways to interact with Python code through Integrated Development Environments (IDEs). These allow you to write, execute, and visualize Python Code within a user friendly interface. Anaconda Navigator has several IDEs included in the bundle, including Jupyter Notebook (PyPAM PBP example scripts).</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
