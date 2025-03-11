@@ -31,7 +31,7 @@ Our lab uses Python to run soundscape analyses using [PyPAM](https://github.com/
 There are several different ways to install and use Python, use what works best for you!
 
 1.  Go to [Anaconda distribution website](https://www.anaconda.com/download/success)
-2.  Select your operating system and download the installer (standard/default settings are ok). Anaconda Navigator comes bundled with a Python distributor and will automatically install the latest Python version (currently 3.12), go here for directions on using other versions
+2.  Select your operating system and download the installer (standard/default settings are ok). Anaconda Navigator comes bundled with a Python distributor and will automatically install the latest Python version (currently 3.12), see ['Creating New Environments'](https://sael-swfsc.github.io/SAEL-lab-manual/content/Acoustic-Analysis-software.html#creating-new-environments) steps below to use a different version of Python
 3.  You're ready to use Python!
 
 ### Python Environments
