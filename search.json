@@ -1170,14 +1170,24 @@
     "href": "content/Data-Archive-GCP.html",
     "title": "Google Cloud Archive and Analysis",
     "section": "",
-    "text": "All of this is temporary. End goal is to have all of this documented on the national PAM repo, and link to it here.\nLink to SWFSC GCP Bucket\nYou can use the built in upload tool to upload small amounts of data directly to GCP"
+    "text": "All of this is temporary. End goal is to have all of this documented on the national PAM repo, and link to it here.\nLink to SWFSC GCP Bucket\nYou can use the built in upload tool to upload small amounts of data directly to GCP",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Google Cloud Archive and Analysis"
+    ]
   },
   {
     "objectID": "content/Data-Archive-GCP.html#bulk-upload-using-gcloud-cli",
     "href": "content/Data-Archive-GCP.html#bulk-upload-using-gcloud-cli",
     "title": "Google Cloud Archive and Analysis",
     "section": "Bulk upload using gcloud CLI",
-    "text": "Bulk upload using gcloud CLI\n\nSee this document for PAM GCP Technical System documentation and a link to the PAM buckets\nFollow steps 1-4 under the Configure gcloud section in this document to install Google Cloud SDK on your computer\nOpen the command prompt and type “gsutil -m cp -r F:/* gs://swfsc-1/drifting_recorder/”, where “F:/*” is the directory with data to upload and “gs://swfsc-1/drifting_recorder/” is the cloud bucket and folder you want to upload data to\nProcessing should start, wait for command prompt to update then refresh the SWFSC bucket website to see your uploaded data\n\n\n\n\n\n\n\nIf you are uploaded a large dataset, it is recommended to run this after normal work hours and on the weekends. See this document with more directions or contact Dan Woodrich (daniel.woodrich@noaa.gov)"
+    "text": "Bulk upload using gcloud CLI\n\nSee this document for PAM GCP Technical System documentation and a link to the PAM buckets\nFollow steps 1-4 under the Configure gcloud section in this document to install Google Cloud SDK on your computer\nOpen the command prompt and type “gsutil -m cp -r F:/* gs://swfsc-1/drifting_recorder/”, where “F:/*” is the directory with data to upload and “gs://swfsc-1/drifting_recorder/” is the cloud bucket and folder you want to upload data to\nProcessing should start, wait for command prompt to update then refresh the SWFSC bucket website to see your uploaded data\n\n\n\n\n\n\n\nIf you are uploaded a large dataset, it is recommended to run this after normal work hours and on the weekends. See this document with more directions or contact Dan Woodrich (daniel.woodrich@noaa.gov)",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Google Cloud Archive and Analysis"
+    ]
   },
   {
     "objectID": "content/Hardware_Handheld-Hydrophone.html",
