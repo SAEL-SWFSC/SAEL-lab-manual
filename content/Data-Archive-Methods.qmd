@@ -1,0 +1,35 @@
+---
+title: Data Archive Methods
+---
+
+[Add process from data download to final processing, maybe a figure?]
+
+## [Google Cloud](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-GCP.html)
+::: callout-important
+## Since this is temporary for processing-- should it go here or with Analysis?
+:::
+Google Cloud is for temporary processing/storing of data.
+
+
+
+## [NCEI](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html)
+NCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.
+
+Users can access data through the interactive map or request data using Google Cloud Platform
+
+## [Tethys](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Tethys.html)
+All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.
+
+The Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).
+
+## PACM/Makara
+::: callout-important
+## This needs it's own page
+:::
+All ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map. Archive methods can be found here.
+
+CalCurCEAS 2024 detection data - work in progress
+
+
+## [InPort](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-InPort.html)
+Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.

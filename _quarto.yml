@@ -44,7 +44,9 @@ website:
           - content/Inventory.qmd
       - section: "Data Management"
         contents:
-          - section: content/Data-Archive.qmd
+          - href: content/Data-Archive.qmd
+            text: Data Archive
+          - section: content/Data-Archive-Methods.qmd
             contents:
               - content/Data-Archive-GCP.qmd
               - content/Data-Archive-NCEI.qmd
