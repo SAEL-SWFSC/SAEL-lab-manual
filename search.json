@@ -558,7 +558,7 @@
     "href": "content/Data-Archive.html",
     "title": "Data Archive",
     "section": "",
-    "text": "Local data storage is currently located in several different locations. Our primary lab (La Jolla Shores, Rm385) contains\nAll ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.\nAll raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on the DON\n(\\swc-storage4-s-ACOUSTICS)\nAll archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)",
+    "text": "Local data storage is currently located in several different locations: ### Digital Data Storage - Old Synology Rm390 - New Synology Rm420 - MMTD-ACOUSTICS(\\swc-storage4-s) aka “The Don” (IT Server Room 433A) - Hard Drive Closet Rm390 with Hard Drive Inventory\n\n\n\nTape Drive Closet Rm420\nGreenbook Cabinet Rm420",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -569,7 +569,7 @@
     "href": "content/Data-Archive.html#local-data-archive",
     "title": "Data Archive",
     "section": "",
-    "text": "Local data storage is currently located in several different locations. Our primary lab (La Jolla Shores, Rm385) contains\nAll ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.\nAll raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on the DON\n(\\swc-storage4-s-ACOUSTICS)\nAll archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)",
+    "text": "Local data storage is currently located in several different locations: ### Digital Data Storage - Old Synology Rm390 - New Synology Rm420 - MMTD-ACOUSTICS(\\swc-storage4-s) aka “The Don” (IT Server Room 433A) - Hard Drive Closet Rm390 with Hard Drive Inventory\n\n\n\nTape Drive Closet Rm420\nGreenbook Cabinet Rm420",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -580,18 +580,7 @@
     "href": "content/Data-Archive.html#public-repositories-in-progress",
     "title": "Data Archive",
     "section": "Public Repositories (in progress)",
-    "text": "Public Repositories (in progress)\nAdd links to PAM national repo and OST\nSAEL Github Organization is for new and recent repositories.\nSpecific publicly accessible projects include:\n\nAdrift in the California Current (Github Repository and website)\nBeaked Whales from NOAA’s CCES 2018 Survey (Figshare)",
-    "crumbs": [
-      "Data Management",
-      "Data Archive"
-    ]
-  },
-  {
-    "objectID": "content/Data-Archive.html#google-cloud-storage",
-    "href": "content/Data-Archive.html#google-cloud-storage",
-    "title": "Data Archive",
-    "section": "Google Cloud Storage",
-    "text": "Google Cloud Storage\nLink to GCP methods and archive (work in progress)",
+    "text": "Public Repositories (in progress)\nSAEL Github Organization is for new and recent repositories. NOAA Fisheries National PAM Network\n\nSpecific publicly accessible projects include:\n\nAdrift in the California Current (Github Repository and website)\nBeaked Whales from NOAA’s CCES 2018 Survey (Figshare)\nCalCurCEAS 2024 Drifter Analysis\nTowed Array Metadata Archive",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -602,18 +591,18 @@
     "href": "content/Data-Archive.html#ncei-data-archive",
     "title": "Data Archive",
     "section": "NCEI Data Archive",
-    "text": "NCEI Data Archive\nNCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.\nUsers can access data through the interactive map or request data using Google Cloud Platform\nSee NCEI section for more information and detailed archive methods",
+    "text": "NCEI Data Archive\nNCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.\nUsers can access data through the interactive map or request data using Google Cloud Platform\nSee NCEI Data Archive section for more information and detailed archive methods",
     "crumbs": [
       "Data Management",
       "Data Archive"
     ]
   },
   {
-    "objectID": "content/Data-Archive.html#pacm",
-    "href": "content/Data-Archive.html#pacm",
+    "objectID": "content/Data-Archive.html#pacm-makara",
+    "href": "content/Data-Archive.html#pacm-makara",
     "title": "Data Archive",
-    "section": "PACM",
-    "text": "PACM\nAll ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map. Archive methods can be found here.\nCalCurCEAS 2024 detection data - work in progress",
+    "section": "PACM, Makara",
+    "text": "PACM, Makara\nAll ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map. Additional metadata will be uploaded as it is compiled and quality-checked.\n\n\n\n\n\n\nThis needs it’s own page\n\n\n\n\n\n\nPACM Archive methods can be found here.",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -624,7 +613,7 @@
     "href": "content/Data-Archive.html#tethys",
     "title": "Data Archive",
     "section": "Tethys",
-    "text": "Tethys\nAll ADRIFT, PASCAL, CCES, and CalCurCEAS deployment metadata and detection data are archived locally in our lab’s Tethys database. See the Tethys section for detailed archive methods and more information.",
+    "text": "Tethys\nAll ADRIFT, PASCAL, CCES, and CalCurCEAS deployment metadata and detection data are archived locally in our lab’s Tethys database. Additional metadata will be uploaded as it is compiled and quality-checked.\nSee the Tethys section for detailed archive methods and more information.",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -635,7 +624,7 @@
     "href": "content/Data-Archive.html#inport-metadata-archive",
     "title": "Data Archive",
     "section": "InPort Metadata Archive",
-    "text": "InPort Metadata Archive\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\nSee InPort section for more information on accessing and submitting metadata",
+    "text": "InPort Metadata Archive\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\nSee InPort section for more information on accessing and submitting metadata.",
     "crumbs": [
       "Data Management",
       "Data Archive"
