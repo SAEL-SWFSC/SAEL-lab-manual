@@ -3,6 +3,7 @@ title: Data Archive
 ---
 
 ## Local Data Archive
+Local data storage is currently located in several different locations. Our primary lab (La Jolla Shores, Rm385) contains 
 
 All ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.
 
