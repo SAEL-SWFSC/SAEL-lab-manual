@@ -21,16 +21,16 @@ Local data storage is currently located in several different locations:
     aka "The Don" (IT Server Room 433A)
 
 -   [Hard Drive Closet
-    Rm390](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventory_Rm390_SAEL_Rankin_14March2025.pdf)
+    Rm390](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf)
     (detailed [Hard Drive
     Inventory](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf))
 
 #### *Analog Data Storage*
 
 -   [Tape Drive Closet
-    Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf)
+    Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/TapeRecordingInventory_Rm385_SAEL_Rankin_14March2025.pdf)
 -   [Greenbook Cabinet
-    Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf)
+    Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/GreenbookInventory_Rm385_SAEL_Rankin_14March2025.pdf)
 
 ## Public Repositories (*in progress)*
 
