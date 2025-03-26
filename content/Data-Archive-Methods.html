@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Intro to ADRIFT – SAEL Lab Manual</title>
+<title>Data Archive Methods – SAEL Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/Data-Archive-GCP.html" rel="next">
+<link href="../content/Data-Archive.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -81,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Intro to ADRIFT</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/Data-Archive.html">Data Management</a></li><li class="breadcrumb-item"><a href="../content/Data-Archive-Methods.html">Data Archive Methods</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -154,13 +156,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Data Management</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Data-Archive.html" class="sidebar-item-text sidebar-link">
@@ -169,13 +171,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../content/Data-Archive-Methods.html" class="sidebar-item-text sidebar-link">
+            <a href="../content/Data-Archive-Methods.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Data Archive Methods</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Data-Archive-GCP.html" class="sidebar-item-text sidebar-link">
@@ -320,19 +322,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction-to-adrift" id="toc-introduction-to-adrift" class="nav-link active" data-scroll-target="#introduction-to-adrift">Introduction to ADRIFT</a>
-  <ul class="collapse">
-  <li><a href="#for-more-information" id="toc-for-more-information" class="nav-link" data-scroll-target="#for-more-information">For More Information:</a></li>
-  </ul></li>
+  <li><a href="#google-cloud" id="toc-google-cloud" class="nav-link active" data-scroll-target="#google-cloud">Google Cloud</a></li>
+  <li><a href="#ncei" id="toc-ncei" class="nav-link" data-scroll-target="#ncei">NCEI</a></li>
+  <li><a href="#tethys" id="toc-tethys" class="nav-link" data-scroll-target="#tethys">Tethys</a></li>
+  <li><a href="#pacmmakara" id="toc-pacmmakara" class="nav-link" data-scroll-target="#pacmmakara">PACM/Makara</a></li>
+  <li><a href="#inport" id="toc-inport" class="nav-link" data-scroll-target="#inport">InPort</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Analysis-adrift.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Analysis-adrift.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive-Methods.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive-Methods.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/Data-Archive.html">Data Management</a></li><li class="breadcrumb-item"><a href="../content/Data-Archive-Methods.html">Data Archive Methods</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Intro to ADRIFT</h1>
+<h1 class="title">Data Archive Methods</h1>
 </div>
 
 
@@ -349,18 +352,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction-to-adrift" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-adrift">Introduction to ADRIFT</h2>
-<p>The ADRIFT in the California Current project uses relatively low cost drifting buoys to study the marine environment. The buoys drift freely with the currents and provide a means of studying the marine environment that are not tethered to a ship or the seafloor. This allows us to study animals (and the environment) in deep, offshore waters without the influence of a noisy ship.</p>
-<p>ADRIFT buoys consist of a surface buoy, a hydrophone array and recorder at depth, and a rope to connect the surface buoy to the array. The surface buoy provides communications (satellite tracker and radar reflector to avoid vessel collision). Our recording system consists of a 2 element vertical hydrophone array connected to a Soundtrap multi-channel autonomous recorder.</p>
-<section id="for-more-information" class="level3">
-<h3 class="anchored" data-anchor-id="for-more-information">For More Information:</h3>
-<p><a href="https://www.fisheries.noaa.gov/west-coast/science-data/southwest-acoustic-ecology-lab">Southwest Acoustic Ecology</a> Web Page and <a href="https://www.fisheries.noaa.gov/west-coast/science-data/adrift-california-current">ADRIFT web page</a></p>
-<p>Our <a href="https://www.fisheries.noaa.gov/taxonomy/term/1000356091">Blog</a></p>
-<p>Detailed methods for field data collection can be found <a href="https://sael-swfsc.github.io/adrift-field-methods/">here</a>.</p>
+<p>[Add process from data download to final processing, maybe a figure?]</p>
+<section id="google-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="google-cloud"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-GCP.html">Google Cloud</a></h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Since this is temporary for processing– should it go here or with Analysis?
+</div>
+</div>
+<div class="callout-body-container callout-body">
 
-
+</div>
+</div>
+<p>Google Cloud is for temporary processing/storing of data.</p>
 </section>
+<section id="ncei" class="level2">
+<h2 class="anchored" data-anchor-id="ncei"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html">NCEI</a></h2>
+<p>NCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.</p>
+<p>Users can access data through the interactive map or request data using Google Cloud Platform</p>
+</section>
+<section id="tethys" class="level2">
+<h2 class="anchored" data-anchor-id="tethys"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Tethys.html">Tethys</a></h2>
+<p>All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.</p>
+<p>The Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).</p>
+</section>
+<section id="pacmmakara" class="level2">
+<h2 class="anchored" data-anchor-id="pacmmakara">PACM/Makara</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+This needs it’s own page
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>All ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map. Archive methods can be found here.</p>
+<p>CalCurCEAS 2024 detection data - work in progress</p>
+</section>
+<section id="inport" class="level2">
+<h2 class="anchored" data-anchor-id="inport"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-InPort.html">InPort</a></h2>
+<p>Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -925,6 +967,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/Data-Archive.html" class="pagination-link" aria-label="Data Archive">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Archive</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/Data-Archive-GCP.html" class="pagination-link" aria-label="Google Cloud Archive and Analysis">
+        <span class="nav-page-text">Google Cloud Archive and Analysis</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -933,7 +987,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Analysis-adrift.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Analysis-adrift.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive-Methods.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive-Methods.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

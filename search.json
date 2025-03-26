@@ -343,7 +343,7 @@
     "text": "All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\n\nOpen Tethys batch file (Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat)\n\n\n\n\n\n\nNote\n\n\n\nThis may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)\n\n\nOnce the tethys.bat file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)\n\nNavigate to the web address and you should see the following screen\n\nFollow the Tethys documentation for interacting with the web client\n\n\n\n\n\n\n\n\n\n\nThe Tethys server (tethys.bat) must be running to use the Data Explorer\n\n\n\n\n\n\n\nNavigate to the Data Explorer batch file (Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat)\nIf you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3\nRight click on data_explorer.bat, and select edit\nUpdate the server argument to point to your computer/server name (changing “../python39/python.exe data_explorer.py –server http://swc-srankin1-d.nmfs.local:9779” to “../python39/python.exe data_explorer.py –server http://swc-kourtney-l.nmfs.local:9779”\nSave and close, and double click on data_explorer.bat to run the batch file\nThere will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be http://127.0.0.1:8050/\nSee Tethys Data Explorer documentation for more information",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "Tethys"
     ]
   },
@@ -355,7 +355,7 @@
     "text": "All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\n\nOpen Tethys batch file (Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat)\n\n\n\n\n\n\nNote\n\n\n\nThis may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)\n\n\nOnce the tethys.bat file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)\n\nNavigate to the web address and you should see the following screen\n\nFollow the Tethys documentation for interacting with the web client\n\n\n\n\n\n\n\n\n\n\nThe Tethys server (tethys.bat) must be running to use the Data Explorer\n\n\n\n\n\n\n\nNavigate to the Data Explorer batch file (Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat)\nIf you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3\nRight click on data_explorer.bat, and select edit\nUpdate the server argument to point to your computer/server name (changing “../python39/python.exe data_explorer.py –server http://swc-srankin1-d.nmfs.local:9779” to “../python39/python.exe data_explorer.py –server http://swc-kourtney-l.nmfs.local:9779”\nSave and close, and double click on data_explorer.bat to run the batch file\nThere will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be http://127.0.0.1:8050/\nSee Tethys Data Explorer documentation for more information",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "Tethys"
     ]
   },
@@ -367,7 +367,7 @@
     "text": "Archiving Deployment Metadata\nAny new deployments saved in the Deployment Details spreadsheet need to be archived to our Tethys database.\n\nDeployment Worksheet Prep Script\nFollow these steps to prepare a Deployment Worksheet for Tethys\n\nClone the TethysSAEL repository to your local computer and open the Create_Deployment_Worksheet.Rfile\nMake sure the deployments you want to archive are saved to the deployDetails sheet in Deployment Details, download the file as a .xslx, and save it to ‘~TethysSAEL\\Deployment Worksheets’, overwriting the previous version if needed\nIn the Create_Deployment_Worksheet.R file, run lines 24-104 to create the function to make the worksheet\nSee the example function use in lines 9-14\n##Example\n# change your project name as needed and number of repetitions\nProjectID = rep('CalCurCEAS',25) \n# List out the deployment ID for each deployment you want to package\nDepID=c('006','008','009','010','011','012','013','014','015','016','017','018','019','020','021','022','023','024','025','026','027')\n# Run the function for the deployments set above\nmapply(makeTethysDep,ProjectID,DepID)\nThe output worksheets will be save to the main Deployment Worksheet folder. Move them to a project specific folder\nPush your new Deployment Worksheets back to the repository\n\n\n\nImporting Deployment Worksheets To Tethys\nThere are a variety of ways to import data to Tethys, these directions will cover the web client and Matlab based uploads. See Tethys Documentation for other options and more details\n\nWeb Client Uploads\n\nFollow the steps in the Tethys Web Interface section above to start the server and open the Web Client\nIn the top right, click on the dropdown and select ‘Import data’\n\nSet the Import Map to SWFSC.Mobile.Deployments.MultiChannel.wGPS.wSensors.wNotes, Collection to Deployments, and Species Coding to NOAA.NMFS.v4\nClick on + Data Source, and ensure Microsoft Excel Driver is selected. Set the Source Name to swfsc\nClick Select to choose a deployment worksheet to upload, or drag a file into the window.\nYour screen should now look something like this\n\nIf you are making corrections to an existing Deployment Sheet, check the ‘Overwrite existing’ box. Click Upload to Tethys and the processing will start. If there is an error it will show up below step 3 in the image above. If there are no errors it will show the following message\n\n\n\n\nMatlab Based Uploads\nNote: This is currently not working so these are the general directions, however no screenshots are available to show step by step changes\n\nFollow the steps in the Tethys Web Interface section above to start the server. Note, the web interface does not need to be open at this time\nOpen Matlab and enter the following into the command window\n% Fill in your server name in the second argument\ndbSubmit('Server', 'http://SWC-SRANKIN1-D.nmfs.local:9779')\nA new window should open called ‘Tethys Import Metadata’\nIf not already set, change the Tethys Server to match your server\nSet Collection to Deployments, Import Map to SWFSC.Mobile.Deployments.MultiChannel.wGPS.wSensors.wNotes, and Species Abbreviations to NOAA.NMFS.v4\nSelect the file you want to import by setting the path in the File import Tab (select Overwrite existing if making updates to existing files)\nClick Submit to Tethys and the process will start. Similar to the web client, messages will appear in the box below to indicate any errors or if the file upload was a success.\nYou can use this option to batch process by setting the path to a folder, rather than an individual file",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "Tethys"
     ]
   },
@@ -379,7 +379,7 @@
     "text": "Archiving Detections\nSimilar to archiving deployments, in progress",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "Tethys"
     ]
   },
@@ -391,7 +391,7 @@
     "text": "Updating the Database\nThere are several methods to update existing documents in the database. These directions will cover Matlab based XQuery methods and a simple reuploading method.\n\nXQueries\nTo update existing database entries, you can pass Matlab an XQuery that points to a specific node and includes an updated value for that node. An example XQuery and sample Matlab script are included here.\n\n\n\n\n\n\nMake sure you have backed up a copy of your database before attempting to update\n\n\n\n\n\n\n\nCreating a new XQuery\nFollow the format of the example XQuery here\n\nIdentify the specific node you want to change. You can find deployments and detection files in the Tethys web browser (click on Tethys icon in top right and select an option from ‘Document listings per collection’). In the example file, we are interested in the audio sensor number from ADRIFT 102 and we want to change it from 856142 to 856141. Change this information to match your node of interest\nSave the XQuery with a descriptive name to ‘Z:’\n\n\n\nRunning Query and Updated Database\n\nOpen the Tethys batch file (see directions here) and check the server name. You should see something like http://YourComputerName.local:9779 or just http://localhost:9779\nOpen TethysXQueryExample.m script in Matlab\nAdd a new Matlab path with subfolders to “Z:”. This will point you to the correct path in the SAEL lab Tethys database and allow you to use Tethys functions and commands\nRun line 5 in the script to initiate connection to the database. If your server name from step 1 is different then ‘localhost:9779’ you will need to change the second argument from ‘localhost’ to the name of your server (example YourComputerName.local)\nTest the connection to the database by running line 7. If you see a new item in the workspace title DeploymentInfo with all deployments listed you can proceed to step 6\nEnsure the path to the .xq file is correct and run line 12\nTo check if the database was uploaded, you can navigate to the specific node using the Tethys web interface query tools\n\n\n\n\nReuploading Data\nYou can also update the database by editing the existing document and reuploading it to the Database.\n\nDeployment Example\nIn this example, I want to change the ADRIFT 102 audio sensor channel 1 number from 856142 to 856141\n\nFind and download the ADRIFT 102 deployment worksheet (all deployment worksheets should be stored here\nOpen the worksheet and navigate to the SensorNumber field on the Sensor tab. Change the sensor number for channel 1\nSave the worksheet and ensure the updated one is reuploaded here\nFollow the directions here to import the updated deployment worksheet using one of the methods described. Make sure the ‘Overwrite existing’ box is selected to add your updates to the database\nTo check if the database was uploaded, you can navigate to the specific node using the Tethys web interface query tools",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "Tethys"
     ]
   },
@@ -403,7 +403,7 @@
     "text": "More info\nSee Tethys Documentation, Tethys SAEL GitHub repository, and our detailed ADRIFT methods for more information.\nContact Kourtney Burger (kourtney.burger@noaa.gov) with any questions",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "Tethys"
     ]
   },
@@ -488,262 +488,69 @@
     ]
   },
   {
-    "objectID": "content/Hardware.html#gliders",
-    "href": "content/Hardware.html#gliders",
-    "title": "Hardware Methods",
-    "section": "Gliders",
-    "text": "Gliders\nPAM-equipped buoyancy-driven gliders allow for autonomous data collection in large regions of offshore waters for extended periods of time.",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#drifting-recorders",
-    "href": "content/Hardware.html#drifting-recorders",
-    "title": "Hardware Methods",
-    "section": "Drifting Recorders",
-    "text": "Drifting Recorders\nDrifting acoustic recorders are low-cost approaches to PAM data collection in deep, offshore waters. Hydrophones can be deployed at depth, and are ideal for studying deep-diving species, such as beaked whales.",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#sonobuoys",
-    "href": "content/Hardware.html#sonobuoys",
-    "title": "Hardware Methods",
-    "section": "Sonobuoys",
-    "text": "Sonobuoys\nSonobuoys are expendable drifting recorders with low-frequency vector sensor hydrophones that can provide a magnetic bearing angle to the sound source. This ability to localize provides added benefits for confirming the source of recorded sounds and is frequently used to study the vocal repertoire of baleen whales when deployed in the presence of sighted animals.",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#towed-arrays",
-    "href": "content/Hardware.html#towed-arrays",
-    "title": "Hardware Methods",
-    "section": "Towed Arrays",
-    "text": "Towed Arrays\nTowing hydrophone arrays behind survey vessels allows for a complementary approach to detecting marine mammals during surveys. This can be especially helpful for species that are difficult to detect using visual observation methods, or during inclement weather where visual observation is limited.",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#handheld-hydrophones",
-    "href": "content/Hardware.html#handheld-hydrophones",
-    "title": "Hardware Methods",
-    "section": "Handheld Hydrophones",
-    "text": "Handheld Hydrophones\nHandheld hydrophones can be deployed from drifting vessels, and provides an easy to use method for collecting passive acoustic data near a vessel. This is ideal for fieldwork on small boats that work in close association with sighted animals.",
-    "crumbs": [
-      "Hardware Methods"
-    ]
-  },
-  {
-    "objectID": "content/Safety-Lab.html",
-    "href": "content/Safety-Lab.html",
-    "title": "General Lab Safety",
+    "objectID": "content/Data-Archive-Methods.html",
+    "href": "content/Data-Archive-Methods.html",
+    "title": "Data Archive Methods",
     "section": "",
-    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
-    "crumbs": [
-      "Lab Management",
-      "General Lab Safety"
-    ]
-  },
-  {
-    "objectID": "content/Safety-Lab.html#safety-resources",
-    "href": "content/Safety-Lab.html#safety-resources",
-    "title": "General Lab Safety",
-    "section": "",
-    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
-    "crumbs": [
-      "Lab Management",
-      "General Lab Safety"
-    ]
-  },
-  {
-    "objectID": "content/Safety-Lab.html#chemical-inventory",
-    "href": "content/Safety-Lab.html#chemical-inventory",
-    "title": "General Lab Safety",
-    "section": "Chemical Inventory",
-    "text": "Chemical Inventory\n\nCurrently SAEL only possesses commercially available (over the counter) products and these are not required to be a part of the chemical inventory.\n\nAs such, we do not currently have a chemical inventory (updated Feb 2023).",
-    "crumbs": [
-      "Lab Management",
-      "General Lab Safety"
-    ]
-  },
-  {
-    "objectID": "content/Safety-Lab.html#organization",
-    "href": "content/Safety-Lab.html#organization",
-    "title": "General Lab Safety",
-    "section": "Organization",
-    "text": "Organization\n\nKeep lab tidy and clean. If you start on a project and intend to keep working on it over a few days (i.e. building equipment) please clean up after you have completed work.\nIf you notice that something is running low (i.e. electrical tape, crab floats, nuts and bolts) please contact Shannon Rankin or Kourtney Burger so that they may order more supplies.",
-    "crumbs": [
-      "Lab Management",
-      "General Lab Safety"
-    ]
-  },
-  {
-    "objectID": "content/OpenScience.html",
-    "href": "content/OpenScience.html",
-    "title": "Open Science",
-    "section": "",
-    "text": "We firmly believe in the power of Open Science, and the reponsibility for federal scientists to actively engage in Open Science. As our efforts have expanded, we have shifted our Open Science materials to a stand-alone repository that can be accessed here: Open Science.",
-    "crumbs": [
-      "Open Science"
-    ]
-  },
-  {
-    "objectID": "content/media.html",
-    "href": "content/media.html",
-    "title": "Media",
-    "section": "",
-    "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
+    "text": "[Add process from data download to final processing, maybe a figure?]",
     "crumbs": [
       "Data Management",
-      "Media"
+      "Data Archive Methods"
     ]
   },
   {
-    "objectID": "content/media.html#public-sound-archive",
-    "href": "content/media.html#public-sound-archive",
-    "title": "Media",
-    "section": "",
-    "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
+    "objectID": "content/Data-Archive-Methods.html#google-cloud",
+    "href": "content/Data-Archive-Methods.html#google-cloud",
+    "title": "Data Archive Methods",
+    "section": "Google Cloud",
+    "text": "Google Cloud\n\n\n\n\n\n\nSince this is temporary for processing– should it go here or with Analysis?\n\n\n\n\n\n\nGoogle Cloud is for temporary processing/storing of data.",
     "crumbs": [
       "Data Management",
-      "Media"
+      "Data Archive Methods"
     ]
   },
   {
-    "objectID": "content/media.html#internal-media-archive",
-    "href": "content/media.html#internal-media-archive",
-    "title": "Media",
-    "section": "Internal Media Archive",
-    "text": "Internal Media Archive\nWe have internal archives for sounds, images, and videos on our lab Google Drive (see link here). Please document all submissions according to the instructions posted in their respective folders.",
+    "objectID": "content/Data-Archive-Methods.html#ncei",
+    "href": "content/Data-Archive-Methods.html#ncei",
+    "title": "Data Archive Methods",
+    "section": "NCEI",
+    "text": "NCEI\nNCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.\nUsers can access data through the interactive map or request data using Google Cloud Platform",
     "crumbs": [
       "Data Management",
-      "Media"
+      "Data Archive Methods"
     ]
   },
   {
-    "objectID": "content/media.html#web-site",
-    "href": "content/media.html#web-site",
-    "title": "Media",
-    "section": "Web Site",
-    "text": "Web Site\nThe website for the Southwest Acoustic Ecology Lab main web page currently includes information about our current research activities. For modifications to the website, contact cory.hom-weaver@noaa.gov.",
+    "objectID": "content/Data-Archive-Methods.html#tethys",
+    "href": "content/Data-Archive-Methods.html#tethys",
+    "title": "Data Archive Methods",
+    "section": "Tethys",
+    "text": "Tethys\nAll ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).",
     "crumbs": [
       "Data Management",
-      "Media"
+      "Data Archive Methods"
     ]
   },
   {
-    "objectID": "content/media.html#sound-bytes-blog",
-    "href": "content/media.html#sound-bytes-blog",
-    "title": "Media",
-    "section": "Sound Bytes Blog",
-    "text": "Sound Bytes Blog\nOur periodic ‘Sound Bytes’ blog shares stories about how we develop tools, build partnerships, and make discoveries. We encourage all team. A writing/posting guide is available here, and Contact cory.hom-weaver@noaa.gov for more information.\nSee link to all blogs here.",
+    "objectID": "content/Data-Archive-Methods.html#pacmmakara",
+    "href": "content/Data-Archive-Methods.html#pacmmakara",
+    "title": "Data Archive Methods",
+    "section": "PACM/Makara",
+    "text": "PACM/Makara\n\n\n\n\n\n\nThis needs it’s own page\n\n\n\n\n\n\nAll ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map. Archive methods can be found here.\nCalCurCEAS 2024 detection data - work in progress",
     "crumbs": [
       "Data Management",
-      "Media"
+      "Data Archive Methods"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Lab Manual",
-    "section": "",
-    "text": "The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA’s management needs. We are part of the Marine Mammal and Turtle Division at NOAA’s Southwest Fisheries Science Center in La Jolla, California.\nThis lab manual serves as the go-to handbook for the behind-the-scenes information to support our science.\n\nTeam Members\nShannon Rankin, SAEL Team Leader\nCory Hom-Weaver, Acoustician and Fieldwork Manager\nKourtney Burger, Acoustician and Data Manager\n\n\nGithub Repositories\nPAM Gliders\n\nPAM-UxS\nGlider Rodeo\n\nAdrift in the California Current:\n\nAdrift Report\nField Methods\nAnalysis Methods\n\nBANTER_Beaked Whales\nFOSSA Soundscape\nSAEL Lab Hardware\nWant to Copy this Lab Manual Format?\nUse the PAM_template_lab_manual following these methods.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "content/Hardware_Gliders.html",
-    "href": "content/Hardware_Gliders.html",
-    "title": "PAM Gliders",
-    "section": "",
-    "text": "NOAA Fisheries will lead a 3 year effort to accelerate a transition to operations for using PAM-based glider surveys to augment existing surveys. To expand on these efforts, PIFSC and SWFSC will lead a 3 year effort to accelerate the transition to operations for PAM-based glider surveys. The work will be focused in the Pacific initially because these Centers are ready to act and they are collectively responsible for the largest area under NMFS jurisdiction, have acute shortages of adequate shiptime, and must find alternative survey modalities to maintain their assessment operations. Despite the regional focus, the goal will be to develop a Research to Operations plan that can be adapted or applied in other regions seeking to implement PAM-equipped glider surveys to support their marine mammal assessments. The effort includes:\n\n\n\n\n\nBuild capacity to sustain glider operations. PIFSC and SWFSC will increase capacity to sustain PAM-glider operations through support for glider technicians at each Center and for pilot and technician training. The Pacific-wide R2O plan will include considerations of operational costs for conducting PAM-glider surveys into the future.\nIn-water instrumentation testing of several PAM-glider systems with the goal of examining hardware and sensor choices and how these choices may vary based on regional differences in assessment needs and oceanographic realities.\nConcurrent glider and shipboard surveys. We will deploy several PAM-equipped gliders in association with two large-scale assessment surveys- PacMAPPS west coast in 2024 and PacMAPPS Hawaiʻi in 2025. These surveys provide an opportunity to collect glider datasets that can be compared alongside traditional cetacean survey data to guide future survey design and analytical advancements. These surveys happen infrequently, such that this is a time-sensitive opportunity to begin validation of glider-based work.\nDevelop Spatial Modeling Methods. We will initiate development of statistical models to accommodate marine mammal acoustic detection data from PAM Gliders, facilitating adoption of these methods to address our stock assessment needs.\n\nThis is a new and ongoing effort, and updates can be found on the NOAA Fisheries PAM-Equipped Glider Research site.",
-    "crumbs": [
-      "Hardware Methods",
-      "PAM Gliders"
-    ]
-  },
-  {
-    "objectID": "content/Acoustic-Analysis-software.html",
-    "href": "content/Acoustic-Analysis-software.html",
-    "title": "Acoustic Analysis Software",
-    "section": "",
-    "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
-    "crumbs": [
-      "Software Management",
-      "Acoustic Analysis Software"
-    ]
-  },
-  {
-    "objectID": "content/Acoustic-Analysis-software.html#pamguard",
-    "href": "content/Acoustic-Analysis-software.html#pamguard",
-    "title": "Acoustic Analysis Software",
-    "section": "",
-    "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
-    "crumbs": [
-      "Software Management",
-      "Acoustic Analysis Software"
-    ]
-  },
-  {
-    "objectID": "content/Acoustic-Analysis-software.html#matlab",
-    "href": "content/Acoustic-Analysis-software.html#matlab",
-    "title": "Acoustic Analysis Software",
-    "section": "Matlab",
-    "text": "Matlab\nMatlab\n\nTriton\nTriton",
-    "crumbs": [
-      "Software Management",
-      "Acoustic Analysis Software"
-    ]
-  },
-  {
-    "objectID": "content/Acoustic-Analysis-software.html#raven",
-    "href": "content/Acoustic-Analysis-software.html#raven",
-    "title": "Acoustic Analysis Software",
-    "section": "Raven",
-    "text": "Raven\nRaven",
-    "crumbs": [
-      "Software Management",
-      "Acoustic Analysis Software"
-    ]
-  },
-  {
-    "objectID": "content/Acoustic-Analysis-software.html#python",
-    "href": "content/Acoustic-Analysis-software.html#python",
-    "title": "Acoustic Analysis Software",
-    "section": "Python",
-    "text": "Python\nOur lab uses Python to run soundscape analyses using PyPAM and PBP\n\n\n\n\n\n\nThese directions are written by a new Python user. If you are an experienced user, please make suggestions/corrections as needed!\n\n\n\n\n\n\n\nDownloading and Installing Python\nThere are several different ways to install and use Python, use what works best for you!\n\nGo to Anaconda distribution website\nSelect your operating system and download the installer (standard/default settings are ok). Anaconda Navigator comes bundled with a Python distributor and will automatically install the latest Python version (currently 3.12), see ‘Creating New Environments’ steps below to use a different version of Python\nYou’re ready to use Python!\n\n\n\nPython Environments\nPython environments allow you to manage packages and Python versions, and ensures your project has the necessary dependencies. Anaconda Navigator allows you to set and work in different environments.\n\nCreating New Environments\nPyPAM requires a specific Python version (3.9-3.11) and some analyses require specific packages that are not included in the base Anaconda channels or Python Package Index (PyPI). Follow the directions below to set up a custom environment for PyPAM (the same directions can be applied to make other environments)\n\nOpen Anaconda Navigator and click on the ‘Environments’ tab on the left\nClick the ‘Create’ button on bottom left\nSet the Environment name (PyPAM for example) and ensure the Python box is checked with 3.9-3.11 version. You can also select the R box and choose a version\nClick ‘Create’ and the environment will establish itself (Note: This may take a few minutes to set up)\nOnce established you can see your new environment in the list and all of the packages that are installed\nClick on the green arrow and select “Open Terminal”\n\nThis will open a command prompt where you can write Python code to edit the environment\nDouble check the python version by typing python –version, this should return a version between 3.9-3.11\nTo install packages more packages type conda install &lt;package name&gt; or pip install &lt;package name&gt;. If the package is included in the base libraries, you can use the conda install format (i.e. conda install netcdf4). If the package is not included, use the pip format (i.e. pip install mbari-pbp)\nInstalling mbari-pbp should also automatically install PyPAM, if you are still missing the PyPAM package type pip install lifewatch-pypam into the environment command window\nYou should now be ready to use PyPAM and PBP functions!\n\n\n\n\nPython IDEs\nThere are also several ways to interact with Python code through Integrated Development Environments (IDEs). These allow you to write, execute, and visualize Python Code within a user friendly interface. Anaconda Navigator has several IDEs included in the bundle, including Jupyter Notebook (PyPAM PBP example scripts).",
-    "crumbs": [
-      "Software Management",
-      "Acoustic Analysis Software"
-    ]
-  },
-  {
-    "objectID": "content/Data-Archive-InPort.html",
-    "href": "content/Data-Archive-InPort.html",
-    "title": "InPort",
-    "section": "",
-    "text": "Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\n\n\n\nYou do not need an account to view metadata on InPort. Open the InPort home page and enter keywords to search the library\n\n\n\nTo submit metadata, you first must contact your center InPort Librarians to get an account set up.\nFollow detailed methods here to submit metadata according to InPort expectations\n\n\n\nInPort Home Page\nSWFSC Organization Library\nHelp Page",
+    "objectID": "content/Data-Archive-Methods.html#inport",
+    "href": "content/Data-Archive-Methods.html#inport",
+    "title": "Data Archive Methods",
+    "section": "InPort",
+    "text": "InPort\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.",
     "crumbs": [
       "Data Management",
-      "Data Archive",
-      "InPort"
-    ]
-  },
-  {
-    "objectID": "content/Data-Archive-InPort.html#inport-metadata-archive",
-    "href": "content/Data-Archive-InPort.html#inport-metadata-archive",
-    "title": "InPort",
-    "section": "",
-    "text": "Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\n\n\n\nYou do not need an account to view metadata on InPort. Open the InPort home page and enter keywords to search the library\n\n\n\nTo submit metadata, you first must contact your center InPort Librarians to get an account set up.\nFollow detailed methods here to submit metadata according to InPort expectations\n\n\n\nInPort Home Page\nSWFSC Organization Library\nHelp Page",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "InPort"
+      "Data Archive Methods"
     ]
   },
   {
@@ -751,7 +558,7 @@
     "href": "content/Data-Archive.html",
     "title": "Data Archive",
     "section": "",
-    "text": "All ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.\nAll raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on the DON\n(\\swc-storage4-s-ACOUSTICS)\nAll archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)",
+    "text": "Local data storage is currently located in several different locations. Our primary lab (La Jolla Shores, Rm385) contains\nAll ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.\nAll raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on the DON\n(\\swc-storage4-s-ACOUSTICS)\nAll archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -762,7 +569,7 @@
     "href": "content/Data-Archive.html#local-data-archive",
     "title": "Data Archive",
     "section": "",
-    "text": "All ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.\nAll raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on the DON\n(\\swc-storage4-s-ACOUSTICS)\nAll archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)",
+    "text": "Local data storage is currently located in several different locations. Our primary lab (La Jolla Shores, Rm385) contains\nAll ADRIFT, PASCAL, and CCES data are locally stored on shared servers/drives.\nAll raw data and current analysis for ADRIFT, PASCAL, and CCES can be found on the DON\n(\\swc-storage4-s-ACOUSTICS)\nAll archived projects and a copy of ADRIFT, PASCAL, and CCES SUD files can be found on the PAM Synology arrays (\\\\SWC-CMAP-N\\pam, \\\\SWC-CMAP-N\\pam2)",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -843,6 +650,265 @@
     "crumbs": [
       "Data Management",
       "Data Archive"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive-InPort.html",
+    "href": "content/Data-Archive-InPort.html",
+    "title": "InPort",
+    "section": "",
+    "text": "Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\n\n\n\nYou do not need an account to view metadata on InPort. Open the InPort home page and enter keywords to search the library\n\n\n\nTo submit metadata, you first must contact your center InPort Librarians to get an account set up.\nFollow detailed methods here to submit metadata according to InPort expectations\n\n\n\nInPort Home Page\nSWFSC Organization Library\nHelp Page",
+    "crumbs": [
+      "Data Management",
+      "Data Archive Methods",
+      "InPort"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive-InPort.html#inport-metadata-archive",
+    "href": "content/Data-Archive-InPort.html#inport-metadata-archive",
+    "title": "InPort",
+    "section": "",
+    "text": "Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\n\n\n\nYou do not need an account to view metadata on InPort. Open the InPort home page and enter keywords to search the library\n\n\n\nTo submit metadata, you first must contact your center InPort Librarians to get an account set up.\nFollow detailed methods here to submit metadata according to InPort expectations\n\n\n\nInPort Home Page\nSWFSC Organization Library\nHelp Page",
+    "crumbs": [
+      "Data Management",
+      "Data Archive Methods",
+      "InPort"
+    ]
+  },
+  {
+    "objectID": "content/Acoustic-Analysis-software.html",
+    "href": "content/Acoustic-Analysis-software.html",
+    "title": "Acoustic Analysis Software",
+    "section": "",
+    "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
+    "crumbs": [
+      "Software Management",
+      "Acoustic Analysis Software"
+    ]
+  },
+  {
+    "objectID": "content/Acoustic-Analysis-software.html#pamguard",
+    "href": "content/Acoustic-Analysis-software.html#pamguard",
+    "title": "Acoustic Analysis Software",
+    "section": "",
+    "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
+    "crumbs": [
+      "Software Management",
+      "Acoustic Analysis Software"
+    ]
+  },
+  {
+    "objectID": "content/Acoustic-Analysis-software.html#matlab",
+    "href": "content/Acoustic-Analysis-software.html#matlab",
+    "title": "Acoustic Analysis Software",
+    "section": "Matlab",
+    "text": "Matlab\nMatlab\n\nTriton\nTriton",
+    "crumbs": [
+      "Software Management",
+      "Acoustic Analysis Software"
+    ]
+  },
+  {
+    "objectID": "content/Acoustic-Analysis-software.html#raven",
+    "href": "content/Acoustic-Analysis-software.html#raven",
+    "title": "Acoustic Analysis Software",
+    "section": "Raven",
+    "text": "Raven\nRaven",
+    "crumbs": [
+      "Software Management",
+      "Acoustic Analysis Software"
+    ]
+  },
+  {
+    "objectID": "content/Acoustic-Analysis-software.html#python",
+    "href": "content/Acoustic-Analysis-software.html#python",
+    "title": "Acoustic Analysis Software",
+    "section": "Python",
+    "text": "Python\nOur lab uses Python to run soundscape analyses using PyPAM and PBP\n\n\n\n\n\n\nThese directions are written by a new Python user. If you are an experienced user, please make suggestions/corrections as needed!\n\n\n\n\n\n\n\nDownloading and Installing Python\nThere are several different ways to install and use Python, use what works best for you!\n\nGo to Anaconda distribution website\nSelect your operating system and download the installer (standard/default settings are ok). Anaconda Navigator comes bundled with a Python distributor and will automatically install the latest Python version (currently 3.12), see ‘Creating New Environments’ steps below to use a different version of Python\nYou’re ready to use Python!\n\n\n\nPython Environments\nPython environments allow you to manage packages and Python versions, and ensures your project has the necessary dependencies. Anaconda Navigator allows you to set and work in different environments.\n\nCreating New Environments\nPyPAM requires a specific Python version (3.9-3.11) and some analyses require specific packages that are not included in the base Anaconda channels or Python Package Index (PyPI). Follow the directions below to set up a custom environment for PyPAM (the same directions can be applied to make other environments)\n\nOpen Anaconda Navigator and click on the ‘Environments’ tab on the left\nClick the ‘Create’ button on bottom left\nSet the Environment name (PyPAM for example) and ensure the Python box is checked with 3.9-3.11 version. You can also select the R box and choose a version\nClick ‘Create’ and the environment will establish itself (Note: This may take a few minutes to set up)\nOnce established you can see your new environment in the list and all of the packages that are installed\nClick on the green arrow and select “Open Terminal”\n\nThis will open a command prompt where you can write Python code to edit the environment\nDouble check the python version by typing python –version, this should return a version between 3.9-3.11\nTo install packages more packages type conda install &lt;package name&gt; or pip install &lt;package name&gt;. If the package is included in the base libraries, you can use the conda install format (i.e. conda install netcdf4). If the package is not included, use the pip format (i.e. pip install mbari-pbp)\nInstalling mbari-pbp should also automatically install PyPAM, if you are still missing the PyPAM package type pip install lifewatch-pypam into the environment command window\nYou should now be ready to use PyPAM and PBP functions!\n\n\n\n\nPython IDEs\nThere are also several ways to interact with Python code through Integrated Development Environments (IDEs). These allow you to write, execute, and visualize Python Code within a user friendly interface. Anaconda Navigator has several IDEs included in the bundle, including Jupyter Notebook (PyPAM PBP example scripts).",
+    "crumbs": [
+      "Software Management",
+      "Acoustic Analysis Software"
+    ]
+  },
+  {
+    "objectID": "content/Hardware_Gliders.html",
+    "href": "content/Hardware_Gliders.html",
+    "title": "PAM Gliders",
+    "section": "",
+    "text": "NOAA Fisheries will lead a 3 year effort to accelerate a transition to operations for using PAM-based glider surveys to augment existing surveys. To expand on these efforts, PIFSC and SWFSC will lead a 3 year effort to accelerate the transition to operations for PAM-based glider surveys. The work will be focused in the Pacific initially because these Centers are ready to act and they are collectively responsible for the largest area under NMFS jurisdiction, have acute shortages of adequate shiptime, and must find alternative survey modalities to maintain their assessment operations. Despite the regional focus, the goal will be to develop a Research to Operations plan that can be adapted or applied in other regions seeking to implement PAM-equipped glider surveys to support their marine mammal assessments. The effort includes:\n\n\n\n\n\nBuild capacity to sustain glider operations. PIFSC and SWFSC will increase capacity to sustain PAM-glider operations through support for glider technicians at each Center and for pilot and technician training. The Pacific-wide R2O plan will include considerations of operational costs for conducting PAM-glider surveys into the future.\nIn-water instrumentation testing of several PAM-glider systems with the goal of examining hardware and sensor choices and how these choices may vary based on regional differences in assessment needs and oceanographic realities.\nConcurrent glider and shipboard surveys. We will deploy several PAM-equipped gliders in association with two large-scale assessment surveys- PacMAPPS west coast in 2024 and PacMAPPS Hawaiʻi in 2025. These surveys provide an opportunity to collect glider datasets that can be compared alongside traditional cetacean survey data to guide future survey design and analytical advancements. These surveys happen infrequently, such that this is a time-sensitive opportunity to begin validation of glider-based work.\nDevelop Spatial Modeling Methods. We will initiate development of statistical models to accommodate marine mammal acoustic detection data from PAM Gliders, facilitating adoption of these methods to address our stock assessment needs.\n\nThis is a new and ongoing effort, and updates can be found on the NOAA Fisheries PAM-Equipped Glider Research site.",
+    "crumbs": [
+      "Hardware Methods",
+      "PAM Gliders"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lab Manual",
+    "section": "",
+    "text": "The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA’s management needs. We are part of the Marine Mammal and Turtle Division at NOAA’s Southwest Fisheries Science Center in La Jolla, California.\nThis lab manual serves as the go-to handbook for the behind-the-scenes information to support our science.\n\nTeam Members\nShannon Rankin, SAEL Team Leader\nCory Hom-Weaver, Acoustician and Fieldwork Manager\nKourtney Burger, Acoustician and Data Manager\n\n\nGithub Repositories\nPAM Gliders\n\nPAM-UxS\nGlider Rodeo\n\nAdrift in the California Current:\n\nAdrift Report\nField Methods\nAnalysis Methods\n\nBANTER_Beaked Whales\nFOSSA Soundscape\nSAEL Lab Hardware\nWant to Copy this Lab Manual Format?\nUse the PAM_template_lab_manual following these methods.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "content/media.html",
+    "href": "content/media.html",
+    "title": "Media",
+    "section": "",
+    "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
+    "crumbs": [
+      "Data Management",
+      "Media"
+    ]
+  },
+  {
+    "objectID": "content/media.html#public-sound-archive",
+    "href": "content/media.html#public-sound-archive",
+    "title": "Media",
+    "section": "",
+    "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
+    "crumbs": [
+      "Data Management",
+      "Media"
+    ]
+  },
+  {
+    "objectID": "content/media.html#internal-media-archive",
+    "href": "content/media.html#internal-media-archive",
+    "title": "Media",
+    "section": "Internal Media Archive",
+    "text": "Internal Media Archive\nWe have internal archives for sounds, images, and videos on our lab Google Drive (see link here). Please document all submissions according to the instructions posted in their respective folders.",
+    "crumbs": [
+      "Data Management",
+      "Media"
+    ]
+  },
+  {
+    "objectID": "content/media.html#web-site",
+    "href": "content/media.html#web-site",
+    "title": "Media",
+    "section": "Web Site",
+    "text": "Web Site\nThe website for the Southwest Acoustic Ecology Lab main web page currently includes information about our current research activities. For modifications to the website, contact cory.hom-weaver@noaa.gov.",
+    "crumbs": [
+      "Data Management",
+      "Media"
+    ]
+  },
+  {
+    "objectID": "content/media.html#sound-bytes-blog",
+    "href": "content/media.html#sound-bytes-blog",
+    "title": "Media",
+    "section": "Sound Bytes Blog",
+    "text": "Sound Bytes Blog\nOur periodic ‘Sound Bytes’ blog shares stories about how we develop tools, build partnerships, and make discoveries. We encourage all team. A writing/posting guide is available here, and Contact cory.hom-weaver@noaa.gov for more information.\nSee link to all blogs here.",
+    "crumbs": [
+      "Data Management",
+      "Media"
+    ]
+  },
+  {
+    "objectID": "content/OpenScience.html",
+    "href": "content/OpenScience.html",
+    "title": "Open Science",
+    "section": "",
+    "text": "We firmly believe in the power of Open Science, and the reponsibility for federal scientists to actively engage in Open Science. As our efforts have expanded, we have shifted our Open Science materials to a stand-alone repository that can be accessed here: Open Science.",
+    "crumbs": [
+      "Open Science"
+    ]
+  },
+  {
+    "objectID": "content/Safety-Lab.html",
+    "href": "content/Safety-Lab.html",
+    "title": "General Lab Safety",
+    "section": "",
+    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
+    "crumbs": [
+      "Lab Management",
+      "General Lab Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety-Lab.html#safety-resources",
+    "href": "content/Safety-Lab.html#safety-resources",
+    "title": "General Lab Safety",
+    "section": "",
+    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
+    "crumbs": [
+      "Lab Management",
+      "General Lab Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety-Lab.html#chemical-inventory",
+    "href": "content/Safety-Lab.html#chemical-inventory",
+    "title": "General Lab Safety",
+    "section": "Chemical Inventory",
+    "text": "Chemical Inventory\n\nCurrently SAEL only possesses commercially available (over the counter) products and these are not required to be a part of the chemical inventory.\n\nAs such, we do not currently have a chemical inventory (updated Feb 2023).",
+    "crumbs": [
+      "Lab Management",
+      "General Lab Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety-Lab.html#organization",
+    "href": "content/Safety-Lab.html#organization",
+    "title": "General Lab Safety",
+    "section": "Organization",
+    "text": "Organization\n\nKeep lab tidy and clean. If you start on a project and intend to keep working on it over a few days (i.e. building equipment) please clean up after you have completed work.\nIf you notice that something is running low (i.e. electrical tape, crab floats, nuts and bolts) please contact Shannon Rankin or Kourtney Burger so that they may order more supplies.",
+    "crumbs": [
+      "Lab Management",
+      "General Lab Safety"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#gliders",
+    "href": "content/Hardware.html#gliders",
+    "title": "Hardware Methods",
+    "section": "Gliders",
+    "text": "Gliders\nPAM-equipped buoyancy-driven gliders allow for autonomous data collection in large regions of offshore waters for extended periods of time.",
+    "crumbs": [
+      "Hardware Methods"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#drifting-recorders",
+    "href": "content/Hardware.html#drifting-recorders",
+    "title": "Hardware Methods",
+    "section": "Drifting Recorders",
+    "text": "Drifting Recorders\nDrifting acoustic recorders are low-cost approaches to PAM data collection in deep, offshore waters. Hydrophones can be deployed at depth, and are ideal for studying deep-diving species, such as beaked whales.",
+    "crumbs": [
+      "Hardware Methods"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#sonobuoys",
+    "href": "content/Hardware.html#sonobuoys",
+    "title": "Hardware Methods",
+    "section": "Sonobuoys",
+    "text": "Sonobuoys\nSonobuoys are expendable drifting recorders with low-frequency vector sensor hydrophones that can provide a magnetic bearing angle to the sound source. This ability to localize provides added benefits for confirming the source of recorded sounds and is frequently used to study the vocal repertoire of baleen whales when deployed in the presence of sighted animals.",
+    "crumbs": [
+      "Hardware Methods"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#towed-arrays",
+    "href": "content/Hardware.html#towed-arrays",
+    "title": "Hardware Methods",
+    "section": "Towed Arrays",
+    "text": "Towed Arrays\nTowing hydrophone arrays behind survey vessels allows for a complementary approach to detecting marine mammals during surveys. This can be especially helpful for species that are difficult to detect using visual observation methods, or during inclement weather where visual observation is limited.",
+    "crumbs": [
+      "Hardware Methods"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#handheld-hydrophones",
+    "href": "content/Hardware.html#handheld-hydrophones",
+    "title": "Hardware Methods",
+    "section": "Handheld Hydrophones",
+    "text": "Handheld Hydrophones\nHandheld hydrophones can be deployed from drifting vessels, and provides an easy to use method for collecting passive acoustic data near a vessel. This is ideal for fieldwork on small boats that work in close association with sighted animals.",
+    "crumbs": [
+      "Hardware Methods"
     ]
   },
   {
@@ -1137,7 +1203,7 @@
     "text": "NCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.\nUsers can access data through the interactive map or request data using Google Cloud Platform",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "NCEI"
     ]
   },
@@ -1149,7 +1215,7 @@
     "text": "NCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.\nUsers can access data through the interactive map or request data using Google Cloud Platform",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "NCEI"
     ]
   },
@@ -1161,7 +1227,7 @@
     "text": "Submitting Data\nNCEI has packaging tools to help automate this process. ADRIFT, CCES, and PASCAL data was archived using Passive Packer. NCEI has since released the Passive Acoustic Collection Engine (PACE) that allows for bulk processing and custom translators. PACE has replaced Passive Packer as our packaging tool.\n\nPACE\nFuture PAM data (CalCurCEAS 2024, gliders, etc) will be packaged and submitted using NCEI’s new Passive Acoustic Collection Engine (PACE). Detailed methods for preparing raw audio data for packaging and archive can be found here.\n\n\nPassive Packer\n\n\n\n\n\n\nThese methods are no longer in use and may be outdated. Please use PACE archive methods for future projects\n\n\n\n\n\n\nAll ADRIFT, CCES, and PASCAL data were packaged using a combination of automated scripts and the NCEI Passive Packer tool. Several automation scripts were used to create Passive Packer ready databases from our deployment details metadata. Detailed methods can be found here.",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "NCEI"
     ]
   },
@@ -1173,7 +1239,7 @@
     "text": "All of this is temporary. End goal is to have all of this documented on the national PAM repo, and link to it here.\nLink to SWFSC GCP Bucket\nYou can use the built in upload tool to upload small amounts of data directly to GCP",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "Google Cloud Archive and Analysis"
     ]
   },
@@ -1185,7 +1251,7 @@
     "text": "Bulk upload using gcloud CLI\n\nSee this document for PAM GCP Technical System documentation and a link to the PAM buckets\nFollow steps 1-4 under the Configure gcloud section in this document to install Google Cloud SDK on your computer\nOpen the command prompt and type “gsutil -m cp -r F:/* gs://swfsc-1/drifting_recorder/”, where “F:/*” is the directory with data to upload and “gs://swfsc-1/drifting_recorder/” is the cloud bucket and folder you want to upload data to\nProcessing should start, wait for command prompt to update then refresh the SWFSC bucket website to see your uploaded data\n\n\n\n\n\n\n\nIf you are uploaded a large dataset, it is recommended to run this after normal work hours and on the weekends. See this document with more directions or contact Dan Woodrich (daniel.woodrich@noaa.gov)",
     "crumbs": [
       "Data Management",
-      "Data Archive",
+      "Data Archive Methods",
       "Google Cloud Archive and Analysis"
     ]
   },
