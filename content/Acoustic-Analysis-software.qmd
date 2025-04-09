@@ -64,8 +64,16 @@ PyPAM requires a specific Python version (3.9-3.11) and some analyses require sp
 
 10. Installing mbari-pbp should also automatically install PyPAM, if you are still missing the PyPAM package type `pip install lifewatch-pypam` into the environment command window
 
-11.  You should now be ready to use PyPAM and PBP functions!
+11. You should now be ready to use PyPAM and PBP functions!
 
 ### Python IDEs
 
 There are also several ways to interact with Python code through Integrated Development Environments (IDEs). These allow you to write, execute, and visualize Python Code within a user friendly interface. Anaconda Navigator has several IDEs included in the bundle, including Jupyter Notebook (PyPAM PBP example scripts).
+
+## LFDCS
+
+[Low Frequency Detection and Classification System (LFDCS)](https://dcs.whoi.edu/lfdcs_manual/lfdcs_manual.html) is a software built by Dr. Mark Baumgartner at the Woods Hole Oceanographic Institution (WHOI). It was designed for automated detection and classification of low-frequency baleen whale vocalizations in real-time acoustic data. It was recently adapted to a LFDCS Desktop program to process archival data as well.
+
+The SAEL Lab has begun taking some initial steps to use LFDCS Desktop for our data and develop/contribute to a west coast call library.
+
+More information here
