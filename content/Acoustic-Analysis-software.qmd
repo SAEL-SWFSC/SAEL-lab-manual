@@ -76,4 +76,4 @@ There are also several ways to interact with Python code through Integrated Deve
 
 The SAEL Lab has begun taking some initial steps to use LFDCS Desktop for our data and develop/contribute to a west coast call library.
 
-More information here
+More information [here](https://docs.google.com/document/d/13kLUZrDIE9lL62hnM-tkICCzyYUa_KCn7shHuO-0Gto/edit?usp=sharing)
