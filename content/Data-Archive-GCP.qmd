@@ -1,5 +1,6 @@
 ---
-title: Google Cloud Archive and Analysis
+title: Google Cloud
+subtitle: GCP for Archive and Analysis
 ---
 
 ::: callout-important

@@ -1,6 +1,6 @@
 ---
-title: "Lab Manual"
-subtitle: "Southwest Acoustics Ecology Lab, SWFSC"
+title: "Southwest Acoustics Ecology Lab, SWFSC"
+subtitle: "Lab Manual"
 page-layout: full
 link-external-newwindow: true
 ---
@@ -17,27 +17,7 @@ This lab manual serves as the go-to handbook for the behind-the-scenes informati
 
 [Kourtney Burger](https://www.fisheries.noaa.gov/contact/kourtney-burger), Acoustician and Data Manager
 
-# Github Repositories
 
-PAM Gliders
-
--   [PAM-UxS](https://nmfs-pam-glider.github.io/PAM-UxS/)
-
--   [Glider Rodeo](https://nmfs-pam-glider.github.io/GliderRodeo/)
-
-Adrift in the California Current:
-
--   [Adrift Report](https://sael-swfsc.github.io/Adrift/)
-
--   [Field Methods](https://sael-swfsc.github.io/adrift-field-methods/)
-
--   [Analysis Methods](https://sael-swfsc.github.io/adrift-analysis-methods/)
-
-[BANTER_Beaked Whales](https://github.com/shannonrankin/BANTER_BeakedWhales)
-
-[FOSSA Soundscape](https://github.com/shannonrankin/fossa_soundscape)
-
-[SAEL Lab Hardware](https://sael-swfsc.github.io/SAEL-Lab-Hardware/)
 
 ***Want to Copy this Lab Manual Format?***
 

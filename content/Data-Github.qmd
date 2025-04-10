@@ -1,0 +1,59 @@
+---
+title: Github Repos
+---
+
+SAEL is part of the California Current Marine Mammal Assessment Program ([CMAP Lab Manual](https://cmap-swfsc.github.io/CMAP-SWFSC/)) and it is also part of the NOAA Fisheries National PAM Network ([National PAM Lab Manual](https://nmfs-ost.github.io/PAM_National_Network/).
+
+The [SAEL Github Organization](https://github.com/SAEL-SWFSC) houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.
+
+We also highly recommend the [NMFS Open Science](https://nmfs-opensci.github.io/)site for more resources.
+
+## PAM Gliders
+
+-   [PAM-UxS](https://nmfs-pam-glider.github.io/PAM-UxS/)
+
+-   [Glider Rodeo](https://nmfs-pam-glider.github.io/GliderRodeo/)
+
+-   [glider-CalCurCEAS](https://github.com/sfregosi-noaa/glider-CalCurCEAS)
+
+## CalCurCEAS 2024 Acoustic Data:
+
+-   [glider-CalCurCEAS](https://github.com/sfregosi-noaa/glider-CalCurCEAS)
+
+-   [drifter-CalCurCEAS](https://github.com/SAEL-SWFSC/CalCurCEAS-2024-Drifter-Analysis)
+
+## Adrift in the California Current:
+
+-   [Adrift Report](https://sael-swfsc.github.io/Adrift/)
+
+-   [Adrift Field Methods](https://sael-swfsc.github.io/adrift-field-methods/)
+
+-   [Adrift Analysis Methods](https://sael-swfsc.github.io/adrift-analysis-methods/)
+
+## Hardware, Methods, Protocol, etc.
+
+-   [SAEL Lab Manual](https://github.com/SAEL-SWFSC/SAEL-lab-manual)
+
+-   [SAEL Lab Hardware](https://sael-swfsc.github.io/SAEL-Lab-Hardware/)
+
+-   [PAM Open Science](https://nmfs-ost.github.io/PAM-OpenScience/)
+
+## Data & Metadata
+
+-   [Towed Array Metadata](https://github.com/shannonrankin/dataWrangling_towedArray) *(under construction)*
+
+-   [Sonobuoy Metadata](https://github.com/SAEL-SWFSC/SWFSC-PAM-Sonobuoys) *(under construction)*
+
+## Projects
+
+-   [BANTER_Beaked Whales](https://github.com/shannonrankin/BANTER_BeakedWhales)
+
+-   [FOSSA Soundscape](https://github.com/shannonrankin/fossa_soundscape)
+
+-   [Data Nuggets Educational Product](https://github.com/shannonrankin/DataNugget)
+
+## Github Templates
+
+-   [Lab Manual](https://github.com/nmfs-ost/PAM_template_lab_manual)
+
+-   [Research Compendium w/ Web Output](https://sael-swfsc.github.io/PAM_template_ResearchCompendium/)

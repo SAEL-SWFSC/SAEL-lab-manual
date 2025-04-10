@@ -4,6 +4,8 @@ title: Lithium Batteries
 
 This document will serve as a working draft for the management of lithium batteries. The following bullet points are the ones we discussed today, please feel free to add or make changes to any section according to NOAA, OMAO, and the State of California regulations.
 
+Here is a [link](https://sael-swfsc.github.io/adrift-field-methods/content/Safety-Protocol-Flooded-SoundTrap.html) to Safety Protocol for Flooded SoundTraps. 
+
 #### **SWFSC Li Battery Management**
 
 1.  **Purpose**

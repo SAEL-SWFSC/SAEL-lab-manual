@@ -4,4 +4,4 @@ title: Inventory
 
 ## Inventory
 
-Inventory is tracked on a google document that can be accessed by lab employees. Inventory should be updated for new equipment, or when there is a change in the status of equipment. For more information, contact: kourtney.burger@noaa.gov or shannon.rankin@noaa.gov.
+Inventory is tracked on a [google document](https://docs.google.com/spreadsheets/d/12u6cwwbuM7BfPt2GKjMXEOwr9yeK0_ztD04aNVYoFIk/edit?usp=sharing) that can be accessed by lab employees. Inventory should be updated for new equipment, or when there is a change in the status of equipment. For more information, contact: kourtney.burger@noaa.gov or shannon.rankin@noaa.gov.

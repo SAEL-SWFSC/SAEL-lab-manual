@@ -51,6 +51,7 @@ website:
               - content/Data-Archive-GCP.qmd
               - content/Data-Archive-NCEI.qmd
               - content/Data-Archive-Tethys.qmd
+              - content/Data-Archive-PacmMakara.qmd
               - content/Data-Archive-InPort.qmd
           - content/Data-SpeciesAndCallTypes.qmd
           - content/media.qmd
@@ -61,9 +62,8 @@ website:
           - content/Hardware_Towed-Hydrophone.qmd
           - content/Hardware_Sonobuoys.qmd
           - content/Hardware_Handheld-Hydrophone.qmd
-      - section: "Software Management"
+      - section: content/SAEL-Analysis-software.qmd
         contents:
-          - content/SAEL-Analysis-software.qmd
           - content/Acoustic-Analysis-software.qmd
           - content/Ocean-Alert-App.qmd
       - href: content/Analysis-Methods.qmd
