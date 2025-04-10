@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>InPort – SAEL Lab Manual</title>
+<title>Github Repos – SAEL Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/Data-SpeciesAndCallTypes.html" rel="next">
-<link href="../content/Data-Archive-PacmMakara.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/Data-Archive.html">Data Management</a></li><li class="breadcrumb-item"><a href="../content/Data-Archive-Methods.html">Data Archive Methods</a></li><li class="breadcrumb-item"><a href="../content/Data-Archive-InPort.html">InPort</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Github Repos</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -156,13 +154,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Data Management</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Data-Archive.html" class="sidebar-item-text sidebar-link">
@@ -173,11 +171,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../content/Data-Archive-Methods.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Archive Methods</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Data-Archive-GCP.html" class="sidebar-item-text sidebar-link">
@@ -204,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/Data-Archive-InPort.html" class="sidebar-item-text sidebar-link active">
+  <a href="../content/Data-Archive-InPort.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">InPort</span></a>
   </div>
 </li>
@@ -322,22 +320,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#inport-metadata-archive" id="toc-inport-metadata-archive" class="nav-link active" data-scroll-target="#inport-metadata-archive">InPort Metadata Archive</a>
-  <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#access-metadata" id="toc-access-metadata" class="nav-link" data-scroll-target="#access-metadata">Access Metadata</a></li>
-  <li><a href="#submitting-metadata" id="toc-submitting-metadata" class="nav-link" data-scroll-target="#submitting-metadata">Submitting Metadata</a></li>
-  <li><a href="#inport-resources" id="toc-inport-resources" class="nav-link" data-scroll-target="#inport-resources">InPort Resources</a></li>
-  </ul></li>
+  <li><a href="#pam-gliders" id="toc-pam-gliders" class="nav-link active" data-scroll-target="#pam-gliders">PAM Gliders</a></li>
+  <li><a href="#calcurceas-2024-acoustic-data" id="toc-calcurceas-2024-acoustic-data" class="nav-link" data-scroll-target="#calcurceas-2024-acoustic-data">CalCurCEAS 2024 Acoustic Data:</a></li>
+  <li><a href="#adrift-in-the-california-current" id="toc-adrift-in-the-california-current" class="nav-link" data-scroll-target="#adrift-in-the-california-current">Adrift in the California Current:</a></li>
+  <li><a href="#hardware-methods-protocol-etc." id="toc-hardware-methods-protocol-etc." class="nav-link" data-scroll-target="#hardware-methods-protocol-etc.">Hardware, Methods, Protocol, etc.</a></li>
+  <li><a href="#data-metadata" id="toc-data-metadata" class="nav-link" data-scroll-target="#data-metadata">Data &amp; Metadata</a></li>
+  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
+  <li><a href="#github-templates" id="toc-github-templates" class="nav-link" data-scroll-target="#github-templates">Github Templates</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive-InPort.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive-InPort.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/Data-Archive.html">Data Management</a></li><li class="breadcrumb-item"><a href="../content/Data-Archive-Methods.html">Data Archive Methods</a></li><li class="breadcrumb-item"><a href="../content/Data-Archive-InPort.html">InPort</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">InPort</h1>
+<h1 class="title">Github Repos</h1>
 </div>
 
 
@@ -354,29 +352,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="inport-metadata-archive" class="level2">
-<h2 class="anchored" data-anchor-id="inport-metadata-archive">InPort Metadata Archive</h2>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.</p>
+<p>SAEL is part of the California Current Marine Mammal Assessment Program (<a href="https://cmap-swfsc.github.io/CMAP-SWFSC/">CMAP Lab Manual</a>) and it is also part of the NOAA Fisheries National PAM Network (<a href="https://nmfs-ost.github.io/PAM_National_Network/">National PAM Lab Manual</a>.</p>
+<p>The <a href="https://github.com/SAEL-SWFSC">SAEL Github Organization</a> houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.</p>
+<p>We also highly recommend the <a href="https://nmfs-opensci.github.io/">NMFS Open Science</a>site for more resources.</p>
+<section id="pam-gliders" class="level2">
+<h2 class="anchored" data-anchor-id="pam-gliders">PAM Gliders</h2>
+<ul>
+<li><p><a href="https://nmfs-pam-glider.github.io/PAM-UxS/">PAM-UxS</a></p></li>
+<li><p><a href="https://nmfs-pam-glider.github.io/GliderRodeo/">Glider Rodeo</a></p></li>
+<li><p><a href="https://github.com/sfregosi-noaa/glider-CalCurCEAS">glider-CalCurCEAS</a></p></li>
+</ul>
 </section>
-<section id="access-metadata" class="level3">
-<h3 class="anchored" data-anchor-id="access-metadata">Access Metadata</h3>
-<p>You do not need an account to view metadata on InPort. Open the <a href="https://www.fisheries.noaa.gov/inport/">InPort home page</a> and enter keywords to search the library</p>
+<section id="calcurceas-2024-acoustic-data" class="level2">
+<h2 class="anchored" data-anchor-id="calcurceas-2024-acoustic-data">CalCurCEAS 2024 Acoustic Data:</h2>
+<ul>
+<li><p><a href="https://github.com/sfregosi-noaa/glider-CalCurCEAS">glider-CalCurCEAS</a></p></li>
+<li><p><a href="https://github.com/SAEL-SWFSC/CalCurCEAS-2024-Drifter-Analysis">drifter-CalCurCEAS</a></p></li>
+</ul>
 </section>
-<section id="submitting-metadata" class="level3">
-<h3 class="anchored" data-anchor-id="submitting-metadata">Submitting Metadata</h3>
-<p>To submit metadata, you first must contact your center InPort Librarians to get an account set up.</p>
-<p>Follow detailed methods <a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Slides/InPortDataArchiveMethods.html#/title-slide">here</a> to submit metadata according to InPort expectations</p>
+<section id="adrift-in-the-california-current" class="level2">
+<h2 class="anchored" data-anchor-id="adrift-in-the-california-current">Adrift in the California Current:</h2>
+<ul>
+<li><p><a href="https://sael-swfsc.github.io/Adrift/">Adrift Report</a></p></li>
+<li><p><a href="https://sael-swfsc.github.io/adrift-field-methods/">Adrift Field Methods</a></p></li>
+<li><p><a href="https://sael-swfsc.github.io/adrift-analysis-methods/">Adrift Analysis Methods</a></p></li>
+</ul>
 </section>
-<section id="inport-resources" class="level3">
-<h3 class="anchored" data-anchor-id="inport-resources">InPort Resources</h3>
-<p><a href="https://www.fisheries.noaa.gov/inport/">InPort Home Page</a></p>
-<p><a href="https://www.fisheries.noaa.gov/inport/hierarchy/1370">SWFSC Organization Library</a></p>
-<p><a href="https://www.fisheries.noaa.gov/inport/help">Help Page</a></p>
+<section id="hardware-methods-protocol-etc." class="level2">
+<h2 class="anchored" data-anchor-id="hardware-methods-protocol-etc.">Hardware, Methods, Protocol, etc.</h2>
+<ul>
+<li><p><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual">SAEL Lab Manual</a></p></li>
+<li><p><a href="https://sael-swfsc.github.io/SAEL-Lab-Hardware/">SAEL Lab Hardware</a></p></li>
+<li><p><a href="https://nmfs-ost.github.io/PAM-OpenScience/">PAM Open Science</a></p></li>
+</ul>
+</section>
+<section id="data-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="data-metadata">Data &amp; Metadata</h2>
+<ul>
+<li><p><a href="https://github.com/shannonrankin/dataWrangling_towedArray">Towed Array Metadata</a> <em>(under construction)</em></p></li>
+<li><p><a href="https://github.com/SAEL-SWFSC/SWFSC-PAM-Sonobuoys">Sonobuoy Metadata</a> <em>(under construction)</em></p></li>
+</ul>
+</section>
+<section id="projects" class="level2">
+<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<ul>
+<li><p><a href="https://github.com/shannonrankin/BANTER_BeakedWhales">BANTER_Beaked Whales</a></p></li>
+<li><p><a href="https://github.com/shannonrankin/fossa_soundscape">FOSSA Soundscape</a></p></li>
+<li><p><a href="https://github.com/shannonrankin/DataNugget">Data Nuggets Educational Product</a></p></li>
+</ul>
+</section>
+<section id="github-templates" class="level2">
+<h2 class="anchored" data-anchor-id="github-templates">Github Templates</h2>
+<ul>
+<li><p><a href="https://github.com/nmfs-ost/PAM_template_lab_manual">Lab Manual</a></p></li>
+<li><p><a href="https://sael-swfsc.github.io/PAM_template_ResearchCompendium/">Research Compendium w/ Web Output</a></p></li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -941,18 +973,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../content/Data-Archive-PacmMakara.html" class="pagination-link" aria-label="PACM/Makara">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">PACM/Makara</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../content/Data-SpeciesAndCallTypes.html" class="pagination-link" aria-label="Species and Call Types">
-        <span class="nav-page-text">Species and Call Types</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -961,7 +981,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive-InPort.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive-InPort.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

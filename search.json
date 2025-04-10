@@ -133,13 +133,39 @@
     ]
   },
   {
-    "objectID": "content/publications.html",
-    "href": "content/publications.html",
-    "title": "Reporting",
+    "objectID": "content/Data-Archive-NCEI.html",
+    "href": "content/Data-Archive-NCEI.html",
+    "title": "NCEI",
     "section": "",
-    "text": "Please see links, below, to publications and reports\nRankin, S., Sakai, T., Archer, F. I., Barlow, J., Cholewiak, D., DeAngelis, A. I., … & Trickey, J. S. (2024). Open-source machine learning BANTER acoustic classification of beaked whale echolocation pulses. Ecological Informatics, 80, 102511.\nBarlow, J., Cárdenas‐Hinojosa, G., Henderson, E. E., Breese, D., López‐Arzate, D., Hidalgo Pla, E., & Taylor, B. L. (2022). Unique morphological and acoustic characteristics of beaked whales (Mesoplodon sp.) off the west coast of Baja California, Mexico.\nBarlow, J., Moore, J. E., McCullough, J. L., & Griffiths, E. T. (2022). Acoustic‐based estimates of Cuvier’s beaked whale (Ziphius cavirostris) density and abundance along the US West Coast from drifting hydrophone recorders. Marine Mammal Science, 38(2), 517-538.\nBarlow, J., Fregosi, S., Thomas, L., Harris, D., & Griffiths, E. T. (2021). Acoustic detection range and population density of Cuvier’s beaked whales estimated from near-surface hydrophones. The Journal of the Acoustical Society of America, 149(1), 111-125.\nBarlow, J., Trickey, J. S., Schorr, G. S., Rankin, S., & Moore, J. E. (2021). Recommended snapshot length for acoustic point-transect surveys of intermittently available Cuvier’s beaked whales. The Journal of the Acoustical Society of America, 149(6), 3830-3840.\nRankin, S., Oedekoven, C., & Archer, F. (2020). Mark recapture distance sampling: using acoustics to estimate the fraction of dolphins missed by observers during shipboard line-transect surveys. Environmental and ecological statistics, 27(2), 233-251.\nSimonis, A. E., Forney, K. A., Rankin, S., Ryan, J., Zhang, Y., DeVogelaere, A., … & Baumann-Pickering, S. (2020). Seal bomb noise as a potential threat to Monterey Bay harbor porpoise. Frontiers in Marine Science, 7, 142.\nArcher, F. I., Rankin, S., Stafford, K. M., Castellote, M., & Delarue, J. (2020). Quantifying spatial and temporal variation of North Pacific fin whale (Balaenoptera physalus) acoustic behavior. Marine Mammal Science, 36(1), 224-245.\nSimonis, A. E., Trickey, J. S., Barlow, J., Rankin, S., Urbán, J., Rojas-Bracho, L., & Moore, J. E. (2020). Passive Acoustic Survey Of Deep-Diving Odontocetes in the California Current Ecosystem 2018.\nRankin, S., Archer, F., Keating, J. L., Oswald, J. N., Oswald, M., Curtis, A., & Barlow, J. (2017). Acoustic classification of dolphins in the California Current using whistles, echolocation clicks, and burst pulses. Marine Mammal Science, 33(2), 520-540.\nRankin, S., Castellote, M., Delarue, J., Stafford, K. M., Archer, F. I., Koot, B., … & Morano, J. L. (2018). Methods for characterizing fin whale song notes for comparative studies of geographic variation in song.\nRankin, S. (2008). Acoustic studies of marine mammals during seven years of combined visual and acoustic line-transect surveys for cetaceans in the eastern and central Pacific Ocean.\nRankin, S., Oswald, J. N., & Barlow, J. (2008). Acoustic behavior of dolphins in the Pacific Ocean: Implications for using passive acoustic methods for population studies. Canadian Acoustics, 36(1), 88-92.",
+    "text": "NCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.\nUsers can access data through the interactive map or request data using Google Cloud Platform",
     "crumbs": [
-      "Publications"
+      "Data Management",
+      "Data Archive Methods",
+      "NCEI"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive-NCEI.html#ncei-data-archive",
+    "href": "content/Data-Archive-NCEI.html#ncei-data-archive",
+    "title": "NCEI",
+    "section": "",
+    "text": "NCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.\nUsers can access data through the interactive map or request data using Google Cloud Platform",
+    "crumbs": [
+      "Data Management",
+      "Data Archive Methods",
+      "NCEI"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive-NCEI.html#submitting-data",
+    "href": "content/Data-Archive-NCEI.html#submitting-data",
+    "title": "NCEI",
+    "section": "Submitting Data",
+    "text": "Submitting Data\nNCEI has packaging tools to help automate this process. ADRIFT, CCES, and PASCAL data was archived using Passive Packer. NCEI has since released the Passive Acoustic Collection Engine (PACE) that allows for bulk processing and custom translators. PACE has replaced Passive Packer as our packaging tool.\n\nPACE\nFuture PAM data (CalCurCEAS 2024, gliders, etc) will be packaged and submitted using NCEI’s new Passive Acoustic Collection Engine (PACE). Detailed methods for preparing raw audio data for packaging and archive can be found here.\n\n\nPassive Packer\n\n\n\n\n\n\nThese methods are no longer in use and may be outdated. Please use PACE archive methods for future projects\n\n\n\n\n\n\nAll ADRIFT, CCES, and PASCAL data were packaged using a combination of automated scripts and the NCEI Passive Packer tool. Several automation scripts were used to create Passive Packer ready databases from our deployment details metadata. Detailed methods can be found here.",
+    "crumbs": [
+      "Data Management",
+      "Data Archive Methods",
+      "NCEI"
     ]
   },
   {
@@ -276,7 +302,6 @@
     "section": "",
     "text": "The Southwest Acoustic Ecology Lab has focused effort on developing a streamlined approach to passive acoustic data analysis that relies an Open Science approach, including a reliance on open-source software.",
     "crumbs": [
-      "Software Management",
       "SAEL Acoustic Software"
     ]
   },
@@ -287,7 +312,6 @@
     "section": "PAMpal",
     "text": "PAMpal\nPAMpal is an R package for processing passive acoustic data. Currently PAMpal only supports data collected using PAMGuard (pamguard.org), but in the future we hope to support other platforms. PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, with the help of numerous partners, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPampal Tutorial (https://taikisan21.github.io/PAMpal/)\nPAMpal CRAN (https://CRAN.R-project.org/package=PAMpal)\nPAMpal Github (https://github.com/TaikiSan21/PAMpal)\n\nIn addition, we have developed these R software packages to address other needs:",
     "crumbs": [
-      "Software Management",
       "SAEL Acoustic Software"
     ]
   },
@@ -298,7 +322,6 @@
     "section": "PAMmisc",
     "text": "PAMmisc\nA collection of miscellaneous functions for passive acoustics (much of the content is adapted from R code written by other people). PAMmisc is a collaboration between Taiki Sakai (SWFSC) and Shannon Rankin, and was funded by NOAA’s Advanced Sampling Technology Working Group.\n\nPAMmisc CRAN (https://CRAN.R-project.org/package=PAMpal)",
     "crumbs": [
-      "Software Management",
       "SAEL Acoustic Software"
     ]
   },
@@ -309,7 +332,6 @@
     "section": "BANTER",
     "text": "BANTER\nBANTER is a hierarchical species classifier for acoustic events developed using multiple call type detectors (see Rankin et al. 2017). Banter User’s Guide available here. Banter was originally developed for dolphins, but has also been applied to beaked whales (Rankin et al. 2024), among other species. BANTER was developed by a collaboration between Shannon Rankin (SWFSC) and Eric Archer (SWFSC) and was funded by NOAA’s Ocean Acoustics Program.\n\nBANTER User’s Guide (https://taikisan21.github.io/PAMpal/banterGuide.html)\nBANTER CRAN (https://CRAN.R-project.org/package=banter)\nBANTER Github (https://github.com/EricArcher/banter)",
     "crumbs": [
-      "Software Management",
       "SAEL Acoustic Software"
     ]
   },
@@ -320,7 +342,6 @@
     "section": "PAMscapes",
     "text": "PAMscapes\nA variety of tools relevant to the analysis of marine soundscape data (including tools for downloading AIS data from Marine Cadastre, connecting AIS data to GPS coordinates, plotting summaries of various soundscape measurements, and downloading relevant environmental variables (wind, swell height) from the National Center for Atmospheric Research. PAMscapes development was a collaboration between Shannon Rankin (SWFSC), Taiki Sakai (SWFSC), Anne Simonis (SWFSC), and Megan McKenna (National Marine Sanctuary Foundation); funding provided by NOAA’s Ocean Acoustics Program.\n\nPAMscapes CRAN (https://CRAN.R-project.org/package=PAMscapes)\nPAMscapes Github (https://github.com/cran/PAMscapes)\nPAMscapes Report to NOAA’s Ocean Acoustics Program (link to download)",
     "crumbs": [
-      "Software Management",
       "SAEL Acoustic Software"
     ]
   },
@@ -331,7 +352,6 @@
     "section": "Driftwatch",
     "text": "Driftwatch\nDriftwatch was developed to help with tracking of drifting acoustic buoys using satellite GPS. The basic code is available on Github, but there are a number of steps required to get it to function for outside use. Driftwatch was developed by Taiki Sakai and was funded by the Bureau of Ocean Energy Management (Inter-Agency Agreement G14-M20PG00013).\n\nDriftwatch Github (https://github.com/TaikiSan21/DriftWatch)\nWhere to Start: Setting_Up_Driftwatch.rmd (in Driftwatch Github Repository)",
     "crumbs": [
-      "Software Management",
       "SAEL Acoustic Software"
     ]
   },
@@ -450,7 +470,7 @@
     "section": "",
     "text": "The Ocean Alert app is used to collect sighting data and record deployment/recovery details for our drifters. Link to access sighting and deployment data, must have SAEL username and password to access our data",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Ocean Alert App"
     ]
   },
@@ -461,7 +481,7 @@
     "section": "Sighting Data",
     "text": "Sighting Data",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Ocean Alert App"
     ]
   },
@@ -472,7 +492,7 @@
     "section": "Drifter Deployment and Recovery Data",
     "text": "Drifter Deployment and Recovery Data",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Ocean Alert App"
     ]
   },
@@ -483,7 +503,7 @@
     "section": "Manuals For Reference",
     "text": "Manuals For Reference\nOcean Alert ADRIFT Instructions\nOcean Alert CINMS Whale Spotting Manual",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Ocean Alert App"
     ]
   },
@@ -503,7 +523,7 @@
     "href": "content/Data-Archive-Methods.html#google-cloud",
     "title": "Data Archive Methods",
     "section": "Google Cloud",
-    "text": "Google Cloud\n\n\n\n\n\n\nSince this is temporary for processing– should it go here or with Analysis?\n\n\n\n\n\n\nGoogle Cloud is for temporary processing/storing of data.",
+    "text": "Google Cloud\nGoogle Cloud is for temporary processing/storing of data for Analysis.",
     "crumbs": [
       "Data Management",
       "Data Archive Methods"
@@ -536,7 +556,7 @@
     "href": "content/Data-Archive-Methods.html#pacmmakara",
     "title": "Data Archive Methods",
     "section": "PACM/Makara",
-    "text": "PACM/Makara\n\n\n\n\n\n\nThis needs it’s own page\n\n\n\n\n\n\nAll ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map. Archive methods can be found here.\nCalCurCEAS 2024 detection data - work in progress",
+    "text": "PACM/Makara\nAll ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map. Archive methods can be found here.\nCalCurCEAS 2024 detection data - work in progress",
     "crumbs": [
       "Data Management",
       "Data Archive Methods"
@@ -672,7 +692,7 @@
     "section": "",
     "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Acoustic Analysis Software"
     ]
   },
@@ -683,7 +703,7 @@
     "section": "",
     "text": "The SAEL Lab uses PAMGuard for several analysis processes.",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Acoustic Analysis Software"
     ]
   },
@@ -694,7 +714,7 @@
     "section": "Matlab",
     "text": "Matlab\nMatlab\n\nTriton\nTriton",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Acoustic Analysis Software"
     ]
   },
@@ -705,7 +725,7 @@
     "section": "Raven",
     "text": "Raven\nRaven",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Acoustic Analysis Software"
     ]
   },
@@ -716,7 +736,7 @@
     "section": "Python",
     "text": "Python\nOur lab uses Python to run soundscape analyses using PyPAM and PBP\n\n\n\n\n\n\nThese directions are written by a new Python user. If you are an experienced user, please make suggestions/corrections as needed!\n\n\n\n\n\n\n\nDownloading and Installing Python\nThere are several different ways to install and use Python, use what works best for you!\n\nGo to Anaconda distribution website\nSelect your operating system and download the installer (standard/default settings are ok). Anaconda Navigator comes bundled with a Python distributor and will automatically install the latest Python version (currently 3.12), see ‘Creating New Environments’ steps below to use a different version of Python\nYou’re ready to use Python!\n\n\n\nPython Environments\nPython environments allow you to manage packages and Python versions, and ensures your project has the necessary dependencies. Anaconda Navigator allows you to set and work in different environments.\n\nCreating New Environments\nPyPAM requires a specific Python version (3.9-3.11) and some analyses require specific packages that are not included in the base Anaconda channels or Python Package Index (PyPI). Follow the directions below to set up a custom environment for PyPAM (the same directions can be applied to make other environments)\n\nOpen Anaconda Navigator and click on the ‘Environments’ tab on the left\nClick the ‘Create’ button on bottom left\nSet the Environment name (PyPAM for example) and ensure the Python box is checked with 3.9-3.11 version. You can also select the R box and choose a version\nClick ‘Create’ and the environment will establish itself (Note: This may take a few minutes to set up)\nOnce established you can see your new environment in the list and all of the packages that are installed\nClick on the green arrow and select “Open Terminal”\n\nThis will open a command prompt where you can write Python code to edit the environment\nDouble check the python version by typing python –version, this should return a version between 3.9-3.11\nTo install packages more packages type conda install &lt;package name&gt; or pip install &lt;package name&gt;. If the package is included in the base libraries, you can use the conda install format (i.e. conda install netcdf4). If the package is not included, use the pip format (i.e. pip install mbari-pbp)\nInstalling mbari-pbp should also automatically install PyPAM, if you are still missing the PyPAM package type pip install lifewatch-pypam into the environment command window\nYou should now be ready to use PyPAM and PBP functions!\n\n\n\n\nPython IDEs\nThere are also several ways to interact with Python code through Integrated Development Environments (IDEs). These allow you to write, execute, and visualize Python Code within a user friendly interface. Anaconda Navigator has several IDEs included in the bundle, including Jupyter Notebook (PyPAM PBP example scripts).",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Acoustic Analysis Software"
     ]
   },
@@ -727,7 +747,7 @@
     "section": "LFDCS",
     "text": "LFDCS\nLow Frequency Detection and Classification System (LFDCS) is a software built by Dr. Mark Baumgartner at the Woods Hole Oceanographic Institution (WHOI). It was designed for automated detection and classification of low-frequency baleen whale vocalizations in real-time acoustic data. It was recently adapted to a LFDCS Desktop program to process archival data as well.\nThe SAEL Lab has begun taking some initial steps to use LFDCS Desktop for our data and develop/contribute to a west coast call library.\nMore information here",
     "crumbs": [
-      "Software Management",
+      "SAEL Acoustic Software",
       "Acoustic Analysis Software"
     ]
   },
@@ -745,9 +765,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Lab Manual",
+    "title": "Southwest Acoustics Ecology Lab, SWFSC",
     "section": "",
-    "text": "The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA’s management needs. We are part of the Marine Mammal and Turtle Division at NOAA’s Southwest Fisheries Science Center in La Jolla, California.\nThis lab manual serves as the go-to handbook for the behind-the-scenes information to support our science.\n\nTeam Members\nShannon Rankin, SAEL Team Leader\nCory Hom-Weaver, Acoustician and Fieldwork Manager\nKourtney Burger, Acoustician and Data Manager\n\n\nGithub Repositories\nPAM Gliders\n\nPAM-UxS\nGlider Rodeo\n\nAdrift in the California Current:\n\nAdrift Report\nField Methods\nAnalysis Methods\n\nBANTER_Beaked Whales\nFOSSA Soundscape\nSAEL Lab Hardware\nWant to Copy this Lab Manual Format?\nUse the PAM_template_lab_manual following these methods.",
+    "text": "The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA’s management needs. We are part of the Marine Mammal and Turtle Division at NOAA’s Southwest Fisheries Science Center in La Jolla, California.\nThis lab manual serves as the go-to handbook for the behind-the-scenes information to support our science.\n\nTeam Members\nShannon Rankin, SAEL Team Leader\nCory Hom-Weaver, Acoustician and Fieldwork Manager\nKourtney Burger, Acoustician and Data Manager\nWant to Copy this Lab Manual Format?\nUse the PAM_template_lab_manual following these methods.",
     "crumbs": [
       "Home"
     ]
@@ -764,8 +784,8 @@
     ]
   },
   {
-    "objectID": "content/media.html#public-sound-archive",
-    "href": "content/media.html#public-sound-archive",
+    "objectID": "content/media.html#soundcloud-public-sound-archive",
+    "href": "content/media.html#soundcloud-public-sound-archive",
     "title": "Media",
     "section": "",
     "text": "Our lab has an internal Sound Media Archive in google drive (see link here) as well as a publicly available sound archive on SoundCloud (see link here).\nAll sounds saved to our SoundCloud archive are available for use and we encourage use in artistic compositions.",
@@ -790,7 +810,7 @@
     "href": "content/media.html#web-site",
     "title": "Media",
     "section": "Web Site",
-    "text": "Web Site\nThe website for the Southwest Acoustic Ecology Lab main web page currently includes information about our current research activities. For modifications to the website, contact cory.hom-weaver@noaa.gov.",
+    "text": "Web Site\nThe website for the Southwest Acoustic Ecology Lab main web page currently includes information about our current research activities. For modifications to the website, contact kourtney.burger@noaa.gov.",
     "crumbs": [
       "Data Management",
       "Media"
@@ -822,7 +842,18 @@
     "href": "content/Safety-Lab.html",
     "title": "General Lab Safety",
     "section": "",
-    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
+    "text": "Monthly Lab Inspections are the responsibility of Shannon Rankin, with results provided to both Shannon Rankin and Jeff Moore. Here is the link to the Lab Inspection Form. Currently, the Lab Inspection is scheduled to occur during the first week of every month.",
+    "crumbs": [
+      "Lab Management",
+      "General Lab Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety-Lab.html#lab-inspections",
+    "href": "content/Safety-Lab.html#lab-inspections",
+    "title": "General Lab Safety",
+    "section": "",
+    "text": "Monthly Lab Inspections are the responsibility of Shannon Rankin, with results provided to both Shannon Rankin and Jeff Moore. Here is the link to the Lab Inspection Form. Currently, the Lab Inspection is scheduled to occur during the first week of every month.",
     "crumbs": [
       "Lab Management",
       "General Lab Safety"
@@ -832,8 +863,8 @@
     "objectID": "content/Safety-Lab.html#safety-resources",
     "href": "content/Safety-Lab.html#safety-resources",
     "title": "General Lab Safety",
-    "section": "",
-    "text": "There are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
+    "section": "Safety Resources",
+    "text": "Safety Resources\nThere are many resources on the Intranet. Some examples include the latest information on COVID-19, the NOAA Emergency Notification System, and the NOAA Safety Incident/Accident reporting home page. If you are working onsite (La Jolla) you should familiarize yourself with these links along with how to report an incident if one occurs.",
     "crumbs": [
       "Lab Management",
       "General Lab Safety"
@@ -967,7 +998,7 @@
     "href": "content/Safety_Lithium-Batteries.html",
     "title": "Lithium Batteries",
     "section": "",
-    "text": "This document will serve as a working draft for the management of lithium batteries. The following bullet points are the ones we discussed today, please feel free to add or make changes to any section according to NOAA, OMAO, and the State of California regulations.\n\nSWFSC Li Battery Management\n\nPurpose\nThe intent of this document is to provide employees and contractors of the Southwest Fisheries Science Center (SWFCS) with guidelines that will allow personnel to safely handle, ship, store, dispose of, and respond to Lithium (Li) and Li-ion battery emergency situations.\nExtreme caution must be exercised when managing Li and Li-ion batteries within the center or conducting field operations due to the potential for fire, damage, or injury to personnel or property if misused or improperly handled. To prevent injury, it is imperative that employers and employees understand the basic function, hazards and safe use of Li and Li-ion battery powered devices.\nProcurement\nLi and Li-batteries can cause injury if they have design defects, are made of low quality materials, are assembled incorrectly, are used or recharged improperly, or are damaged during shipment or handling by the consumer. When purchasing Li batteries please use the following best practices guidelines. While the list is not exhaustive, it provides SWFCS the ability to ensure that the Li batteries purchased are of the highest quality available:\n\nPurchase batteries from a reputable manufacturer, supplier, or use a preferred supplier\nEnsure that the batteries are tested in accordance with an OSHA recognized Nationally Recognized Testing Laboratory (NLTR) and meet industry standards\nAvoid batteries that have been shipped without protective packaging (i.e., hard plastic casing or similar protective measures)\nInspect batteries upon receipt and safely dispose of damaged batteries\nCheck to ensure that a Safety Data Sheet (SDS) particular to the battery ordered has been shipped alongside the batteries; store this in a binder accessible to those with access with the Li or Li-ion batteries\nDo not over purchase in size or volume\n\nHandling\nObserve the following guidelines when handling Li and Li-ion batteries:\n\nKeep batteries from contacting conductive materials, water, seawater, strong oxidizers, and strong acids\nDo not place batteries in direct sunlight, on hot surfaces or in hot locations\nInspect batteries for signs of damage before use. Do not use batteries if there is any evidence of leakage or deformity. Never use and promptly and properly dispose of damaged or “puffy” batteries\nConsult the SDS for precautions to use when handling leaking batteries.\nKeep all flammable materials away from operating area\nAllow time for cooling before charging a battery that is still warm from usage and refrain from using a battery that is still warm from charging\nTurn off equipment if the battery becomes unexpectedly, or excessively hot. Wait for battery to cool before removing from equipment\nUse batteries only for the application for which they were designed. Only use lithium cells and batteries in approved equipment\nKeep batteries in their original packaging until ready for use\nUse special care in handling batteries. Make sure they are not punctured, crushed, mishandled, disassembled or exposed to storage temperatures exceeding the maximum specified temperature on the product’s safety data sheet\nRemove jewelry items such as rings, wristwatches, pendants, etc., that could come in contact with the battery terminals\n\nStorage\n\nStorage cabinets must conform to the National Fire Protection Agency (NFPA)  30 or equivalent: 18 gauge sheet steel, double wall, locked, and labeled with a list of contents. Maintain at least 2” clearance around the cabinet for ventilation and fire control\nThe cabinet location must be protected from forklifts, hand trucks, overhead loads, and other devices that could result in cell damage to the storage cabinet and the batteries while in storage\nCabinet should be isolated from flammable liquids and hazardous waste. No other hazardous or combustible material should be stored in or on the cabinet.\nLabel all storage cabinets with the applicable hazardous materials placard.\nStorage areas with more than 5 pounds of metallic lithium must be labeled with the appropriate placard in accordance with NFPA 704 diamond that is at least 18” on each side with applicable information (e.g. Health 3, Flammability 2, Reactivity 2, and Special Hazard W); see Attachment A.\nRemove batteries from device for long-term storage\nStore batteries in a lithium safe guard or bag to prevent damage to other batteries in the case of fire or ignition\nStore batteries in a cool, dry, and ventilated area\nStore the batteries at temperatures between 5°C and 20°C (41°F and 68°F)\nSeparate fresh and depleted batteries/cells\nAvoid bulk-storage in non-laboratory areas, such as offices\nVisually inspect storage areas weekly\nMaintain a binder of SDS pertaining to the specific batteries near the storage cabinets\n\nCharging\nLi batteries are grouped into two general categories: primary and secondary batteries. \n\nPrimary batteries consist of single-use cells containing metallic lithium anodes, are non-rechargeable and are commonly known as Li metal batteries\n\nNEVER charge a primary battery\nStore one time use (primary batteries) separately from secondary batteries; properly label the outer packaging to prevent this mistake\n\nSecondary batteries contain an intercalated Li compound for the anode and cathode. These batteries are rechargeable and are commonly referred to as Li-ion batteries\n\nUse the following guidelines when charging secondary batteries.\n\nWhen applicable, use Lithium Polymer (LiPo) bags to charge batteries\nUse only lithium-specific chargers to safely charge cells or battery packs\nCharge secondary batteries to approximately 50% - 70% of capacity before long-term storage. Most chargers will have a designated “storage-mode” dependent on the voltage, type of battery, and how many cells it is\nDisconnect batteries immediately if during operation or charging they:\n\nEmit an unusual smell\nEmit smoke\nOverheat or become abnormally hot\nThe battery begins to swell\nBehave abnormally\n\nDo not leave batteries and chargers unattended during charging. Charging should be in a manned space or remotely monitored\nRemove batteries from chargers promptly after charging is complete. Do not use the charger as a storage device/location\nDo not parallel charge batteries of varying age and charge status\nCheck voltage before parallel charging. All batteries should be within 0.5 volts of each other\nIf a battery cannot maintain a charge for its normal duration, even when properly charged, remove the battery from service and dispose of properly\n\nShipping:\nFederal regulations about shipping Li batteries are updated every year as new hazards are identified. Due to these yearly updates, this document will not provide specific shipping instructions. SWFSC personnel needing to ship Li batteries must take the appropriate International Aviation Transportation Association (IATA), International Maritime Dangerous Goods (IMDG), or Department of Transportation (DOT) training, attend and update their training certification every 2 - 3 years, and provide a copy of the certificate to Marty Nelson, Safety Engineer, SECO. Trained personnel will also adhere to the Federal regulations that govern the specific mode of transportation to be used.\nDisposal\n\nIn California, Li-metal/ion batteries are considered hazardous waste and need to be disposed of properly. All Li batteries types (AAA, AA, C, D, button cell, 9-volt, etc), whether primary or secondary, must be recycled or taken to a household hazardous waste disposal facility, a universal waste handler (e.g., storage facility or broker), or an authorized recycling facility\nOptions for recycling\ni. The Big Green Box ($3.84/lb) https://biggreenbox.com/products/lithium-metal-batteries1\nii. Update Green ($2.00/lb) https://updategreen.com/\niii. Secure E-Waste Solutions https://www.sesrecycling.com/\n\nEmergency Response\n\nPreventative Measures\nPlease follow the steps outlined below to ensure that any batteries showing signs of misuse are handled and disposed of properly. Proper PPE will be worn when taking preventative measures including a lab coat, rubber gloves, and safety glasses.\ni. If batteries are showing evidence of thermal runaway failure, be very cautious; the gases may be flammable and toxic and failure modes can be hazardous\nii. Disconnect the battery (if possible)\niii. Remove the battery from the equipment/device (if possible)\niv.  Place the battery in a metal or other container away from combustibles\nFires\nIn the event that a Li metal or ion battery were to catch fire, a room could fill quickly with dense white smoke and the fire will be difficult to extinguish. The fumes and smoke from the fire can cause severe irritation to the respiratory tract, eyes and skin. All precautions must be taken to limit exposure to these fumes. The following actions should be taken:\ni. Evacuate personnel from all areas affected by the smoke and fumes and sound the fire alarm\nii. Assess the scene for unsafe conditions for yourself and others\niii. Assist victim, determine extent of injury, and administer first aid if appropriate and you are trained\niv. Ventilate the affected areas and continue ventilation until the odor is no longer detected\nv. Use a CO2 (Class BC) or dry chemical (Class ABC) fire extinguisher\nvi. Don’t use a Class D fire extinguisher \nvii. If possible, direct someone to call 9-911 for emergency response on one of the facility phones\n\nReporting\n\nAlert\ni. Facilities Manager (EXT 2880, cell 858-886-6553)\nii. Safety Officer (EXT 5650, cell 858-864-4136\niii. Front Desk Receptionist (EXT 7000)\nSend someone with a key card to meet the emergency responders at the loading dock and guide them through the facility doors - go up the elevator or stairs (many routes require a key card for access).\nUse the NOAASafe portal for the reporting of NOAA incidents, injuries, work related illnesses, or near misses. https://nsdesk.servicenowservices.com/noaasafe\nAlso, please refer to the NOAA Safety and Environmental Compliance Office (SECO) for any other safety-related issues. https://sites.google.com/a/noaa.gov/ocao/seco\n\n\n\nAttachment A",
+    "text": "This document will serve as a working draft for the management of lithium batteries. The following bullet points are the ones we discussed today, please feel free to add or make changes to any section according to NOAA, OMAO, and the State of California regulations.\nHere is a link to Safety Protocol for Flooded SoundTraps.\n\nSWFSC Li Battery Management\n\nPurpose\nThe intent of this document is to provide employees and contractors of the Southwest Fisheries Science Center (SWFCS) with guidelines that will allow personnel to safely handle, ship, store, dispose of, and respond to Lithium (Li) and Li-ion battery emergency situations.\nExtreme caution must be exercised when managing Li and Li-ion batteries within the center or conducting field operations due to the potential for fire, damage, or injury to personnel or property if misused or improperly handled. To prevent injury, it is imperative that employers and employees understand the basic function, hazards and safe use of Li and Li-ion battery powered devices.\nProcurement\nLi and Li-batteries can cause injury if they have design defects, are made of low quality materials, are assembled incorrectly, are used or recharged improperly, or are damaged during shipment or handling by the consumer. When purchasing Li batteries please use the following best practices guidelines. While the list is not exhaustive, it provides SWFCS the ability to ensure that the Li batteries purchased are of the highest quality available:\n\nPurchase batteries from a reputable manufacturer, supplier, or use a preferred supplier\nEnsure that the batteries are tested in accordance with an OSHA recognized Nationally Recognized Testing Laboratory (NLTR) and meet industry standards\nAvoid batteries that have been shipped without protective packaging (i.e., hard plastic casing or similar protective measures)\nInspect batteries upon receipt and safely dispose of damaged batteries\nCheck to ensure that a Safety Data Sheet (SDS) particular to the battery ordered has been shipped alongside the batteries; store this in a binder accessible to those with access with the Li or Li-ion batteries\nDo not over purchase in size or volume\n\nHandling\nObserve the following guidelines when handling Li and Li-ion batteries:\n\nKeep batteries from contacting conductive materials, water, seawater, strong oxidizers, and strong acids\nDo not place batteries in direct sunlight, on hot surfaces or in hot locations\nInspect batteries for signs of damage before use. Do not use batteries if there is any evidence of leakage or deformity. Never use and promptly and properly dispose of damaged or “puffy” batteries\nConsult the SDS for precautions to use when handling leaking batteries.\nKeep all flammable materials away from operating area\nAllow time for cooling before charging a battery that is still warm from usage and refrain from using a battery that is still warm from charging\nTurn off equipment if the battery becomes unexpectedly, or excessively hot. Wait for battery to cool before removing from equipment\nUse batteries only for the application for which they were designed. Only use lithium cells and batteries in approved equipment\nKeep batteries in their original packaging until ready for use\nUse special care in handling batteries. Make sure they are not punctured, crushed, mishandled, disassembled or exposed to storage temperatures exceeding the maximum specified temperature on the product’s safety data sheet\nRemove jewelry items such as rings, wristwatches, pendants, etc., that could come in contact with the battery terminals\n\nStorage\n\nStorage cabinets must conform to the National Fire Protection Agency (NFPA)  30 or equivalent: 18 gauge sheet steel, double wall, locked, and labeled with a list of contents. Maintain at least 2” clearance around the cabinet for ventilation and fire control\nThe cabinet location must be protected from forklifts, hand trucks, overhead loads, and other devices that could result in cell damage to the storage cabinet and the batteries while in storage\nCabinet should be isolated from flammable liquids and hazardous waste. No other hazardous or combustible material should be stored in or on the cabinet.\nLabel all storage cabinets with the applicable hazardous materials placard.\nStorage areas with more than 5 pounds of metallic lithium must be labeled with the appropriate placard in accordance with NFPA 704 diamond that is at least 18” on each side with applicable information (e.g. Health 3, Flammability 2, Reactivity 2, and Special Hazard W); see Attachment A.\nRemove batteries from device for long-term storage\nStore batteries in a lithium safe guard or bag to prevent damage to other batteries in the case of fire or ignition\nStore batteries in a cool, dry, and ventilated area\nStore the batteries at temperatures between 5°C and 20°C (41°F and 68°F)\nSeparate fresh and depleted batteries/cells\nAvoid bulk-storage in non-laboratory areas, such as offices\nVisually inspect storage areas weekly\nMaintain a binder of SDS pertaining to the specific batteries near the storage cabinets\n\nCharging\nLi batteries are grouped into two general categories: primary and secondary batteries. \n\nPrimary batteries consist of single-use cells containing metallic lithium anodes, are non-rechargeable and are commonly known as Li metal batteries\n\nNEVER charge a primary battery\nStore one time use (primary batteries) separately from secondary batteries; properly label the outer packaging to prevent this mistake\n\nSecondary batteries contain an intercalated Li compound for the anode and cathode. These batteries are rechargeable and are commonly referred to as Li-ion batteries\n\nUse the following guidelines when charging secondary batteries.\n\nWhen applicable, use Lithium Polymer (LiPo) bags to charge batteries\nUse only lithium-specific chargers to safely charge cells or battery packs\nCharge secondary batteries to approximately 50% - 70% of capacity before long-term storage. Most chargers will have a designated “storage-mode” dependent on the voltage, type of battery, and how many cells it is\nDisconnect batteries immediately if during operation or charging they:\n\nEmit an unusual smell\nEmit smoke\nOverheat or become abnormally hot\nThe battery begins to swell\nBehave abnormally\n\nDo not leave batteries and chargers unattended during charging. Charging should be in a manned space or remotely monitored\nRemove batteries from chargers promptly after charging is complete. Do not use the charger as a storage device/location\nDo not parallel charge batteries of varying age and charge status\nCheck voltage before parallel charging. All batteries should be within 0.5 volts of each other\nIf a battery cannot maintain a charge for its normal duration, even when properly charged, remove the battery from service and dispose of properly\n\nShipping:\nFederal regulations about shipping Li batteries are updated every year as new hazards are identified. Due to these yearly updates, this document will not provide specific shipping instructions. SWFSC personnel needing to ship Li batteries must take the appropriate International Aviation Transportation Association (IATA), International Maritime Dangerous Goods (IMDG), or Department of Transportation (DOT) training, attend and update their training certification every 2 - 3 years, and provide a copy of the certificate to Marty Nelson, Safety Engineer, SECO. Trained personnel will also adhere to the Federal regulations that govern the specific mode of transportation to be used.\nDisposal\n\nIn California, Li-metal/ion batteries are considered hazardous waste and need to be disposed of properly. All Li batteries types (AAA, AA, C, D, button cell, 9-volt, etc), whether primary or secondary, must be recycled or taken to a household hazardous waste disposal facility, a universal waste handler (e.g., storage facility or broker), or an authorized recycling facility\nOptions for recycling\ni. The Big Green Box ($3.84/lb) https://biggreenbox.com/products/lithium-metal-batteries1\nii. Update Green ($2.00/lb) https://updategreen.com/\niii. Secure E-Waste Solutions https://www.sesrecycling.com/\n\nEmergency Response\n\nPreventative Measures\nPlease follow the steps outlined below to ensure that any batteries showing signs of misuse are handled and disposed of properly. Proper PPE will be worn when taking preventative measures including a lab coat, rubber gloves, and safety glasses.\ni. If batteries are showing evidence of thermal runaway failure, be very cautious; the gases may be flammable and toxic and failure modes can be hazardous\nii. Disconnect the battery (if possible)\niii. Remove the battery from the equipment/device (if possible)\niv.  Place the battery in a metal or other container away from combustibles\nFires\nIn the event that a Li metal or ion battery were to catch fire, a room could fill quickly with dense white smoke and the fire will be difficult to extinguish. The fumes and smoke from the fire can cause severe irritation to the respiratory tract, eyes and skin. All precautions must be taken to limit exposure to these fumes. The following actions should be taken:\ni. Evacuate personnel from all areas affected by the smoke and fumes and sound the fire alarm\nii. Assess the scene for unsafe conditions for yourself and others\niii. Assist victim, determine extent of injury, and administer first aid if appropriate and you are trained\niv. Ventilate the affected areas and continue ventilation until the odor is no longer detected\nv. Use a CO2 (Class BC) or dry chemical (Class ABC) fire extinguisher\nvi. Don’t use a Class D fire extinguisher \nvii. If possible, direct someone to call 9-911 for emergency response on one of the facility phones\n\nReporting\n\nAlert\ni. Facilities Manager (EXT 2880, cell 858-886-6553)\nii. Safety Officer (EXT 5650, cell 858-864-4136\niii. Front Desk Receptionist (EXT 7000)\nSend someone with a key card to meet the emergency responders at the loading dock and guide them through the facility doors - go up the elevator or stairs (many routes require a key card for access).\nUse the NOAASafe portal for the reporting of NOAA incidents, injuries, work related illnesses, or near misses. https://nsdesk.servicenowservices.com/noaasafe\nAlso, please refer to the NOAA Safety and Environmental Compliance Office (SECO) for any other safety-related issues. https://sites.google.com/a/noaa.gov/ocao/seco\n\n\n\nAttachment A",
     "crumbs": [
       "Lab Management",
       "Lithium Batteries"
@@ -1196,63 +1227,93 @@
     "text": "Slide with Highlighted Code Lines\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\nMore line highlighting options here"
   },
   {
-    "objectID": "content/Data-Archive-NCEI.html",
-    "href": "content/Data-Archive-NCEI.html",
-    "title": "NCEI",
+    "objectID": "content/publications.html",
+    "href": "content/publications.html",
+    "title": "Reporting",
     "section": "",
-    "text": "NCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.\nUsers can access data through the interactive map or request data using Google Cloud Platform",
+    "text": "Please see links, below, to publications and reports\nRankin, S., Sakai, T., Archer, F. I., Barlow, J., Cholewiak, D., DeAngelis, A. I., … & Trickey, J. S. (2024). Open-source machine learning BANTER acoustic classification of beaked whale echolocation pulses. Ecological Informatics, 80, 102511.\nBarlow, J., Cárdenas‐Hinojosa, G., Henderson, E. E., Breese, D., López‐Arzate, D., Hidalgo Pla, E., & Taylor, B. L. (2022). Unique morphological and acoustic characteristics of beaked whales (Mesoplodon sp.) off the west coast of Baja California, Mexico.\nBarlow, J., Moore, J. E., McCullough, J. L., & Griffiths, E. T. (2022). Acoustic‐based estimates of Cuvier’s beaked whale (Ziphius cavirostris) density and abundance along the US West Coast from drifting hydrophone recorders. Marine Mammal Science, 38(2), 517-538.\nBarlow, J., Fregosi, S., Thomas, L., Harris, D., & Griffiths, E. T. (2021). Acoustic detection range and population density of Cuvier’s beaked whales estimated from near-surface hydrophones. The Journal of the Acoustical Society of America, 149(1), 111-125.\nBarlow, J., Trickey, J. S., Schorr, G. S., Rankin, S., & Moore, J. E. (2021). Recommended snapshot length for acoustic point-transect surveys of intermittently available Cuvier’s beaked whales. The Journal of the Acoustical Society of America, 149(6), 3830-3840.\nRankin, S., Oedekoven, C., & Archer, F. (2020). Mark recapture distance sampling: using acoustics to estimate the fraction of dolphins missed by observers during shipboard line-transect surveys. Environmental and ecological statistics, 27(2), 233-251.\nSimonis, A. E., Forney, K. A., Rankin, S., Ryan, J., Zhang, Y., DeVogelaere, A., … & Baumann-Pickering, S. (2020). Seal bomb noise as a potential threat to Monterey Bay harbor porpoise. Frontiers in Marine Science, 7, 142.\nArcher, F. I., Rankin, S., Stafford, K. M., Castellote, M., & Delarue, J. (2020). Quantifying spatial and temporal variation of North Pacific fin whale (Balaenoptera physalus) acoustic behavior. Marine Mammal Science, 36(1), 224-245.\nSimonis, A. E., Trickey, J. S., Barlow, J., Rankin, S., Urbán, J., Rojas-Bracho, L., & Moore, J. E. (2020). Passive Acoustic Survey Of Deep-Diving Odontocetes in the California Current Ecosystem 2018.\nRankin, S., Archer, F., Keating, J. L., Oswald, J. N., Oswald, M., Curtis, A., & Barlow, J. (2017). Acoustic classification of dolphins in the California Current using whistles, echolocation clicks, and burst pulses. Marine Mammal Science, 33(2), 520-540.\nRankin, S., Castellote, M., Delarue, J., Stafford, K. M., Archer, F. I., Koot, B., … & Morano, J. L. (2018). Methods for characterizing fin whale song notes for comparative studies of geographic variation in song.\nRankin, S. (2008). Acoustic studies of marine mammals during seven years of combined visual and acoustic line-transect surveys for cetaceans in the eastern and central Pacific Ocean.\nRankin, S., Oswald, J. N., & Barlow, J. (2008). Acoustic behavior of dolphins in the Pacific Ocean: Implications for using passive acoustic methods for population studies. Canadian Acoustics, 36(1), 88-92.",
     "crumbs": [
-      "Data Management",
-      "Data Archive Methods",
-      "NCEI"
+      "Publications"
     ]
   },
   {
-    "objectID": "content/Data-Archive-NCEI.html#ncei-data-archive",
-    "href": "content/Data-Archive-NCEI.html#ncei-data-archive",
-    "title": "NCEI",
+    "objectID": "content/Data-Github.html",
+    "href": "content/Data-Github.html",
+    "title": "Github Repos",
     "section": "",
-    "text": "NCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.\nUsers can access data through the interactive map or request data using Google Cloud Platform",
-    "crumbs": [
-      "Data Management",
-      "Data Archive Methods",
-      "NCEI"
-    ]
+    "text": "SAEL is part of the California Current Marine Mammal Assessment Program (CMAP Lab Manual) and it is also part of the NOAA Fisheries National PAM Network (National PAM Lab Manual.\nThe SAEL Github Organization houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.\nWe also highly recommend the NMFS Open Sciencesite for more resources."
   },
   {
-    "objectID": "content/Data-Archive-NCEI.html#submitting-data",
-    "href": "content/Data-Archive-NCEI.html#submitting-data",
-    "title": "NCEI",
-    "section": "Submitting Data",
-    "text": "Submitting Data\nNCEI has packaging tools to help automate this process. ADRIFT, CCES, and PASCAL data was archived using Passive Packer. NCEI has since released the Passive Acoustic Collection Engine (PACE) that allows for bulk processing and custom translators. PACE has replaced Passive Packer as our packaging tool.\n\nPACE\nFuture PAM data (CalCurCEAS 2024, gliders, etc) will be packaged and submitted using NCEI’s new Passive Acoustic Collection Engine (PACE). Detailed methods for preparing raw audio data for packaging and archive can be found here.\n\n\nPassive Packer\n\n\n\n\n\n\nThese methods are no longer in use and may be outdated. Please use PACE archive methods for future projects\n\n\n\n\n\n\nAll ADRIFT, CCES, and PASCAL data were packaged using a combination of automated scripts and the NCEI Passive Packer tool. Several automation scripts were used to create Passive Packer ready databases from our deployment details metadata. Detailed methods can be found here.",
-    "crumbs": [
-      "Data Management",
-      "Data Archive Methods",
-      "NCEI"
-    ]
+    "objectID": "content/Data-Github.html#pam-gliders",
+    "href": "content/Data-Github.html#pam-gliders",
+    "title": "Github Repos",
+    "section": "PAM Gliders",
+    "text": "PAM Gliders\n\nPAM-UxS\nGlider Rodeo\nglider-CalCurCEAS"
+  },
+  {
+    "objectID": "content/Data-Github.html#calcurceas-2024-acoustic-data",
+    "href": "content/Data-Github.html#calcurceas-2024-acoustic-data",
+    "title": "Github Repos",
+    "section": "CalCurCEAS 2024 Acoustic Data:",
+    "text": "CalCurCEAS 2024 Acoustic Data:\n\nglider-CalCurCEAS\ndrifter-CalCurCEAS"
+  },
+  {
+    "objectID": "content/Data-Github.html#adrift-in-the-california-current",
+    "href": "content/Data-Github.html#adrift-in-the-california-current",
+    "title": "Github Repos",
+    "section": "Adrift in the California Current:",
+    "text": "Adrift in the California Current:\n\nAdrift Report\nAdrift Field Methods\nAdrift Analysis Methods"
+  },
+  {
+    "objectID": "content/Data-Github.html#hardware-methods-protocol-etc.",
+    "href": "content/Data-Github.html#hardware-methods-protocol-etc.",
+    "title": "Github Repos",
+    "section": "Hardware, Methods, Protocol, etc.",
+    "text": "Hardware, Methods, Protocol, etc.\n\nSAEL Lab Manual\nSAEL Lab Hardware\nPAM Open Science"
+  },
+  {
+    "objectID": "content/Data-Github.html#data-metadata",
+    "href": "content/Data-Github.html#data-metadata",
+    "title": "Github Repos",
+    "section": "Data & Metadata",
+    "text": "Data & Metadata\n\nTowed Array Metadata (under construction)\nSonobuoy Metadata (under construction)"
+  },
+  {
+    "objectID": "content/Data-Github.html#projects",
+    "href": "content/Data-Github.html#projects",
+    "title": "Github Repos",
+    "section": "Projects",
+    "text": "Projects\n\nBANTER_Beaked Whales\nFOSSA Soundscape\nData Nuggets Educational Product"
+  },
+  {
+    "objectID": "content/Data-Github.html#github-templates",
+    "href": "content/Data-Github.html#github-templates",
+    "title": "Github Repos",
+    "section": "Github Templates",
+    "text": "Github Templates\n\nLab Manual\nResearch Compendium w/ Web Output"
   },
   {
     "objectID": "content/Data-Archive-GCP.html",
     "href": "content/Data-Archive-GCP.html",
-    "title": "Google Cloud Archive and Analysis",
+    "title": "Google Cloud",
     "section": "",
     "text": "All of this is temporary. End goal is to have all of this documented on the national PAM repo, and link to it here.\nLink to SWFSC GCP Bucket\nYou can use the built in upload tool to upload small amounts of data directly to GCP",
     "crumbs": [
       "Data Management",
       "Data Archive Methods",
-      "Google Cloud Archive and Analysis"
+      "Google Cloud"
     ]
   },
   {
     "objectID": "content/Data-Archive-GCP.html#bulk-upload-using-gcloud-cli",
     "href": "content/Data-Archive-GCP.html#bulk-upload-using-gcloud-cli",
-    "title": "Google Cloud Archive and Analysis",
+    "title": "Google Cloud",
     "section": "Bulk upload using gcloud CLI",
     "text": "Bulk upload using gcloud CLI\n\nSee this document for PAM GCP Technical System documentation and a link to the PAM buckets\nFollow steps 1-4 under the Configure gcloud section in this document to install Google Cloud SDK on your computer\nOpen the command prompt and type “gsutil -m cp -r F:/* gs://swfsc-1/drifting_recorder/”, where “F:/*” is the directory with data to upload and “gs://swfsc-1/drifting_recorder/” is the cloud bucket and folder you want to upload data to\nProcessing should start, wait for command prompt to update then refresh the SWFSC bucket website to see your uploaded data\n\n\n\n\n\n\n\nIf you are uploaded a large dataset, it is recommended to run this after normal work hours and on the weekends. See this document with more directions or contact Dan Woodrich (daniel.woodrich@noaa.gov)",
     "crumbs": [
       "Data Management",
       "Data Archive Methods",
-      "Google Cloud Archive and Analysis"
+      "Google Cloud"
     ]
   },
   {
