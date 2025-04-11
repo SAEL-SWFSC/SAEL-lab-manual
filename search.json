@@ -1241,56 +1241,96 @@
     "href": "content/Data-Github.html",
     "title": "Github Repos",
     "section": "",
-    "text": "SAEL is part of the California Current Marine Mammal Assessment Program (CMAP Lab Manual) and it is also part of the NOAA Fisheries National PAM Network (National PAM Lab Manual.\nThe SAEL Github Organization houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.\nWe also highly recommend the NMFS Open Sciencesite for more resources."
+    "text": "SAEL is part of the California Current Marine Mammal Assessment Program (CMAP Lab Manual) and it is also part of the NOAA Fisheries National PAM Network (National PAM Lab Manual.\nThe SAEL Github Organization houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.\nWe also highly recommend the NMFS Open Sciencesite for more resources.",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Github Repos"
+    ]
   },
   {
     "objectID": "content/Data-Github.html#pam-gliders",
     "href": "content/Data-Github.html#pam-gliders",
     "title": "Github Repos",
     "section": "PAM Gliders",
-    "text": "PAM Gliders\n\nPAM-UxS\nGlider Rodeo\nglider-CalCurCEAS"
+    "text": "PAM Gliders\n\nPAM-UxS\nGlider Rodeo\nglider-CalCurCEAS",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Github Repos"
+    ]
   },
   {
     "objectID": "content/Data-Github.html#calcurceas-2024-acoustic-data",
     "href": "content/Data-Github.html#calcurceas-2024-acoustic-data",
     "title": "Github Repos",
     "section": "CalCurCEAS 2024 Acoustic Data:",
-    "text": "CalCurCEAS 2024 Acoustic Data:\n\nglider-CalCurCEAS\ndrifter-CalCurCEAS"
+    "text": "CalCurCEAS 2024 Acoustic Data:\n\nglider-CalCurCEAS\ndrifter-CalCurCEAS",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Github Repos"
+    ]
   },
   {
     "objectID": "content/Data-Github.html#adrift-in-the-california-current",
     "href": "content/Data-Github.html#adrift-in-the-california-current",
     "title": "Github Repos",
     "section": "Adrift in the California Current:",
-    "text": "Adrift in the California Current:\n\nAdrift Report\nAdrift Field Methods\nAdrift Analysis Methods"
+    "text": "Adrift in the California Current:\n\nAdrift Report\nAdrift Field Methods\nAdrift Analysis Methods",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Github Repos"
+    ]
   },
   {
     "objectID": "content/Data-Github.html#hardware-methods-protocol-etc.",
     "href": "content/Data-Github.html#hardware-methods-protocol-etc.",
     "title": "Github Repos",
     "section": "Hardware, Methods, Protocol, etc.",
-    "text": "Hardware, Methods, Protocol, etc.\n\nSAEL Lab Manual\nSAEL Lab Hardware\nPAM Open Science"
+    "text": "Hardware, Methods, Protocol, etc.\n\nSAEL Lab Manual\nSAEL Lab Hardware\nPAM Open Science",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Github Repos"
+    ]
   },
   {
     "objectID": "content/Data-Github.html#data-metadata",
     "href": "content/Data-Github.html#data-metadata",
     "title": "Github Repos",
     "section": "Data & Metadata",
-    "text": "Data & Metadata\n\nTowed Array Metadata (under construction)\nSonobuoy Metadata (under construction)"
+    "text": "Data & Metadata\n\nTowed Array Metadata (under construction)\nSonobuoy Metadata (under construction)",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Github Repos"
+    ]
   },
   {
     "objectID": "content/Data-Github.html#projects",
     "href": "content/Data-Github.html#projects",
     "title": "Github Repos",
     "section": "Projects",
-    "text": "Projects\n\nBANTER_Beaked Whales\nFOSSA Soundscape\nData Nuggets Educational Product"
+    "text": "Projects\n\nBANTER_Beaked Whales\nFOSSA Soundscape\nData Nuggets Educational Product",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Github Repos"
+    ]
   },
   {
     "objectID": "content/Data-Github.html#github-templates",
     "href": "content/Data-Github.html#github-templates",
     "title": "Github Repos",
     "section": "Github Templates",
-    "text": "Github Templates\n\nLab Manual\nResearch Compendium w/ Web Output"
+    "text": "Github Templates\n\nLab Manual\nResearch Compendium w/ Web Output",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Github Repos"
+    ]
   },
   {
     "objectID": "content/Data-Archive-GCP.html",
