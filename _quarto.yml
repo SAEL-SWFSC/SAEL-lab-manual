@@ -44,8 +44,10 @@ website:
           - content/Inventory.qmd
       - section: "Data Management"
         contents:
-          - href: content/Data-Archive.qmd
-            text: Data Archive
+          - section: content/Data-Archive.qmd
+            # text: Data Archive
+            contents:
+              - content/Data-Github.qmd
           - section: content/Data-Archive-Methods.qmd
             contents:
               - content/Data-Archive-GCP.qmd
