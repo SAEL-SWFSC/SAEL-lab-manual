@@ -12,7 +12,7 @@
 :::
 
 
-We firmly believe in the power of Open Science, and the reponsibility for federal scientists to actively engage in Open Science. As our efforts have expanded, we have shifted our Open Science materials to a stand-alone repository that can be accessed here: [Open Science](https://sael-swfsc.github.io/OpenScience/). 
+We firmly believe in the power of Open Science, and the reponsibility for federal scientists to actively engage in Open Science. As our efforts have expanded, we have shifted our Open Science materials to a stand-alone repository that can be accessed here: [Open Science](https://nmfs-ost.github.io/PAM-OpenScience/). 
 
 
 ![](images/openScience.png)
