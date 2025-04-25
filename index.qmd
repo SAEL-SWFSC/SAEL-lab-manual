@@ -5,11 +5,19 @@ page-layout: full
 link-external-newwindow: true
 ---
 
-The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA's management needs. We are part of the Marine Mammal and Turtle Division at NOAA's Southwest Fisheries Science Center in La Jolla, California.
+::::: columns
+::: {.column width="60%"}
+The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA's management needs. We are part of the Marine Mammal and Turtle Division at [NOAA's Southwest Fisheries Science Center](https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center) in La Jolla, California.
 
 This lab manual serves as the go-to handbook for the behind-the-scenes information to support our science.
+:::
 
-# Team Members
+::: {.column width="40%"}
+![Examples of different passive acoustic platforms used by NOAA](content/images/PAMplatforms.png){fig-alt="" fig-align="center"}
+:::
+:::::
+
+## Team Members
 
 [Shannon Rankin](https://www.fisheries.noaa.gov/contact/shannon-rankin), SAEL Team Leader
 
@@ -17,7 +25,29 @@ This lab manual serves as the go-to handbook for the behind-the-scenes informati
 
 [Kourtney Burger](https://www.fisheries.noaa.gov/contact/kourtney-burger), Acoustician and Data Manager
 
+## Other SAEL Repositories
 
+See our [GitHub Repos page](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Github.html) for links to all of our lab's individual repositories
+
+## Location
+
+**Shipping Address:** DOC/NOAA - SWFSC, 8901 La Jolla Shores Drive, La Jolla, CA 92037
+
+## Additional NMFS PAM Lab Manuals
+
+-   [PIFSC: Pacific Islands Fisheries](https://pifsc-protected-species-division.github.io/CRP_PAM_Manual/)
+
+-   [NWFSC: Northwest Fisheries](https://noaa-nwfsc.github.io/NWFSC-PAM-Lab-Manual/){target="_blank"}
+
+-   [AFSC: Alaska Fisheries](https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/){target="_blank"}
+
+-   [SEFSC: Southeast Fisheries](https://sefsc.github.io/SEFSC-PAM-Lab-Manual/){target="_blank"}
+
+-   [NEFSC: Northeast Fisheries](https://nefsc.github.io/NEFSC_PAB_lab_manual/){target="_blank"}
+
+-   [National PAM Network](https://nmfs-ost.github.io/PAM_National_Network/){target="_blank"}
+
+## Like what you see?
 
 ***Want to Copy this Lab Manual Format?***
 

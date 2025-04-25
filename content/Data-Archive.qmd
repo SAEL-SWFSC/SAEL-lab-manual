@@ -5,11 +5,20 @@ editor:
     wrap: 72
 ---
 
+## Archive Status
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4AnmnJo2D0HRSoqI49Xb1pNKEz7e3u4OczKz22B294eQskYeKN0YLDa7B5Jc9GcCPB7lA4zUl_GYT/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
+
+</iframe>
+
+[Link for SAEL Lab
+Members](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing)
+
 ## Local Data Archive
 
 Local data storage is currently located in several different locations:
 
-#### *Digital Data Storage*
+### *Digital Data Storage*
 
 -   [Old Synology
     Rm390](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/SynologyNASinventory_Rm390_SAEL_Rankin_14March2025.pdf)
@@ -25,33 +34,12 @@ Local data storage is currently located in several different locations:
     (detailed [Hard Drive
     Inventory](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf))
 
-#### *Analog Data Storage*
+### *Analog Data Storage*
 
 -   [Tape Drive Closet
     Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/TapeRecordingInventory_Rm385_SAEL_Rankin_14March2025.pdf)
 -   [Greenbook Cabinet
     Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/GreenbookInventory_Rm385_SAEL_Rankin_14March2025.pdf)
-
-## Public Repositories (*in progress)*
-
-[SAEL Github Organization](https://github.com/SAEL-SWFSC) is for new and
-recent repositories. [NOAA Fisheries National PAM
-Network](https://nmfs-ost.github.io/PAM_National_Network/)
-
-#### *Specific publicly accessible projects include:*
-
--   Adrift in the California Current ([Github
-    Repository](https://github.com/SAEL-SWFSC/Adrift){target="_blank"}
-    and [website](https://sael-swfsc.github.io/Adrift/))
-
--   [Beaked Whales from NOAA's CCES 2018 Survey
-    (Figshare)](https://figshare.com/projects/Beaked_Whale_Acoustic_Events_from_Drifting_Acoustic_Recordings_during_NOAA_s_CCES_2018_Survey/94511)
-
--   [CalCurCEAS 2024 Drifter
-    Analysis](https://github.com/SAEL-SWFSC/CalCurCEAS-2024-Drifter-Analysis)
-
--   [Towed Array Metadata
-    Archive](https://github.com/shannonrankin/dataWrangling_towedArray)
 
 ## External Data Archives
 
@@ -61,5 +49,60 @@ Information (NCEI), PACM-Makara, Google Cloud Platform (GCP), NMFS
 Enterprise Data Management Program - InPort, and Tethys (local
 database).
 
-Detailed archive methods for each source can be found
-[here](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Methods.html)
+Detailed archive methods for each source can be found on their
+respective sections below
+
+### [*Google Cloud*](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-GCP.html)
+
+Google Cloud is for temporary processing/storing of data for Analysis.
+
+### [*NCEI*](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html)
+
+NCEI hosts a [Passive Acoustic Data
+Archive](https://www.ncei.noaa.gov/products/passive-acoustic-data),
+where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data,
+and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio
+data will be accessible in this archive once it has been cleared.
+
+Users can access data through the [interactive
+map](https://www.ncei.noaa.gov/maps/passive-acoustic-data/) or request
+data using [Google Cloud
+Platform](https://console.cloud.google.com/marketplace/details/noaa-public/passive_acoustic_monitoring?pli=1&project=ggn-nmfs-pamdata-prod-1)
+
+### [*Tethys*](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Tethys.html)
+
+All ADRIFT, PASCAL 2016, CCES 2018, and CalCurCEAS 2024 deployment
+metadata and detection data are archived locally in our lab’s [Tethys
+database](https://tethys.sdsu.edu/).
+
+The Tethys database is saved locally on the DON server
+(Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the
+database, but these directions will only include opening the web client
+interface (main web app and Data Explorer).
+
+### [*PACM/Makara*](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-PACM_Makara.html)
+
+All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are
+archived and available on the [Passive Acoustic Cetacean
+Map](https://apps-nefsc.fisheries.noaa.gov/pacm/#/) (PACM). Makara is an
+updated database and methods will be added here
+
+CalCurCEAS 2024 detection data - work in progress
+
+### [*InPort*](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-InPort.html)
+
+Per Fisheries Information Management and Data Documentation policy and
+procedural directives, all Fisheries data must be inventoried with
+complete metadata in [InPort](https://www.fisheries.noaa.gov/inport/),
+NMFS Enterprise Data Management Program. PAM data is complicated, and
+there is no standard for posting metadata to InPort. Given that detailed
+metadata is archived to NCEI, SWFSC will post all data related to PAM
+Deployments/data collection efforts and ensure there is a link to access
+additional data/metadata via NCEI and PACM.
+
+### *OBIS Seamap*
+
+We are no longer storing marine mammal detection data in the OBIS
+database. OBIS specific processing scripts for beaked whales are
+available
+[here](https://github.com/TaikiSan21/PAMpal/blob/735dfec50b3c6feaa8772765d752e8260363a2c5/devel/OBIS_Functions.R).

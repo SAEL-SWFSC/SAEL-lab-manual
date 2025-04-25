@@ -6,7 +6,7 @@ SAEL is part of the California Current Marine Mammal Assessment Program ([CMAP L
 
 The [SAEL Github Organization](https://github.com/SAEL-SWFSC) houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.
 
-We also highly recommend the [NMFS Open Science](https://nmfs-opensci.github.io/)site for more resources.
+We also highly recommend the [NMFS Open Science](https://nmfs-opensci.github.io/) site for more resources.
 
 ## PAM Gliders
 
@@ -51,6 +51,8 @@ We also highly recommend the [NMFS Open Science](https://nmfs-opensci.github.io/
 -   [FOSSA Soundscape](https://github.com/shannonrankin/fossa_soundscape)
 
 -   [Data Nuggets Educational Product](https://github.com/shannonrankin/DataNugget)
+
+-   [Beaked Whales from NOAA's CCES 2018 Survey (Figshare)](https://figshare.com/projects/Beaked_Whale_Acoustic_Events_from_Drifting_Acoustic_Recordings_during_NOAA_s_CCES_2018_Survey/94511)
 
 ## Github Templates
 

@@ -46,14 +46,12 @@ website:
         contents:
           - section: content/Data-Archive.qmd
             contents:
-              - content/Data-Github.qmd
-              - section: content/Data-Archive-Methods.qmd
-                contents:
-                  - content/Data-Archive-GCP.qmd
-                  - content/Data-Archive-NCEI.qmd
-                  - content/Data-Archive-Tethys.qmd
-                  - content/Data-Archive-PACM_Makara.qmd
-                  - content/Data-Archive-InPort.qmd
+              - content/Data-Archive-GCP.qmd
+              - content/Data-Archive-NCEI.qmd
+              - content/Data-Archive-Tethys.qmd
+              - content/Data-Archive-PACM_Makara.qmd
+              - content/Data-Archive-InPort.qmd
+          - content/Data-Github.qmd
           - content/Data-SpeciesAndCallTypes.qmd
           - content/media.qmd
       - section:  content/Hardware.qmd
