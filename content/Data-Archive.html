@@ -178,17 +178,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Github Repos</span></a>
   </div>
 </li>
-      </ul>
-  </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/Data-Archive-Methods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Archive Methods</span></a>
+ <span class="menu-text">Archive Methods</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Data-Archive-GCP.html" class="sidebar-item-text sidebar-link">
@@ -209,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/Data-Archive-PacmMakara.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/Data-Archive-PACM_Makara.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PACM/Makara</span></a>
   </div>
 </li>
@@ -219,6 +217,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">InPort</span></a>
   </div>
 </li>
+      </ul>
+  </li>
       </ul>
   </li>
           <li class="sidebar-item">
@@ -335,11 +335,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#local-data-archive" id="toc-local-data-archive" class="nav-link active" data-scroll-target="#local-data-archive">Local Data Archive</a></li>
   <li><a href="#public-repositories-in-progress" id="toc-public-repositories-in-progress" class="nav-link" data-scroll-target="#public-repositories-in-progress">Public Repositories (<em>in progress)</em></a></li>
-  <li><a href="#ncei-data-archive" id="toc-ncei-data-archive" class="nav-link" data-scroll-target="#ncei-data-archive">NCEI Data Archive</a></li>
-  <li><a href="#pacm-makara" id="toc-pacm-makara" class="nav-link" data-scroll-target="#pacm-makara">PACM, Makara</a></li>
-  <li><a href="#tethys" id="toc-tethys" class="nav-link" data-scroll-target="#tethys">Tethys</a></li>
-  <li><a href="#inport-metadata-archive" id="toc-inport-metadata-archive" class="nav-link" data-scroll-target="#inport-metadata-archive">InPort Metadata Archive</a></li>
-  <li><a href="#obis-seamap" id="toc-obis-seamap" class="nav-link" data-scroll-target="#obis-seamap">OBIS Seamap</a></li>
+  <li><a href="#external-data-archives" id="toc-external-data-archives" class="nav-link" data-scroll-target="#external-data-archives">External Data Archives</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -398,43 +394,10 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="ncei-data-archive" class="level2">
-<h2 class="anchored" data-anchor-id="ncei-data-archive">NCEI Data Archive</h2>
-<p>NCEI hosts a <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">Passive Acoustic Data Archive</a>, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.</p>
-<p>Users can access data through the <a href="https://www.ncei.noaa.gov/maps/passive-acoustic-data/">interactive map</a> or request data using <a href="https://console.cloud.google.com/marketplace/details/noaa-public/passive_acoustic_monitoring?pli=1&amp;project=ggn-nmfs-pamdata-prod-1">Google Cloud Platform</a></p>
-<p>See <a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html">NCEI Data Archive section</a> for more information and detailed archive methods</p>
-</section>
-<section id="pacm-makara" class="level2">
-<h2 class="anchored" data-anchor-id="pacm-makara">PACM, Makara</h2>
-<p>All ADRIFT, CCES, and PASCAL marine mammal detection data are archived and available on the <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/">Passive Acoustic Cetacean Map</a>. Additional metadata will be uploaded as it is compiled and quality-checked.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-This needs it’s own page
-</div>
-</div>
-<div class="callout-body-container callout-body">
-
-</div>
-</div>
-<p>PACM Archive methods can be found <a href="https://github.com/Kourtney-Burger/ADRIFT-PACM">here</a>.</p>
-</section>
-<section id="tethys" class="level2">
-<h2 class="anchored" data-anchor-id="tethys">Tethys</h2>
-<p>All ADRIFT, PASCAL, CCES, and CalCurCEAS deployment metadata and detection data are archived locally in our lab’s <a href="https://tethys.sdsu.edu/">Tethys database</a>. Additional metadata will be uploaded as it is compiled and quality-checked.</p>
-<p>See the <a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Tethys.html">Tethys section</a> for detailed archive methods and more information.</p>
-</section>
-<section id="inport-metadata-archive" class="level2">
-<h2 class="anchored" data-anchor-id="inport-metadata-archive">InPort Metadata Archive</h2>
-<p>Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.</p>
-<p>See <a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-InPort.html">InPort section</a> for more information on accessing and submitting metadata.</p>
-</section>
-<section id="obis-seamap" class="level2">
-<h2 class="anchored" data-anchor-id="obis-seamap">OBIS Seamap</h2>
-<p>We are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available <a href="https://github.com/TaikiSan21/PAMpal/blob/735dfec50b3c6feaa8772765d752e8260363a2c5/devel/OBIS_Functions.R">here</a>.</p>
+<section id="external-data-archives" class="level2">
+<h2 class="anchored" data-anchor-id="external-data-archives">External Data Archives</h2>
+<p>Along with our local data storage, SAEL datasets are also archived at several external sources including National Centers for Environmental Information (NCEI), PACM-Makara, Google Cloud Platform (GCP), NMFS Enterprise Data Management Program - InPort, and Tethys (local database).</p>
+<p>Detailed archive methods for each source can be found <a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Methods.html">here</a></p>
 
 
 </section>
