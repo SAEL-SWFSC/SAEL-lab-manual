@@ -9,7 +9,7 @@ editor:
 
 Local data storage is currently located in several different locations:
 
-#### *Digital Data Storage* 
+#### *Digital Data Storage*
 
 -   [Old Synology
     Rm390](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/SynologyNASinventory_Rm390_SAEL_Rankin_14March2025.pdf)
@@ -53,67 +53,13 @@ Network](https://nmfs-ost.github.io/PAM_National_Network/)
 -   [Towed Array Metadata
     Archive](https://github.com/shannonrankin/dataWrangling_towedArray)
 
-## NCEI Data Archive
+## External Data Archives
 
-NCEI hosts a [Passive Acoustic Data
-Archive](https://www.ncei.noaa.gov/products/passive-acoustic-data),
-where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data,
-and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio
-data will be accessible in this archive once it has been cleared.
+Along with our local data storage, SAEL datasets are also archived at
+several external sources including National Centers for Environmental
+Information (NCEI), PACM-Makara, Google Cloud Platform (GCP), NMFS
+Enterprise Data Management Program - InPort, and Tethys (local
+database).
 
-Users can access data through the [interactive
-map](https://www.ncei.noaa.gov/maps/passive-acoustic-data/) or request
-data using [Google Cloud
-Platform](https://console.cloud.google.com/marketplace/details/noaa-public/passive_acoustic_monitoring?pli=1&project=ggn-nmfs-pamdata-prod-1)
-
-See [NCEI Data Archive
-section](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html)
-for more information and detailed archive methods
-
-## PACM, Makara
-
-All ADRIFT, CCES, and PASCAL marine mammal detection data are archived
-and available on the [Passive Acoustic Cetacean
-Map](https://apps-nefsc.fisheries.noaa.gov/pacm/#/). Additional metadata
-will be uploaded as it is compiled and quality-checked.
-
-
-::: callout-important
-## This needs it's own page
-:::
-
-
-PACM Archive methods can be found
-[here](https://github.com/Kourtney-Burger/ADRIFT-PACM).
-
-## Tethys
-
-All ADRIFT, PASCAL, CCES, and CalCurCEAS deployment metadata and
-detection data are archived locally in our lab's [Tethys
-database](https://tethys.sdsu.edu/). Additional metadata will be
-uploaded as it is compiled and quality-checked.
-
-See the [Tethys
-section](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Tethys.html)
-for detailed archive methods and more information.
-
-## InPort Metadata Archive
-
-Per Fisheries Information Management and Data Documentation policy and
-procedural directives, all Fisheries data must be inventoried with
-complete metadata in InPort, our official metadata repository. PAM data
-is complicated, and there is no standard for posting metadata to InPort.
-Given that detailed metadata is archived to NCEI, SWFSC will post all
-data related to PAM Deployments/data collection efforts and ensure there
-is a link to access additional data/metadata via NCEI and PACM.
-
-See [InPort
-section](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-InPort.html)
-for more information on accessing and submitting metadata.
-
-## OBIS Seamap
-
-We are no longer storing marine mammal detection data in the OBIS
-database. OBIS specific processing scripts for beaked whales are
-available
-[here](https://github.com/TaikiSan21/PAMpal/blob/735dfec50b3c6feaa8772765d752e8260363a2c5/devel/OBIS_Functions.R).
+Detailed archive methods for each source can be found
+[here](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Methods.html)
