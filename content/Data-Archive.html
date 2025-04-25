@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/Data-Github.html" rel="next">
+<link href="../content/Data-Archive-GCP.html" rel="next">
 <link href="../content/Inventory.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -174,21 +174,6 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/Data-Github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Github Repos</span></a>
-  </div>
-</li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../content/Data-Archive-Methods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Archive Methods</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../content/Data-Archive-GCP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Google Cloud</span></a>
   </div>
@@ -219,8 +204,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-      </ul>
-  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/Data-Github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Github Repos</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Data-SpeciesAndCallTypes.html" class="sidebar-item-text sidebar-link">
@@ -239,11 +228,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../content/Hardware.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hardware Methods</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Hardware_Gliders.html" class="sidebar-item-text sidebar-link">
@@ -280,11 +269,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../content/SAEL-Analysis-software.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">SAEL Acoustic Software</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/Acoustic-Analysis-software.html" class="sidebar-item-text sidebar-link">
@@ -333,9 +322,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#local-data-archive" id="toc-local-data-archive" class="nav-link active" data-scroll-target="#local-data-archive">Local Data Archive</a></li>
-  <li><a href="#public-repositories-in-progress" id="toc-public-repositories-in-progress" class="nav-link" data-scroll-target="#public-repositories-in-progress">Public Repositories (<em>in progress)</em></a></li>
-  <li><a href="#external-data-archives" id="toc-external-data-archives" class="nav-link" data-scroll-target="#external-data-archives">External Data Archives</a></li>
+  <li><a href="#archive-status" id="toc-archive-status" class="nav-link active" data-scroll-target="#archive-status">Archive Status</a></li>
+  <li><a href="#local-data-archive" id="toc-local-data-archive" class="nav-link" data-scroll-target="#local-data-archive">Local Data Archive</a>
+  <ul class="collapse">
+  <li><a href="#digital-data-storage" id="toc-digital-data-storage" class="nav-link" data-scroll-target="#digital-data-storage"><em>Digital Data Storage</em></a></li>
+  <li><a href="#analog-data-storage" id="toc-analog-data-storage" class="nav-link" data-scroll-target="#analog-data-storage"><em>Analog Data Storage</em></a></li>
+  </ul></li>
+  <li><a href="#external-data-archives" id="toc-external-data-archives" class="nav-link" data-scroll-target="#external-data-archives">External Data Archives</a>
+  <ul class="collapse">
+  <li><a href="#google-cloud" id="toc-google-cloud" class="nav-link" data-scroll-target="#google-cloud"><em>Google Cloud</em></a></li>
+  <li><a href="#ncei" id="toc-ncei" class="nav-link" data-scroll-target="#ncei"><em>NCEI</em></a></li>
+  <li><a href="#tethys" id="toc-tethys" class="nav-link" data-scroll-target="#tethys"><em>Tethys</em></a></li>
+  <li><a href="#pacmmakara" id="toc-pacmmakara" class="nav-link" data-scroll-target="#pacmmakara"><em>PACM/Makara</em></a></li>
+  <li><a href="#inport" id="toc-inport" class="nav-link" data-scroll-target="#inport"><em>InPort</em></a></li>
+  <li><a href="#obis-seamap" id="toc-obis-seamap" class="nav-link" data-scroll-target="#obis-seamap"><em>OBIS Seamap</em></a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/edit/main/content/Data-Archive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/content/Data-Archive.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -361,11 +362,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="archive-status" class="level2">
+<h2 class="anchored" data-anchor-id="archive-status">Archive Status</h2>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4AnmnJo2D0HRSoqI49Xb1pNKEz7e3u4OczKz22B294eQskYeKN0YLDa7B5Jc9GcCPB7lA4zUl_GYT/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
+</iframe>
+<p><a href="https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing">Link for SAEL Lab Members</a></p>
+</section>
 <section id="local-data-archive" class="level2">
 <h2 class="anchored" data-anchor-id="local-data-archive">Local Data Archive</h2>
 <p>Local data storage is currently located in several different locations:</p>
-<section id="digital-data-storage" class="level4">
-<h4 class="anchored" data-anchor-id="digital-data-storage"><em>Digital Data Storage</em></h4>
+<section id="digital-data-storage" class="level3">
+<h3 class="anchored" data-anchor-id="digital-data-storage"><em>Digital Data Storage</em></h3>
 <ul>
 <li><p><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/SynologyNASinventory_Rm390_SAEL_Rankin_14March2025.pdf">Old Synology Rm390</a></p></li>
 <li><p><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/SynologyNASinventory_Rm420_SAEL_Rankin_26March2025.pdf">New Synology Rm420</a></p></li>
@@ -373,33 +380,47 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf">Hard Drive Closet Rm390</a> (detailed <a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf">Hard Drive Inventory</a>)</p></li>
 </ul>
 </section>
-<section id="analog-data-storage" class="level4">
-<h4 class="anchored" data-anchor-id="analog-data-storage"><em>Analog Data Storage</em></h4>
+<section id="analog-data-storage" class="level3">
+<h3 class="anchored" data-anchor-id="analog-data-storage"><em>Analog Data Storage</em></h3>
 <ul>
 <li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/TapeRecordingInventory_Rm385_SAEL_Rankin_14March2025.pdf">Tape Drive Closet Rm420</a></li>
 <li><a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/GreenbookInventory_Rm385_SAEL_Rankin_14March2025.pdf">Greenbook Cabinet Rm420</a></li>
 </ul>
 </section>
 </section>
-<section id="public-repositories-in-progress" class="level2">
-<h2 class="anchored" data-anchor-id="public-repositories-in-progress">Public Repositories (<em>in progress)</em></h2>
-<p><a href="https://github.com/SAEL-SWFSC">SAEL Github Organization</a> is for new and recent repositories. <a href="https://nmfs-ost.github.io/PAM_National_Network/">NOAA Fisheries National PAM Network</a></p>
-<section id="specific-publicly-accessible-projects-include" class="level4">
-<h4 class="anchored" data-anchor-id="specific-publicly-accessible-projects-include"><em>Specific publicly accessible projects include:</em></h4>
-<ul>
-<li><p>Adrift in the California Current (<a href="https://github.com/SAEL-SWFSC/Adrift" target="_blank">Github Repository</a> and <a href="https://sael-swfsc.github.io/Adrift/">website</a>)</p></li>
-<li><p><a href="https://figshare.com/projects/Beaked_Whale_Acoustic_Events_from_Drifting_Acoustic_Recordings_during_NOAA_s_CCES_2018_Survey/94511">Beaked Whales from NOAA’s CCES 2018 Survey (Figshare)</a></p></li>
-<li><p><a href="https://github.com/SAEL-SWFSC/CalCurCEAS-2024-Drifter-Analysis">CalCurCEAS 2024 Drifter Analysis</a></p></li>
-<li><p><a href="https://github.com/shannonrankin/dataWrangling_towedArray">Towed Array Metadata Archive</a></p></li>
-</ul>
-</section>
-</section>
 <section id="external-data-archives" class="level2">
 <h2 class="anchored" data-anchor-id="external-data-archives">External Data Archives</h2>
 <p>Along with our local data storage, SAEL datasets are also archived at several external sources including National Centers for Environmental Information (NCEI), PACM-Makara, Google Cloud Platform (GCP), NMFS Enterprise Data Management Program - InPort, and Tethys (local database).</p>
-<p>Detailed archive methods for each source can be found <a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Methods.html">here</a></p>
+<p>Detailed archive methods for each source can be found on their respective sections below</p>
+<section id="google-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="google-cloud"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-GCP.html"><em>Google Cloud</em></a></h3>
+<p>Google Cloud is for temporary processing/storing of data for Analysis.</p>
+</section>
+<section id="ncei" class="level3">
+<h3 class="anchored" data-anchor-id="ncei"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html"><em>NCEI</em></a></h3>
+<p>NCEI hosts a <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">Passive Acoustic Data Archive</a>, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.</p>
+<p>Users can access data through the <a href="https://www.ncei.noaa.gov/maps/passive-acoustic-data/">interactive map</a> or request data using <a href="https://console.cloud.google.com/marketplace/details/noaa-public/passive_acoustic_monitoring?pli=1&amp;project=ggn-nmfs-pamdata-prod-1">Google Cloud Platform</a></p>
+</section>
+<section id="tethys" class="level3">
+<h3 class="anchored" data-anchor-id="tethys"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-Tethys.html"><em>Tethys</em></a></h3>
+<p>All ADRIFT, PASCAL 2016, CCES 2018, and CalCurCEAS 2024 deployment metadata and detection data are archived locally in our lab’s <a href="https://tethys.sdsu.edu/">Tethys database</a>.</p>
+<p>The Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).</p>
+</section>
+<section id="pacmmakara" class="level3">
+<h3 class="anchored" data-anchor-id="pacmmakara"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-PACM_Makara.html"><em>PACM/Makara</em></a></h3>
+<p>All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/">Passive Acoustic Cetacean Map</a> (PACM). Makara is an updated database and methods will be added here</p>
+<p>CalCurCEAS 2024 detection data - work in progress</p>
+</section>
+<section id="inport" class="level3">
+<h3 class="anchored" data-anchor-id="inport"><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-InPort.html"><em>InPort</em></a></h3>
+<p>Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in <a href="https://www.fisheries.noaa.gov/inport/">InPort</a>, NMFS Enterprise Data Management Program. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.</p>
+</section>
+<section id="obis-seamap" class="level3">
+<h3 class="anchored" data-anchor-id="obis-seamap"><em>OBIS Seamap</em></h3>
+<p>We are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available <a href="https://github.com/TaikiSan21/PAMpal/blob/735dfec50b3c6feaa8772765d752e8260363a2c5/devel/OBIS_Functions.R">here</a>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -971,8 +992,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/Data-Github.html" class="pagination-link" aria-label="Github Repos">
-        <span class="nav-page-text">Github Repos</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/Data-Archive-GCP.html" class="pagination-link" aria-label="Google Cloud">
+        <span class="nav-page-text">Google Cloud</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

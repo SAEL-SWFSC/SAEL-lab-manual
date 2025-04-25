@@ -4,7 +4,57 @@
     "href": "index.html",
     "title": "Southwest Acoustics Ecology Lab, SWFSC",
     "section": "",
-    "text": "The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA’s management needs. We are part of the Marine Mammal and Turtle Division at NOAA’s Southwest Fisheries Science Center in La Jolla, California.\nThis lab manual serves as the go-to handbook for the behind-the-scenes information to support our science.\n\nTeam Members\nShannon Rankin, SAEL Team Leader\nCory Hom-Weaver, Acoustician and Fieldwork Manager\nKourtney Burger, Acoustician and Data Manager\nWant to Copy this Lab Manual Format?\nUse the PAM_template_lab_manual following these methods.",
+    "text": "The Southwest Acoustic Ecology Lab conducts research using passive acoustic monitoring to support NOAA’s management needs. We are part of the Marine Mammal and Turtle Division at NOAA’s Southwest Fisheries Science Center in La Jolla, California.\nThis lab manual serves as the go-to handbook for the behind-the-scenes information to support our science.\n\n\n\n\nExamples of different passive acoustic platforms used by NOAA",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#team-members",
+    "href": "index.html#team-members",
+    "title": "Southwest Acoustics Ecology Lab, SWFSC",
+    "section": "Team Members",
+    "text": "Team Members\nShannon Rankin, SAEL Team Leader\nCory Hom-Weaver, Acoustician and Fieldwork Manager\nKourtney Burger, Acoustician and Data Manager",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#other-sael-repositories",
+    "href": "index.html#other-sael-repositories",
+    "title": "Southwest Acoustics Ecology Lab, SWFSC",
+    "section": "Other SAEL Repositories",
+    "text": "Other SAEL Repositories\nSee our GitHub Repos page for links to all of our lab’s individual repositories",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#location",
+    "href": "index.html#location",
+    "title": "Southwest Acoustics Ecology Lab, SWFSC",
+    "section": "Location",
+    "text": "Location\nShipping Address: DOC/NOAA - SWFSC, 8901 La Jolla Shores Drive, La Jolla, CA 92037",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#additional-nmfs-pam-lab-manuals",
+    "href": "index.html#additional-nmfs-pam-lab-manuals",
+    "title": "Southwest Acoustics Ecology Lab, SWFSC",
+    "section": "Additional NMFS PAM Lab Manuals",
+    "text": "Additional NMFS PAM Lab Manuals\n\nPIFSC: Pacific Islands Fisheries\nNWFSC: Northwest Fisheries\nAFSC: Alaska Fisheries\nSEFSC: Southeast Fisheries\nNEFSC: Northeast Fisheries\nNational PAM Network",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#like-what-you-see",
+    "href": "index.html#like-what-you-see",
+    "title": "Southwest Acoustics Ecology Lab, SWFSC",
+    "section": "Like what you see?",
+    "text": "Like what you see?\nWant to Copy this Lab Manual Format?\nUse the PAM_template_lab_manual following these methods.",
     "crumbs": [
       "Home"
     ]
@@ -61,7 +111,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "InPort"
     ]
   },
@@ -74,7 +123,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "InPort"
     ]
   },
@@ -524,10 +572,9 @@
     "href": "content/Data-Github.html",
     "title": "Github Repos",
     "section": "",
-    "text": "SAEL is part of the California Current Marine Mammal Assessment Program (CMAP Lab Manual) and it is also part of the NOAA Fisheries National PAM Network (National PAM Lab Manual.\nThe SAEL Github Organization houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.\nWe also highly recommend the NMFS Open Sciencesite for more resources.",
+    "text": "SAEL is part of the California Current Marine Mammal Assessment Program (CMAP Lab Manual) and it is also part of the NOAA Fisheries National PAM Network (National PAM Lab Manual.\nThe SAEL Github Organization houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.\nWe also highly recommend the NMFS Open Science site for more resources.",
     "crumbs": [
       "Data Management",
-      "Data Archive",
       "Github Repos"
     ]
   },
@@ -539,7 +586,6 @@
     "text": "PAM Gliders\n\nPAM-UxS\nGlider Rodeo\nglider-CalCurCEAS",
     "crumbs": [
       "Data Management",
-      "Data Archive",
       "Github Repos"
     ]
   },
@@ -551,7 +597,6 @@
     "text": "CalCurCEAS 2024 Acoustic Data:\n\nglider-CalCurCEAS\ndrifter-CalCurCEAS",
     "crumbs": [
       "Data Management",
-      "Data Archive",
       "Github Repos"
     ]
   },
@@ -563,7 +608,6 @@
     "text": "Adrift in the California Current:\n\nAdrift Report\nAdrift Field Methods\nAdrift Analysis Methods",
     "crumbs": [
       "Data Management",
-      "Data Archive",
       "Github Repos"
     ]
   },
@@ -575,7 +619,6 @@
     "text": "Hardware, Methods, Protocol, etc.\n\nSAEL Lab Manual\nSAEL Lab Hardware\nPAM Open Science",
     "crumbs": [
       "Data Management",
-      "Data Archive",
       "Github Repos"
     ]
   },
@@ -587,7 +630,6 @@
     "text": "Data & Metadata\n\nTowed Array Metadata (under construction)\nSonobuoy Metadata (under construction)",
     "crumbs": [
       "Data Management",
-      "Data Archive",
       "Github Repos"
     ]
   },
@@ -596,10 +638,9 @@
     "href": "content/Data-Github.html#projects",
     "title": "Github Repos",
     "section": "Projects",
-    "text": "Projects\n\nBANTER_Beaked Whales\nFOSSA Soundscape\nData Nuggets Educational Product",
+    "text": "Projects\n\nBANTER_Beaked Whales\nFOSSA Soundscape\nData Nuggets Educational Product\nBeaked Whales from NOAA’s CCES 2018 Survey (Figshare)",
     "crumbs": [
       "Data Management",
-      "Data Archive",
       "Github Repos"
     ]
   },
@@ -611,7 +652,6 @@
     "text": "Github Templates\n\nLab Manual\nResearch Compendium w/ Web Output",
     "crumbs": [
       "Data Management",
-      "Data Archive",
       "Github Repos"
     ]
   },
@@ -679,7 +719,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "PACM/Makara"
     ]
   },
@@ -692,7 +731,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "PACM/Makara"
     ]
   },
@@ -705,7 +743,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "PACM/Makara"
     ]
   },
@@ -718,7 +755,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "Tethys"
     ]
   },
@@ -731,7 +767,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "Tethys"
     ]
   },
@@ -744,7 +779,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "Tethys"
     ]
   },
@@ -757,7 +791,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "Tethys"
     ]
   },
@@ -770,7 +803,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "Tethys"
     ]
   },
@@ -783,7 +815,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "Tethys"
     ]
   },
@@ -816,7 +847,18 @@
     "href": "content/Data-Archive.html",
     "title": "Data Archive",
     "section": "",
-    "text": "Local data storage is currently located in several different locations:\n\n\n\nOld Synology Rm390\nNew Synology Rm420\nMMTD-ACOUSTICS(\\swc-storage4-s) aka “The Don” (IT Server Room 433A)\nHard Drive Closet Rm390 (detailed Hard Drive Inventory)\n\n\n\n\n\nTape Drive Closet Rm420\nGreenbook Cabinet Rm420",
+    "text": "Link for SAEL Lab Members",
+    "crumbs": [
+      "Data Management",
+      "Data Archive"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive.html#archive-status",
+    "href": "content/Data-Archive.html#archive-status",
+    "title": "Data Archive",
+    "section": "",
+    "text": "Link for SAEL Lab Members",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -826,19 +868,8 @@
     "objectID": "content/Data-Archive.html#local-data-archive",
     "href": "content/Data-Archive.html#local-data-archive",
     "title": "Data Archive",
-    "section": "",
-    "text": "Local data storage is currently located in several different locations:\n\n\n\nOld Synology Rm390\nNew Synology Rm420\nMMTD-ACOUSTICS(\\swc-storage4-s) aka “The Don” (IT Server Room 433A)\nHard Drive Closet Rm390 (detailed Hard Drive Inventory)\n\n\n\n\n\nTape Drive Closet Rm420\nGreenbook Cabinet Rm420",
-    "crumbs": [
-      "Data Management",
-      "Data Archive"
-    ]
-  },
-  {
-    "objectID": "content/Data-Archive.html#public-repositories-in-progress",
-    "href": "content/Data-Archive.html#public-repositories-in-progress",
-    "title": "Data Archive",
-    "section": "Public Repositories (in progress)",
-    "text": "Public Repositories (in progress)\nSAEL Github Organization is for new and recent repositories. NOAA Fisheries National PAM Network\n\nSpecific publicly accessible projects include:\n\nAdrift in the California Current (Github Repository and website)\nBeaked Whales from NOAA’s CCES 2018 Survey (Figshare)\nCalCurCEAS 2024 Drifter Analysis\nTowed Array Metadata Archive",
+    "section": "Local Data Archive",
+    "text": "Local Data Archive\nLocal data storage is currently located in several different locations:\n\nDigital Data Storage\n\nOld Synology Rm390\nNew Synology Rm420\nMMTD-ACOUSTICS(\\swc-storage4-s) aka “The Don” (IT Server Room 433A)\nHard Drive Closet Rm390 (detailed Hard Drive Inventory)\n\n\n\nAnalog Data Storage\n\nTape Drive Closet Rm420\nGreenbook Cabinet Rm420",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -849,7 +880,7 @@
     "href": "content/Data-Archive.html#external-data-archives",
     "title": "Data Archive",
     "section": "External Data Archives",
-    "text": "External Data Archives\nAlong with our local data storage, SAEL datasets are also archived at several external sources including National Centers for Environmental Information (NCEI), PACM-Makara, Google Cloud Platform (GCP), NMFS Enterprise Data Management Program - InPort, and Tethys (local database).\nDetailed archive methods for each source can be found here",
+    "text": "External Data Archives\nAlong with our local data storage, SAEL datasets are also archived at several external sources including National Centers for Environmental Information (NCEI), PACM-Makara, Google Cloud Platform (GCP), NMFS Enterprise Data Management Program - InPort, and Tethys (local database).\nDetailed archive methods for each source can be found on their respective sections below\n\nGoogle Cloud\nGoogle Cloud is for temporary processing/storing of data for Analysis.\n\n\nNCEI\nNCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.\nUsers can access data through the interactive map or request data using Google Cloud Platform\n\n\nTethys\nAll ADRIFT, PASCAL 2016, CCES 2018, and CalCurCEAS 2024 deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\nPACM/Makara\nAll ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM). Makara is an updated database and methods will be added here\nCalCurCEAS 2024 detection data - work in progress\n\n\nInPort\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, NMFS Enterprise Data Management Program. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\n\n\nOBIS Seamap\nWe are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available here.",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -1134,76 +1165,53 @@
     ]
   },
   {
+    "objectID": "content/Data-Archive-Methods.html",
+    "href": "content/Data-Archive-Methods.html",
+    "title": "Archive Methods",
+    "section": "",
+    "text": "Google Cloud is for temporary processing/storing of data for Analysis."
+  },
+  {
     "objectID": "content/Data-Archive-Methods.html#google-cloud",
     "href": "content/Data-Archive-Methods.html#google-cloud",
     "title": "Archive Methods",
-    "section": "Google Cloud",
-    "text": "Google Cloud\nGoogle Cloud is for temporary processing/storing of data for Analysis.",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Archive Methods"
-    ]
+    "section": "",
+    "text": "Google Cloud is for temporary processing/storing of data for Analysis."
   },
   {
     "objectID": "content/Data-Archive-Methods.html#ncei",
     "href": "content/Data-Archive-Methods.html#ncei",
     "title": "Archive Methods",
     "section": "NCEI",
-    "text": "NCEI\nNCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.\nUsers can access data through the interactive map or request data using Google Cloud Platform",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Archive Methods"
-    ]
+    "text": "NCEI\nNCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.\nUsers can access data through the interactive map or request data using Google Cloud Platform"
   },
   {
     "objectID": "content/Data-Archive-Methods.html#tethys",
     "href": "content/Data-Archive-Methods.html#tethys",
     "title": "Archive Methods",
     "section": "Tethys",
-    "text": "Tethys\nAll ADRIFT, PASCAL 2016, CCES 2018, and CalCurCEAS 2024 deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Archive Methods"
-    ]
+    "text": "Tethys\nAll ADRIFT, PASCAL 2016, CCES 2018, and CalCurCEAS 2024 deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer)."
   },
   {
     "objectID": "content/Data-Archive-Methods.html#pacmmakara",
     "href": "content/Data-Archive-Methods.html#pacmmakara",
     "title": "Archive Methods",
     "section": "PACM/Makara",
-    "text": "PACM/Makara\nAll ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM). Makara is an updated database and methods will be added here\nCalCurCEAS 2024 detection data - work in progress",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Archive Methods"
-    ]
+    "text": "PACM/Makara\nAll ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM). Makara is an updated database and methods will be added here\nCalCurCEAS 2024 detection data - work in progress"
   },
   {
     "objectID": "content/Data-Archive-Methods.html#inport",
     "href": "content/Data-Archive-Methods.html#inport",
     "title": "Archive Methods",
     "section": "InPort",
-    "text": "InPort\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, NMFS Enterprise Data Management Program. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Archive Methods"
-    ]
+    "text": "InPort\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, NMFS Enterprise Data Management Program. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM."
   },
   {
     "objectID": "content/Data-Archive-Methods.html#obis-seamap",
     "href": "content/Data-Archive-Methods.html#obis-seamap",
     "title": "Archive Methods",
     "section": "OBIS Seamap",
-    "text": "OBIS Seamap\nWe are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available here.",
-    "crumbs": [
-      "Data Management",
-      "Data Archive",
-      "Archive Methods"
-    ]
+    "text": "OBIS Seamap\nWe are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available here."
   },
   {
     "objectID": "content/SharedValues-BestPractices.html",
@@ -1324,7 +1332,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "Google Cloud"
     ]
   },
@@ -1337,7 +1344,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "Google Cloud"
     ]
   },
@@ -1350,7 +1356,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "NCEI"
     ]
   },
@@ -1363,7 +1368,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "NCEI"
     ]
   },
@@ -1376,7 +1380,6 @@
     "crumbs": [
       "Data Management",
       "Data Archive",
-      "Archive Methods",
       "NCEI"
     ]
   }
