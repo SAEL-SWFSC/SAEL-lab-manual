@@ -24,7 +24,7 @@ All ADRIFT, PASCAL 2016, CCES 2018, and CalCurCEAS 2024 deployment metadata and 
 
 The Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).
 
-## [PACM/Makara](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-PACM_Makara.qmd)
+## [PACM/Makara](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-PACM_Makara.html)
 
 All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the [Passive Acoustic Cetacean Map](https://apps-nefsc.fisheries.noaa.gov/pacm/#/) (PACM). Makara is an updated database and methods will be added here
 
