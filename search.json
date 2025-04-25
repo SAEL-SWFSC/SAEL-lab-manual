@@ -671,6 +671,45 @@
     ]
   },
   {
+    "objectID": "content/Data-Archive-PACM_Makara.html",
+    "href": "content/Data-Archive-PACM_Makara.html",
+    "title": "PACM/Makara",
+    "section": "",
+    "text": "All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM).\nThe interactive map below can be adjusted to visualize detections",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Archive Methods",
+      "PACM/Makara"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive-PACM_Makara.html#accessing-data",
+    "href": "content/Data-Archive-PACM_Makara.html#accessing-data",
+    "title": "PACM/Makara",
+    "section": "",
+    "text": "All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM).\nThe interactive map below can be adjusted to visualize detections",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Archive Methods",
+      "PACM/Makara"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive-PACM_Makara.html#archiving-data",
+    "href": "content/Data-Archive-PACM_Makara.html#archiving-data",
+    "title": "PACM/Makara",
+    "section": "Archiving Data",
+    "text": "Archiving Data\nDetailed methods for archiving data to PACM can be found in this ADRIFT-PACM GitHub repository.\nWORK IN PROGRESS - updated methods for archiving to Makara",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Archive Methods",
+      "PACM/Makara"
+    ]
+  },
+  {
     "objectID": "content/Data-Archive-Tethys.html",
     "href": "content/Data-Archive-Tethys.html",
     "title": "Tethys",
