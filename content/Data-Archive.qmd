@@ -7,12 +7,12 @@ editor:
 
 ## Archive Status
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4AnmnJo2D0HRSoqI49Xb1pNKEz7e3u4OczKz22B294eQskYeKN0YLDa7B5Jc9GcCPB7lA4zUl_GYT/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4AnmnJo2D0HRSoqI49Xb1pNKEz7e3u4OczKz22B294eQskYeKN0YLDa7B5Jc9GcCPB7lA4zUl_GYT/pubhtml?widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
 
 </iframe>
 
 [Link for SAEL Lab
-Members](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing)
+Members](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing){target="_blank"}
 
 ## Local Data Archive
 
@@ -100,9 +100,9 @@ metadata is archived to NCEI, SWFSC will post all data related to PAM
 Deployments/data collection efforts and ensure there is a link to access
 additional data/metadata via NCEI and PACM.
 
-### *OBIS Seamap*
+### *OBIS-SEAMAP*
 
-We are no longer storing marine mammal detection data in the OBIS
-database. OBIS specific processing scripts for beaked whales are
-available
+We are no longer storing marine mammal detection data in the
+[OBIS-SEAMAP database](https://seamap.env.duke.edu/). OBIS specific
+processing scripts for beaked whales are available
 [here](https://github.com/TaikiSan21/PAMpal/blob/735dfec50b3c6feaa8772765d752e8260363a2c5/devel/OBIS_Functions.R).

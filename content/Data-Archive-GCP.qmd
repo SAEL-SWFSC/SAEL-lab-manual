@@ -3,21 +3,107 @@ title: Google Cloud
 subtitle: GCP for Archive and Analysis
 ---
 
-::: callout-important
-## All of this is temporary. End goal is to have all of this documented on the national PAM repo, and link to it here.
-:::
+#### [National PAM SI Cloud Repo](https://nmfs-ost.github.io/PAM-Cloud/){target="_blank"}: more details on cloud storage and processing from the cloud team
 
-[Link to SWFSC GCP Bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false)
+#### [Link to SWFSC GCP Bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false){target="_blank"}: our data storage site
 
-You can use the built in upload tool to upload small amounts of data directly to GCP
+## Accessing Data
 
-## Bulk upload using gcloud CLI
+Check the [archive spreadsheet](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing) to see if the dataset you are interested in accessing is available in the [SWFSC-SAEL bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false). Note: only the raw audio data is uploaded here, see our [NCEI archive](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html) for additional ancillary data.
 
-1.  See [this document for PAM GCP Technical System documentation](https://docs.google.com/document/d/1iEOwgTPGklLWzLoooAFkvG6n1v8e4yuhw7xcYuzj_-4/edit?tab=t.0) and a link to the PAM buckets
-2.  Follow [steps 1-4 under the Configure gcloud section in this document](https://docs.google.com/document/d/1UsBBN7FPLlIAlPG0g5q9nsNGpyODL7wscYrzBiR2hlY/edit?pli=1&tab=t.0) to install Google Cloud SDK on your computer
-3.  Open the command prompt and type "gsutil -m cp -r F:/\* [gs://swfsc-1/drifting_recorder/](gs://swfsc-1/drifting_recorder/)", where "F:/\*" is the directory with data to upload and "[gs://swfsc-1/drifting_recorder/](gs://swfsc-1/drifting_recorder/)" is the cloud bucket and folder you want to upload data to
-4.  Processing should start, wait for command prompt to update then refresh the SWFSC bucket website to see your uploaded data
+The bucket is broken down by platform -\> project -\> deployment. You can select all data within a platform, or any subfolder within that directory, and click download.
+
+## Cloud Storage
+
+### Manual Upload
+
+1.  Open [SWFSC bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false) in GCP console
+
+2.  Select Upload (Upload files or Upload folder) and navigate to the data you want to upload
+
+3.  Click "Upload"
+
+    ::: callout-caution
+    ## Large data files or datasets may crash GCP with this upload method. If you would like to upload large amounts of data, do so through the GCP sdk/gsutil options below
+    :::
+
+### sdk/gsutil Set-Up
+
+1.  Download the [Google Cloud CLI installer](https://cloud.google.com/sdk/docs/install-sdk) and install Cloud SDK on your computer
+2.  Open the 'Google Cloud SDK Shell Terminal', follow the prompts, and select ***'ggn-nmfs-pamdata-prod-1'*** as your project
+
+### sdk/gsutil Upload
+
+1.  Open the 'Google Cloud SDK Shell Terminal'
+2.  Enter the follow command to upload files to the GCP: `gsutil -m cp -r [source pathway to files to be uploaded/] gs:[destination pathway to folder on bucket/]`
+    -   SAEL ADRIFT Example `"gsutil -m cp -r E:\DATA\LEG_2\RECORDINGS\CalCurCEAS_004 gs://swfsc-1/drifting_recorder/CalCurCEAS_2024"`
+3.  Processing should start, wait for terminal prompt to update then refresh the SWFSC bucket website to see your uploaded data
+
+### Automated sdk/gsutil Upload
+
+You can use the following R script to automatically run the above command and bulk upload data from a source. R script available [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/Scripts/GoogleCloudBulkUpload.R){target="_blank"}. This script is set up to only run from 6 pm to 6 am on weekdays and full time on weekends, to avoid excess network traffic.
+
+``` r
+# Check for weekday and hour
+is_weekday = function(x){
+  weekdays = c('Thursday', 'Friday', 'Monday', 'Tuesday', 'Wednesday')
+  return(weekdays(x) %in% weekdays)
+}
+
+is_after_hours = function(x){
+  return(as.integer(format(x,"%H")) < 6 | as.integer(format(x, "%H")) > 18)
+}
+
+# Google  cloud bucket to transfer to
+my_fmc_bucket_name = 'swfsc-1/drifting_recorder/ADRIFT'
+
+# List deployment IDs to copy to bucket
+deployment_dir <- "Z:/RECORDINGS/DRIFTERS/ADRIFT/RAW" #path to top level directory
+all_deployments <- list.dirs(deployment_dir, full.names = FALSE, recursive = FALSE) #list deployment IDs based on folder names within top level directory
+ADRIFT_deployments <- grep("^ADRIFT_\\d{3}", all_deployments, value = TRUE) #remove Opps deployments
+
+# Copy wav files
+for (folder in ADRIFT_deployments) {
+  #check day and time
+  while (is_weekday(Sys.time()) & !is_after_hours(Sys.time())) {
+    cat(paste('waiting...',Sys.time(), "\n"))
+    Sys.sleep(600) #wait 10 minutes until trying again
+  }
+  
+  LocalDir <- file.path(deployment_dir, folder) #local folder with wav files
+  
+  wav <- list.files(LocalDir, pattern = "\\.wav$", full.names = TRUE) #list of wav files to copy
+
+  GCP_FolderName <- sub("_CENSOR$", "", folder) # create folder name for GCP bucket, removing CENSOR from folder name
+
+  GCP_path <- file.path(my_fmc_bucket_name, GCP_FolderName) # create path to GCP folder
+  
+  for (file in wav) {
+    string <- paste("gsutil -m cp -r ", file, " ", "gs://", GCP_path, "/", sep="") # create command to pass to google cloud sdk command window
+    
+    message("Uploading: ", file, " -> ", GCP_path) # print a progress message in R console
+    
+    system(string) # pass the command for processing and wav file transfer
+  }
+}
+```
+
+### More information on Cloud Storage
+
+See the [PAM SI Cloud Storage](https://nmfs-ost.github.io/PAM-Cloud/content/Cloud.Storage.html){target="_blank"} website for more information and troubleshooting tips
+
+## Cloud Processing
 
 ::: callout-note
-## If you are uploaded a large dataset, it is recommended to run this after normal work hours and on the weekends. See [this document](https://docs.google.com/document/d/1FrbaNNepsr5Jz54U4fataQN1tqBLDSYWwYj9yApDexc/edit?tab=t.0#heading=h.tr521ujctakv) with more directions or contact Dan Woodrich ([daniel.woodrich\@noaa.gov](mailto:daniel.woodrich@noaa.gov))
+work in progress
 :::
+
+Cloud based processing is now available through google workstations using the data you upload to GCP. SAEL has not began processing in the cloud but you can follow the steps below to establish a windows virtual machine (workstation) and access the [existing cloud based software](https://docs.google.com/spreadsheets/d/1b60mbrTqpHH29vN8u6KcWdABWEfdkRhZTSwYcdnMJUM/edit?gid=1389628961#gid=1389628961){target="_blank"}
+
+### PAM Windows Workstation
+
+Follow the [detailed directions here](https://nmfs-ost.github.io/PAM-Cloud/content/PAM.ww.html){target="_blank"} to establish a windows workstation
+
+### More Information on Cloud Processing
+
+See the [PAM SI Cloud Processing](https://nmfs-ost.github.io/PAM-Cloud/content/Cloud.Processing.html){target="_blank"} website for more information and troubleshooting tips
