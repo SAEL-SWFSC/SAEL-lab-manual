@@ -544,7 +544,7 @@
     "href": "content/Slides/InPortDataArchiveMethods.html#slide-with-scrollable-figure-panel",
     "title": "InPort Data Archive Methods",
     "section": "Slide with Scrollable Figure Panel",
-    "text": "Slide with Scrollable Figure Panel\n\n\n\n\n\n\n\n\n\nSNR 1 Call\n\n\n\n\n\n\n\nSNR 2 Call\n\n\n\n\n\n\n\n\n\nSNR 3 Call\n\n\n\n\n\n\n\nBad Recordings"
+    "text": "Slide with Scrollable Figure Panel\n\n\n\n\n\n\nSNR 1 Call\n\n\n\n\n\n\n\nSNR 2 Call\n\n\n\n\n\n\n\n\n\nSNR 3 Call\n\n\n\n\n\n\n\nBad Recordings"
   },
   {
     "objectID": "content/Slides/InPortDataArchiveMethods.html#slide-with-code",
@@ -715,7 +715,7 @@
     "href": "content/Data-Archive-PACM_Makara.html",
     "title": "PACM/Makara",
     "section": "",
-    "text": "All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM).\nThe interactive map below can be adjusted to visualize detections",
+    "text": "All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM).\nThe interactive map below can be adjusted to visualize detections SAEL",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -727,7 +727,7 @@
     "href": "content/Data-Archive-PACM_Makara.html#accessing-data",
     "title": "PACM/Makara",
     "section": "",
-    "text": "All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM).\nThe interactive map below can be adjusted to visualize detections",
+    "text": "All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM).\nThe interactive map below can be adjusted to visualize detections SAEL",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -739,7 +739,7 @@
     "href": "content/Data-Archive-PACM_Makara.html#archiving-data",
     "title": "PACM/Makara",
     "section": "Archiving Data",
-    "text": "Archiving Data\nDetailed methods for archiving data to PACM can be found in this ADRIFT-PACM GitHub repository.\nWORK IN PROGRESS - updated methods for archiving to Makara",
+    "text": "Archiving Data\n\nMAKARA\nWORK IN PROGRESS - updated methods for archiving to Makara. Waiting for next Makara release\n\n\nPACM\n\n\n\n\n\n\nNote\n\n\n\nThese methods are no longer in use and may be outdated. Please use MAKARA methods for future projects\n\n\nDetailed methods for archiving data to PACM can be found in this ADRIFT-PACM GitHub repository.",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -751,7 +751,7 @@
     "href": "content/Data-Archive-Tethys.html",
     "title": "Tethys",
     "section": "",
-    "text": "All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\n\nOpen Tethys batch file (Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat)\n\n\n\n\n\n\nNote\n\n\n\nThis may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)\n\n\nOnce the tethys.bat file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)\n\nNavigate to the web address and you should see the following screen\n\nFollow the Tethys documentation for interacting with the web client\n\n\n\n\n\n\n\n\n\n\nThe Tethys server (tethys.bat) must be running to use the Data Explorer\n\n\n\n\n\n\n\nNavigate to the Data Explorer batch file (Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat)\nIf you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3\nRight click on data_explorer.bat, and select edit\nUpdate the server argument to point to your computer/server name (changing “../python39/python.exe data_explorer.py –server http://swc-srankin1-d.nmfs.local:9779” to “../python39/python.exe data_explorer.py –server http://swc-kourtney-l.nmfs.local:9779”\nSave and close, and double click on data_explorer.bat to run the batch file\nThere will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be http://127.0.0.1:8050/\nSee Tethys Data Explorer documentation for more information",
+    "text": "All ADRIFT, PASCAL, CCES, and CalCurCEAS deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\n\nOpen Tethys batch file (Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat)\n\n\n\n\n\n\nNote\n\n\n\nThis may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)\n\n\nOnce the tethys.bat file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)\n\nNavigate to the web address and you should see the following screen\n\nFollow the Tethys documentation for interacting with the web client\n\n\n\n\n\n\n\n\n\n\nThe Tethys server (tethys.bat) must be running to use the Data Explorer\n\n\n\n\n\n\n\nNavigate to the Data Explorer batch file (Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat)\nIf you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3\nRight click on data_explorer.bat, and select edit\nUpdate the server argument to point to your computer/server name (changing “../python39/python.exe data_explorer.py –server http://swc-srankin1-d.nmfs.local:9779” to “../python39/python.exe data_explorer.py –server http://swc-kourtney-l.nmfs.local:9779”\nSave and close, and double click on data_explorer.bat to run the batch file\nThere will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be http://127.0.0.1:8050/\nSee Tethys Data Explorer documentation for more information",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -763,7 +763,7 @@
     "href": "content/Data-Archive-Tethys.html#accessing-data",
     "title": "Tethys",
     "section": "",
-    "text": "All ADRIFT, PASCAL, and CCES deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\n\nOpen Tethys batch file (Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat)\n\n\n\n\n\n\nNote\n\n\n\nThis may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)\n\n\nOnce the tethys.bat file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)\n\nNavigate to the web address and you should see the following screen\n\nFollow the Tethys documentation for interacting with the web client\n\n\n\n\n\n\n\n\n\n\nThe Tethys server (tethys.bat) must be running to use the Data Explorer\n\n\n\n\n\n\n\nNavigate to the Data Explorer batch file (Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat)\nIf you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3\nRight click on data_explorer.bat, and select edit\nUpdate the server argument to point to your computer/server name (changing “../python39/python.exe data_explorer.py –server http://swc-srankin1-d.nmfs.local:9779” to “../python39/python.exe data_explorer.py –server http://swc-kourtney-l.nmfs.local:9779”\nSave and close, and double click on data_explorer.bat to run the batch file\nThere will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be http://127.0.0.1:8050/\nSee Tethys Data Explorer documentation for more information",
+    "text": "All ADRIFT, PASCAL, CCES, and CalCurCEAS deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\n\nOpen Tethys batch file (Z:/ANALYSIS/Tethys/databases/metadata/tethys.bat)\n\n\n\n\n\n\nNote\n\n\n\nThis may take a while to load if you have never accessed this database or if you are accessing it remotely (up to an hour)\n\n\nOnce the tethys.bat file has loaded, you should see a website address in the command window to open the web interface (this will include your computer name)\n\nNavigate to the web address and you should see the following screen\n\nFollow the Tethys documentation for interacting with the web client\n\n\n\n\n\n\n\n\n\n\nThe Tethys server (tethys.bat) must be running to use the Data Explorer\n\n\n\n\n\n\n\nNavigate to the Data Explorer batch file (Z:/ANALYSIS/Tethys/DataExplorer/data_explorer.bat)\nIf you are using swc-srankin1-d desktop, skip to step 5. Otherwise, proceed to step 3\nRight click on data_explorer.bat, and select edit\nUpdate the server argument to point to your computer/server name (changing “../python39/python.exe data_explorer.py –server http://swc-srankin1-d.nmfs.local:9779” to “../python39/python.exe data_explorer.py –server http://swc-kourtney-l.nmfs.local:9779”\nSave and close, and double click on data_explorer.bat to run the batch file\nThere will be a series of automatic queries to access the database, and then you should see a prompt to open the Data Explorer at another web address. It should be http://127.0.0.1:8050/\nSee Tethys Data Explorer documentation for more information",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -880,7 +880,7 @@
     "href": "content/Data-Archive.html#external-data-archives",
     "title": "Data Archive",
     "section": "External Data Archives",
-    "text": "External Data Archives\nAlong with our local data storage, SAEL datasets are also archived at several external sources including National Centers for Environmental Information (NCEI), PACM-Makara, Google Cloud Platform (GCP), NMFS Enterprise Data Management Program - InPort, and Tethys (local database).\nDetailed archive methods for each source can be found on their respective sections below\n\nGoogle Cloud\nGoogle Cloud is for temporary processing/storing of data for Analysis.\n\n\nNCEI\nNCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.\nUsers can access data through the interactive map or request data using Google Cloud Platform\n\n\nTethys\nAll ADRIFT, PASCAL 2016, CCES 2018, and CalCurCEAS 2024 deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\nPACM/Makara\nAll ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM). Makara is an updated database and methods will be added here\nCalCurCEAS 2024 detection data - work in progress\n\n\nInPort\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, NMFS Enterprise Data Management Program. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\n\n\nOBIS Seamap\nWe are no longer storing marine mammal detection data in the OBIS database. OBIS specific processing scripts for beaked whales are available here.",
+    "text": "External Data Archives\nAlong with our local data storage, SAEL datasets are also archived at several external sources including National Centers for Environmental Information (NCEI), PACM-Makara, Google Cloud Platform (GCP), NMFS Enterprise Data Management Program - InPort, and Tethys (local database).\nDetailed archive methods for each source can be found on their respective sections below\n\nGoogle Cloud\nGoogle Cloud is for temporary processing/storing of data for Analysis.\n\n\nNCEI\nNCEI hosts a Passive Acoustic Data Archive, where all ADRIFT, CCES, and PASCAL deployment metadata, raw audio data, and soundscape metrics are publicly available. CalCurCEAS 2024 raw audio data will be accessible in this archive once it has been cleared.\nUsers can access data through the interactive map or request data using Google Cloud Platform\n\n\nTethys\nAll ADRIFT, PASCAL 2016, CCES 2018, and CalCurCEAS 2024 deployment metadata and detection data are archived locally in our lab’s Tethys database.\nThe Tethys database is saved locally on the DON server (Z:/ANALYSIS/Tethys). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).\n\n\nPACM/Makara\nAll ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the Passive Acoustic Cetacean Map (PACM). Makara is an updated database and methods will be added here\nCalCurCEAS 2024 detection data - work in progress\n\n\nInPort\nPer Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, NMFS Enterprise Data Management Program. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.\n\n\nOBIS-SEAMAP\nWe are no longer storing marine mammal detection data in the OBIS-SEAMAP database. OBIS specific processing scripts for beaked whales are available here.",
     "crumbs": [
       "Data Management",
       "Data Archive"
@@ -1031,7 +1031,7 @@
     "href": "content/Slides/methodsSlidesTemplate.html#slide-with-scrollable-figure-panel",
     "title": "Methods Template",
     "section": "Slide with Scrollable Figure Panel",
-    "text": "Slide with Scrollable Figure Panel\n\n\n\n\n\n\n\n\n\nSNR 1 Call\n\n\n\n\n\n\n\nSNR 2 Call\n\n\n\n\n\n\n\n\n\nSNR 3 Call\n\n\n\n\n\n\n\nBad Recordings"
+    "text": "Slide with Scrollable Figure Panel\n\n\n\n\n\n\nSNR 1 Call\n\n\n\n\n\n\n\nSNR 2 Call\n\n\n\n\n\n\n\n\n\nSNR 3 Call\n\n\n\n\n\n\n\nBad Recordings"
   },
   {
     "objectID": "content/Slides/methodsSlidesTemplate.html#slide-with-code",
@@ -1324,11 +1324,11 @@
     ]
   },
   {
-    "objectID": "content/Data-Archive-GCP.html",
-    "href": "content/Data-Archive-GCP.html",
+    "objectID": "content/Data-Archive-GCP.html#accessing-data",
+    "href": "content/Data-Archive-GCP.html#accessing-data",
     "title": "Google Cloud",
-    "section": "",
-    "text": "All of this is temporary. End goal is to have all of this documented on the national PAM repo, and link to it here.\nLink to SWFSC GCP Bucket\nYou can use the built in upload tool to upload small amounts of data directly to GCP",
+    "section": "Accessing Data",
+    "text": "Accessing Data\nCheck the archive spreadsheet to see if the dataset you are interested in accessing is available in the SWFSC-SAEL bucket. Note: only the raw audio data is uploaded here, see our NCEI archive for additional ancillary data.\nThe bucket is broken down by platform -&gt; project -&gt; deployment. You can select all data within a platform, or any subfolder within that directory, and click download.",
     "crumbs": [
       "Data Management",
       "Data Archive",
@@ -1336,11 +1336,23 @@
     ]
   },
   {
-    "objectID": "content/Data-Archive-GCP.html#bulk-upload-using-gcloud-cli",
-    "href": "content/Data-Archive-GCP.html#bulk-upload-using-gcloud-cli",
+    "objectID": "content/Data-Archive-GCP.html#cloud-storage",
+    "href": "content/Data-Archive-GCP.html#cloud-storage",
     "title": "Google Cloud",
-    "section": "Bulk upload using gcloud CLI",
-    "text": "Bulk upload using gcloud CLI\n\nSee this document for PAM GCP Technical System documentation and a link to the PAM buckets\nFollow steps 1-4 under the Configure gcloud section in this document to install Google Cloud SDK on your computer\nOpen the command prompt and type “gsutil -m cp -r F:/* gs://swfsc-1/drifting_recorder/”, where “F:/*” is the directory with data to upload and “gs://swfsc-1/drifting_recorder/” is the cloud bucket and folder you want to upload data to\nProcessing should start, wait for command prompt to update then refresh the SWFSC bucket website to see your uploaded data\n\n\n\n\n\n\n\nIf you are uploaded a large dataset, it is recommended to run this after normal work hours and on the weekends. See this document with more directions or contact Dan Woodrich (daniel.woodrich@noaa.gov)",
+    "section": "Cloud Storage",
+    "text": "Cloud Storage\n\nManual Upload\n\nOpen SWFSC bucket in GCP console\nSelect Upload (Upload files or Upload folder) and navigate to the data you want to upload\nClick “Upload”\n\n\n\n\n\n\nLarge data files or datasets may crash GCP with this upload method. If you would like to upload large amounts of data, do so through the GCP sdk/gsutil options below\n\n\n\n\n\n\n\n\n\nsdk/gsutil Set-Up\n\nDownload the Google Cloud CLI installer and install Cloud SDK on your computer\nOpen the ‘Google Cloud SDK Shell Terminal’, follow the prompts, and select ‘ggn-nmfs-pamdata-prod-1’ as your project\n\n\n\nsdk/gsutil Upload\n\nOpen the ‘Google Cloud SDK Shell Terminal’\nEnter the follow command to upload files to the GCP: gsutil -m cp -r [source pathway to files to be uploaded/] gs:[destination pathway to folder on bucket/]\n\nSAEL ADRIFT Example \"gsutil -m cp -r E:\\DATA\\LEG_2\\RECORDINGS\\CalCurCEAS_004 gs://swfsc-1/drifting_recorder/CalCurCEAS_2024\"\n\nProcessing should start, wait for terminal prompt to update then refresh the SWFSC bucket website to see your uploaded data\n\n\n\nAutomated sdk/gsutil Upload\nYou can use the following R script to automatically run the above command and bulk upload data from a source. R script available here. This script is set up to only run from 6 pm to 6 am on weekdays and full time on weekends, to avoid excess network traffic.\n# Check for weekday and hour\nis_weekday = function(x){\n  weekdays = c('Thursday', 'Friday', 'Monday', 'Tuesday', 'Wednesday')\n  return(weekdays(x) %in% weekdays)\n}\n\nis_after_hours = function(x){\n  return(as.integer(format(x,\"%H\")) &lt; 6 | as.integer(format(x, \"%H\")) &gt; 18)\n}\n\n# Google  cloud bucket to transfer to\nmy_fmc_bucket_name = 'swfsc-1/drifting_recorder/ADRIFT'\n\n# List deployment IDs to copy to bucket\ndeployment_dir &lt;- \"Z:/RECORDINGS/DRIFTERS/ADRIFT/RAW\" #path to top level directory\nall_deployments &lt;- list.dirs(deployment_dir, full.names = FALSE, recursive = FALSE) #list deployment IDs based on folder names within top level directory\nADRIFT_deployments &lt;- grep(\"^ADRIFT_\\\\d{3}\", all_deployments, value = TRUE) #remove Opps deployments\n\n# Copy wav files\nfor (folder in ADRIFT_deployments) {\n  #check day and time\n  while (is_weekday(Sys.time()) & !is_after_hours(Sys.time())) {\n    cat(paste('waiting...',Sys.time(), \"\\n\"))\n    Sys.sleep(600) #wait 10 minutes until trying again\n  }\n  \n  LocalDir &lt;- file.path(deployment_dir, folder) #local folder with wav files\n  \n  wav &lt;- list.files(LocalDir, pattern = \"\\\\.wav$\", full.names = TRUE) #list of wav files to copy\n\n  GCP_FolderName &lt;- sub(\"_CENSOR$\", \"\", folder) # create folder name for GCP bucket, removing CENSOR from folder name\n\n  GCP_path &lt;- file.path(my_fmc_bucket_name, GCP_FolderName) # create path to GCP folder\n  \n  for (file in wav) {\n    string &lt;- paste(\"gsutil -m cp -r \", file, \" \", \"gs://\", GCP_path, \"/\", sep=\"\") # create command to pass to google cloud sdk command window\n    \n    message(\"Uploading: \", file, \" -&gt; \", GCP_path) # print a progress message in R console\n    \n    system(string) # pass the command for processing and wav file transfer\n  }\n}\n\n\nMore information on Cloud Storage\nSee the PAM SI Cloud Storage website for more information and troubleshooting tips",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Google Cloud"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive-GCP.html#cloud-processing",
+    "href": "content/Data-Archive-GCP.html#cloud-processing",
+    "title": "Google Cloud",
+    "section": "Cloud Processing",
+    "text": "Cloud Processing\n\n\n\n\n\n\nNote\n\n\n\nwork in progress\n\n\nCloud based processing is now available through google workstations using the data you upload to GCP. SAEL has not began processing in the cloud but you can follow the steps below to establish a windows virtual machine (workstation) and access the existing cloud based software\n\nPAM Windows Workstation\nFollow the detailed directions here to establish a windows workstation\n\n\nMore Information on Cloud Processing\nSee the PAM SI Cloud Processing website for more information and troubleshooting tips",
     "crumbs": [
       "Data Management",
       "Data Archive",
