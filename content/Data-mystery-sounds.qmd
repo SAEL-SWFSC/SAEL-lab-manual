@@ -5,7 +5,9 @@ format: html
 
 ## Share a Mystery Sound
 
-Did you find a mysterious sound that you can't quite match to own of [our known calls](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-SpeciesAndCallTypes.html) (link to species/call page)? Ask the broader community on the [Bioacoustics Stack Exchange](https://bioacoustics.stackexchange.com/). Follow the steps below to share your sound and post your question
+Did you find a mysterious sound that you can't quite match to own of [our known calls](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-SpeciesAndCallTypes.html) (link to species/call page)? Ask the broader community on the [Bioacoustics Stack Exchange](https://bioacoustics.stackexchange.com/)!
+
+Follow the steps below to share your sound and post your question;
 
 1.  Go to the [Bioacoustics Stack Exchange](https://bioacoustics.stackexchange.com/) and click the blue 'Ask Question' button
 
