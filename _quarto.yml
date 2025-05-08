@@ -53,6 +53,7 @@ website:
               - content/Data-Archive-InPort.qmd
           - content/Data-Github.qmd
           - content/Data-SpeciesAndCallTypes.qmd
+          - content/Data-mystery-sounds.qmd
           - content/media.qmd
       - section:  content/Hardware.qmd
         contents: 

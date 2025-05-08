@@ -1,0 +1,24 @@
+---
+title: "Mystery Sounds"
+format: html
+---
+
+## Share a Mystery Sound
+
+Did you find a mysterious sound that you can't quite match to own of [our known calls](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-SpeciesAndCallTypes.html) (link to species/call page)? Ask the broader community on the [Bioacoustics Stack Exchange](https://bioacoustics.stackexchange.com/). Follow the steps below to share your sound and post your question
+
+1.  Go to the [Bioacoustics Stack Exchange](https://bioacoustics.stackexchange.com/) and click the blue 'Ask Question' button
+
+2.  Give a brief but descriptive title, make sure to include some basic information about the sound (frequency range, location, etc)
+
+3.  In the body of the question, give an in depth description of the sound and include a screenshot of the spectrogram and/or wavform. Also include information about the recording platform, hydrophone, and any other information to help people help you
+
+4.  Add the tags 'mystery-sound', 'species-identification', and any others you think are relevant
+
+5.  You can also upload a clip of your sound to Soundcloud (or somewhere similar) and add a link to the question description
+
+6.  Post your question!
+
+## Other Mystery Sounds
+
+Check out the other mystery sounds people have posted on the [Stack Exchange here](https://bioacoustics.stackexchange.com/questions/tagged/mystery-sound)
