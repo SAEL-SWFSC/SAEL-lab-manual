@@ -7,19 +7,37 @@ format: html
 
 Did you find a mysterious sound that you can't quite match to own of [our known calls](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-SpeciesAndCallTypes.html) (link to species/call page)? Ask the broader community on the [Bioacoustics Stack Exchange](https://bioacoustics.stackexchange.com/)!
 
-Follow the steps below to share your sound and post your question;
+Follow the steps below to set up an account, share your sound, and post your question
+
+### Login or Create Stack Exchange Account
+
+Skip to ['Post a Question'](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-mystery-sounds.html#post-a-question) if you already have an account
+
+1.  Go to the [Bioacoustics Stack Exchange](https://bioacoustics.stackexchange.com/) and click the 'Log in' or 'Sign up' button in the upper right corner
+2.  You can sign up with Google or select your own email and password
+3.  Follow the directions to complete you profile
+
+### Post a Question
 
 1.  Go to the [Bioacoustics Stack Exchange](https://bioacoustics.stackexchange.com/) and click the blue 'Ask Question' button
 
 2.  Give a brief but descriptive title, make sure to include some basic information about the sound (frequency range, location, etc)
 
-3.  In the body of the question, give an in depth description of the sound and include a screenshot of the spectrogram and/or wavform. Also include information about the recording platform, hydrophone, and any other information to help people help you
+    -   *Example title: "Mysterious pulsed sound from seafloor hydrophone off Kamchatka in spring 2022"*
 
-4.  Add the tags 'mystery-sound', 'species-identification', and any others you think are relevant
+3.  In the body of the question, give an in depth description of the sound and include the location and time of year. Also include information about the recording platform, hydrophone, and any other information to help people help you
 
-5.  You can also upload a clip of your sound to Soundcloud (or somewhere similar) and add a link to the question description
+    -   *Example description: "This sound has been recorded in early to late winter (January/February) on the shelf (25 m depth) off the US state of Georgia in the Western North Atlantic. The data was from a moored Soundtrap 600 with an HTI-96 hydrophone, recording at 288 kHz. There appears to be stacked harmonics that are frequency modulated. Audibly, they sound like they may originate from a marine mammal in my opinion."*
 
-6.  Post your question!
+4.  Include at least one image of the spectrogram of the sound. You can also include images of other examples of the sound or the waveform.
+
+5.  Add the tags 'mystery-sound', 'species-identification', and any others you think are relevant
+
+6.  You can also upload a clip of your sound to Soundcloud (or somewhere similar) and add a link to the question description
+
+7.  Post your question! Don't forget to check back and edit your question in case someone needs more info
+
+8.  If someone give you an answer, then click the checkmark on the left side of the post to select that as the right answer
 
 ## Other Mystery Sounds
 
