@@ -571,7 +571,7 @@
     "href": "content/Acoustic-Analysis-software.html#lfdcs",
     "title": "Acoustic Analysis Software",
     "section": "LFDCS",
-    "text": "LFDCS\nLow Frequency Detection and Classification System (LFDCS) is a software built by Dr. Mark Baumgartner at the Woods Hole Oceanographic Institution (WHOI). It was designed for automated detection and classification of low-frequency baleen whale vocalizations in real-time acoustic data. It was recently adapted to a LFDCS Desktop program to process archival data as well.\nThe SAEL Lab has begun taking some initial steps to use LFDCS Desktop for our data and develop/contribute to a west coast call library.\nMore information here",
+    "text": "LFDCS\nLow Frequency Detection and Classification System (LFDCS) is a software built by Dr. Mark Baumgartner at the Woods Hole Oceanographic Institution (WHOI). It was designed for automated detection and classification of low-frequency baleen whale vocalizations in real-time acoustic data. It was recently adapted to a LFDCS Desktop program to process archival data as well.\nLFDCS requires an IDL Runtime license. More information on the license and how to purchase it can be found here\nThe SAEL Lab has begun taking some initial steps to use LFDCS Desktop for our data and develop/contribute to a west coast call library.\nMore information here",
     "crumbs": [
       "SAEL Acoustic Software",
       "Acoustic Analysis Software"
