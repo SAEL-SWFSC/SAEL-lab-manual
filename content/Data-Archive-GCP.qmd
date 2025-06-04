@@ -45,12 +45,14 @@ You can use the following R script to automatically run the above command and bu
 
 ```{r}
 #| echo: false
-#| results: asis
+#| eval: false
+
+#| file: ../Scripts/GoogleCloudBulkUpload.R
 
 # Read in the script and output it as a formatted code block
-script_path <- "../Scripts/GoogleCloudBulkUpload.R"  # Adjust path as needed
-code <- readLines(script_path)
-cat("```r\n", paste(code, collapse = "\n"), "\n```")
+# script_path <- "../Scripts/GoogleCloudBulkUpload.R"  # Adjust path as needed
+# code <- readLines(script_path)
+# cat("```r\n", paste(code, collapse = "\n"), "\n```")
 ```
 
 ### More information on Cloud Storage
