@@ -44,7 +44,7 @@ The bucket is broken down by platform -\> project -\> deployment. You can select
 You can use the following R script to automatically run the above command and bulk upload data from a source. R script available [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/Scripts/GoogleCloudBulkUpload.R){target="_blank"}. This script is set up to only run from 6 pm to 6 am on weekdays and full time on weekends, to avoid excess network traffic.
 
 ```{r}
-#| echo: false
+#| echo: true
 #| eval: false
 
 #| file: ../Scripts/GoogleCloudBulkUpload.R
