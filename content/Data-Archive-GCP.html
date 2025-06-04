@@ -638,7 +638,7 @@ Large data files or datasets may crash GCP with this upload method. If you would
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Leave as is, unless you want to change where the log file is saved to, in this structure it is built to be saved to the /Scripts folder in the GitHub repo </span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>log_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(), <span class="st">"/Scripts/GCP_transfer_log_"</span>, <span class="fu">format</span>(<span class="fu">Sys.time</span>(), <span class="st">"%Y%m%d_%H%M%S"</span>), <span class="st">".txt"</span>)  <span class="co"># Log file name, with path (used with gsutil -L command)</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>log_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(), <span class="st">"/GCP_transfer_log_"</span>, <span class="fu">format</span>(<span class="fu">Sys.time</span>(), <span class="st">"%Y%m%d_%H%M%S"</span>), <span class="st">".txt"</span>)  <span class="co"># Log file name, with path (used with gsutil -L command)</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------RUN AS IS-----------</span></span>
