@@ -624,14 +624,62 @@ Large data files or datasets may crash GCP with this upload method. If you would
 <section id="automated-sdkgsutil-upload" class="level3">
 <h3 class="anchored" data-anchor-id="automated-sdkgsutil-upload">Automated sdk/gsutil Upload</h3>
 <p>You can use the following R script to automatically run the above command and bulk upload data from a source. R script available <a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/Scripts/GoogleCloudBulkUpload.R" target="_blank">here</a>. This script is set up to only run from 6 pm to 6 am on weekdays and full time on weekends, to avoid excess network traffic.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| file: ../Scripts/GoogleCloudBulkUpload.R</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the script and output it as a formatted code block</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># script_path &lt;- "../Scripts/GoogleCloudBulkUpload.R"  # Adjust path as needed</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># code &lt;- readLines(script_path)</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># cat("```r\n", paste(code, collapse = "\n"), "\n```")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="co"># ----------------------------</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Front End Paths / Decisions</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ----------------------------</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Local_dir <span class="ot">&lt;-</span> <span class="st">"C:/Users/kourtney.burger/Desktop/test"</span> <span class="co"># Path to Local Directory you want to copy FROM</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Cloud_dir <span class="ot">&lt;-</span> <span class="st">"swfsc-1/drifting_recorder/kbtest"</span>      <span class="co"># Path to Cloud Directory you want to copy TO</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>offHoursCopy <span class="ot">&lt;-</span> <span class="cn">FALSE</span>                                <span class="co"># TRUE = Copy on nights/weekends, FALSE = copy until complete</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>file_type <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">.wav$"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>               <span class="st">"</span><span class="sc">\\</span><span class="st">.log.xml$"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>               <span class="st">"</span><span class="sc">\\</span><span class="st">.accel.csv$"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>               <span class="st">"</span><span class="sc">\\</span><span class="st">.temp.csv$"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>               <span class="st">"</span><span class="sc">\\</span><span class="st">.ltsa$"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Leave as is, unless you want to change where the log file is saved to. This structure is built to save it to your current working directory </span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>log_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(), <span class="st">"/GCP_transfer_log_"</span>, <span class="fu">format</span>(<span class="fu">Sys.time</span>(), <span class="st">"%Y%m%d_%H%M%S"</span>), <span class="st">".txt"</span>)  <span class="co"># Log file name, with path (used with gsutil -L command)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># -----------RUN AS IS-----------</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for weekday and hour, run between 6 AM and 6 PM on weekdays</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>is_weekday <span class="ot">=</span> <span class="cf">function</span>(x){</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  weekdays <span class="ot">=</span> <span class="fu">c</span>(<span class="st">'Thursday'</span>, <span class="st">'Friday'</span>, <span class="st">'Monday'</span>, <span class="st">'Tuesday'</span>, <span class="st">'Wednesday'</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">weekdays</span>(x) <span class="sc">%in%</span> weekdays)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>is_after_hours <span class="ot">=</span> <span class="cf">function</span>(x){</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">as.integer</span>(<span class="fu">format</span>(x,<span class="st">"%H"</span>)) <span class="sc">&lt;</span> <span class="dv">6</span> <span class="sc">|</span> <span class="fu">as.integer</span>(<span class="fu">format</span>(x, <span class="st">"%H"</span>)) <span class="sc">&gt;</span> <span class="dv">18</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># List all the files in the local directory, recursively</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>file_type <span class="ot">&lt;-</span> <span class="fu">paste</span>(file_type, <span class="at">collapse =</span> <span class="st">"|"</span>) <span class="co"># combine all file types to one regex (uses or expression)</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>good_files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(Local_dir, <span class="at">pattern =</span> file_type, <span class="at">full.names =</span> <span class="cn">TRUE</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy files one by one and create a log</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (file <span class="cf">in</span> good_files) {</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="co"># check for after hours, will run any time if offHoursCopy = FALSE above</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (offHoursCopy) {</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="fu">is_weekday</span>(<span class="fu">Sys.time</span>()) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is_after_hours</span>(<span class="fu">Sys.time</span>())) {</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="fu">paste</span>(<span class="st">'waiting...'</span>,<span class="fu">Sys.time</span>(), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>))</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Sys.sleep</span>(<span class="dv">600</span>) <span class="co">#wait 10 minutes until trying again</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="co"># build a relative GCP path to retain local folder structure</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  rel_path <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="fu">paste0</span>(<span class="st">"^"</span>, Local_dir, <span class="st">"/?"</span>), <span class="st">""</span>, file)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>  GCP_path <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"gs://"</span>, Cloud_dir, <span class="st">"/"</span>, rel_path)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>  <span class="co"># create gsutil command</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>  cmd <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"gsutil -m cp -c -L "</span>, log_file, <span class="st">" "</span>, file, <span class="st">" "</span>, GCP_path)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pass command to process and print progress message in R console</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"Uploading: "</span>, file, <span class="st">" -&gt; "</span>, GCP_path)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">system</span>(cmd)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co"># convert log file to csv to make it easier to check upload</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>log <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(log_file, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(log, <span class="fu">paste0</span>(log_file, <span class="st">".csv"</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="more-information-on-cloud-storage" class="level3">
 <h3 class="anchored" data-anchor-id="more-information-on-cloud-storage">More information on Cloud Storage</h3>
