@@ -12,7 +12,7 @@ file_type <- c("\\.wav$",
 )
 
 # Leave as is, unless you want to change where the log file is saved to, in this structure it is built to be saved to the /Scripts folder in the GitHub repo 
-log_file <- paste0(getwd(), "/Scripts/GCP_transfer_log_", format(Sys.time(), "%Y%m%d_%H%M%S"), ".txt")  # Log file name, with path (used with gsutil -L command)
+log_file <- paste0(getwd(), "/GCP_transfer_log_", format(Sys.time(), "%Y%m%d_%H%M%S"), ".txt")  # Log file name, with path (used with gsutil -L command)
 
 
 # -----------RUN AS IS-----------
