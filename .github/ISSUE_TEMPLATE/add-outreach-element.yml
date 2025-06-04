@@ -1,6 +1,6 @@
 name: "Add Outreach Element"
 description: Add Outreach Element to Database (blog, media, presentation, etc)
-title: "💡 [REQUEST] - <title>"
+title: "💡 [REQUEST] - Your Title Here"
 labels: ["question"]
 body:
   - type: input
@@ -59,14 +59,14 @@ body:
         - Othere (describe in comments)
     validations:
       required: true
-  - type: checkboxes
+- type: checkboxes
     id: noaa_comms
     attributes:
       label: Was this reviewed by NOAA Communications?
       description: If this outreach was reviewed by any level of NOAA Communications team, please check box (details in comments are appreciated).
     validations:
       required: false
-  - type: textarea
+- type: textarea
     id: comments
     attributes:
       label: "Comments"
