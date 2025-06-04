@@ -1,9 +1,7 @@
 name: "Add Outreach Element"
 description: Add Outreach Element to Database (blog, media, presentation, etc)
 title: "💡 [REQUEST] - <title>"
-labels: [
-  "question"
-]
+labels: ["question"]
 body:
   - type: input
     id: date
