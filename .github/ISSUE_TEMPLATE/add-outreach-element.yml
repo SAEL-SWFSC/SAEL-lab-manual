@@ -1,9 +1,7 @@
 name: "Add Outreach Element"
 description: Add Outreach Element to Database (blog, media, presentation, etc)
-title: "💡 [REQUEST] - <title>"
-labels: [
-  "question"
-]
+title: "💡 [REQUEST] - Your Title Here"
+labels: ["question"]
 body:
   - type: input
     id: date
@@ -33,7 +31,7 @@ body:
     id: link
     attributes:
       label: "Link"
-      description: Add DOI or URL to the location of the element. If there is no online presence, then type "attached" and attach document to form.
+      description: Add DOI or URL to the location of the element. If there is no online presence, then type 'attached' and attach document to form.
       placeholder: "zzzz"
     validations:
       required: true
@@ -45,7 +43,7 @@ body:
       placeholder: "abcd"
     validations:
       required: true
-- type: dropdown
+  - type: dropdown
     id: type
     attributes:
       label: "Type of Outreach"
@@ -58,7 +56,7 @@ body:
         - Webstory
         - Newspaper
         - Film (news, other video media)
-        - Othere (describe in comments)
+        - Other (describe in comments)
     validations:
       required: true
   - type: checkboxes
@@ -66,6 +64,8 @@ body:
     attributes:
       label: Was this reviewed by NOAA Communications?
       description: If this outreach was reviewed by any level of NOAA Communications team, please check box (details in comments are appreciated).
+      options:
+        - label: Yes, reviewed by NOAA Communications
     validations:
       required: false
   - type: textarea
@@ -73,6 +73,6 @@ body:
     attributes:
       label: "Comments"
       description: Any additional comments?
-      placeholder: xyz
+      placeholder: "xyz"
     validations:
       required: false
