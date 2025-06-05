@@ -1,7 +1,0 @@
-Source,Destination,Start,End,Md5,UploadId,Source Size,Bytes Transferred,Result,Description
-file://C:\Users\kourtney.burger\Desktop\test\5987.210822185958.accel.csv,gs://swfsc-1/drifting_recorder/kbtest/5987.210822185958.accel.csv,2025-06-05T21:27:23.409103Z,2025-06-05T21:27:24.131211Z,cjXwpXD+Ft82RyjBlszAdw==,,1176,1176,OK,
-file://C:\Users\kourtney.burger\Desktop\test\5987.210822185958.log.xml,gs://swfsc-1/drifting_recorder/kbtest/5987.210822185958.log.xml,2025-06-05T21:27:27.388191Z,2025-06-05T21:27:28.048822Z,yZ+Lkf0ijmaOiUHqe/Mo1A==,,2276,2276,OK,
-file://C:\Users\kourtney.burger\Desktop\test\5987.210822192358.temp.csv,gs://swfsc-1/drifting_recorder/kbtest/5987.210822192358.temp.csv,2025-06-05T21:27:31.248570Z,2025-06-05T21:27:31.901357Z,VWPwrua4GaR9GBeV2tQH7w==,,670,670,OK,
-file://C:\Users\kourtney.burger\Desktop\test\5987.210828232358.wav,gs://swfsc-1/drifting_recorder/kbtest/5987.210828232358.wav,2025-06-05T21:27:38.438585Z,2025-06-05T21:27:39.541090Z,bTjoBUww4fad3IJTF5x7WQ==,,360052,360052,OK,
-file://C:\Users\kourtney.burger\Desktop\test\test2\5987.210828233758.wav,gs://swfsc-1/drifting_recorder/kbtest/test2/5987.210828233758.wav,2025-06-05T21:27:42.852635Z,2025-06-05T21:27:44.025741Z,HOpAg32en4spKK5J0Qx3QA==,,360050,360050,OK,
-file://C:\Users\kourtney.burger\Desktop\test\test2\5987.210829092429.wav,gs://swfsc-1/drifting_recorder/kbtest/test2/5987.210829092429.wav,2025-06-05T21:27:52.712735Z,2025-06-05T21:27:53.943534Z,gc3irefzgDn9CXkpFHOEVw==,,360054,360054,OK,
