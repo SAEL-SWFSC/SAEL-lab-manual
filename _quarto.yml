@@ -42,7 +42,7 @@ website:
           - content/Safety-Lab.qmd
           - content/Safety_Lithium-Batteries.qmd
           - content/Inventory.qmd
-      - section: "Data Management"
+      - section: content/Data-Management.qmd
         contents:
           - section: content/Data-Archive.qmd
             contents:

@@ -1,0 +1,14 @@
+---
+title: "Data Management"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Data Management Structure
+
+To promote consistency and reproducibility, the SAEL lab follows a
+standardized data management framework, including uniform file naming
+conventions and directory organization. Lab members can access the full
+structure
+[here](https://docs.google.com/document/d/15gwvtf855YYQetF_ED7OJYPNQK2GFGw0sSl9HVp2tR4/edit?usp=sharing).
