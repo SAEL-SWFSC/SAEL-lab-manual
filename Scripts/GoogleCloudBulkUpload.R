@@ -62,7 +62,7 @@ copy_files_to_GCP <- function(Local_dir, Cloud_dir, file_type = NULL, log_file, 
   
   # subset files that successfully transferred and failed 
   successful_log <- subset(log_df, Result == "OK") 
-  failed_log <- subset(log_df, Result == "ERROR" | Result == "SKIPPED")
+  failed_log <- subset(log_df, Result == "error" | Result == "SKIPPED" | Result == "skipped")
   
   # number of files that successfully copied and failed 
   N_files_copied <- nrow(successful_log)
@@ -108,9 +108,9 @@ copy_files_to_GCP <- function(Local_dir, Cloud_dir, file_type = NULL, log_file, 
 ## ----STEP 1: Define parameters----
 library(openxlsx)
 # Path to Local Directory you want to copy FROM
-Local_dir <- "C:/Users/kourtney.burger/Desktop/test" 
+Local_dir <- "E:/risso-20250414/processed r/HF" 
 # Path to Cloud Directory you want to copy TO
-Cloud_dir <- "swfsc-1/drifting_recorder/kbtest"      
+Cloud_dir <- "swfsc-1/2025_SWFSC_Glider_SeaTrials/risso-20250414/audio_wav/12kHz"      
 # Log file name with path
 log_file <- paste0(getwd(), "/GCP_transfer_log_", format(Sys.time(), "%Y%m%d_%H%M%S"), ".txt")  #  (used with gsutil -L command). Leave as is, unless you want to change where the log file is saved to. This structure is built to save it to your current working directory
 # Copy off hours?
@@ -125,7 +125,7 @@ file_type <- NULL
 # We recommend you run this and replace any spaces in your ORIGINAL filenames/foldernames
 # Risk: If you have documents, code that require the exact names (with spaces), you may have issues
 # DO NOT RUN THIS LINE IF YOU NEED TO RETAIN SPACES IN YOUR FILE NAME, these functions will still work
-rename_spaces(Local_dir)
+# rename_spaces(Local_dir)
 
 
 ## ----STEP 3: Copy files to GCP----
