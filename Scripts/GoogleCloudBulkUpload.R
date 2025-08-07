@@ -108,15 +108,15 @@ copy_files_to_GCP <- function(Local_dir, Cloud_dir, file_type = NULL, log_file, 
 ## ----STEP 1: Define parameters----
 library(openxlsx)
 # Path to Local Directory you want to copy FROM
-Local_dir <- "E:/risso-20250414/processed r/HF" 
+Local_dir <- "Z:/RECORDINGS/DRIFTERS/CCES_2018/RAW" 
 # Path to Cloud Directory you want to copy TO
-Cloud_dir <- "swfsc-1/2025_SWFSC_Glider_SeaTrials/risso-20250414/audio_wav/12kHz"      
+Cloud_dir <- "swfsc-1/2018_CCES_1651/drifting_recorder/audio_wav"      
 # Log file name with path
 log_file <- paste0(getwd(), "/GCP_transfer_log_", format(Sys.time(), "%Y%m%d_%H%M%S"), ".txt")  #  (used with gsutil -L command). Leave as is, unless you want to change where the log file is saved to. This structure is built to save it to your current working directory
 # Copy off hours?
 offHoursCopy <- FALSE  # default is TRUE = Copy only on nights/weekends
 # Copy all files? Choose file type if you do not want copy all
-file_type <- NULL
+file_type <- c("\\.wav$", "\\.ltsa")
 # file_type <- c("\\.wav$", "\\.log.xml$", "\\.accel.csv$", "\\.temp.csv$", "\\.ltsa$", "\\.flac$")
 
 
