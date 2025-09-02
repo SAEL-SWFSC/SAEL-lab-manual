@@ -4,7 +4,7 @@ title: Drifting Recorders
 
 ## Overview
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 Drifting recorders consist of hydrophones deployed at depth below a drifting buoy. They are relatively low cost, which allows for deployment of multiple instruments (increasing the spatial coverage of the area). The hydrophones are positioned near the animals in the water columns (neither at the surface nor the seafloor).
 
@@ -14,7 +14,7 @@ Drifting recorders have been increasingly deployed during large scale shipboard 
 ::: {.column width="50%"}
 ![](images/DriftingAcousticBuoyDiagram.jpg)
 :::
-:::
+:::::
 
 ## Components
 
@@ -25,6 +25,12 @@ These drifting buoys can use two types of [Ocean Instrument SoundTrap Recoders](
 There are common hardware and software errors associated with these instruments. See [this spreadsheet](https://docs.google.com/spreadsheets/d/1HYPw2-IsgiTonLoSUGJ00FHVmN4wSoPqCmpd0fQESbk/edit?gid=0#gid=0) for a list of common errors.
 
 See [here](https://sael-swfsc.github.io/adrift-field-methods/content/Hardware-Subsurface.html#recorder) for more information of recorder types
+
+### Hydrophone
+
+Each drifting buoy is equipped with a two-element vertical hydrophone array below the recorder. The hydrophones are from [High Tech, Inc.](https://www.hightechincusa.com/products/hydrophones/), with the top hydrophone being an [HTI-92WB](https://www.hightechincusa.com/products/hydrophones/hti92wb.html) and 5 meters below that, a [HTI-96min](https://www.hightechincusa.com/products/hydrophones/marinemammal.html).
+
+Each hydrophone has a specific sensitivity and when coupled with the recorder, the array will have an overall system sensitivity. Hydrophone sensitivity and recorder sensitivity/gain values can be found in our inventory [here](https://docs.google.com/spreadsheets/d/12u6cwwbuM7BfPt2GKjMXEOwr9yeK0_ztD04aNVYoFIk/edit?gid=395300949#gid=395300949). For soundscape analysis and system calibration, overall system sensitivity values for past deployments can be found [here](https://docs.google.com/spreadsheets/d/1X3n8XtLbYdIqNKSqy9w4CO0lJmRgQUbSEq56HOpXwTE/edit?usp=sharing).
 
 ## Projects
 
