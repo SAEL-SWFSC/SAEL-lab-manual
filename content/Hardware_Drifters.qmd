@@ -32,6 +32,8 @@ Each drifting buoy is equipped with a two-element vertical hydrophone array belo
 
 Each hydrophone has a specific sensitivity and when coupled with the recorder, the array will have an overall system sensitivity. Hydrophone sensitivity and recorder sensitivity/gain values can be found in our inventory [here](https://docs.google.com/spreadsheets/d/12u6cwwbuM7BfPt2GKjMXEOwr9yeK0_ztD04aNVYoFIk/edit?gid=395300949#gid=395300949). For soundscape analysis and system calibration, overall system sensitivity values for past deployments can be found [here](https://docs.google.com/spreadsheets/d/10bxlwfVOe1LFfj69B_YddxcA0V14m7codYwgD2YncFk/edit?gid=42687545#gid=42687545).
 
+For new deployments, the hydrophone sensitivity can be calculated using the [`CheckSystemSensitivity.r` script here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/3c5a8922166c0eae19c3c9ff4e274ec7c01a2b76/Scripts/CheckSystemSensitivity.R).
+
 ## Projects
 
 ### ADRIFT
