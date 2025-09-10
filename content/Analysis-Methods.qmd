@@ -5,5 +5,13 @@ title: Analysis Methods
 Detailed Analysis methods for the [ADRIFT project](https://sael-swfsc.github.io/Adrift/) can be found [here](https://sael-swfsc.github.io/adrift-analysis-methods/)
 
 ## PAMGuard Tutorials
-We have an in-house PAMGuard Tutorial (2021). [Link to materials](https://drive.google.com/drive/folders/1P3DRVoI7rKEUHz66Z_L2nztE49npRHKN?usp=sharing) in google drive available (restricted to NOAA employees). 
 
+We have an in-house PAMGuard Tutorial (2021). [Link to materials](https://drive.google.com/drive/folders/1P3DRVoI7rKEUHz66Z_L2nztE49npRHKN?usp=sharing) in google drive available (restricted to NOAA employees).
+
+## Audio Data QAQC
+
+Use the following R script to run a quality assurance and control check on new audio data. More details on these methods can be found on the [PAM QAQ/QC Tools PAMverse page](https://nmfs-ost.github.io/PAMverse/content/QAQC.html) and [PAMscapes QAQC User Guide](https://docs.google.com/document/d/1coo21rPb7WIxkFPqjt7CQKAkDu5KjdqXsZs_0PVbI9M/edit?usp=sharing)
+
+``` r
+#enter script later
+```
