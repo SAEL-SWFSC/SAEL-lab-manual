@@ -1198,6 +1198,16 @@
     ]
   },
   {
+    "objectID": "content/Analysis-Methods.html#audio-data-qaqc",
+    "href": "content/Analysis-Methods.html#audio-data-qaqc",
+    "title": "Analysis Methods",
+    "section": "Audio Data QAQC",
+    "text": "Audio Data QAQC\nUse the following R script to run a quality assurance and control check on new audio data. More details on these methods can be found on the PAM QAQ/QC Tools PAMverse page and PAMscapes QAQC User Guide\n#enter script later",
+    "crumbs": [
+      "Analysis Methods"
+    ]
+  },
+  {
     "objectID": "content/media.html",
     "href": "content/media.html",
     "title": "Media",
