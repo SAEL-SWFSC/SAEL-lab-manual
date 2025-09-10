@@ -563,8 +563,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="audio-data-qaqc" class="level2">
 <h2 class="anchored" data-anchor-id="audio-data-qaqc">Audio Data QAQC</h2>
-<p>Use the following R script to run a quality assurance and control check on new audio data. More details on these methods can be found on the <a href="https://nmfs-ost.github.io/PAMverse/content/QAQC.html">PAM QAQ/QC Tools PAMverse page</a> and <a href="https://docs.google.com/document/d/1coo21rPb7WIxkFPqjt7CQKAkDu5KjdqXsZs_0PVbI9M/edit?usp=sharing">PAMscapes QAQC User Guide</a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#enter script later</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Use the following R script (<a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/f07268155aafcaf16fe541b58097d68efc7af052/Scripts/Run_recording_QAQC.R">here</a>) to run a quality assurance and control check on new audio data. More details on these methods can be found on the <a href="https://nmfs-ost.github.io/PAMverse/content/QAQC.html">PAM QAQ/QC Tools PAMverse page</a> and <a href="https://docs.google.com/document/d/1coo21rPb7WIxkFPqjt7CQKAkDu5KjdqXsZs_0PVbI9M/edit?usp=sharing">PAMscapes QAQC User Guide</a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run quality assurance and control check on audio data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># There are some assumptions on folder structure and data types that must be met to avoid errors in this workflow. See more information here; [PAM QAQ/QC Tools PAMverse page](https://nmfs-ost.github.io/PAMverse/content/QAQC.html) and [PAMscapes QAQC User Guide](https://docs.google.com/document/d/1coo21rPb7WIxkFPqjt7CQKAkDu5KjdqXsZs_0PVbI9M/edit?usp=sharing)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#----Load packages----</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(PAMmisc)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(PAMscapes)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googlesheets4)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#----Read deployment metadata (deployment IDs and calibration values)----</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># download and read in sheets</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># DeployDetails &lt;- read.csv(here('data', 'Deployment Details - deployDetails.csv'), header=TRUE)</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># OR </span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># load from google sheets link</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>DeployDetails <span class="ot">&lt;-</span> <span class="fu">read_sheet</span>(<span class="st">"https://docs.google.com/spreadsheets/d/10bxlwfVOe1LFfj69B_YddxcA0V14m7codYwgD2YncFk/edit?gid=42687545#gid=42687545"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                            <span class="at">sheet =</span> <span class="st">"deployDetails"</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#----Run QAQC Function For Single Deployment----</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>DepID <span class="ot">&lt;-</span> <span class="st">'PASCAL_001'</span> <span class="co"># list deployment of interest</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>DepSens <span class="ot">&lt;-</span> DeployDetails <span class="sc">%&gt;%</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Data_ID <span class="sc">==</span> DepID) <span class="sc">%&gt;%</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(SystemSensitivity)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>qaqcData <span class="ot">&lt;-</span> <span class="fu">evaluateDeployment</span>(<span class="at">dir =</span> <span class="st">"Z:/RECORDINGS/DRIFTERS/PASCAL_2016/RAW/PASCAL_001"</span>, </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>                               <span class="at">sensitivity =</span> DepSens, </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>                               <span class="at">outDir =</span> <span class="st">"Z:/METADATA/PASCAL/PASCAL_001/PASCAL_001_QAQC"</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co"># This will open a shiny app to review the data</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">runQAQCReview</span>(qaqcData)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">#----Run QAQC Function For Group of Deployments----</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co"># list deployments of interest manually</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>DepIDs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"PASCAL_001"</span>, <span class="st">"PASCAL_002"</span>) </span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co"># OR</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>DepIDs <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"PASCAL_%03d"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Sens_df <span class="ot">&lt;-</span> DeployDetails <span class="sc">%&gt;%</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Data_ID <span class="sc">%in%</span> DepIDs) <span class="sc">%&gt;%</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Data_ID, SystemSensitivity) <span class="sc">%&gt;%</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">DepID =</span> Data_ID, <span class="at">Sensitivity =</span> SystemSensitivity)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Set directories</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>rawAudio <span class="ot">&lt;-</span> <span class="st">"Z:/RECORDINGS/DRIFTERS/PASCAL_2016/RAW/"</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>output <span class="ot">&lt;-</span> <span class="st">"Z:/METADATA/PASCAL/"</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(Sens_df)) {</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">evaluateDeployment</span>(<span class="at">dir =</span> <span class="fu">paste0</span>(rawAudio, Sens_df<span class="sc">$</span>DepID[i]), </span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>                     <span class="at">sensitivity =</span> Sens_df<span class="sc">$</span>Sensitivity[i], </span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>                     <span class="at">outDir =</span> <span class="fu">paste0</span>(output, Sens_df<span class="sc">$</span>DepID[i], <span class="st">"/"</span>, Sens_df<span class="sc">$</span>DepID[i], <span class="st">"_QAQC"</span>))</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Uncomment the line below to review data in a shiny app</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co"># runQAQCReview(qaqcData)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
