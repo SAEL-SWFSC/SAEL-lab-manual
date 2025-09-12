@@ -17,15 +17,15 @@ DeployDetails <- read_sheet("https://docs.google.com/spreadsheets/d/10bxlwfVOe1L
                             sheet = "deployDetails")
 
 #----Run QAQC Function For Single Deployment----
-# DepID <- 'PASCAL_001' # list deployment of interest
-# 
-# DepSens <- DeployDetails %>%
-#   filter(Data_ID == DepID) %>%
-#   pull(SystemSensitivity)
-# 
-# qaqcData <- evaluateDeployment(dir = "Z:/RECORDINGS/DRIFTERS/PASCAL_2016/RAW/PASCAL_001", 
-#                                sensitivity = DepSens, 
-#                                outDir = "Z:/METADATA/PASCAL/PASCAL_001/PASCAL_001_QAQC")
+DepID <- 'PASCAL_001' # list deployment of interest
+
+DepSens <- DeployDetails %>%
+ filter(Data_ID == DepID) %>%
+ pull(SystemSensitivity)
+ 
+qaqcData <- evaluateDeployment(dir = paste0("Z:/RECORDINGS/DRIFTERS/PASCAL_2016/RAW/", DepID), 
+                              sensitivity = DepSens, 
+                              outDir = paste0("Z:/METADATA/PASCAL/", DepID,"/", DepID, "_QAQC"))
 
 # This will open a shiny app to review the data
 # runQAQCReview(qaqcData)
@@ -43,7 +43,7 @@ Sens_df <- DeployDetails %>%
   rename(DepID = Data_ID, Sensitivity = SystemSensitivity)
 
 # FOR TESTING
-Sens_df <- Sens_df[-c(9,10,25,26,28,29,32,33), ]
+Sens_df <- Sens_df[-c(1,2,3,4,9,10,25,26,28,29,32,33), ]
 
 # Set directories
 rawAudio <- "Z:/RECORDINGS/DRIFTERS/PASCAL_2016/RAW/"
@@ -58,4 +58,4 @@ for (i in 1:nrow(Sens_df)) {
 
 
 # Uncomment the line below to review data in a shiny app
-# runQAQCReview(qaqcData)
+# runQAQCReview('Path to data csv file')
