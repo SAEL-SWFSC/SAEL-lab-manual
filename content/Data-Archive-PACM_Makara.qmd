@@ -16,7 +16,7 @@ The interactive map below can be adjusted to visualize detections SAEL
 
 ### MAKARA
 
-WORK IN PROGRESS - updated methods for archiving to Makara. Waiting for next Makara release
+WORK IN PROGRESS - [temporay methods for archiving to Makara can be found here](https://github.com/Kourtney-Burger/ADRIFT-PACM/tree/main/Makara). Waiting for next Makara release
 
 ### PACM
 
