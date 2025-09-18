@@ -921,7 +921,7 @@
     "href": "content/Data-Archive-PACM_Makara.html#archiving-data",
     "title": "PACM/Makara",
     "section": "Archiving Data",
-    "text": "Archiving Data\n\nMAKARA\nWORK IN PROGRESS - updated methods for archiving to Makara. Waiting for next Makara release\n\n\nPACM\n\n\n\n\n\n\nNote\n\n\n\nThese methods are no longer in use and may be outdated. Please use MAKARA methods for future projects\n\n\nDetailed methods for archiving data to PACM can be found in this ADRIFT-PACM GitHub repository.",
+    "text": "Archiving Data\n\nMAKARA\nWORK IN PROGRESS - temporay methods for archiving to Makara can be found here. Waiting for next Makara release\n\n\nPACM\n\n\n\n\n\n\nNote\n\n\n\nThese methods are no longer in use and may be outdated. Please use MAKARA methods for future projects\n\n\nDetailed methods for archiving data to PACM can be found in this ADRIFT-PACM GitHub repository.",
     "crumbs": [
       "Data Management",
       "Data Archive",
