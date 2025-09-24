@@ -35,22 +35,24 @@ DeployDetails <- read_sheet("https://docs.google.com/spreadsheets/d/10bxlwfVOe1L
 # DepIDs <- c("PASCAL_001", "PASCAL_002") 
 
 # OR
-DepIDs <- sprintf("PASCAL_%03d", 1:30)
+filtered_data <- DeployDetails %>%
+  filter(Project == "ADRIFT", Status == "Complete")
+
+filtered_data <- filtered_data[-c(1:56), ]
+
+DepIDs <- filtered_data$Data_ID
 
 Sens_df <- DeployDetails %>%
   filter(Data_ID %in% DepIDs) %>%
   select(Data_ID, SystemSensitivity) %>%
   rename(DepID = Data_ID, Sensitivity = SystemSensitivity)
 
-# FOR TESTING
-Sens_df <- Sens_df[-c(9,10,25,26,28,29,32,33), ]
-
 # Set directories
-rawAudio <- "Z:/RECORDINGS/DRIFTERS/PASCAL_2016/RAW/"
-output <- "Z:/METADATA/PASCAL/"
+rawAudio <- "Z:/RECORDINGS/DRIFTERS/ADRIFT/RAW/"
+output <- "Z:/METADATA/ADRIFT/"
 
 for (i in 1:nrow(Sens_df)) {
-  evaluateDeployment(dir = paste0(rawAudio, Sens_df$DepID[i]), 
+  evaluateDeployment(dir = paste0(rawAudio, Sens_df$DepID[i], "_CENSOR"), 
                      sensitivity = Sens_df$Sensitivity[i], 
                      outDir = paste0(output, Sens_df$DepID[i], "/", Sens_df$DepID[i], "_QAQC"))
 }
