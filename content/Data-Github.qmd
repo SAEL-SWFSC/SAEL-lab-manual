@@ -30,11 +30,9 @@ We also highly recommend the [NMFS Open Science](https://nmfs-opensci.github.io/
 
 -   [Adrift Analysis Methods](https://sael-swfsc.github.io/adrift-analysis-methods/)
 
-## Hardware, Methods, Protocol, etc.
+## Methods, Protocol, etc.
 
 -   [SAEL Lab Manual](https://github.com/SAEL-SWFSC/SAEL-lab-manual)
-
--   [SAEL Lab Hardware](https://sael-swfsc.github.io/SAEL-Lab-Hardware/)
 
 -   [PAM Open Science](https://nmfs-ost.github.io/PAM-OpenScience/)
 
