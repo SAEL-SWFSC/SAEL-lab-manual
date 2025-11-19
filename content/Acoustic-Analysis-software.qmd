@@ -20,55 +20,7 @@ The SAEL Lab uses [PAMGuard](https://www.pamguard.org/) for several analysis pro
 
 ## Python
 
-Our lab uses Python to run soundscape analyses using [PyPAM](https://github.com/lifewatch/pypam) and [PBP](https://github.com/mbari-org/pbp)
-
-::: callout-note
-## These directions are written by a new Python user. If you are an experienced user, please make suggestions/corrections as needed!
-:::
-
-### Downloading and Installing Python
-
-There are several different ways to install and use Python, use what works best for you!
-
-1.  Go to [Anaconda distribution website](https://www.anaconda.com/download/success)
-2.  Select your operating system and download the installer (standard/default settings are ok). Anaconda Navigator comes bundled with a Python distributor and will automatically install the latest Python version (currently 3.12), see ['Creating New Environments'](https://sael-swfsc.github.io/SAEL-lab-manual/content/Acoustic-Analysis-software.html#creating-new-environments) steps below to use a different version of Python
-3.  You're ready to use Python!
-
-### Python Environments
-
-Python environments allow you to manage packages and Python versions, and ensures your project has the necessary dependencies. Anaconda Navigator allows you to set and work in different environments.
-
-#### Creating New Environments
-
-PyPAM requires a specific Python version (3.9-3.11) and some analyses require specific packages that are not included in the base Anaconda channels or Python Package Index (PyPI). Follow the directions below to set up a custom environment for PyPAM (the same directions can be applied to make other environments)
-
-1.  Open Anaconda Navigator and click on the 'Environments' tab on the left
-
-2.  Click the 'Create' button on bottom left
-
-3.  Set the Environment name (PyPAM for example) and ensure the Python box is checked with 3.9-3.11 version. You can also select the R box and choose a version
-
-4.  Click 'Create' and the environment will establish itself (Note: This may take a few minutes to set up)
-
-5.  Once established you can see your new environment in the list and all of the packages that are installed
-
-6.  Click on the green arrow and select "Open Terminal"
-
-    ![](images/AnacondaTerminal.jpg)
-
-7.  This will open a command prompt where you can write Python code to edit the environment
-
-8.  Double check the python version by typing `python –version`, this should return a version between 3.9-3.11
-
-9.  To install packages more packages type `conda install <package name>` or `pip install <package name>`. If the package is included in the base libraries, you can use the `conda install` format (i.e. `conda install netcdf4`). If the package is not included, use the pip format (i.e. `pip install mbari-pbp`)
-
-10. Installing mbari-pbp should also automatically install PyPAM, if you are still missing the PyPAM package type `pip install lifewatch-pypam` into the environment command window
-
-11. You should now be ready to use PyPAM and PBP functions!
-
-### Python IDEs
-
-There are also several ways to interact with Python code through Integrated Development Environments (IDEs). These allow you to write, execute, and visualize Python Code within a user friendly interface. Anaconda Navigator has several IDEs included in the bundle, including Jupyter Notebook (PyPAM PBP example scripts).
+Python can be used for soundscape analyses using [PyPAM](https://github.com/lifewatch/pypam) and [PBP](https://github.com/mbari-org/pbp)
 
 ## LFDCS
 
