@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -74,14 +74,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b68b14291fce0367c2cd0b7f2d3b5158.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6878c03325e4b83cf38f0baaf9c01681.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-b68b14291fce0367c2cd0b7f2d3b5158.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3fe749c4c491919af384cf3d21cd6cd9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-232e4682cfd531faa731a02c7ded2837.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3fe749c4c491919af384cf3d21cd6cd9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -579,8 +579,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="accessing-data" class="level2">
 <h2 class="anchored" data-anchor-id="accessing-data">Accessing Data</h2>
-<p>Check the <a href="https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing">archive spreadsheet</a> to see if the dataset you are interested in accessing is available in the <a href="https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&amp;project=ggn-nmfs-pamdata-prod-1&amp;prefix=&amp;forceOnObjectsSortingFiltering=false">SWFSC-SAEL bucket</a>. Note: only the raw audio data is uploaded here, see our <a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html">NCEI archive</a> for additional ancillary data.</p>
-<p>The bucket is broken down by platform -&gt; project -&gt; deployment. You can select all data within a platform, or any subfolder within that directory, and click download.</p>
+<p>Check the <a href="https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing">archive spreadsheet</a> to see if the dataset you are interested in accessing is available in the <a href="https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&amp;project=ggn-nmfs-pamdata-prod-1&amp;prefix=&amp;forceOnObjectsSortingFiltering=false">SWFSC-SAEL bucket</a>. Note: there are two SWFSC buckets. SWFSC-1 is for raw audio data and LTSAs only. SWFSC-1-working contains analysis files, metadata, and other ancillary data.</p>
+<p>Below is a general data structure of the two buckets. The most updated data structure can be accessed <a href="https://docs.google.com/document/d/15gwvtf855YYQetF_ED7OJYPNQK2GFGw0sSl9HVp2tR4/edit?usp=sharing">here</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/gcp_data_structure.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 </section>
 <section id="cloud-storage" class="level2">
 <h2 class="anchored" data-anchor-id="cloud-storage">Cloud Storage</h2>
