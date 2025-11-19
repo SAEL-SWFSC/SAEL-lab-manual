@@ -1294,11 +1294,11 @@
     ]
   },
   {
-    "objectID": "content/Data-Github.html#hardware-methods-protocol-etc.",
-    "href": "content/Data-Github.html#hardware-methods-protocol-etc.",
+    "objectID": "content/Data-Github.html#methods-protocol-etc.",
+    "href": "content/Data-Github.html#methods-protocol-etc.",
     "title": "Github Repos",
-    "section": "Hardware, Methods, Protocol, etc.",
-    "text": "Hardware, Methods, Protocol, etc.\n\nSAEL Lab Manual\nSAEL Lab Hardware\nPAM Open Science",
+    "section": "Methods, Protocol, etc.",
+    "text": "Methods, Protocol, etc.\n\nSAEL Lab Manual\nPAM Open Science",
     "crumbs": [
       "Data Management",
       "Github Repos"
