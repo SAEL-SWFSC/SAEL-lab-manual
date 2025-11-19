@@ -2,7 +2,7 @@
 title: Github Repos
 ---
 
-SAEL is part of the California Current Marine Mammal Assessment Program ([CMAP Lab Manual](https://cmap-swfsc.github.io/CMAP-SWFSC/)) and it is also part of the NOAA Fisheries National PAM Network ([National PAM Lab Manual](https://nmfs-ost.github.io/PAM_National_Network/).
+SAEL is part of the California Current Marine Mammal Assessment Program ([CMAP Lab Manual](https://cmap-swfsc.github.io/CMAP-SWFSC/)) and it is also part of the NOAA Fisheries National PAM Network ([National PAM Lab Manual](https://nmfs-ost.github.io/PAM_National_Network/)).
 
 The [SAEL Github Organization](https://github.com/SAEL-SWFSC) houses many of our Github Repositories, although not all related Repos exist within this organizational structure. Below we provide a link to most (all?) of our related Github repositories.
 

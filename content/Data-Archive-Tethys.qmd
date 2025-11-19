@@ -4,7 +4,7 @@ title: Tethys
 
 ## Accessing Data
 
-All ADRIFT, PASCAL, CCES, and CalCurCEAS deployment metadata and detection data are archived locally in our lab's Tethys database.
+All deployment metadata and detection data are archived locally in our lab's Tethys database.
 
 The Tethys database is saved locally on the DON server (*Z:/ANALYSIS/Tethys*). Tethys has multiple ways to access/visualize the database, but these directions will only include opening the web client interface (main web app and Data Explorer).
 

@@ -9,9 +9,11 @@ subtitle: GCP for Archive and Analysis
 
 ## Accessing Data
 
-Check the [archive spreadsheet](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing) to see if the dataset you are interested in accessing is available in the [SWFSC-SAEL bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false). Note: only the raw audio data is uploaded here, see our [NCEI archive](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Archive-NCEI.html) for additional ancillary data.
+Check the [archive spreadsheet](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing) to see if the dataset you are interested in accessing is available in the [SWFSC-SAEL bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false). Note: there are two SWFSC buckets. SWFSC-1 is for raw audio data and LTSAs only. SWFSC-1-working contains analysis files, metadata, and other ancillary data.
 
-The bucket is broken down by platform -\> project -\> deployment. You can select all data within a platform, or any subfolder within that directory, and click download.
+Below is a general data structure of the two buckets. The most updated data structure can be accessed [here](https://docs.google.com/document/d/15gwvtf855YYQetF_ED7OJYPNQK2GFGw0sSl9HVp2tR4/edit?usp=sharing)
+
+![](images/gcp_data_structure.jpg){fig-align="center"}
 
 ## Cloud Storage
 

@@ -8,7 +8,7 @@ title: NCEI
 
 </iframe>
 
-NCEI hosts a [Passive Acoustic Data Archive](https://www.ncei.noaa.gov/products/passive-acoustic-data), where all ADRIFT, CCES, and PASCAL deployment metadata and soundscape metrics are publicly available.
+NCEI hosts a [Passive Acoustic Data Archive](https://www.ncei.noaa.gov/products/passive-acoustic-data), where all raw audio files, deployment metadata, and soundscape metrics are publicly available.
 
 Users can access data through the [interactive map](https://www.ncei.noaa.gov/maps/passive-acoustic-data/) or request data using [Google Cloud Platform](https://console.cloud.google.com/marketplace/details/noaa-public/passive_acoustic_monitoring?pli=1&project=ggn-nmfs-pamdata-prod-1)
 

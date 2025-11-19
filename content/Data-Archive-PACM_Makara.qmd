@@ -6,17 +6,13 @@ title: PACM/Makara
 
 All ADRIFT, PASCAL 2016, and CCES 2018 marine mammal detection data are archived and available on the [Passive Acoustic Cetacean Map](https://apps-nefsc.fisheries.noaa.gov/pacm/#/) (PACM).
 
-The interactive map below can be adjusted to visualize detections SAEL
-
-<iframe src="https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw" style="width:950px; height:500px; border: 2px solid black;">
-
-</iframe>
+The interactive map can be filtered to show SAEL detections based on species, platform type, and other advanced filters. 
 
 ## Archiving Data
 
 ### MAKARA
 
-WORK IN PROGRESS - [temporay methods for archiving to Makara can be found here](https://github.com/Kourtney-Burger/ADRIFT-PACM/tree/main/Makara). Waiting for next Makara release
+WORK IN PROGRESS - [temporary methods for archiving to Makara can be found here](https://github.com/Kourtney-Burger/PACM-Makara/tree/main/Makara). Waiting for next Makara release
 
 ### PACM
 
