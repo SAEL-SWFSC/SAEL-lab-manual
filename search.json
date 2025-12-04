@@ -368,7 +368,7 @@
     "href": "content/Data-SpeciesAndCallTypes.html",
     "title": "Species and Call Types",
     "section": "",
-    "text": "Use the following species abbreviations and call type codes for all data analysis and data archive. Full species abbreviation table available here.",
+    "text": "Use the following species abbreviations and call type codes for all data analysis and data archive. Full species abbreviation table available here.\nAccess to edit species abbreviations and call type codes - SAEL Lab Members Only",
     "crumbs": [
       "Data Management",
       "Species and Call Types"
@@ -379,7 +379,7 @@
     "href": "content/Data-SpeciesAndCallTypes.html#species",
     "title": "Species and Call Types",
     "section": "Species",
-    "text": "Species\n\n\n\n\n\n\n\n\n\nCommon Name\nScientific Name\nSAEL Species\nPACM Species\n\n\n\n\nBaird’s Beaked Whale\nBerardius bairdii\nBB (or Bb1)\nBWBB\n\n\nBlue whale\nBalaenoptera musculus\nBm\nBLWH\n\n\nBryde’s Whale\nBalaenoptera brydei\nBe\nBBWH\n\n\nCross Seamount beaked whales\nNA\nBWC\nBWC\n\n\nDall’s porpoise\nPhocoenoides dalli\nPd\nDAPO\n\n\nDolphins\nDelphinidae sp.\nIncludes Gg, Lo, and UO\nUNDO\n\n\nFin whale\nBalaenoptera physalus\nBp\nFIWH\n\n\nGray whale\nEschrichtius robustus\nEr\nGRWH\n\n\nGoose-beaked whale (Cuvier’s)\nZiphius cavirostris\nZc\nGOBW\n\n\nHarbor porpoise\nPhocoena phocoena\n\nHAPO\n\n\nHubb’s beaked whale\nMesoplodon carlhubbsi\nMc\nBWMC\n\n\nHumpback whale\nMegaptera novaeangliae\nMn\nHUWH\n\n\nKogia\nKogia sp.\nKs\nUNKO\n\n\nMinke whale\nBalaenoptera acutorostrata\nBa\nMIWH\n\n\nNBHF - Kogia, Dall’s Porpoise, Harbor Porpoise\nNA\nNBHF\nNBHF\n\n\nOrca\nOrcinus orca\nOo\nOOWH\n\n\nPacific white-sided dolphin\nLagenorhynchus obliquidens\nLo\nPWDO\n\n\nRisso’s dolphin\nGrampus griseus\nGg\nGRAM\n\n\nSei whale\nBalaenoptera borealis\nBb (or B. Borealis)\nSEWH\n\n\nSperm Whale\nPhyseter macrocephalus\nPm\nSPWH\n\n\nStejneger’s beaked whale\nMesoplodon stejnegeri\nMs\nBWMS\n\n\nUnidentified beaked whale 43 kHz\nNA\nBW43\nBW43\n\n\nUnidentified dolphin\nNA\nUO\nUNDO\n\n\nUnidentified mesoplodon (beaked whale)\nMesoplodon sp.\nBW\nUNME",
+    "text": "Species",
     "crumbs": [
       "Data Management",
       "Species and Call Types"
@@ -390,7 +390,7 @@
     "href": "content/Data-SpeciesAndCallTypes.html#call-types",
     "title": "Species and Call Types",
     "section": "Call Types",
-    "text": "Call Types\n\n\n\n\n\n\n\n\n\n\n\nSpecies\nCall Type Name\nSAEL Call Code\nPACM Call Code\nPACM Call Description\nNotes\n\n\n\n\nBeaked whale\nBeaked whale frequency modulated upsweep\n\nFMUS\nBeaked whale foraging clicks\n\n\n\nBlue whale\nBlue whale A call\nA\nBLANEP\nNE Pacific blue whale A call\n\n\n\nBlue whale\nBlue whale B call\nB\nBLBNEP\nNE Pacific blue whale B call\n\n\n\nBlue whale\nBlue whale D call\nD\nBLDNEP\nNE Pacific blue whale D call\n\n\n\nBlue whale\nBlue whale tonal call\nBLTonal\nBLTONNEP\nNE Pacific blue whale tonal call\n\n\n\nBlue whale\nBlue whale downsweep call\nBLDS\nBLDSNEP\nNE Pacific blue whale downsweep call\n\n\n\nBlue whale\nBlue whale mixed call\nBLMixed\nBLMIXNEP\nNE Pacific blue whale mixed calls (A, B, D, tonal, downsweep)\n\n\n\nFin whale\nFin whale 20 Hz pulse\n20Hz\nFW20HZ\nNE Pacific fin whale 20 Hz pulses\n\n\n\nFin whale\nFin whale 40 Hz downsweep\n40Hz\nFW40HZ\nNE Pacfic fin whale 40 Hz downsweeps\n\n\n\nGray whale\nGray whale unidentified\nUnidentified\nGWUND\nUnidentified NE Pacific gray whale calls\n\n\n\nHumpback whale\nHumpback whale unidentified\nUnidentified\nHWUND\nUnidentified NE Pacific humpback whale calls (cannot distinguish social vs song)\n\n\n\nHumpback whale\nHumpback whale social\nSocial\nHWSOC\nHumpback whale social calls only\n\n\n\nHumpback whale\nHumpback whale song\nSong\nHWSONG\nHumpback whale song only\n\n\n\nMinke whale\nMinke whale boing\nBoing\nMWNEPBOING\nNE Pacific minke whale boing\n\n\n\nNBHF\nNBHF\nNA\nNBHF\nAll NBHF calls for kogia sp., dall’s porpoise, and harbor porpoise\n\n\n\nOdontocete\nOdontocete impulsive click\nClicks\nODCLICK\nDolphin clicks (either delphinid or blackfish)\n\n\n\nOdontocete\nOdontocete whistle\nWhistles\nODWHIS\nDolphin whistles (either delphinid or blackfish)\n\n\n\nSei whale\nSei whale 30-80Hz downsweep\nSWDS\nSWDS\nSei whale downsweep spanning 80-30Hz, occurs as single downsweeps or repeated 3-5 seconds apart as doublets, triplets, or more.\n\n\n\nSperm whale\nSperm whale usual click\nClicks\nSPUSC\nSperm whale foraging click\n\n\n\nSperm whale\nSperm whale slow click\nSlow Clicks\nSPSLC\nSperm whale social: slow clicks",
+    "text": "Call Types",
     "crumbs": [
       "Data Management",
       "Species and Call Types"
