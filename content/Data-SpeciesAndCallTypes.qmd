@@ -1,7 +1,12 @@
 ---
 title: Species and Call Types
 ---
-The following table marine mammal species and call types for the North East Pacific Region. It also includes species and call type codes to be used in future analysis and data archives. 
+
+The following table lists marine mammal species and call types for the Northeast Pacific Region. It includes species and call type codes to be used in future analysis and data archives.
+
+::: callout-important
+## All analysis should use PACM species codes and call type codes
+:::
 
 [Access to edit species abbreviations and call type codes](https://docs.google.com/spreadsheets/d/1xZzh56lA7P4awbz6CNAOciQk8YNNWQG5LJkI5vR3nH0/edit?usp=sharing) - SAEL Lab Members Only
 
