@@ -375,22 +375,11 @@
     ]
   },
   {
-    "objectID": "content/Data-SpeciesAndCallTypes.html#species",
-    "href": "content/Data-SpeciesAndCallTypes.html#species",
+    "objectID": "content/Data-SpeciesAndCallTypes.html#species-list-call-codes",
+    "href": "content/Data-SpeciesAndCallTypes.html#species-list-call-codes",
     "title": "Species and Call Types",
-    "section": "Species",
-    "text": "Species",
-    "crumbs": [
-      "Data Management",
-      "Species and Call Types"
-    ]
-  },
-  {
-    "objectID": "content/Data-SpeciesAndCallTypes.html#call-types",
-    "href": "content/Data-SpeciesAndCallTypes.html#call-types",
-    "title": "Species and Call Types",
-    "section": "Call Types",
-    "text": "Call Types",
+    "section": "Species List & Call Codes",
+    "text": "Species List & Call Codes",
     "crumbs": [
       "Data Management",
       "Species and Call Types"
