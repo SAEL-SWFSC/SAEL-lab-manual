@@ -6,14 +6,8 @@ Use the following [species abbreviations and call type codes](https://docs.googl
 
 [Access to edit species abbreviations and call type codes](https://docs.google.com/spreadsheets/d/1xZzh56lA7P4awbz6CNAOciQk8YNNWQG5LJkI5vR3nH0/edit?usp=sharing) - SAEL Lab Members Only
 
-## Species
+## Species List & Call Codes
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSoUB48OIQDAb3bp-To11b16f5fcugZiTHEtkZAGvZQ8gA0lPDlLldO0pLQPU2Qv2aeQ0fP7XgaZxI2/pubhtml?gid=0&single=true;headers=false" style="width:950px; height:500px; border: 2px solid black;">
-
-</iframe>
-
-## Call Types
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS4AnmnJo2D0HRSoqI49Xb1pNKEz7e3u4OczKz22B294eQskYeKN0YLDa7B5Jc9GcCPB7lA4zUl_GYT/pubhtml?widget=true&amp;headers=false" style="width:950px; height:500px; border: 2px solid black;">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSoUB48OIQDAb3bp-To11b16f5fcugZiTHEtkZAGvZQ8gA0lPDlLldO0pLQPU2Qv2aeQ0fP7XgaZxI2/pubhtml;headers=false" style="width:950px; height:500px; border: 2px solid black;">
 
 </iframe>
