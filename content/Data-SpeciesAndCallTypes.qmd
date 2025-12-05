@@ -8,6 +8,8 @@ The following table lists marine mammal species and call types for the Northeast
 ## All analysis should use PACM species codes and call type codes
 :::
 
+The PACM/Makara species and call type reference tables can be found in the [Passive Acoustic Reporting System Templates](https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates)
+
 The NMFS/Tethys species abbreviations can be found [here](https://drive.google.com/file/d/1fg4yzSoncXLiwsya98yoJMd0N49nUXKA/view).
 
 ## Species List & Call Codes
