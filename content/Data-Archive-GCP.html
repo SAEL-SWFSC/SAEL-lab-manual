@@ -645,9 +645,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="automated-sdkgsutil-upload">Automated sdk/gsutil Upload</h3>
 <p>You can use the following R script to automatically run the above command and bulk upload data from a source. R script available <a href="https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/Scripts/GoogleCloudBulkUpload.R" target="_blank">here</a>. This script is set up to only run from 6 pm to 6 am on weekdays and full time on weekends, to avoid excess network traffic.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="co"># ----FUNCTIONS----</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Short recursive space-to-underscore renamer</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Space-to-underscore renamer</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>rename_spaces <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">path =</span> <span class="st">"."</span>) {</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get all files and folders, deepest first</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get all files and folders</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  all_paths <span class="ot">&lt;-</span> <span class="fu">list.files</span>(path, <span class="at">recursive =</span> <span class="cn">TRUE</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>, <span class="at">include.dirs =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  all_paths <span class="ot">&lt;-</span> all_paths[<span class="fu">order</span>(<span class="fu">nchar</span>(all_paths), <span class="at">decreasing =</span> <span class="cn">TRUE</span>)]</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  </span>
@@ -675,11 +675,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy function</span></span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>copy_files_to_GCP <span class="ot">&lt;-</span> <span class="cf">function</span>(Local_dir, Cloud_dir, <span class="at">file_type =</span> <span class="cn">NULL</span>, log_file, <span class="at">offHoursCopy =</span> <span class="cn">TRUE</span>) {</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="do">## List files ####</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="do">## List files</span></span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  file_type <span class="ot">&lt;-</span> <span class="fu">paste</span>(file_type, <span class="at">collapse =</span> <span class="st">"|"</span>) <span class="co"># combine all file types to one regex (uses or expression)</span></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  good_files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(Local_dir, <span class="at">pattern =</span> file_type, <span class="at">full.names =</span> <span class="cn">TRUE</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Copy files ####</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Copy files</span></span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (file <span class="cf">in</span> good_files) {</span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># check for after hours, will run any time if offHoursCopy = FALSE above</span></span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (offHoursCopy) {</span>
@@ -702,7 +702,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Create Log ####</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Create Log</span></span>
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>  <span class="co"># read in log file created in cmd</span></span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>  log_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(log_file, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>  </span>
@@ -755,40 +755,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openxlsx)</span>
 <span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="co"># Path to Local Directory you want to copy FROM</span></span>
 <span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>Local_dir <span class="ot">&lt;-</span> <span class="st">"Z:/RECORDINGS/DRIFTERS/CCES_2018/RAW"</span> </span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="co"># Path to Cloud Directory you want to copy TO</span></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>Cloud_dir <span class="ot">&lt;-</span> <span class="st">"swfsc-1/2018_CCES_1651/drifting_recorder/audio_wav"</span>      </span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="co"># Log file name with path</span></span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>log_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(), <span class="st">"/GCP_transfer_log_"</span>, <span class="fu">format</span>(<span class="fu">Sys.time</span>(), <span class="st">"%Y%m%d_%H%M%S"</span>), <span class="st">".txt"</span>)  <span class="co">#  (used with gsutil -L command). Leave as is, unless you want to change where the log file is saved to. This structure is built to save it to your current working directory</span></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy off hours?</span></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>offHoursCopy <span class="ot">&lt;-</span> <span class="cn">FALSE</span>  <span class="co"># default is TRUE = Copy only on nights/weekends</span></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy all files? Choose file type if you do not want copy all</span></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>file_type <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">.wav$"</span>, <span class="st">"</span><span class="sc">\\</span><span class="st">.ltsa"</span>)</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="co"># file_type &lt;- c("\\.wav$", "\\.log.xml$", "\\.accel.csv$", "\\.temp.csv$", "\\.ltsa$", "\\.flac$")</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="co"># Path to Cloud Directory you want to copy TO</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Cloud_dir <span class="ot">&lt;-</span> <span class="st">"swfsc-1/2018_CCES_1651/drifting_recorder/audio_wav"</span>      </span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="co"># Log file name with path</span></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>log_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">getwd</span>(), <span class="st">"/GCP_transfer_log_"</span>, <span class="fu">format</span>(<span class="fu">Sys.time</span>(), <span class="st">"%Y%m%d_%H%M%S"</span>), <span class="st">".txt"</span>)  <span class="co">#  (used with gsutil -L command). Leave as is, unless you want to change where the log file is saved to. This structure is built to save it to your current working directory</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy off hours?</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>offHoursCopy <span class="ot">&lt;-</span> <span class="cn">FALSE</span>  <span class="co"># default is TRUE = Copy only on nights/weekends</span></span>
 <span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="do">## ----STEP 2: (Optional) Rename files/folders to remove spaces----</span></span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="co"># Spaces within your filenames/foldernames may lead to downstream processing issues</span></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="co"># We recommend you run this and replace any spaces in your ORIGINAL filenames/foldernames</span></span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="co"># Risk: If you have documents, code that require the exact names (with spaces), you may have issues</span></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="co"># DO NOT RUN THIS LINE IF YOU NEED TO RETAIN SPACES IN YOUR FILE NAME, these functions will still work</span></span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="co"># rename_spaces(Local_dir)</span></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="do">## ----STEP 3: Copy files to GCP----</span></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="co"># progress will be printed to the R console, check the output xlsx file for errors </span></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="fu">copy_files_to_GCP</span>(</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>  <span class="at">Local_dir =</span> Local_dir,</span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>  <span class="at">Cloud_dir =</span> Cloud_dir,</span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>  <span class="at">file_type =</span> file_type,</span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>  <span class="at">log_file =</span> log_file,</span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>  <span class="at">offHoursCopy =</span> offHoursCopy</span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="co"># --------------Final Notes:--------------</span></span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="co"># - You must have gsutil installed and authenticated on your system</span></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="co"># - Make sure the GCP bucket exists and you have write permissions</span></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="co"># - Output Excel log will be saved to your working directory alongside your log txt file, summarizing success/failures </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy all files? Choose file type if you do not want copy all</span></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>file_type <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">.wav$"</span>, <span class="st">"</span><span class="sc">\\</span><span class="st">.ltsa"</span>)</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="co"># file_type &lt;- c("\\.wav$", "\\.log.xml$", "\\.accel.csv$", "\\.temp.csv$", "\\.ltsa$", "\\.flac$")</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="do">## ----STEP 2: (Optional) Rename files/folders to remove spaces----</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="co"># Spaces within your filenames/foldernames may lead to downstream processing issues</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="co"># We recommend you run this and replace any spaces in your ORIGINAL filenames/foldernames</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="co"># Risk: If you have documents, code that require the exact names (with spaces), you may have issues</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="co"># DO NOT RUN THIS LINE IF YOU NEED TO RETAIN SPACES IN YOUR FILE NAME, these functions will still work</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="co"># rename_spaces(Local_dir)</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="do">## ----STEP 3: Copy files to GCP----</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="co"># progress will be printed to the R console, check the output xlsx file for errors </span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="fu">copy_files_to_GCP</span>(</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>  <span class="at">Local_dir =</span> Local_dir,</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>  <span class="at">Cloud_dir =</span> Cloud_dir,</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>  <span class="at">file_type =</span> file_type,</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>  <span class="at">log_file =</span> log_file,</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>  <span class="at">offHoursCopy =</span> offHoursCopy</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="co"># --------------Final Notes:--------------</span></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="co"># You must have gsutil installed and authenticated on your system</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="co"># Make sure the GCP bucket exists and you have write permissions</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="co"># Output Excel log will be saved to your working directory alongside your log txt file, summarizing success/failures of file uploads </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="more-information-on-cloud-storage" class="level3">
 <h3 class="anchored" data-anchor-id="more-information-on-cloud-storage">More information on Cloud Storage</h3>
