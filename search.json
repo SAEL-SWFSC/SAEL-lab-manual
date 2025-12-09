@@ -1199,7 +1199,7 @@
     "href": "content/Ocean-Alert-App.html",
     "title": "Ocean Alert App",
     "section": "",
-    "text": "The Ocean Alert app is used to collect sighting data and record deployment/recovery details for our drifters. Link to access sighting and deployment data, must have SAEL username and password to access our data",
+    "text": "The Ocean Alert app is used to collect sighting data and record deployment/recovery details for our drifters. Manuals, instructions, and login information can be found here - only accessible to SAEL lab members.",
     "crumbs": [
       "SAEL Acoustic Software",
       "Ocean Alert App"
@@ -1210,7 +1210,7 @@
     "href": "content/Ocean-Alert-App.html#sighting-data",
     "title": "Ocean Alert App",
     "section": "Sighting Data",
-    "text": "Sighting Data",
+    "text": "Sighting Data\nTo acces sighting data, go to https://spotter.conserve.io/accounts/login/ and use the SAEL lab login. Under Sighting CSV, click the ‘Sightings’ link for ADRIFT Buoy Deployment project. This will download a CSV file of all sightings data from ADRIFT CCC cruises.",
     "crumbs": [
       "SAEL Acoustic Software",
       "Ocean Alert App"
@@ -1221,7 +1221,7 @@
     "href": "content/Ocean-Alert-App.html#drifter-deployment-and-recovery-data",
     "title": "Ocean Alert App",
     "section": "Drifter Deployment and Recovery Data",
-    "text": "Drifter Deployment and Recovery Data",
+    "text": "Drifter Deployment and Recovery Data\nTo acces drifting buoy deployment and recovery data, go to https://spotter.conserve.io/accounts/login/ and use the SAEL lab login. Under ‘Other CSV’, click the ‘ADRIFT Gear Deployment’ link for ADRIFT Buoy Deployment project. This will download a CSV file of all buoy deployment metadata from ADRIFT CCC cruises.",
     "crumbs": [
       "SAEL Acoustic Software",
       "Ocean Alert App"
