@@ -530,7 +530,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#accessing-data" id="toc-accessing-data" class="nav-link active" data-scroll-target="#accessing-data">Accessing Data</a></li>
+  <li><a href="#swfsc-gcp-buckets" id="toc-swfsc-gcp-buckets" class="nav-link active" data-scroll-target="#swfsc-gcp-buckets"><strong>SWFSC GCP Buckets:</strong></a></li>
+  <li><a href="#data-structure" id="toc-data-structure" class="nav-link" data-scroll-target="#data-structure">Data Structure</a></li>
+  <li><a href="#accessing-data" id="toc-accessing-data" class="nav-link" data-scroll-target="#accessing-data">Accessing Data</a></li>
   <li><a href="#cloud-storage" id="toc-cloud-storage" class="nav-link" data-scroll-target="#cloud-storage">Cloud Storage</a>
   <ul class="collapse">
   <li><a href="#manual-upload" id="toc-manual-upload" class="nav-link" data-scroll-target="#manual-upload">Manual Upload</a></li>
@@ -572,20 +574,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <section id="national-pam-si-cloud-repo-more-details-on-cloud-storage-and-processing-from-the-cloud-team" class="level4">
-<h4 class="anchored" data-anchor-id="national-pam-si-cloud-repo-more-details-on-cloud-storage-and-processing-from-the-cloud-team"><a href="https://nmfs-ost.github.io/PAM-Cloud/" target="_blank">National PAM SI Cloud Repo</a>: more details on cloud storage and processing from the cloud team</h4>
+<h4 class="anchored" data-anchor-id="national-pam-si-cloud-repo-more-details-on-cloud-storage-and-processing-from-the-cloud-team"><a href="https://nmfs-ost.github.io/PAM-Cloud/" target="_blank"><strong>National PAM SI Cloud Repo</strong></a><strong>:</strong> more details on cloud storage and processing from the cloud team</h4>
 </section>
-<section id="link-to-swfsc-gcp-bucket-our-data-storage-site" class="level4">
-<h4 class="anchored" data-anchor-id="link-to-swfsc-gcp-bucket-our-data-storage-site"><a href="https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&amp;project=ggn-nmfs-pamdata-prod-1&amp;prefix=&amp;forceOnObjectsSortingFiltering=false" target="_blank">Link to SWFSC GCP Bucket</a>: our data storage site</h4>
+<section id="swfsc-gcp-buckets" class="level2">
+<h2 class="anchored" data-anchor-id="swfsc-gcp-buckets"><strong>SWFSC GCP Buckets:</strong></h2>
+<section id="swfsc-1-all-raw-audio-data-and-ltsas" class="level4">
+<h4 class="anchored" data-anchor-id="swfsc-1-all-raw-audio-data-and-ltsas"><a href="https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&amp;hl=en&amp;invt=Abt4Vg&amp;project=ggn-nmfs-pamdata-prod-1&amp;prefix=&amp;forceOnObjectsSortingFiltering=false">swfsc-1</a> : all raw audio data and LTSAs</h4>
 </section>
-<section id="accessing-data" class="level2">
-<h2 class="anchored" data-anchor-id="accessing-data">Accessing Data</h2>
-<p>Check the <a href="https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing">archive spreadsheet</a> to see if the dataset you are interested in accessing is available in the <a href="https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&amp;project=ggn-nmfs-pamdata-prod-1&amp;prefix=&amp;forceOnObjectsSortingFiltering=false">SWFSC-SAEL bucket</a>. Note: there are two SWFSC buckets. SWFSC-1 is for raw audio data and LTSAs only. SWFSC-1-working contains analysis files, metadata, and other ancillary data.</p>
+<section id="swfsc-1-working-all-metadata-analysis-files-and-other-ancillary-data" class="level4">
+<h4 class="anchored" data-anchor-id="swfsc-1-working-all-metadata-analysis-files-and-other-ancillary-data"><a href="https://console.cloud.google.com/storage/browser/swfsc-1-working;tab=objects?hl=en&amp;invt=Abt4Vg&amp;project=ggn-nmfs-pamdata-prod-1&amp;prefix=&amp;forceOnObjectsSortingFiltering=false">swfsc-1-working</a> : all metadata, analysis files, and other ancillary data</h4>
+</section>
+</section>
+<section id="data-structure" class="level2">
+<h2 class="anchored" data-anchor-id="data-structure">Data Structure</h2>
 <p>Below is a general data structure of the two buckets. The most updated data structure can be accessed <a href="https://docs.google.com/document/d/15gwvtf855YYQetF_ED7OJYPNQK2GFGw0sSl9HVp2tR4/edit?usp=sharing">here</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/gcp_data_structure.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
+</section>
+<section id="accessing-data" class="level2">
+<h2 class="anchored" data-anchor-id="accessing-data">Accessing Data</h2>
+<p>Check the <a href="https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing">archive spreadsheet</a> to see if the dataset you are interested in accessing is available in the <a href="https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&amp;project=ggn-nmfs-pamdata-prod-1&amp;prefix=&amp;forceOnObjectsSortingFiltering=false">SWFSC-SAEL bucket</a>.</p>
+<p>Data can be downloaded directly from the bucket/project of interest by selecting the folder and clicking ‘Download’.</p>
+<p><img src="images/GCP_bucket.png" class="img-fluid"></p>
 </section>
 <section id="cloud-storage" class="level2">
 <h2 class="anchored" data-anchor-id="cloud-storage">Cloud Storage</h2>

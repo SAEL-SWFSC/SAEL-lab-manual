@@ -187,11 +187,35 @@
     ]
   },
   {
+    "objectID": "content/Data-Archive-GCP.html#swfsc-gcp-buckets",
+    "href": "content/Data-Archive-GCP.html#swfsc-gcp-buckets",
+    "title": "Google Cloud",
+    "section": "SWFSC GCP Buckets:",
+    "text": "SWFSC GCP Buckets:\n\nswfsc-1 : all raw audio data and LTSAs\n\n\nswfsc-1-working : all metadata, analysis files, and other ancillary data",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Google Cloud"
+    ]
+  },
+  {
+    "objectID": "content/Data-Archive-GCP.html#data-structure",
+    "href": "content/Data-Archive-GCP.html#data-structure",
+    "title": "Google Cloud",
+    "section": "Data Structure",
+    "text": "Data Structure\nBelow is a general data structure of the two buckets. The most updated data structure can be accessed here",
+    "crumbs": [
+      "Data Management",
+      "Data Archive",
+      "Google Cloud"
+    ]
+  },
+  {
     "objectID": "content/Data-Archive-GCP.html#accessing-data",
     "href": "content/Data-Archive-GCP.html#accessing-data",
     "title": "Google Cloud",
     "section": "Accessing Data",
-    "text": "Accessing Data\nCheck the archive spreadsheet to see if the dataset you are interested in accessing is available in the SWFSC-SAEL bucket. Note: there are two SWFSC buckets. SWFSC-1 is for raw audio data and LTSAs only. SWFSC-1-working contains analysis files, metadata, and other ancillary data.\nBelow is a general data structure of the two buckets. The most updated data structure can be accessed here",
+    "text": "Accessing Data\nCheck the archive spreadsheet to see if the dataset you are interested in accessing is available in the SWFSC-SAEL bucket.\nData can be downloaded directly from the bucket/project of interest by selecting the folder and clicking ‘Download’.",
     "crumbs": [
       "Data Management",
       "Data Archive",
