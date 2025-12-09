@@ -8,6 +8,10 @@ title: InPort
 
 Per Fisheries Information Management and Data Documentation policy and procedural directives, all Fisheries data must be inventoried with complete metadata in InPort, our official metadata repository. PAM data is complicated, and there is no standard for posting metadata to InPort. Given that detailed metadata is archived to NCEI, SWFSC will post all data related to PAM Deployments/data collection efforts and ensure there is a link to access additional data/metadata via NCEI and PACM.
 
+::: callout-note
+## InPort data submission guidelines are currently being updated. New guidance detailing InPort data entries is expected to be released with PARR 2.0
+:::
+
 ### SAEL Data Status
 
 [ADRIFT InPort Entry](https://www.fisheries.noaa.gov/inport/item/75725) - incomplete
