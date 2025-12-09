@@ -2,14 +2,16 @@
 title: Ocean Alert App
 ---
 
-The Ocean Alert app is used to collect sighting data and record deployment/recovery details for our drifters. [Link to access sighting and deployment data](https://spotter.conserve.io/spotter/projects), must have SAEL username and password to access our data
+The Ocean Alert app is used to collect sighting data and record deployment/recovery details for our drifters. Manuals, instructions, and login information can be found [here](https://drive.google.com/drive/folders/114y5I6rx6S96JkgKcK89bd053rVHcjjZ?usp=drive_link) - only accessible to SAEL lab members.
 
 ## Sighting Data
+To acces sighting data, go to [https://spotter.conserve.io/accounts/login/](https://spotter.conserve.io/accounts/login/) and use the SAEL lab login. Under Sighting CSV, click the 'Sightings' link for ADRIFT Buoy Deployment project. This will download a CSV file of all sightings data from ADRIFT CCC cruises. 
 
 ## Drifter Deployment and Recovery Data
+To acces drifting buoy deployment and recovery data, go to [https://spotter.conserve.io/accounts/login/](https://spotter.conserve.io/accounts/login/) and use the SAEL lab login. Under 'Other CSV', click the 'ADRIFT Gear Deployment' link for ADRIFT Buoy Deployment project. This will download a CSV file of all buoy deployment metadata from ADRIFT CCC cruises. 
 
 ## Manuals For Reference
 
-[Ocean Alert ADRIFT Instructions](https://drive.google.com/file/d/1bqZR9ar4-QImobS6tcbloou8f4ImYVSa/view?usp=share_link)
+[Ocean Alert ADRIFT Instructions](https://drive.google.com/file/d/1bqZR9ar4-QImobS6tcbloou8f4ImYVSa/view?usp=drive_link)
 
-[Ocean Alert CINMS Whale Spotting Manual](https://drive.google.com/file/d/1UapmQE_rihtly_KTtPZLYqWm-EJupFnh/view?usp=share_link)
+[Ocean Alert CINMS Whale Spotting Manual](https://drive.google.com/file/d/1UapmQE_rihtly_KTtPZLYqWm-EJupFnh/view?usp=drive_link)
