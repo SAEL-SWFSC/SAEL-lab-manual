@@ -3,17 +3,27 @@ title: Google Cloud
 subtitle: GCP for Archive and Analysis
 ---
 
-#### [National PAM SI Cloud Repo](https://nmfs-ost.github.io/PAM-Cloud/){target="_blank"}: more details on cloud storage and processing from the cloud team
+#### [**National PAM SI Cloud Repo**](https://nmfs-ost.github.io/PAM-Cloud/){target="_blank"}**:** more details on cloud storage and processing from the cloud team
 
-#### [Link to SWFSC GCP Bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false){target="_blank"}: our data storage site
+## **SWFSC GCP Buckets:** 
 
-## Accessing Data
+#### [swfsc-1](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&hl=en&invt=Abt4Vg&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false) : all raw audio data and LTSAs
 
-Check the [archive spreadsheet](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing) to see if the dataset you are interested in accessing is available in the [SWFSC-SAEL bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false). Note: there are two SWFSC buckets. SWFSC-1 is for raw audio data and LTSAs only. SWFSC-1-working contains analysis files, metadata, and other ancillary data.
+#### [swfsc-1-working](https://console.cloud.google.com/storage/browser/swfsc-1-working;tab=objects?hl=en&invt=Abt4Vg&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false) : all metadata, analysis files, and other ancillary data
+
+## Data Structure
 
 Below is a general data structure of the two buckets. The most updated data structure can be accessed [here](https://docs.google.com/document/d/15gwvtf855YYQetF_ED7OJYPNQK2GFGw0sSl9HVp2tR4/edit?usp=sharing)
 
 ![](images/gcp_data_structure.jpg){fig-align="center"}
+
+## Accessing Data
+
+Check the [archive spreadsheet](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIASIlcZD6zWa-k/edit?usp=sharing) to see if the dataset you are interested in accessing is available in the [SWFSC-SAEL bucket](https://console.cloud.google.com/storage/browser/swfsc-1;tab=objects?forceOnBucketsSortingFiltering=true&project=ggn-nmfs-pamdata-prod-1&prefix=&forceOnObjectsSortingFiltering=false).
+
+Data can be downloaded directly from the bucket/project of interest by selecting the folder and clicking 'Download'.
+
+![](images/GCP_bucket.png)
 
 ## Cloud Storage
 
