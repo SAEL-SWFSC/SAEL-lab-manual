@@ -16,30 +16,34 @@ Members](https://docs.google.com/spreadsheets/d/1bNu1GPOmyn3CRZ70Mnq4ZZmH7n7ZwIA
 
 ## Local Data Archive
 
+::: callout-warning
+## All on premise data servers (including Synology arrays and Don) will be decommissioned through the Fisheries wide cloud migration efforts. Check the external data archives for long term file storage locations.
+:::
+
 Local data storage is currently located in several different locations:
 
 ### *Digital Data Storage*
 
 -   [Old Synology
-    Rm390](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/SynologyNASinventory_Rm390_SAEL_Rankin_14March2025.pdf)
+    Rm385](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/SynologyNASinventory_Rm390_SAEL_Rankin_14March2025.pdf) -
+    all data transferred to new synology, drive is available as
+    temporary storage location for MMTD
 
 -   [New Synology
-    Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/SynologyNASinventory_Rm420_SAEL_Rankin_26March2025.pdf)
+    Rm385](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/SynologyNASinventory_Rm420_SAEL_Rankin_26March2025.pdf)
 
 -   [MMTD-ACOUSTICS(\\swc-storage4-s)](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/MMTD-ACOUSTICS-NAS_Rm433A_SAEL_Rankin_26March2025.pdf)
     aka "The Don" (IT Server Room 433A)
 
--   [Hard Drive Closet
-    Rm390](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf)
-    (detailed [Hard Drive
+-   Hard Drive Closet Rm385 (detailed [Hard Drive
     Inventory](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/HDinventoryDetails_Rm390_SAEL_Rankin_14March2025.pdf))
 
 ### *Analog Data Storage*
 
 -   [Tape Drive Closet
-    Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/TapeRecordingInventory_Rm385_SAEL_Rankin_14March2025.pdf)
+    Rm385](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/TapeRecordingInventory_Rm385_SAEL_Rankin_14March2025.pdf)
 -   [Greenbook Cabinet
-    Rm420](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/GreenbookInventory_Rm385_SAEL_Rankin_14March2025.pdf)
+    Rm385](https://github.com/SAEL-SWFSC/SAEL-lab-manual/tree/main/supplemental/GreenbookInventory_Rm385_SAEL_Rankin_14March2025.pdf)
 
 ## External Data Archives
 
