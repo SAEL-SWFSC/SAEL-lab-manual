@@ -1107,7 +1107,7 @@
     "href": "content/Data-Archive.html#local-data-archive",
     "title": "Data Archive",
     "section": "Local Data Archive",
-    "text": "Local Data Archive\nLocal data storage is currently located in several different locations:\n\nDigital Data Storage\n\nOld Synology Rm390\nNew Synology Rm420\nMMTD-ACOUSTICS(\\swc-storage4-s) aka “The Don” (IT Server Room 433A)\nHard Drive Closet Rm390 (detailed Hard Drive Inventory)\n\n\n\nAnalog Data Storage\n\nTape Drive Closet Rm420\nGreenbook Cabinet Rm420",
+    "text": "Local Data Archive\n\n\n\n\n\n\nWarningAll on premise data servers (including Synology arrays and Don) will be decommissioned through the Fisheries wide cloud migration efforts. Check the external data archives for long term file storage locations.\n\n\n\n\n\n\nLocal data storage is currently located in several different locations:\n\nDigital Data Storage\n\nOld Synology Rm385 - all data transferred to new synology, drive is available as temporary storage location for MMTD\nNew Synology Rm385\nMMTD-ACOUSTICS(\\swc-storage4-s) aka “The Don” (IT Server Room 433A)\nHard Drive Closet Rm385 (detailed Hard Drive Inventory)\n\n\n\nAnalog Data Storage\n\nTape Drive Closet Rm385\nGreenbook Cabinet Rm385",
     "crumbs": [
       "Data Management",
       "Data Archive"
