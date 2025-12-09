@@ -1,7 +1,7 @@
 # ----FUNCTIONS----
-# Short recursive space-to-underscore renamer
+# Space-to-underscore renamer
 rename_spaces <- function(path = ".") {
-  # Get all files and folders, deepest first
+  # Get all files and folders
   all_paths <- list.files(path, recursive = TRUE, full.names = TRUE, include.dirs = TRUE)
   all_paths <- all_paths[order(nchar(all_paths), decreasing = TRUE)]
   
@@ -29,11 +29,11 @@ is_after_hours <- function(x){
 
 # Copy function
 copy_files_to_GCP <- function(Local_dir, Cloud_dir, file_type = NULL, log_file, offHoursCopy = TRUE) {
-  ## List files ####
+  ## List files
   file_type <- paste(file_type, collapse = "|") # combine all file types to one regex (uses or expression)
   good_files <- list.files(Local_dir, pattern = file_type, full.names = TRUE, recursive = TRUE)
   
-  ## Copy files ####
+  ## Copy files
   for (file in good_files) {
     # check for after hours, will run any time if offHoursCopy = FALSE above
     if (offHoursCopy) {
@@ -56,7 +56,7 @@ copy_files_to_GCP <- function(Local_dir, Cloud_dir, file_type = NULL, log_file, 
   }
   
   
-  ## Create Log ####
+  ## Create Log
   # read in log file created in cmd
   log_df <- read.csv(log_file, header = TRUE)
   
@@ -109,12 +109,16 @@ copy_files_to_GCP <- function(Local_dir, Cloud_dir, file_type = NULL, log_file, 
 library(openxlsx)
 # Path to Local Directory you want to copy FROM
 Local_dir <- "Z:/RECORDINGS/DRIFTERS/CCES_2018/RAW" 
+
 # Path to Cloud Directory you want to copy TO
 Cloud_dir <- "swfsc-1/2018_CCES_1651/drifting_recorder/audio_wav"      
+
 # Log file name with path
 log_file <- paste0(getwd(), "/GCP_transfer_log_", format(Sys.time(), "%Y%m%d_%H%M%S"), ".txt")  #  (used with gsutil -L command). Leave as is, unless you want to change where the log file is saved to. This structure is built to save it to your current working directory
+
 # Copy off hours?
 offHoursCopy <- FALSE  # default is TRUE = Copy only on nights/weekends
+
 # Copy all files? Choose file type if you do not want copy all
 file_type <- c("\\.wav$", "\\.ltsa")
 # file_type <- c("\\.wav$", "\\.log.xml$", "\\.accel.csv$", "\\.temp.csv$", "\\.ltsa$", "\\.flac$")
@@ -140,6 +144,6 @@ copy_files_to_GCP(
 
 
 # --------------Final Notes:--------------
-# - You must have gsutil installed and authenticated on your system
-# - Make sure the GCP bucket exists and you have write permissions
-# - Output Excel log will be saved to your working directory alongside your log txt file, summarizing success/failures
+# You must have gsutil installed and authenticated on your system
+# Make sure the GCP bucket exists and you have write permissions
+# Output Excel log will be saved to your working directory alongside your log txt file, summarizing success/failures of file uploads
