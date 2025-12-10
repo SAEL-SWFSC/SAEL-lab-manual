@@ -14,7 +14,7 @@ Users can access data through the [interactive map](https://www.ncei.noaa.gov/ma
 
 ## Submitting Data
 
-NCEI has packaging tools to help automate this process. ADRIFT, CCES, and PASCAL data was archived using Passive Packer. NCEI has since released the Passive Acoustic Collection Engine (PACE) that allows for bulk processing and custom translators. PACE has replaced Passive Packer as our packaging tool.
+NCEI has packaging tools to help automate this process. ADRIFT, CCES, and PASCAL data were archived using Passive Packer. NCEI has since released the Passive Acoustic Collection Engine (PACE) that allows for bulk processing and custom translators. PACE has replaced Passive Packer as our packaging tool.
 
 ### PACE
 
