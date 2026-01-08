@@ -25,6 +25,7 @@ This lab manual serves as the go-to handbook for the behind-the-scenes informati
 
 [Kourtney Burger](https://www.fisheries.noaa.gov/contact/kourtney-burger), Acoustician and Data Manager
 
+<<<<<<< Updated upstream
 ## Other SAEL Repositories
 
 See our [GitHub Repos page](https://sael-swfsc.github.io/SAEL-lab-manual/content/Data-Github.html) for links to all of our lab's individual repositories
@@ -49,6 +50,8 @@ See our [GitHub Repos page](https://sael-swfsc.github.io/SAEL-lab-manual/content
 
 ## Like what you see?
 
+=======
+>>>>>>> Stashed changes
 ***Want to Copy this Lab Manual Format?***
 
 *Use the [PAM_template_lab_manual](https://github.com/nmfs-ost/PAM_template_lab_manual) following [these methods](https://nmfs-ost.github.io/PAM_template_lab_manual/#how-to-use-this-template).*
