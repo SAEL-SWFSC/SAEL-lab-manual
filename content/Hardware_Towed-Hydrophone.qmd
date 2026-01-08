@@ -4,7 +4,7 @@ title: Towed Array
 
 Southwest Fisheries Science Center initiated towed array research in the late 1990s using solid hydrophone arrays developed by Norris (Santa Barbara). Breakages at sea were common, and Jay Barlow began designing a custom towed hydrophone to provide more control over building and repairing equipment. The first towed hydrophones developed by SWFSC consisted of solid polyeurethane hydrophones molded onto cable (see [Construction Guide](https://repository.library.noaa.gov/view/noaa/3620)). These solid hydrophones required a long and robust 'tail' to minimize 'fish-tailing', and yet damage to internal wires at the front end of the mold were common (this area acted as a 'joint', bending and eventually leading to wear on the internal wires). A need for more robust towed arrays with the ability to repair and replace internal components lead to the design of oil-filled towed hydrophone arrays (still in use today).
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 In 2011, SWFSC led an effort to develop a standardized approach to building and using towed hydrophone arrays for marine mammal surveys. Funded by NOAA's Ocean Acoustics Program, the primary goals were to (1) develop a modular hardware/software system to be used by all NMFS science centers during shipboard cetacean surveys, and (2) host a workshop to build these systems (see [Workshop Report](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/supplemental/ASTWG_FY12_PAMHardwareWorkshop.pdf)). The towed array information, below, is based off the design developed for this workshop.
 :::
@@ -12,13 +12,13 @@ In 2011, SWFSC led an effort to develop a standardized approach to building and 
 ::: {.column width="50%"}
 ![](images/towed_modularArray.png){width="186"}
 :::
-:::
+:::::
 
 Later, SWFSC conducted several efforts to develop a volumetric (tetrahedral) towed hydrophone array to allow for improved real-time localization. Initial efforts led by Jay Barlow led to successful tracking of beaked whales during SoCal Behavioral Response Studies (SoCal BRS), and later collaborations with external organizations via Small Business Innovation Research programs.
 
 ![](images/towed_tetrahedral.jpg){width="175"} ![](images/towed_volumetric.jpg){width="200"} ![](images/towed_trident.jpg){width="200"}
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 Conducting real-time towed array surveys require significant expertise during surveys, and to allow for data collection when real-time data are not required, Jay Barlow developed an autonomous towed hydrophone array consisting of an autonomous recorder within a PVC housing and towed behind the ship using a strong rope.
 :::
@@ -26,7 +26,7 @@ Conducting real-time towed array surveys require significant expertise during su
 ::: {.column width="50%"}
 ![](images/towed_autonomousArray.jpg){width="206"}
 :::
-:::
+:::::
 
 Ultimately, the need for real-time detection during surveys off the U.S. West Coast did not justify the resources required and SWFSC conducted their final towed array survey in 2016. All towed array equipment was transferred to other science centers still conducting towed array surveys, and ongoing improvement of towed array systems are being led by our colleagues at PIFSC.
 
