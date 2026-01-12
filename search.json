@@ -721,7 +721,17 @@
     "href": "index.html#team-members",
     "title": "Southwest Acoustics Ecology Lab, SWFSC",
     "section": "Team Members",
-    "text": "Team Members\nShannon Rankin, SAEL Team Leader\nCory Hom-Weaver, Acoustician and Fieldwork Manager\nKourtney Burger, Acoustician and Data Manager\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream ## Other SAEL Repositories\nSee our GitHub Repos page for links to all of our lab’s individual repositories",
+    "text": "Team Members\nShannon Rankin, SAEL Team Leader\nCory Hom-Weaver, Acoustician and Fieldwork Manager\nKourtney Burger, Acoustician and Data Manager",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#other-sael-repositories",
+    "href": "index.html#other-sael-repositories",
+    "title": "Southwest Acoustics Ecology Lab, SWFSC",
+    "section": "Other SAEL Repositories",
+    "text": "Other SAEL Repositories\nSee our GitHub Repos page for links to all of our lab’s individual repositories",
     "crumbs": [
       "Home"
     ]
