@@ -21,9 +21,7 @@ This lab manual serves as the go-to handbook for the behind-the-scenes informati
 
 [Shannon Rankin](https://www.fisheries.noaa.gov/contact/shannon-rankin), SAEL Team Leader
 
-[Cory Hom-Weaver](https://www.fisheries.noaa.gov/contact/cory-hom-weaver), Acoustician and Fieldwork Manager
-
-[Kourtney Burger](https://www.fisheries.noaa.gov/contact/kourtney-burger), Acoustician and Data Manager
+[Kourtney Burger](https://www.fisheries.noaa.gov/contact/kourtney-burger), Acoustician with Ecosystem Science Division
 
 ## Other SAEL Repositories
 

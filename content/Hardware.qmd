@@ -20,6 +20,9 @@ Sonobuoys are expendable drifting recorders with low-frequency vector sensor hyd
 
 Towing hydrophone arrays behind survey vessels allows for a complementary approach to detecting marine mammals during surveys. This can be especially helpful for species that are difficult to detect using visual observation methods, or during inclement weather where visual observation is limited.
 
+## [Seafloor Moorings](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Moorings.html)
+Seafloor moorings are stationary seafloor mounted moorings with an acoustic release, self-contained Soundtrap hydrophone/recorder, and a subsurface float. These were specifically deployed for a series of studies on seal bombs in the Channel Islands National Marine Sanctuary and the impact of seal bombs on harbor porpoise in Monterey Bay. 
+
 ## [Handheld Hydrophones](https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_Handheld-Hydrophone.html)
 
 Handheld hydrophones can be deployed from drifting vessels, and provides an easy to use method for collecting passive acoustic data near a vessel. This is ideal for fieldwork on small boats that work in close association with sighted animals.

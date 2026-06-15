@@ -1,0 +1,17 @@
+---
+title: Seafloor Moorings
+---
+
+Seafloor moorings are stationary seafloor mounted moorings with an acoustic release, self-contained Soundtrap hydrophone/recorder, and a subsurface float. These were specifically deployed for a series of studies on seal bombs in the Channel Islands National Marine Sanctuary and the impact of seal bombs on harbor porpoise in Monterey Bay. 
+
+The first project in 2019 was a collaboration between Channel Islands National Marine Sanctuary and Southwest Fisheries Science Center to study the use of seal bombs in the sanctuary. This project consisted of deployments off Santa Rosa Island and San Miguel Islands (two deployments at each site). In addition to the intended study, this project served as a 'pilot study' for the future [SanctSound](https://sanctsound.ioos.us/) project. A link to the final report is provided, below.
+
+A followup study of the impacts of seal bombs on harbor porpoise in Monterey Bay was initiated in 2020. This project included seafloor moorings distributed across Monterey Bay off Davenport, Marina, Point Pinos, Rocky Point, Santa Cruz, and Sunset State Beach. 
+
+
+## Resources
+
+[Seal Bomb Noise as a Potential Threat to Monterey Bay Harbor Porpoise](https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2020.00142/full) 2020. Anne Simonis, Karin Forney, Shannon Rankin, John Ryan, Yanwu Zhang, Andrew DeVogelaere, John Joseph, Tetyana Margolina, Anna Krumpel, and Simone Baumann-Pickering. Frontiers in Marine Science.
+
+[Quantifying human drivers of noise in the Channel Islands National Marine Sanctuary: A focus on seal bombs. Report to NOAA's Ocean Acoustics Program.](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/supplemental/SWFSC-CINMS_OAP_2019_FinalReport.pdf) 2019. Lindsey Peavey (NOAA Sanctuaries), Shannon Rankin and Anne Simonis (SWFSC)
+
