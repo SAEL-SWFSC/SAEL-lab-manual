@@ -7,8 +7,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Kourtney Burger">
   <title>SAEL Lab Manual – Methods Template</title>
@@ -21,10 +21,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -202,7 +205,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Kourtney Burger 
+Kourtney Burger
 </div>
 </div>
 </div>
@@ -393,27 +396,27 @@ Kourtney Burger
 <section id="slide-with-code" class="slide level2">
 <h2>Slide with Code</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-2"><a></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(hp, mpg, <span class="at">color =</span> am)) <span class="sc">+</span></span>
-<span id="cb1-3"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb1-4"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">method =</span> <span class="st">"loess"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a aria-label="2"></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(hp, mpg, <span class="at">color =</span> am)) <span class="sc">+</span></span>
+<span id="cb1-3"><a aria-label="3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb1-4"><a aria-label="4"></a>  <span class="fu">geom_smooth</span>(<span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">method =</span> <span class="st">"loess"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="slide-with-executable-code" class="slide level2">
 <h2>Slide with Executable Code</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co">#library(ggplot2)</span></span>
-<span id="cb2-2"><a></a><span class="co">#ggplot(mtcars, aes(hp, mpg, color = am)) +</span></span>
-<span id="cb2-3"><a></a><span class="co">#  geom_point() +</span></span>
-<span id="cb2-4"><a></a><span class="co">#  geom_smooth(formula = y ~ x, method = "loess")</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a><span class="co">#library(ggplot2)</span></span>
+<span id="cb2-2"><a aria-label="2"></a><span class="co">#ggplot(mtcars, aes(hp, mpg, color = am)) +</span></span>
+<span id="cb2-3"><a aria-label="3"></a><span class="co">#  geom_point() +</span></span>
+<span id="cb2-4"><a aria-label="4"></a><span class="co">#  geom_smooth(formula = y ~ x, method = "loess")</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="slide-with-highlighted-code-lines" class="slide level2">
 <h2>Slide with Highlighted Code Lines</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-code-line-numbers="2-4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>library(ggplot2)</span>
-<span id="cb3-2"><a></a>ggplot(mtcars, aes(hp, mpg, color <span class="op">=</span> am)) <span class="op">+</span></span>
-<span id="cb3-3"><a></a>  geom_point() <span class="op">+</span></span>
-<span id="cb3-4"><a></a>  geom_smooth(formula <span class="op">=</span> y <span class="op">~</span> x, method <span class="op">=</span> <span class="st">"loess"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-code-line-numbers="2-4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-label="1"></a>library(ggplot2)</span>
+<span id="cb3-2"><a aria-label="2"></a>ggplot(mtcars, aes(hp, mpg, color <span class="op">=</span> am)) <span class="op">+</span></span>
+<span id="cb3-3"><a aria-label="3"></a>  geom_point() <span class="op">+</span></span>
+<span id="cb3-4"><a aria-label="4"></a>  geom_smooth(formula <span class="op">=</span> y <span class="op">~</span> x, method <span class="op">=</span> <span class="st">"loess"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="footer">
 <p><a href="https://quarto.org/docs/presentations/revealjs/#line-highlighting">More line highlighting options here</a></p>
 </div>
