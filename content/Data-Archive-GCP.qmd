@@ -47,11 +47,11 @@ Data can be downloaded directly from the bucket/project of interest by selecting
 ### sdk/gsutil Upload
 
 1.  Open the 'Google Cloud SDK Shell Terminal'
-2.  Enter the follow command to upload files to the GCP: `gsutil -m cp -r [source pathway to files to be uploaded/] gs:[destination pathway to folder on bucket/]`
-    -   SAEL ADRIFT Example `"gsutil -m cp -r E:\DATA\LEG_2\RECORDINGS\CalCurCEAS_004 gs://swfsc-1/drifting_recorder/CalCurCEAS_2024"`
+2.  Enter the follow command to upload files to the GCP: `gcloud storage cp -r [source pathway to files to be uploaded/] gs:[destination pathway to folder on bucket/]`
+    -   SAEL ADRIFT Example `"gcloud storage cp -r E:\DATA\LEG_2\RECORDINGS\CalCurCEAS_004 gs://swfsc-1/drifting_recorder/CalCurCEAS_2024"`
 3.  Processing should start, wait for terminal prompt to update then refresh the SWFSC bucket website to see your uploaded data
 
-### Automated sdk/gsutil Upload
+### Automated sdk/gsutil Upload - OUTDATED
 
 You can use the following R script to automatically run the above command and bulk upload data from a source. R script available [here](https://github.com/SAEL-SWFSC/SAEL-lab-manual/blob/main/Scripts/GoogleCloudBulkUpload.R){target="_blank"}. This script is set up to only run from 6 pm to 6 am on weekdays and full time on weekends, to avoid excess network traffic.
 
